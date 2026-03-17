@@ -1,0 +1,233 @@
+{
+  "date": "2024-11-11",
+  "total": 10,
+  "source": "https://huggingface.co/papers/date/2024-11-11",
+  "papers": [
+    {
+      "arxiv_id": "2411.04997",
+      "title": "LLM2CLIP: Powerful Language Model Unlock Richer Visual Representation",
+      "authors": [
+        "Weiquan Huang",
+        "Aoqi Wu",
+        "Yifan Yang",
+        "Xufang Luo",
+        "Yuqing Yang",
+        "Liang Hu",
+        "Qi Dai",
+        "Xiyang Dai",
+        "Dongdong Chen",
+        "Chong Luo",
+        "Lili Qiu"
+      ],
+      "abstract": "CLIP is one of the most important multimodal foundational models today. What\npowers CLIP's capabilities? The rich supervision signals provided by natural\nlanguage, the carrier of human knowledge, shape a powerful cross-modal\nrepresentation space. However, with the rapid advancements in large language\nmodels LLMs like GPT-4 and LLaMA, the boundaries of language comprehension and\ngeneration are continually being pushed. This raises an intriguing question:\ncan the capabilities of LLMs be harnessed to further improve multimodal\nrepresentation learning? The potential benefits of incorporating LLMs into CLIP\nare clear. LLMs' strong textual understanding can fundamentally improve CLIP's\nability to handle image captions, drastically enhancing its ability to process\nlong and complex texts, a well-known limitation of vanilla CLIP. Moreover, LLMs\nare trained on a vast corpus of text, possessing open-world knowledge. This\nallows them to expand on caption information during training, increasing the\nefficiency of the learning process. In this paper, we propose LLM2CLIP, a novel\napproach that embraces the power of LLMs to unlock CLIP's potential. By\nfine-tuning the LLM in the caption space with contrastive learning, we extract\nits textual capabilities into the output embeddings, significantly improving\nthe output layer's textual discriminability. We then design an efficient\ntraining process where the fine-tuned LLM acts as a powerful teacher for CLIP's\nvisual encoder. Thanks to the LLM's presence, we can now incorporate longer and\nmore complex captions without being restricted by vanilla CLIP's text encoder's\ncontext window and ability limitations. Our experiments demonstrate that this\napproach brings substantial improvements in cross-modal tasks.",
+      "published_at": "2024-11-07",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "Yif Yang",
+      "upvotes": 39,
+      "organization": "",
+      "github_repo": "https://github.com/microsoft/LLM2CLIP",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.04997",
+      "arxiv_url": "https://arxiv.org/abs/2411.04997"
+    },
+    {
+      "arxiv_id": "2411.04282",
+      "title": "Language Models are Hidden Reasoners: Unlocking Latent Reasoning\n  Capabilities via Self-Rewarding",
+      "authors": [
+        "Haolin Chen",
+        "Yihao Feng",
+        "Zuxin Liu",
+        "Weiran Yao",
+        "Akshara Prabhakar",
+        "Shelby Heinecke",
+        "Ricky Ho",
+        "Phil Mui",
+        "Silvio Savarese",
+        "Caiming Xiong",
+        "Huan Wang"
+      ],
+      "abstract": "Large language models (LLMs) have shown impressive capabilities, but still\nstruggle with complex reasoning tasks requiring multiple steps. While\nprompt-based methods like Chain-of-Thought (CoT) can improve LLM reasoning at\ninference time, optimizing reasoning capabilities during training remains\nchallenging. We introduce LaTent Reasoning Optimization (LaTRO), a principled\nframework that formulates reasoning as sampling from a latent distribution and\noptimizes it via variational approaches. LaTRO enables LLMs to concurrently\nimprove both their reasoning process and ability to evaluate reasoning quality,\nwithout requiring external feedback or reward models. We validate LaTRO through\nexperiments on GSM8K and ARC-Challenge datasets using multiple model\narchitectures. On GSM8K, LaTRO improves zero-shot accuracy by an average of\n12.5% over base models and 9.6% over supervised fine-tuning across\nPhi-3.5-mini, Mistral-7B, and Llama-3.1-8B. Our findings suggest that\npre-trained LLMs possess latent reasoning capabilities that can be unlocked and\nenhanced through our proposed optimization approach in a self-improvement\nmanner. The code of LaTRO is available at\nhttps://github.com/SalesforceAIResearch/LaTRO.",
+      "published_at": "2024-11-06",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "Haolin Chen",
+      "upvotes": 37,
+      "organization": "",
+      "github_repo": "https://github.com/salesforceairesearch/latro",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.04282",
+      "arxiv_url": "https://arxiv.org/abs/2411.04282"
+    },
+    {
+      "arxiv_id": "2411.05288",
+      "title": "Balancing Pipeline Parallelism with Vocabulary Parallelism",
+      "authors": [
+        "Man Tsung Yeung",
+        "Penghui Qi",
+        "Min Lin",
+        "Xinyi Wan"
+      ],
+      "abstract": "Pipeline parallelism is widely used to scale the training of\ntransformer-based large language models, various works have been done to\nimprove its throughput and memory footprint. In this paper, we address a\nfrequently overlooked issue: the vocabulary layers can cause imbalanced\ncomputation and memory usage across pipeline stages, worsening pipeline bubbles\nand the memory bottleneck. To tackle this, we partition the vocabulary layers\nevenly across pipeline devices and group the computation into pipeline passes.\nTo reduce the activation memory overhead, we propose several algorithms to\nreduce communication barriers within vocabulary layers. Additionally, we\nutilize a generalizable method to integrate Vocabulary Parallelism with\nexisting pipeline schedules. By combining these techniques, our methods\neffectively balance the computation and parameter memory, with only a small\nconstant activation memory overhead. Notably, when combined with activation\nmemory-balanced schedules like V-Half, our approach achieves perfect balance in\nboth memory and computation. Extensive evaluations demonstrate that our method\nachieves computation and memory balance regardless of the vocabulary size,\nresulting in a 5% to 51% improvement in throughput compared to naive\napproaches, meanwhile significantly reducing peak memory usage especially for\nlarge vocabulary scenarios. Our implementation is open-sourced at\nhttps://github.com/sail-sg/VocabularyParallelism .",
+      "published_at": "2024-11-08",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "Xinyi Wan",
+      "upvotes": 20,
+      "organization": "",
+      "github_repo": "https://github.com/sail-sg/vocabularyparallelism",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.05288",
+      "arxiv_url": "https://arxiv.org/abs/2411.05288"
+    },
+    {
+      "arxiv_id": "2411.04425",
+      "title": "DELIFT: Data Efficient Language model Instruction Fine Tuning",
+      "authors": [
+        "Ishika Agarwal",
+        "Krishna Killamsetty",
+        "Lucian Popa",
+        "Marina Danilevksy"
+      ],
+      "abstract": "Fine-tuning large language models (LLMs) is essential for enhancing their\nperformance on specific tasks but is often resource-intensive due to redundant\nor uninformative data. To address this inefficiency, we introduce DELIFT (Data\nEfficient Language model Instruction Fine-Tuning), a novel algorithm that\nsystematically optimizes data selection across the three key stages of\nfine-tuning: (1) instruction tuning, (2) task-specific fine-tuning (e.g.,\nreasoning, question-answering), and (3) continual fine-tuning (e.g.,\nincorporating new data versions). Unlike existing methods that focus on\nsingle-stage optimization or rely on computationally intensive gradient\ncalculations, DELIFT operates efficiently across all stages. Central to our\napproach is a pairwise utility metric that quantifies how beneficial a data\nsample is for improving the model's responses to other samples, effectively\nmeasuring the informational value relative to the model's current capabilities.\nBy leveraging different submodular functions applied to this metric, DELIFT\nselects diverse and optimal subsets that are useful across all stages of\nfine-tuning. Experiments across various tasks and model scales demonstrate that\nDELIFT can reduce the fine-tuning data size by up to 70% without compromising\nperformance, offering significant computational savings and outperforming\nexisting methods in both efficiency and efficacy.",
+      "published_at": "2024-11-07",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "Ishika Agarwal",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/agarwalishika/delift",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.04425",
+      "arxiv_url": "https://arxiv.org/abs/2411.04425"
+    },
+    {
+      "arxiv_id": "2411.02462",
+      "title": "Parameter-Efficient Fine-Tuning of Large Language Models for Unit Test\n  Generation: An Empirical Study",
+      "authors": [
+        "André Storhaug",
+        "Jingyue Li"
+      ],
+      "abstract": "The advent of large language models (LLMs) like GitHub Copilot has\nsignificantly enhanced programmers' productivity, particularly in code\ngeneration. However, these models often struggle with real-world tasks without\nfine-tuning. As LLMs grow larger and more performant, fine-tuning for\nspecialized tasks becomes increasingly expensive. Parameter-efficient\nfine-tuning (PEFT) methods, which fine-tune only a subset of model parameters,\noffer a promising solution by reducing the computational costs of tuning LLMs\nwhile maintaining their performance. Existing studies have explored using PEFT\nand LLMs for various code-related tasks and found that the effectiveness of\nPEFT techniques is task-dependent. The application of PEFT techniques in unit\ntest generation remains underexplored. The state-of-the-art is limited to using\nLLMs with full fine-tuning to generate unit tests. This paper investigates both\nfull fine-tuning and various PEFT methods, including LoRA, (IA)^3, and prompt\ntuning, across different model architectures and sizes. We use well-established\nbenchmark datasets to evaluate their effectiveness in unit test generation. Our\nfindings show that PEFT methods can deliver performance comparable to full\nfine-tuning for unit test generation, making specialized fine-tuning more\naccessible and cost-effective. Notably, prompt tuning is the most effective in\nterms of cost and resource utilization, while LoRA approaches the effectiveness\nof full fine-tuning in several cases.",
+      "published_at": "2024-11-04",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "André Storhaug",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/andstor/peft-unit-test-generation-replication-package",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.02462",
+      "arxiv_url": "https://arxiv.org/abs/2411.02462"
+    },
+    {
+      "arxiv_id": "2411.04954",
+      "title": "CAD-MLLM: Unifying Multimodality-Conditioned CAD Generation With MLLM",
+      "authors": [
+        "Jingwei Xu",
+        "Chenyu Wang",
+        "Zibo Zhao",
+        "Wen Liu",
+        "Yi Ma",
+        "Shenghua Gao"
+      ],
+      "abstract": "This paper aims to design a unified Computer-Aided Design (CAD) generation\nsystem that can easily generate CAD models based on the user's inputs in the\nform of textual description, images, point clouds, or even a combination of\nthem. Towards this goal, we introduce the CAD-MLLM, the first system capable of\ngenerating parametric CAD models conditioned on the multimodal input.\nSpecifically, within the CAD-MLLM framework, we leverage the command sequences\nof CAD models and then employ advanced large language models (LLMs) to align\nthe feature space across these diverse multi-modalities data and CAD models'\nvectorized representations. To facilitate the model training, we design a\ncomprehensive data construction and annotation pipeline that equips each CAD\nmodel with corresponding multimodal data. Our resulting dataset, named\nOmni-CAD, is the first multimodal CAD dataset that contains textual\ndescription, multi-view images, points, and command sequence for each CAD\nmodel. It contains approximately 450K instances and their CAD construction\nsequences. To thoroughly evaluate the quality of our generated CAD models, we\ngo beyond current evaluation metrics that focus on reconstruction quality by\nintroducing additional metrics that assess topology quality and surface\nenclosure extent. Extensive experimental results demonstrate that CAD-MLLM\nsignificantly outperforms existing conditional generative methods and remains\nhighly robust to noises and missing points. The project page and more\nvisualizations can be found at: https://cad-mllm.github.io/",
+      "published_at": "2024-11-07",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "Jingwei Xu",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/CAD-MLLM/CAD-MLLM",
+      "project_page": "https://cad-mllm.github.io/",
+      "hf_url": "https://huggingface.co/papers/2411.04954",
+      "arxiv_url": "https://arxiv.org/abs/2411.04954"
+    },
+    {
+      "arxiv_id": "2411.06272",
+      "title": "Golden Touchstone: A Comprehensive Bilingual Benchmark for Evaluating\n  Financial Large Language Models",
+      "authors": [
+        "Xiaojun Wu",
+        "Junxi Liu",
+        "Huanyi Su",
+        "Zhouchi Lin",
+        "Yiyan Qi",
+        "Chengjin Xu",
+        "Jiajun Su",
+        "Jiajie Zhong",
+        "Fuwei Wang",
+        "Saizhuo Wang",
+        "Fengrui Hua",
+        "Jia Li",
+        "Jian Guo"
+      ],
+      "abstract": "As large language models become increasingly prevalent in the financial\nsector, there is a pressing need for a standardized method to comprehensively\nassess their performance. However, existing finance benchmarks often suffer\nfrom limited language and task coverage, as well as challenges such as\nlow-quality datasets and inadequate adaptability for LLM evaluation. To address\nthese limitations, we propose \"Golden Touchstone\", the first comprehensive\nbilingual benchmark for financial LLMs, which incorporates representative\ndatasets from both Chinese and English across eight core financial NLP tasks.\nDeveloped from extensive open source data collection and industry-specific\ndemands, this benchmark includes a variety of financial tasks aimed at\nthoroughly assessing models' language understanding and generation\ncapabilities. Through comparative analysis of major models on the benchmark,\nsuch as GPT-4o Llama3, FinGPT and FinMA, we reveal their strengths and\nlimitations in processing complex financial information. Additionally, we\nopen-sourced Touchstone-GPT, a financial LLM trained through continual\npre-training and financial instruction tuning, which demonstrates strong\nperformance on the bilingual benchmark but still has limitations in specific\ntasks.This research not only provides the financial large language models with\na practical evaluation tool but also guides the development and optimization of\nfuture research. The source code for Golden Touchstone and model weight of\nTouchstone-GPT have been made publicly available at\nhttps://github.com/IDEA-FinAI/Golden-Touchstone, contributing to the\nongoing evolution of FinLLMs and fostering further research in this critical\narea.",
+      "published_at": "2024-11-09",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "wuxiaojun",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/IDEA-FinAI/Golden-Touchstone",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.06272",
+      "arxiv_url": "https://arxiv.org/abs/2411.06272"
+    },
+    {
+      "arxiv_id": "2411.04986",
+      "title": "The Semantic Hub Hypothesis: Language Models Share Semantic\n  Representations Across Languages and Modalities",
+      "authors": [
+        "Zhaofeng Wu",
+        "Xinyan Velocity Yu",
+        "Dani Yogatama",
+        "Jiasen Lu",
+        "Yoon Kim"
+      ],
+      "abstract": "Modern language models can process inputs across diverse languages and\nmodalities. We hypothesize that models acquire this capability through learning\na shared representation space across heterogeneous data types (e.g., different\nlanguages and modalities), which places semantically similar inputs near one\nanother, even if they are from different modalities/languages. We term this the\nsemantic hub hypothesis, following the hub-and-spoke model from neuroscience\n(Patterson et al., 2007) which posits that semantic knowledge in the human\nbrain is organized through a transmodal semantic \"hub\" which integrates\ninformation from various modality-specific \"spokes\" regions. We first show that\nmodel representations for semantically equivalent inputs in different languages\nare similar in the intermediate layers, and that this space can be interpreted\nusing the model's dominant pretraining language via the logit lens. This\ntendency extends to other data types, including arithmetic expressions, code,\nand visual/audio inputs. Interventions in the shared representation space in\none data type also predictably affect model outputs in other data types,\nsuggesting that this shared representations space is not simply a vestigial\nbyproduct of large-scale training on broad data, but something that is actively\nutilized by the model during input processing.",
+      "published_at": "2024-11-07",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "Zhaofeng Wu",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/ZhaofengWu/semantic-hub",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.04986",
+      "arxiv_url": "https://arxiv.org/abs/2411.04986"
+    },
+    {
+      "arxiv_id": "2411.04097",
+      "title": "RaVL: Discovering and Mitigating Spurious Correlations in Fine-Tuned\n  Vision-Language Models",
+      "authors": [
+        "Maya Varma",
+        "Jean-Benoit Delbrouck",
+        "Zhihong Chen",
+        "Akshay Chaudhari",
+        "Curtis Langlotz"
+      ],
+      "abstract": "Fine-tuned vision-language models (VLMs) often capture spurious correlations\nbetween image features and textual attributes, resulting in degraded zero-shot\nperformance at test time. Existing approaches for addressing spurious\ncorrelations (i) primarily operate at the global image-level rather than\nintervening directly on fine-grained image features and (ii) are predominantly\ndesigned for unimodal settings. In this work, we present RaVL, which takes a\nfine-grained perspective on VLM robustness by discovering and mitigating\nspurious correlations using local image features rather than operating at the\nglobal image level. Given a fine-tuned VLM, RaVL first discovers spurious\ncorrelations by leveraging a region-level clustering approach to identify\nprecise image features contributing to zero-shot classification errors. Then,\nRaVL mitigates the identified spurious correlation with a novel region-aware\nloss function that enables the VLM to focus on relevant regions and ignore\nspurious relationships during fine-tuning. We evaluate RaVL on 654 VLMs with\nvarious model architectures, data domains, and learned spurious correlations.\nOur results show that RaVL accurately discovers (191% improvement over the\nclosest baseline) and mitigates (8.2% improvement on worst-group image\nclassification accuracy) spurious correlations. Qualitative evaluations on\ngeneral-domain and medical-domain VLMs confirm our findings.",
+      "published_at": "2024-11-06",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "Maya Varma",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/stanford-aimi/ravl",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.04097",
+      "arxiv_url": "https://arxiv.org/abs/2411.04097"
+    },
+    {
+      "arxiv_id": "2411.05457",
+      "title": "Improving the detection of technical debt in Java source code with an\n  enriched dataset",
+      "authors": [
+        "Nam Le Hai",
+        "Anh M. T. Bui",
+        "Phuong T. Nguyen",
+        "Davide Di Ruscio",
+        "Rick Kazman"
+      ],
+      "abstract": "Technical debt (TD) is a term used to describe the additional work and costs\nthat emerge when developers have opted for a quick and easy solution to a\nproblem, rather than a more effective and well-designed, but time-consuming\napproach. Self-Admitted Technical Debts (SATDs) are a specific type of\ntechnical debts that developers intentionally document and acknowledge,\ntypically via textual comments. While these self-admitted comments are a useful\ntool for identifying technical debts, most of the existing approaches focus on\ncapturing crucial tokens associated with various categories of TD, neglecting\nthe rich information embedded within the source code itself. Recent research\nhas focused on detecting SATDs by analyzing comments embedded in source code,\nand there has been little work dealing with technical debts contained in the\nsource code. To fill such a gap, in this study, through the analysis of\ncomments and their associated source code from 974 Java projects hosted in the\nStack corpus, we curated the first ever dataset of TD identified by code\ncomments, coupled with its associated source code. Through an empirical\nevaluation, we found out that the comments of the resulting dataset help\nenhance the prediction performance of state-of-the-art SATD detection models.\nMore importantly, including the classified source code significantly improves\nthe accuracy in predicting various types of technical debt. In this respect,\nour work is two-fold: (i) We believe that our dataset will catalyze future work\nin the domain, inspiring various research issues related to the recognition of\ntechnical debt; (ii) The proposed classifiers may serve as baselines for other\nstudies on the detection of TD by means of the curated dataset.",
+      "published_at": "2024-11-08",
+      "submitted_at": "2024-11-11",
+      "submitted_by": "Le Hai Nam",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/namcyan/tesoro",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.05457",
+      "arxiv_url": "https://arxiv.org/abs/2411.05457"
+    }
+  ]
+}

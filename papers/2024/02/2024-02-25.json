@@ -1,0 +1,73 @@
+{
+  "date": "2024-02-25",
+  "total": 3,
+  "source": "https://huggingface.co/papers/date/2024-02-25",
+  "papers": [
+    {
+      "arxiv_id": "2402.14830",
+      "title": "Orca-Math: Unlocking the potential of SLMs in Grade School Math",
+      "authors": [
+        "Arindam Mitra",
+        "Hamed Khanpour",
+        "Corby Rosset",
+        "Ahmed Awadallah"
+      ],
+      "abstract": "Mathematical word problem-solving has long been recognized as a complex task\nfor small language models (SLMs). A recent study hypothesized that the smallest\nmodel size, needed to achieve over 80% accuracy on the GSM8K benchmark, is 34\nbillion parameters. To reach this level of performance with smaller models,\nresearcher often train SLMs to generate Python code or use tools to help avoid\ncalculation errors. Additionally, they employ ensembling, where outputs of up\nto 100 model runs are combined to arrive at a more accurate result. Result\nselection is done using consensus, majority vote or a separate a verifier model\nused in conjunction with the SLM. Ensembling provides a substantial boost in\naccuracy but at a significant cost increase with multiple calls to the model\n(e.g., Phi-GSM uses top-48 to boost the performance from 68.2 to 81.5).\n  In this work, we present Orca-Math, a 7-billion-parameter SLM based on the\nMistral-7B, which achieves 86.81% on GSM8k without the need for multiple model\ncalls or the use of verifiers, code execution or any other external tools. Our\napproach has the following key elements: (1) A high quality synthetic dataset\nof 200K math problems created using a multi-agent setup where agents\ncollaborate to create the data, (2) An iterative learning techniques that\nenables the SLM to practice solving problems, receive feedback on its solutions\nand learn from preference pairs incorporating the SLM solutions and the\nfeedback. When trained with Supervised Fine-Tuning alone, Orca-Math achieves\n81.50% on GSM8k pass@1 metric. With iterative preference learning, Orca-Math\nachieves 86.81% pass@1. Orca-Math surpasses the performance of significantly\nlarger models such as LLAMA-2-70B, WizardMath-70B, Gemini-Pro, ChatGPT-3.5. It\nalso significantly outperforms other smaller models while using much smaller\ndata (hundreds of thousands vs. millions of problems).",
+      "published_at": "2024-02-16",
+      "submitted_at": "2024-02-25",
+      "submitted_by": "AK",
+      "upvotes": 24,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2402.14830",
+      "arxiv_url": "https://arxiv.org/abs/2402.14830"
+    },
+    {
+      "arxiv_id": "2402.15504",
+      "title": "Gen4Gen: Generative Data Pipeline for Generative Multi-Concept\n  Composition",
+      "authors": [
+        "Chun-Hsiao Yeh",
+        "Ta-Ying Cheng",
+        "He-Yen Hsieh",
+        "Chuan-En Lin",
+        "Yi Ma",
+        "Andrew Markham",
+        "Niki Trigoni",
+        "H. T. Kung",
+        "Yubei Chen"
+      ],
+      "abstract": "Recent text-to-image diffusion models are able to learn and synthesize images\ncontaining novel, personalized concepts (e.g., their own pets or specific\nitems) with just a few examples for training. This paper tackles two\ninterconnected issues within this realm of personalizing text-to-image\ndiffusion models. First, current personalization techniques fail to reliably\nextend to multiple concepts -- we hypothesize this to be due to the mismatch\nbetween complex scenes and simple text descriptions in the pre-training dataset\n(e.g., LAION). Second, given an image containing multiple personalized\nconcepts, there lacks a holistic metric that evaluates performance on not just\nthe degree of resemblance of personalized concepts, but also whether all\nconcepts are present in the image and whether the image accurately reflects the\noverall text description. To address these issues, we introduce Gen4Gen, a\nsemi-automated dataset creation pipeline utilizing generative models to combine\npersonalized concepts into complex compositions along with text-descriptions.\nUsing this, we create a dataset called MyCanvas, that can be used to benchmark\nthe task of multi-concept personalization. In addition, we design a\ncomprehensive metric comprising two scores (CP-CLIP and TI-CLIP) for better\nquantifying the performance of multi-concept, personalized text-to-image\ndiffusion methods. We provide a simple baseline built on top of Custom\nDiffusion with empirical prompting strategies for future researchers to\nevaluate on MyCanvas. We show that by improving data quality and prompting\nstrategies, we can significantly increase multi-concept personalized image\ngeneration quality, without requiring any modifications to model architecture\nor training algorithms.",
+      "published_at": "2024-02-23",
+      "submitted_at": "2024-02-25",
+      "submitted_by": "AK",
+      "upvotes": 21,
+      "organization": "",
+      "github_repo": "https://github.com/louisYen/Gen4Gen",
+      "project_page": "https://danielchyeh.github.io/Gen4Gen/",
+      "hf_url": "https://huggingface.co/papers/2402.15504",
+      "arxiv_url": "https://arxiv.org/abs/2402.15504"
+    },
+    {
+      "arxiv_id": "2402.15021",
+      "title": "CLoVe: Encoding Compositional Language in Contrastive Vision-Language\n  Models",
+      "authors": [
+        "Santiago Castro",
+        "Amir Ziai",
+        "Avneesh Saluja",
+        "Zhuoning Yuan",
+        "Rada Mihalcea"
+      ],
+      "abstract": "Recent years have witnessed a significant increase in the performance of\nVision and Language tasks. Foundational Vision-Language Models (VLMs), such as\nCLIP, have been leveraged in multiple settings and demonstrated remarkable\nperformance across several tasks. Such models excel at object-centric\nrecognition yet learn text representations that seem invariant to word order,\nfailing to compose known concepts in novel ways. However, no evidence exists\nthat any VLM, including large-scale single-stream models such as GPT-4V,\nidentifies compositions successfully. In this paper, we introduce a framework\nto significantly improve the ability of existing models to encode compositional\nlanguage, with over 10% absolute improvement on compositionality benchmarks,\nwhile maintaining or improving the performance on standard object-recognition\nand retrieval benchmarks. Our code and pre-trained models are publicly\navailable at https://github.com/netflix/clove.",
+      "published_at": "2024-02-22",
+      "submitted_at": "2024-02-25",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/netflix/clove",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2402.15021",
+      "arxiv_url": "https://arxiv.org/abs/2402.15021"
+    }
+  ]
+}

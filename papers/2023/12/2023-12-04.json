@@ -1,0 +1,205 @@
+{
+  "date": "2023-12-04",
+  "total": 9,
+  "source": "https://huggingface.co/papers/date/2023-12-04",
+  "papers": [
+    {
+      "arxiv_id": "2312.00752",
+      "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+      "authors": [
+        "Albert Gu",
+        "Tri Dao"
+      ],
+      "abstract": "Foundation models, now powering most of the exciting applications in deep\nlearning, are almost universally based on the Transformer architecture and its\ncore attention module. Many subquadratic-time architectures such as linear\nattention, gated convolution and recurrent models, and structured state space\nmodels (SSMs) have been developed to address Transformers' computational\ninefficiency on long sequences, but they have not performed as well as\nattention on important modalities such as language. We identify that a key\nweakness of such models is their inability to perform content-based reasoning,\nand make several improvements. First, simply letting the SSM parameters be\nfunctions of the input addresses their weakness with discrete modalities,\nallowing the model to selectively propagate or forget information along the\nsequence length dimension depending on the current token. Second, even though\nthis change prevents the use of efficient convolutions, we design a\nhardware-aware parallel algorithm in recurrent mode. We integrate these\nselective SSMs into a simplified end-to-end neural network architecture without\nattention or even MLP blocks (Mamba). Mamba enjoys fast inference (5times\nhigher throughput than Transformers) and linear scaling in sequence length, and\nits performance improves on real data up to million-length sequences. As a\ngeneral sequence model backbone, Mamba achieves state-of-the-art performance\nacross several modalities such as language, audio, and genomics. On language\nmodeling, our Mamba-3B model outperforms Transformers of the same size and\nmatches Transformers twice its size, both in pretraining and downstream\nevaluation.",
+      "published_at": "2023-12-01",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 150,
+      "organization": "",
+      "github_repo": "https://github.com/state-spaces/mamba",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00752",
+      "arxiv_url": "https://arxiv.org/abs/2312.00752"
+    },
+    {
+      "arxiv_id": "2312.00063",
+      "title": "MoMask: Generative Masked Modeling of 3D Human Motions",
+      "authors": [
+        "Chuan Guo",
+        "Yuxuan Mu",
+        "Muhammad Gohar Javed",
+        "Sen Wang",
+        "Li Cheng"
+      ],
+      "abstract": "We introduce MoMask, a novel masked modeling framework for text-driven 3D\nhuman motion generation. In MoMask, a hierarchical quantization scheme is\nemployed to represent human motion as multi-layer discrete motion tokens with\nhigh-fidelity details. Starting at the base layer, with a sequence of motion\ntokens obtained by vector quantization, the residual tokens of increasing\norders are derived and stored at the subsequent layers of the hierarchy. This\nis consequently followed by two distinct bidirectional transformers. For the\nbase-layer motion tokens, a Masked Transformer is designated to predict\nrandomly masked motion tokens conditioned on text input at training stage.\nDuring generation (i.e. inference) stage, starting from an empty sequence, our\nMasked Transformer iteratively fills up the missing tokens; Subsequently, a\nResidual Transformer learns to progressively predict the next-layer tokens\nbased on the results from current layer. Extensive experiments demonstrate that\nMoMask outperforms the state-of-art methods on the text-to-motion generation\ntask, with an FID of 0.045 (vs e.g. 0.141 of T2M-GPT) on the HumanML3D dataset,\nand 0.228 (vs 0.514) on KIT-ML, respectively. MoMask can also be seamlessly\napplied in related tasks without further model fine-tuning, such as text-guided\ntemporal inpainting.",
+      "published_at": "2023-11-29",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 18,
+      "organization": "",
+      "github_repo": "https://github.com/EricGuo5513/momask-codes",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00063",
+      "arxiv_url": "https://arxiv.org/abs/2312.00063"
+    },
+    {
+      "arxiv_id": "2312.00210",
+      "title": "DREAM: Diffusion Rectification and Estimation-Adaptive Models",
+      "authors": [
+        "Jinxin Zhou",
+        "Tianyu Ding",
+        "Tianyi Chen",
+        "Jiachen Jiang",
+        "Ilya Zharkov",
+        "Zhihui Zhu",
+        "Luming Liang"
+      ],
+      "abstract": "We present DREAM, a novel training framework representing Diffusion\nRectification and Estimation-Adaptive Models, requiring minimal code changes\n(just three lines) yet significantly enhancing the alignment of training with\nsampling in diffusion models. DREAM features two components: diffusion\nrectification, which adjusts training to reflect the sampling process, and\nestimation adaptation, which balances perception against distortion. When\napplied to image super-resolution (SR), DREAM adeptly navigates the tradeoff\nbetween minimizing distortion and preserving high image quality. Experiments\ndemonstrate DREAM's superiority over standard diffusion-based SR methods,\nshowing a 2 to 3times  faster training convergence and a 10 to\n20times reduction in necessary sampling steps to achieve comparable or\nsuperior results. We hope DREAM will inspire a rethinking of diffusion model\ntraining paradigms.",
+      "published_at": "2023-11-30",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/jinxinzhou/dream",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00210",
+      "arxiv_url": "https://arxiv.org/abs/2312.00210"
+    },
+    {
+      "arxiv_id": "2312.00849",
+      "title": "RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment from\n  Fine-grained Correctional Human Feedback",
+      "authors": [
+        "Tianyu Yu",
+        "Yuan Yao",
+        "Haoye Zhang",
+        "Taiwen He",
+        "Yifeng Han",
+        "Ganqu Cui",
+        "Jinyi Hu",
+        "Hai-Tao Zheng",
+        "Maosong Sun",
+        "Tat-Seng Chua"
+      ],
+      "abstract": "Multimodal Large Language Models (MLLMs) have recently demonstrated\nimpressive capabilities in multimodal understanding, reasoning, and\ninteraction. However, existing MLLMs prevalently suffer from serious\nhallucination problems, generating text that is not factually grounded in\nassociated images. The problem makes existing MLLMs untrustworthy and thus\nimpractical in real-world (especially high-stakes) applications. To address the\nchallenge, we present RLHF-V, which enhances MLLM trustworthiness via behavior\nalignment from fine-grained correctional human feedback. Specifically, RLHF-V\ncollects human preference in the form of segment-level corrections on\nhallucinations, and performs dense direct preference optimization over the\nhuman feedback. Comprehensive experiments on five benchmarks in both automatic\nand human evaluation show that, RLHF-V can enable substantially more\ntrustworthy MLLM behaviors with promising data and computation efficiency.\nRemarkably, using 1.4k annotated data samples, RLHF-V significantly reduces the\nhallucination rate of the base MLLM by 34.8%, outperforming the concurrent\nLLaVA-RLHF trained on 10k annotated data. The final model achieves\nstate-of-the-art performance in trustworthiness among open-source MLLMs, and\nshows better robustness than GPT-4V in preventing hallucinations aroused from\nover-generalization. We open-source our code, model, and data at\nhttps://github.com/RLHF-V/RLHF-V.",
+      "published_at": "2023-12-01",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/exgc/r1v-free",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00849",
+      "arxiv_url": "https://arxiv.org/abs/2312.00849"
+    },
+    {
+      "arxiv_id": "2312.00451",
+      "title": "FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting",
+      "authors": [
+        "Zehao Zhu",
+        "Zhiwen Fan",
+        "Yifan Jiang",
+        "Zhangyang Wang"
+      ],
+      "abstract": "Novel view synthesis from limited observations remains an important and\npersistent task. However, high efficiency in existing NeRF-based few-shot view\nsynthesis is often compromised to obtain an accurate 3D representation. To\naddress this challenge, we propose a few-shot view synthesis framework based on\n3D Gaussian Splatting that enables real-time and photo-realistic view synthesis\nwith as few as three training views. The proposed method, dubbed FSGS, handles\nthe extremely sparse initialized SfM points with a thoughtfully designed\nGaussian Unpooling process. Our method iteratively distributes new Gaussians\naround the most representative locations, subsequently infilling local details\nin vacant areas. We also integrate a large-scale pre-trained monocular depth\nestimator within the Gaussians optimization process, leveraging online\naugmented views to guide the geometric optimization towards an optimal\nsolution. Starting from sparse points observed from limited input viewpoints,\nour FSGS can accurately grow into unseen regions, comprehensively covering the\nscene and boosting the rendering quality of novel views. Overall, FSGS achieves\nstate-of-the-art performance in both accuracy and rendering efficiency across\ndiverse datasets, including LLFF, Mip-NeRF360, and Blender. Project website:\nhttps://zehaozhu.github.io/FSGS/.",
+      "published_at": "2023-12-01",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/vita-group/fsgs",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00451",
+      "arxiv_url": "https://arxiv.org/abs/2312.00451"
+    },
+    {
+      "arxiv_id": "2312.00109",
+      "title": "Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering",
+      "authors": [
+        "Tao Lu",
+        "Mulin Yu",
+        "Linning Xu",
+        "Yuanbo Xiangli",
+        "Limin Wang",
+        "Dahua Lin",
+        "Bo Dai"
+      ],
+      "abstract": "Neural rendering methods have significantly advanced photo-realistic 3D scene\nrendering in various academic and industrial applications. The recent 3D\nGaussian Splatting method has achieved the state-of-the-art rendering quality\nand speed combining the benefits of both primitive-based representations and\nvolumetric representations. However, it often leads to heavily redundant\nGaussians that try to fit every training view, neglecting the underlying scene\ngeometry. Consequently, the resulting model becomes less robust to significant\nview changes, texture-less area and lighting effects. We introduce Scaffold-GS,\nwhich uses anchor points to distribute local 3D Gaussians, and predicts their\nattributes on-the-fly based on viewing direction and distance within the view\nfrustum. Anchor growing and pruning strategies are developed based on the\nimportance of neural Gaussians to reliably improve the scene coverage. We show\nthat our method effectively reduces redundant Gaussians while delivering\nhigh-quality rendering. We also demonstrates an enhanced capability to\naccommodate scenes with varying levels-of-detail and view-dependent\nobservations, without sacrificing the rendering speed.",
+      "published_at": "2023-11-30",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/city-super/Scaffold-GS",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00109",
+      "arxiv_url": "https://arxiv.org/abs/2312.00109"
+    },
+    {
+      "arxiv_id": "2312.00375",
+      "title": "Text-Guided 3D Face Synthesis -- From Generation to Editing",
+      "authors": [
+        "Yunjie Wu",
+        "Yapeng Meng",
+        "Zhipeng Hu",
+        "Lincheng Li",
+        "Haoqian Wu",
+        "Kun Zhou",
+        "Xin Yu"
+      ],
+      "abstract": "Text-guided 3D face synthesis has achieved remarkable results by leveraging\ntext-to-image (T2I) diffusion models. However, most existing works focus solely\non the direct generation, ignoring the editing, restricting them from\nsynthesizing customized 3D faces through iterative adjustments. In this paper,\nwe propose a unified text-guided framework from face generation to editing. In\nthe generation stage, we propose a geometry-texture decoupled generation to\nmitigate the loss of geometric details caused by coupling. Besides, decoupling\nenables us to utilize the generated geometry as a condition for texture\ngeneration, yielding highly geometry-texture aligned results. We further employ\na fine-tuned texture diffusion model to enhance texture quality in both RGB and\nYUV space. In the editing stage, we first employ a pre-trained diffusion model\nto update facial geometry or texture based on the texts. To enable sequential\nediting, we introduce a UV domain consistency preservation regularization,\npreventing unintentional changes to irrelevant facial attributes. Besides, we\npropose a self-guided consistency weight strategy to improve editing efficacy\nwhile preserving consistency. Through comprehensive experiments, we showcase\nour method's superiority in face synthesis. Project page:\nhttps://faceg2e.github.io/.",
+      "published_at": "2023-12-01",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/JiejiangWu/FaceG2E",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00375",
+      "arxiv_url": "https://arxiv.org/abs/2312.00375"
+    },
+    {
+      "arxiv_id": "2312.00252",
+      "title": "PyNeRF: Pyramidal Neural Radiance Fields",
+      "authors": [
+        "Haithem Turki",
+        "Michael Zollhöfer",
+        "Christian Richardt",
+        "Deva Ramanan"
+      ],
+      "abstract": "Neural Radiance Fields (NeRFs) can be dramatically accelerated by spatial\ngrid representations. However, they do not explicitly reason about scale and so\nintroduce aliasing artifacts when reconstructing scenes captured at different\ncamera distances. Mip-NeRF and its extensions propose scale-aware renderers\nthat project volumetric frustums rather than point samples but such approaches\nrely on positional encodings that are not readily compatible with grid methods.\nWe propose a simple modification to grid-based models by training model heads\nat different spatial grid resolutions. At render time, we simply use coarser\ngrids to render samples that cover larger volumes. Our method can be easily\napplied to existing accelerated NeRF methods and significantly improves\nrendering quality (reducing error rates by 20-90% across synthetic and\nunbounded real-world scenes) while incurring minimal performance overhead (as\neach model head is quick to evaluate). Compared to Mip-NeRF, we reduce error\nrates by 20% while training over 60x faster.",
+      "published_at": "2023-11-30",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/hturki/pynerf",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00252",
+      "arxiv_url": "https://arxiv.org/abs/2312.00252"
+    },
+    {
+      "arxiv_id": "2312.00085",
+      "title": "X-Dreamer: Creating High-quality 3D Content by Bridging the Domain Gap\n  Between Text-to-2D and Text-to-3D Generation",
+      "authors": [
+        "Yiwei Ma",
+        "Yijun Fan",
+        "Jiayi Ji",
+        "Haowei Wang",
+        "Xiaoshuai Sun",
+        "Guannan Jiang",
+        "Annan Shu",
+        "Rongrong Ji"
+      ],
+      "abstract": "In recent times, automatic text-to-3D content creation has made significant\nprogress, driven by the development of pretrained 2D diffusion models. Existing\ntext-to-3D methods typically optimize the 3D representation to ensure that the\nrendered image aligns well with the given text, as evaluated by the pretrained\n2D diffusion model. Nevertheless, a substantial domain gap exists between 2D\nimages and 3D assets, primarily attributed to variations in camera-related\nattributes and the exclusive presence of foreground objects. Consequently,\nemploying 2D diffusion models directly for optimizing 3D representations may\nlead to suboptimal outcomes. To address this issue, we present X-Dreamer, a\nnovel approach for high-quality text-to-3D content creation that effectively\nbridges the gap between text-to-2D and text-to-3D synthesis. The key components\nof X-Dreamer are two innovative designs: Camera-Guided Low-Rank Adaptation\n(CG-LoRA) and Attention-Mask Alignment (AMA) Loss. CG-LoRA dynamically\nincorporates camera information into the pretrained diffusion models by\nemploying camera-dependent generation for trainable parameters. This\nintegration enhances the alignment between the generated 3D assets and the\ncamera's perspective. AMA loss guides the attention map of the pretrained\ndiffusion model using the binary mask of the 3D object, prioritizing the\ncreation of the foreground object. This module ensures that the model focuses\non generating accurate and detailed foreground objects. Extensive evaluations\ndemonstrate the effectiveness of our proposed method compared to existing\ntext-to-3D approaches. Our project webpage:\nhttps://xmuxiaoma666.github.io/Projects/X-Dreamer .",
+      "published_at": "2023-11-30",
+      "submitted_at": "2023-12-04",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/xmu-xiaoma666/X-Dreamer",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.00085",
+      "arxiv_url": "https://arxiv.org/abs/2312.00085"
+    }
+  ]
+}

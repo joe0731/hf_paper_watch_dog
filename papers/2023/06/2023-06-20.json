@@ -1,0 +1,42 @@
+{
+  "date": "2023-06-20",
+  "total": 1,
+  "source": "https://huggingface.co/papers/date/2023-06-20",
+  "papers": [
+    {
+      "arxiv_id": "2306.11698",
+      "title": "DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT\n  Models",
+      "authors": [
+        "Boxin Wang",
+        "Weixin Chen",
+        "Hengzhi Pei",
+        "Chulin Xie",
+        "Mintong Kang",
+        "Chenhui Zhang",
+        "Chejian Xu",
+        "Zidi Xiong",
+        "Ritik Dutta",
+        "Rylan Schaeffer",
+        "Sang T. Truong",
+        "Simran Arora",
+        "Mantas Mazeika",
+        "Dan Hendrycks",
+        "Zinan Lin",
+        "Yu Cheng",
+        "Sanmi Koyejo",
+        "Dawn Song",
+        "Bo Li"
+      ],
+      "abstract": "Generative Pre-trained Transformer (GPT) models have exhibited exciting\nprogress in capabilities, capturing the interest of practitioners and the\npublic alike. Yet, while the literature on the trustworthiness of GPT models\nremains limited, practitioners have proposed employing capable GPT models for\nsensitive applications to healthcare and finance - where mistakes can be\ncostly. To this end, this work proposes a comprehensive trustworthiness\nevaluation for large language models with a focus on GPT-4 and GPT-3.5,\nconsidering diverse perspectives - including toxicity, stereotype bias,\nadversarial robustness, out-of-distribution robustness, robustness on\nadversarial demonstrations, privacy, machine ethics, and fairness. Based on our\nevaluations, we discover previously unpublished vulnerabilities to\ntrustworthiness threats. For instance, we find that GPT models can be easily\nmisled to generate toxic and biased outputs and leak private information in\nboth training data and conversation history. We also find that although GPT-4\nis usually more trustworthy than GPT-3.5 on standard benchmarks, GPT-4 is more\nvulnerable given jailbreaking system or user prompts, potentially due to the\nreason that GPT-4 follows the (misleading) instructions more precisely. Our\nwork illustrates a comprehensive trustworthiness evaluation of GPT models and\nsheds light on the trustworthiness gaps. Our benchmark is publicly available at\nhttps://decodingtrust.github.io/.",
+      "published_at": "2023-06-20",
+      "submitted_at": "2023-06-20",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.11698",
+      "arxiv_url": "https://arxiv.org/abs/2306.11698"
+    }
+  ]
+}

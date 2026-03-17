@@ -1,0 +1,104 @@
+{
+  "date": "2023-10-27",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-10-27",
+  "papers": [
+    {
+      "arxiv_id": "2310.17631",
+      "title": "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+      "authors": [
+        "Lianghui Zhu",
+        "Xinggang Wang",
+        "Xinlong Wang"
+      ],
+      "abstract": "Evaluating Large Language Models (LLMs) in open-ended scenarios is\nchallenging because existing benchmarks and metrics can not measure them\ncomprehensively. To address this problem, we propose to fine-tune LLMs as\nscalable judges (JudgeLM) to evaluate LLMs efficiently and effectively in\nopen-ended benchmarks. We first propose a comprehensive, large-scale,\nhigh-quality dataset containing task seeds, LLMs-generated answers, and\nGPT-4-generated judgments for fine-tuning high-performance judges, as well as a\nnew benchmark for evaluating the judges. We train JudgeLM at different scales\nfrom 7B, 13B, to 33B parameters, and conduct a systematic analysis of its\ncapabilities and behaviors. We then analyze the key biases in fine-tuning LLM\nas a judge and consider them as position bias, knowledge bias, and format bias.\nTo address these issues, JudgeLM introduces a bag of techniques including swap\naugmentation, reference support, and reference drop, which clearly enhance the\njudge's performance. JudgeLM obtains the state-of-the-art judge performance on\nboth the existing PandaLM benchmark and our proposed new benchmark. Our JudgeLM\nis efficient and the JudgeLM-7B only needs 3 minutes to judge 5K samples with 8\nA100 GPUs. JudgeLM obtains high agreement with the teacher judge, achieving an\nagreement exceeding 90% that even surpasses human-to-human agreement. JudgeLM\nalso demonstrates extended capabilities in being judges of the single answer,\nmultimodal models, multiple answers, and multi-turn chat.",
+      "published_at": "2023-10-26",
+      "submitted_at": "2023-10-27",
+      "submitted_by": "AK",
+      "upvotes": 35,
+      "organization": "",
+      "github_repo": "https://github.com/baaivision/judgelm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.17631",
+      "arxiv_url": "https://arxiv.org/abs/2310.17631"
+    },
+    {
+      "arxiv_id": "2310.17075",
+      "title": "HyperFields: Towards Zero-Shot Generation of NeRFs from Text",
+      "authors": [
+        "Sudarshan Babu",
+        "Richard Liu",
+        "Avery Zhou",
+        "Michael Maire",
+        "Greg Shakhnarovich",
+        "Rana Hanocka"
+      ],
+      "abstract": "We introduce HyperFields, a method for generating text-conditioned Neural\nRadiance Fields (NeRFs) with a single forward pass and (optionally) some\nfine-tuning. Key to our approach are: (i) a dynamic hypernetwork, which learns\na smooth mapping from text token embeddings to the space of NeRFs; (ii) NeRF\ndistillation training, which distills scenes encoded in individual NeRFs into\none dynamic hypernetwork. These techniques enable a single network to fit over\na hundred unique scenes. We further demonstrate that HyperFields learns a more\ngeneral map between text and NeRFs, and consequently is capable of predicting\nnovel in-distribution and out-of-distribution scenes -- either zero-shot or\nwith a few finetuning steps. Finetuning HyperFields benefits from accelerated\nconvergence thanks to the learned general map, and is capable of synthesizing\nnovel scenes 5 to 10 times faster than existing neural optimization-based\nmethods. Our ablation experiments show that both the dynamic architecture and\nNeRF distillation are critical to the expressivity of HyperFields.",
+      "published_at": "2023-10-26",
+      "submitted_at": "2023-10-27",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.17075",
+      "arxiv_url": "https://arxiv.org/abs/2310.17075"
+    },
+    {
+      "arxiv_id": "2310.17022",
+      "title": "Controlled Decoding from Language Models",
+      "authors": [
+        "Sidharth Mudgal",
+        "Jong Lee",
+        "Harish Ganapathy",
+        "YaGuang Li",
+        "Tao Wang",
+        "Yanping Huang",
+        "Zhifeng Chen",
+        "Heng-Tze Cheng",
+        "Michael Collins",
+        "Trevor Strohman",
+        "Jilin Chen",
+        "Alex Beutel",
+        "Ahmad Beirami"
+      ],
+      "abstract": "We propose controlled decoding (CD), a novel off-policy reinforcement\nlearning method to control the autoregressive generation from language models\ntowards high reward outcomes. CD solves an off-policy reinforcement learning\nproblem through a value function for the reward, which we call a prefix scorer.\nThe prefix scorer is used at inference time to steer the generation towards\nhigher reward outcomes. We show that the prefix scorer may be trained on\n(possibly) off-policy data to predict the expected reward when decoding is\ncontinued from a partially decoded response. We empirically demonstrate that CD\nis effective as a control mechanism on Reddit conversations corpus. We also\nshow that the modularity of the design of CD makes it possible to control for\nmultiple rewards, effectively solving a multi-objective reinforcement learning\nproblem with no additional complexity. Finally, we show that CD can be applied\nin a novel blockwise fashion at inference-time, again without the need for any\ntraining-time changes, essentially bridging the gap between the popular\nbest-of-K strategy and token-level reinforcement learning. This makes CD a\npromising approach for alignment of language models.",
+      "published_at": "2023-10-25",
+      "submitted_at": "2023-10-27",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.17022",
+      "arxiv_url": "https://arxiv.org/abs/2310.17022"
+    },
+    {
+      "arxiv_id": "2310.17157",
+      "title": "Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time",
+      "authors": [
+        "Zichang Liu",
+        "Jue Wang",
+        "Tri Dao",
+        "Tianyi Zhou",
+        "Binhang Yuan",
+        "Zhao Song",
+        "Anshumali Shrivastava",
+        "Ce Zhang",
+        "Yuandong Tian",
+        "Christopher Re",
+        "Beidi Chen"
+      ],
+      "abstract": "Large language models (LLMs) with hundreds of billions of parameters have\nsparked a new wave of exciting AI applications. However, they are\ncomputationally expensive at inference time. Sparsity is a natural approach to\nreduce this cost, but existing methods either require costly retraining, have\nto forgo LLM's in-context learning ability, or do not yield wall-clock time\nspeedup on modern hardware. We hypothesize that contextual sparsity, which are\nsmall, input-dependent sets of attention heads and MLP parameters that yield\napproximately the same output as the dense model for a given input, can address\nthese issues. We show that contextual sparsity exists, that it can be\naccurately predicted, and that we can exploit it to speed up LLM inference in\nwall-clock time without compromising LLM's quality or in-context learning\nability. Based on these insights, we propose DejaVu, a system that uses a\nlow-cost algorithm to predict contextual sparsity on the fly given inputs to\neach layer, along with an asynchronous and hardware-aware implementation that\nspeeds up LLM inference. We validate that DejaVu can reduce the inference\nlatency of OPT-175B by over 2X compared to the state-of-the-art\nFasterTransformer, and over 6X compared to the widely used Hugging Face\nimplementation, without compromising model quality. The code is available at\nhttps://github.com/FMInference/DejaVu.",
+      "published_at": "2023-10-26",
+      "submitted_at": "2023-10-27",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/fminference/dejavu",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.17157",
+      "arxiv_url": "https://arxiv.org/abs/2310.17157"
+    }
+  ]
+}

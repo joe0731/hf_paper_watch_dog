@@ -1,0 +1,212 @@
+{
+  "date": "2023-09-01",
+  "total": 9,
+  "source": "https://huggingface.co/papers/date/2023-09-01",
+  "papers": [
+    {
+      "arxiv_id": "2308.16512",
+      "title": "MVDream: Multi-view Diffusion for 3D Generation",
+      "authors": [
+        "Yichun Shi",
+        "Peng Wang",
+        "Jianglong Ye",
+        "Mai Long",
+        "Kejie Li",
+        "Xiao Yang"
+      ],
+      "abstract": "We propose MVDream, a multi-view diffusion model that is able to generate\ngeometrically consistent multi-view images from a given text prompt. By\nleveraging image diffusion models pre-trained on large-scale web datasets and a\nmulti-view dataset rendered from 3D assets, the resulting multi-view diffusion\nmodel can achieve both the generalizability of 2D diffusion and the consistency\nof 3D data. Such a model can thus be applied as a multi-view prior for 3D\ngeneration via Score Distillation Sampling, where it greatly improves the\nstability of existing 2D-lifting methods by solving the 3D consistency problem.\nFinally, we show that the multi-view diffusion model can also be fine-tuned\nunder a few shot setting for personalized 3D generation, i.e. DreamBooth3D\napplication, where the consistency can be maintained after learning the subject\nidentity.",
+      "published_at": "2023-08-31",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 106,
+      "organization": "",
+      "github_repo": "https://github.com/bytedance/MVDream",
+      "project_page": "https://mv-dream.github.io/",
+      "hf_url": "https://huggingface.co/papers/2308.16512",
+      "arxiv_url": "https://arxiv.org/abs/2308.16512"
+    },
+    {
+      "arxiv_id": "2308.16271",
+      "title": "Emergence of Segmentation with Minimalistic White-Box Transformers",
+      "authors": [
+        "Yaodong Yu",
+        "Tianzhe Chu",
+        "Shengbang Tong",
+        "Ziyang Wu",
+        "Druv Pai",
+        "Sam Buchanan",
+        "Yi Ma"
+      ],
+      "abstract": "Transformer-like models for vision tasks have recently proven effective for a\nwide range of downstream applications such as segmentation and detection.\nPrevious works have shown that segmentation properties emerge in vision\ntransformers (ViTs) trained using self-supervised methods such as DINO, but not\nin those trained on supervised classification tasks. In this study, we probe\nwhether segmentation emerges in transformer-based models solely as a result of\nintricate self-supervised learning mechanisms, or if the same emergence can be\nachieved under much broader conditions through proper design of the model\narchitecture. Through extensive experimental results, we demonstrate that when\nemploying a white-box transformer-like architecture known as CRATE, whose\ndesign explicitly models and pursues low-dimensional structures in the data\ndistribution, segmentation properties, at both the whole and parts levels,\nalready emerge with a minimalistic supervised training recipe. Layer-wise\nfiner-grained analysis reveals that the emergent properties strongly\ncorroborate the designed mathematical functions of the white-box network. Our\nresults suggest a path to design white-box foundation models that are\nsimultaneously highly performant and mathematically fully interpretable. Code\nis at https://github.com/Ma-Lab-Berkeley/CRATE.",
+      "published_at": "2023-08-30",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/ma-lab-berkeley/crate",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.16271",
+      "arxiv_url": "https://arxiv.org/abs/2308.16271"
+    },
+    {
+      "arxiv_id": "2308.16458",
+      "title": "BioCoder: A Benchmark for Bioinformatics Code Generation with Contextual\n  Pragmatic Knowledge",
+      "authors": [
+        "Xiangru Tang",
+        "Bill Qian",
+        "Rick Gao",
+        "Jiakang Chen",
+        "Xinyun Chen",
+        "Mark Gerstein"
+      ],
+      "abstract": "Pre-trained language models like ChatGPT have significantly improved code\ngeneration. As these models scale up, there is an increasing need for the\noutput to handle more intricate tasks. Moreover, in bioinformatics, generating\nfunctional programs poses additional notable challenges due to the amount of\ndomain knowledge, the need for complicated data operations, and intricate\nfunctional dependencies between the operations. Here, we present BioCoder, a\nbenchmark developed to evaluate existing pre-trained models in generating\nbioinformatics code. In relation to function-code generation, BioCoder covers\npotential package dependencies, class declarations, and global variables. It\nincorporates 1026 functions and 1243 methods in Python and Java from GitHub and\n253 examples from the Rosalind Project. BioCoder incorporates a fuzz-testing\nframework for evaluation, and we have applied it to evaluate many models\nincluding InCoder, CodeGen, CodeGen2, SantaCoder, StarCoder, StarCoder+,\nInstructCodeT5+, and ChatGPT. Our detailed analysis of these models emphasizes\nthe importance of domain knowledge, pragmatic code generation, and contextual\nunderstanding. Our dataset, benchmark, Docker images, and scripts required for\ntesting are all available at https://github.com/gersteinlab/biocoder.",
+      "published_at": "2023-08-31",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/gersteinlab/biocoder",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.16458",
+      "arxiv_url": "https://arxiv.org/abs/2308.16458"
+    },
+    {
+      "arxiv_id": "2308.16824",
+      "title": "Can Programming Languages Boost Each Other via Instruction Tuning?",
+      "authors": [
+        "Daoguang Zan",
+        "Ailun Yu",
+        "Bo Shen",
+        "Jiaxin Zhang",
+        "Taihong Chen",
+        "Bing Geng",
+        "Bei Chen",
+        "Jichuan Ji",
+        "Yafen Yao",
+        "Yongji Wang",
+        "Qianxiang Wang"
+      ],
+      "abstract": "When human programmers have mastered a programming language, it would be\neasier when they learn a new programming language. In this report, we focus on\nexploring whether programming languages can boost each other during the\ninstruction fine-tuning phase of code large language models. We conduct\nextensive experiments of 8 popular programming languages (Python, JavaScript,\nTypeScript, C, C++, Java, Go, HTML) on StarCoder. Results demonstrate that\nprogramming languages can significantly improve each other. For example,\nCodeM-Python 15B trained on Python is able to increase Java by an absolute\n17.95% pass@1 on HumanEval-X. More surprisingly, we found that CodeM-HTML 7B\ntrained on the HTML corpus can improve Java by an absolute 15.24% pass@1. Our\ntraining data is released at https://github.com/NL2Code/CodeM.",
+      "published_at": "2023-08-31",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/NL2Code/CodeM",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.16824",
+      "arxiv_url": "https://arxiv.org/abs/2308.16824"
+    },
+    {
+      "arxiv_id": "2308.16582",
+      "title": "Any-Size-Diffusion: Toward Efficient Text-Driven Synthesis for Any-Size\n  HD Images",
+      "authors": [
+        "Qingping Zheng",
+        "Yuanfan Guo",
+        "Jiankang Deng",
+        "Jianhua Han",
+        "Ying Li",
+        "Songcen Xu",
+        "Hang Xu"
+      ],
+      "abstract": "Stable diffusion, a generative model used in text-to-image synthesis,\nfrequently encounters resolution-induced composition problems when generating\nimages of varying sizes. This issue primarily stems from the model being\ntrained on pairs of single-scale images and their corresponding text\ndescriptions. Moreover, direct training on images of unlimited sizes is\nunfeasible, as it would require an immense number of text-image pairs and\nentail substantial computational expenses. To overcome these challenges, we\npropose a two-stage pipeline named Any-Size-Diffusion (ASD), designed to\nefficiently generate well-composed images of any size, while minimizing the\nneed for high-memory GPU resources. Specifically, the initial stage, dubbed Any\nRatio Adaptability Diffusion (ARAD), leverages a selected set of images with a\nrestricted range of ratios to optimize the text-conditional diffusion model,\nthereby improving its ability to adjust composition to accommodate diverse\nimage sizes. To support the creation of images at any desired size, we further\nintroduce a technique called Fast Seamless Tiled Diffusion (FSTD) at the\nsubsequent stage. This method allows for the rapid enlargement of the ASD\noutput to any high-resolution size, avoiding seaming artifacts or memory\noverloads. Experimental results on the LAION-COCO and MM-CelebA-HQ benchmarks\ndemonstrate that ASD can produce well-structured images of arbitrary sizes,\ncutting down the inference time by 2x compared to the traditional tiled\nalgorithm.",
+      "published_at": "2023-08-31",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.16582",
+      "arxiv_url": "https://arxiv.org/abs/2308.16582"
+    },
+    {
+      "arxiv_id": "2308.16246",
+      "title": "Active Neural Mapping",
+      "authors": [
+        "Zike Yan",
+        "Haoxiang Yang",
+        "Hongbin Zha"
+      ],
+      "abstract": "We address the problem of active mapping with a continually-learned neural\nscene representation, namely Active Neural Mapping. The key lies in actively\nfinding the target space to be explored with efficient agent movement, thus\nminimizing the map uncertainty on-the-fly within a previously unseen\nenvironment. In this paper, we examine the weight space of the\ncontinually-learned neural field, and show empirically that the neural\nvariability, the prediction robustness against random weight perturbation, can\nbe directly utilized to measure the instant uncertainty of the neural map.\nTogether with the continuous geometric information inherited in the neural map,\nthe agent can be guided to find a traversable path to gradually gain knowledge\nof the environment. We present for the first time an active mapping system with\na coordinate-based implicit neural representation for online scene\nreconstruction. Experiments in the visually-realistic Gibson and Matterport3D\nenvironment demonstrate the efficacy of the proposed method.",
+      "published_at": "2023-08-30",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/allenai/embodied-clip",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.16246",
+      "arxiv_url": "https://arxiv.org/abs/2308.16246"
+    },
+    {
+      "arxiv_id": "2308.16891",
+      "title": "GNFactor: Multi-Task Real Robot Learning with Generalizable Neural\n  Feature Fields",
+      "authors": [
+        "Yanjie Ze",
+        "Ge Yan",
+        "Yueh-Hua Wu",
+        "Annabella Macaluso",
+        "Yuying Ge",
+        "Jianglong Ye",
+        "Nicklas Hansen",
+        "Li Erran Li",
+        "Xiaolong Wang"
+      ],
+      "abstract": "It is a long-standing problem in robotics to develop agents capable of\nexecuting diverse manipulation tasks from visual observations in unstructured\nreal-world environments. To achieve this goal, the robot needs to have a\ncomprehensive understanding of the 3D structure and semantics of the scene. In\nthis work, we present GNFactor, a visual behavior cloning agent for\nmulti-task robotic manipulation with Generalizable Neural\nfeature Fields. GNFactor jointly optimizes a generalizable neural\nfield (GNF) as a reconstruction module and a Perceiver Transformer as a\ndecision-making module, leveraging a shared deep 3D voxel representation. To\nincorporate semantics in 3D, the reconstruction module utilizes a\nvision-language foundation model (e.g., Stable Diffusion) to distill\nrich semantic information into the deep 3D voxel. We evaluate GNFactor on 3\nreal robot tasks and perform detailed ablations on 10 RLBench tasks with a\nlimited number of demonstrations. We observe a substantial improvement of\nGNFactor over current state-of-the-art methods in seen and unseen tasks,\ndemonstrating the strong generalization ability of GNFactor. Our project\nwebsite is https://yanjieze.com/GNFactor/ .",
+      "published_at": "2023-08-31",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/YanjieZe/GNFactor",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.16891",
+      "arxiv_url": "https://arxiv.org/abs/2308.16891"
+    },
+    {
+      "arxiv_id": "2308.16884",
+      "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122\n  Language Variants",
+      "authors": [
+        "Lucas Bandarkar",
+        "Davis Liang",
+        "Benjamin Muller",
+        "Mikel Artetxe",
+        "Satya Narayan Shukla",
+        "Donald Husa",
+        "Naman Goyal",
+        "Abhinandan Krishnan",
+        "Luke Zettlemoyer",
+        "Madian Khabsa"
+      ],
+      "abstract": "We present Belebele, a multiple-choice machine reading comprehension (MRC)\ndataset spanning 122 language variants. Significantly expanding the language\ncoverage of natural language understanding (NLU) benchmarks, this dataset\nenables the evaluation of text models in high-, medium-, and low-resource\nlanguages. Each question is based on a short passage from the Flores-200\ndataset and has four multiple-choice answers. The questions were carefully\ncurated to discriminate between models with different levels of general\nlanguage comprehension. The English dataset on its own proves difficult enough\nto challenge state-of-the-art language models. Being fully parallel, this\ndataset enables direct comparison of model performance across all languages. We\nuse this dataset to evaluate the capabilities of multilingual masked language\nmodels (MLMs) and large language models (LLMs). We present extensive results\nand find that despite significant cross-lingual transfer in English-centric\nLLMs, much smaller MLMs pretrained on balanced multilingual data still\nunderstand far more languages. We also observe that larger vocabulary size and\nconscious vocabulary construction correlate with better performance on\nlow-resource languages. Overall, Belebele opens up new avenues for evaluating\nand analyzing the multilingual capabilities of NLP systems.",
+      "published_at": "2023-08-31",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/belebele",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.16884",
+      "arxiv_url": "https://arxiv.org/abs/2308.16884"
+    },
+    {
+      "arxiv_id": "2308.16876",
+      "title": "SportsSloMo: A New Benchmark and Baselines for Human-centric Video Frame\n  Interpolation",
+      "authors": [
+        "Jiaben Chen",
+        "Huaizu Jiang"
+      ],
+      "abstract": "Human-centric video frame interpolation has great potential for improving\npeople's entertainment experiences and finding commercial applications in the\nsports analysis industry, e.g., synthesizing slow-motion videos. Although there\nare multiple benchmark datasets available in the community, none of them is\ndedicated for human-centric scenarios. To bridge this gap, we introduce\nSportsSloMo, a benchmark consisting of more than 130K video clips and 1M video\nframes of high-resolution (geq720p) slow-motion sports videos crawled from\nYouTube. We re-train several state-of-the-art methods on our benchmark, and the\nresults show a decrease in their accuracy compared to other datasets. It\nhighlights the difficulty of our benchmark and suggests that it poses\nsignificant challenges even for the best-performing methods, as human bodies\nare highly deformable and occlusions are frequent in sports videos. To improve\nthe accuracy, we introduce two loss terms considering the human-aware priors,\nwhere we add auxiliary supervision to panoptic segmentation and human keypoints\ndetection, respectively. The loss terms are model agnostic and can be easily\nplugged into any video frame interpolation approaches. Experimental results\nvalidate the effectiveness of our proposed loss terms, leading to consistent\nperformance improvement over 5 existing models, which establish strong baseline\nmodels on our benchmark. The dataset and code can be found at:\nhttps://neu-vi.github.io/SportsSlomo/.",
+      "published_at": "2023-08-31",
+      "submitted_at": "2023-09-01",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.16876",
+      "arxiv_url": "https://arxiv.org/abs/2308.16876"
+    }
+  ]
+}

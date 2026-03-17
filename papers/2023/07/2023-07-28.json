@@ -1,0 +1,121 @@
+{
+  "date": "2023-07-28",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2023-07-28",
+  "papers": [
+    {
+      "arxiv_id": "2307.15063",
+      "title": "To Adapt or Not to Adapt? Real-Time Adaptation for Semantic Segmentation",
+      "authors": [
+        "Marc Botet Colomer",
+        "Pier Luigi Dovesi",
+        "Theodoros Panagiotakopoulos",
+        "Joao Frederico Carvalho",
+        "Linus Härenstam-Nielsen",
+        "Hossein Azizpour",
+        "Hedvig Kjellström",
+        "Daniel Cremers",
+        "Matteo Poggi"
+      ],
+      "abstract": "The goal of Online Domain Adaptation for semantic segmentation is to handle\nunforeseeable domain changes that occur during deployment, like sudden weather\nevents. However, the high computational costs associated with brute-force\nadaptation make this paradigm unfeasible for real-world applications. In this\npaper we propose HAMLET, a Hardware-Aware Modular Least Expensive Training\nframework for real-time domain adaptation. Our approach includes a\nhardware-aware back-propagation orchestration agent (HAMT) and a dedicated\ndomain-shift detector that enables active control over when and how the model\nis adapted (LT). Thanks to these advancements, our approach is capable of\nperforming semantic segmentation while simultaneously adapting at more than\n29FPS on a single consumer-grade GPU. Our framework's encouraging accuracy and\nspeed trade-off is demonstrated on OnDA and SHIFT benchmarks through\nexperimental results.",
+      "published_at": "2023-07-27",
+      "submitted_at": "2023-07-28",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "https://github.com/MarcBotet/hamlet",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.15063",
+      "arxiv_url": "https://arxiv.org/abs/2307.15063"
+    },
+    {
+      "arxiv_id": "2307.14620",
+      "title": "NeRF-Det: Learning Geometry-Aware Volumetric Representation for\n  Multi-View 3D Object Detection",
+      "authors": [
+        "Chenfeng Xu",
+        "Bichen Wu",
+        "Ji Hou",
+        "Sam Tsai",
+        "Ruilong Li",
+        "Jialiang Wang",
+        "Wei Zhan",
+        "Zijian He",
+        "Peter Vajda",
+        "Kurt Keutzer",
+        "Masayoshi Tomizuka"
+      ],
+      "abstract": "We present NeRF-Det, a novel method for indoor 3D detection with posed RGB\nimages as input. Unlike existing indoor 3D detection methods that struggle to\nmodel scene geometry, our method makes novel use of NeRF in an end-to-end\nmanner to explicitly estimate 3D geometry, thereby improving 3D detection\nperformance. Specifically, to avoid the significant extra latency associated\nwith per-scene optimization of NeRF, we introduce sufficient geometry priors to\nenhance the generalizability of NeRF-MLP. Furthermore, we subtly connect the\ndetection and NeRF branches through a shared MLP, enabling an efficient\nadaptation of NeRF to detection and yielding geometry-aware volumetric\nrepresentations for 3D detection. Our method outperforms state-of-the-arts by\n3.9 mAP and 3.1 mAP on the ScanNet and ARKITScenes benchmarks, respectively. We\nprovide extensive analysis to shed light on how NeRF-Det works. As a result of\nour joint-training design, NeRF-Det is able to generalize well to unseen scenes\nfor object detection, view synthesis, and depth estimation tasks without\nrequiring per-scene optimization. Code is available at\nhttps://github.com/facebookresearch/NeRF-Det.",
+      "published_at": "2023-07-27",
+      "submitted_at": "2023-07-28",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/nerf-det",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.14620",
+      "arxiv_url": "https://arxiv.org/abs/2307.14620"
+    },
+    {
+      "arxiv_id": "2307.14460",
+      "title": "MiDaS v3.1 -- A Model Zoo for Robust Monocular Relative Depth Estimation",
+      "authors": [
+        "Reiner Birkl",
+        "Diana Wofk",
+        "Matthias Müller"
+      ],
+      "abstract": "We release MiDaS v3.1 for monocular depth estimation, offering a variety of\nnew models based on different encoder backbones. This release is motivated by\nthe success of transformers in computer vision, with a large variety of\npretrained vision transformers now available. We explore how using the most\npromising vision transformers as image encoders impacts depth estimation\nquality and runtime of the MiDaS architecture. Our investigation also includes\nrecent convolutional approaches that achieve comparable quality to vision\ntransformers in image classification tasks. While the previous release MiDaS\nv3.0 solely leverages the vanilla vision transformer ViT, MiDaS v3.1 offers\nadditional models based on BEiT, Swin, SwinV2, Next-ViT and LeViT. These models\noffer different performance-runtime tradeoffs. The best model improves the\ndepth estimation quality by 28% while efficient models enable downstream tasks\nrequiring high frame rates. We also describe the general process for\nintegrating new backbones. A video summarizing the work can be found at\nhttps://youtu.be/UjaeNNFf9sE and the code is available at\nhttps://github.com/isl-org/MiDaS.",
+      "published_at": "2023-07-26",
+      "submitted_at": "2023-07-28",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/isl-org/MiDaS",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.14460",
+      "arxiv_url": "https://arxiv.org/abs/2307.14460"
+    },
+    {
+      "arxiv_id": "2307.13813",
+      "title": "How to Scale Your EMA",
+      "authors": [
+        "Dan Busbridge",
+        "Jason Ramapuram",
+        "Pierre Ablin",
+        "Tatiana Likhomanenko",
+        "Eeshan Gunesh Dhekane",
+        "Xavier Suau",
+        "Russ Webb"
+      ],
+      "abstract": "Preserving training dynamics across batch sizes is an important tool for\npractical machine learning as it enables the trade-off between batch size and\nwall-clock time. This trade-off is typically enabled by a scaling rule, for\nexample, in stochastic gradient descent, one should scale the learning rate\nlinearly with the batch size. Another important tool for practical machine\nlearning is the model Exponential Moving Average (EMA), which is a model copy\nthat does not receive gradient information, but instead follows its target\nmodel with some momentum. This model EMA can improve the robustness and\ngeneralization properties of supervised learning, stabilize pseudo-labeling,\nand provide a learning signal for Self-Supervised Learning (SSL). Prior works\nhave treated the model EMA separately from optimization, leading to different\ntraining dynamics across batch sizes and lower model performance. In this work,\nwe provide a scaling rule for optimization in the presence of model EMAs and\ndemonstrate its validity across a range of architectures, optimizers, and data\nmodalities. We also show the rule's validity where the model EMA contributes to\nthe optimization of the target model, enabling us to train EMA-based\npseudo-labeling and SSL methods at small and large batch sizes. For SSL, we\nenable training of BYOL up to batch size 24,576 without sacrificing\nperformance, optimally a 6times wall-clock time reduction.",
+      "published_at": "2023-07-25",
+      "submitted_at": "2023-07-28",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.13813",
+      "arxiv_url": "https://arxiv.org/abs/2307.13813"
+    },
+    {
+      "arxiv_id": "2307.15042",
+      "title": "TEDi: Temporally-Entangled Diffusion for Long-Term Motion Synthesis",
+      "authors": [
+        "Zihan Zhang",
+        "Richard Liu",
+        "Kfir Aberman",
+        "Rana Hanocka"
+      ],
+      "abstract": "The gradual nature of a diffusion process that synthesizes samples in small\nincrements constitutes a key ingredient of Denoising Diffusion Probabilistic\nModels (DDPM), which have presented unprecedented quality in image synthesis\nand been recently explored in the motion domain. In this work, we propose to\nadapt the gradual diffusion concept (operating along a diffusion time-axis)\ninto the temporal-axis of the motion sequence. Our key idea is to extend the\nDDPM framework to support temporally varying denoising, thereby entangling the\ntwo axes. Using our special formulation, we iteratively denoise a motion buffer\nthat contains a set of increasingly-noised poses, which auto-regressively\nproduces an arbitrarily long stream of frames. With a stationary diffusion\ntime-axis, in each diffusion step we increment only the temporal-axis of the\nmotion such that the framework produces a new, clean frame which is removed\nfrom the beginning of the buffer, followed by a newly drawn noise vector that\nis appended to it. This new mechanism paves the way towards a new framework for\nlong-term motion synthesis with applications to character animation and other\ndomains.",
+      "published_at": "2023-07-27",
+      "submitted_at": "2023-07-28",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "https://github.com/threedle/TEDi",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.15042",
+      "arxiv_url": "https://arxiv.org/abs/2307.15042"
+    }
+  ]
+}

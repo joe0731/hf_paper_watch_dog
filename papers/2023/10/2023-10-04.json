@@ -1,0 +1,96 @@
+{
+  "date": "2023-10-04",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-10-04",
+  "papers": [
+    {
+      "arxiv_id": "2310.01798",
+      "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "authors": [
+        "Jie Huang",
+        "Xinyun Chen",
+        "Swaroop Mishra",
+        "Huaixiu Steven Zheng",
+        "Adams Wei Yu",
+        "Xinying Song",
+        "Denny Zhou"
+      ],
+      "abstract": "Large Language Models (LLMs) have emerged as a groundbreaking technology with\ntheir unparalleled text generation capabilities across various applications.\nNevertheless, concerns persist regarding the accuracy and appropriateness of\ntheir generated content. A contemporary methodology, self-correction, has been\nproposed as a remedy to these issues. Building upon this premise, this paper\ncritically examines the role and efficacy of self-correction within LLMs,\nshedding light on its true potential and limitations. Central to our\ninvestigation is the notion of intrinsic self-correction, whereby an LLM\nattempts to correct its initial responses based solely on its inherent\ncapabilities, without the crutch of external feedback. In the context of\nreasoning, our research indicates that LLMs struggle to self-correct their\nresponses without external feedback, and at times, their performance might even\ndegrade post self-correction. Drawing from these insights, we offer suggestions\nfor future research and practical applications in this field.",
+      "published_at": "2023-10-03",
+      "submitted_at": "2023-10-04",
+      "submitted_by": "AK",
+      "upvotes": 36,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.01798",
+      "arxiv_url": "https://arxiv.org/abs/2310.01798"
+    },
+    {
+      "arxiv_id": "2310.01596",
+      "title": "ImagenHub: Standardizing the evaluation of conditional image generation\n  models",
+      "authors": [
+        "Max Ku",
+        "Tianle Li",
+        "Yujie Lu",
+        "Xingyu Fu",
+        "Wenwen Zhuang",
+        "Wenhu Chen"
+      ],
+      "abstract": "Recently, a myriad of conditional image generation and editing models have\nbeen developed to serve different downstream tasks, including text-to-image\ngeneration, text-guided image editing, subject-driven image generation,\ncontrol-guided image generation, etc. However, we observe huge inconsistencies\nin experimental conditions: datasets, inference, and evaluation metrics -\nrender fair comparisons difficult. This paper proposes ImagenHub, which is a\none-stop library to standardize the inference and evaluation of all the\nconditional image generation models. Firstly, we define seven prominent tasks\nand curate high-quality evaluation datasets for them. Secondly, we built a\nunified inference pipeline to ensure fair comparison. Thirdly, we design two\nhuman evaluation scores, i.e. Semantic Consistency and Perceptual Quality,\nalong with comprehensive guidelines to evaluate generated images. We train\nexpert raters to evaluate the model outputs based on the proposed metrics. Our\nhuman evaluation achieves a high inter-worker agreement of Krippendorff's alpha\non 76% models with a value higher than 0.4. We comprehensively evaluated a\ntotal of around 30 models and observed three key takeaways: (1) the existing\nmodels' performance is generally unsatisfying except for Text-guided Image\nGeneration and Subject-driven Image Generation, with 74% models achieving an\noverall score lower than 0.5. (2) we examined the claims from published papers\nand found 83% of them hold with a few exceptions. (3) None of the existing\nautomatic metrics has a Spearman's correlation higher than 0.2 except\nsubject-driven image generation. Moving forward, we will continue our efforts\nto evaluate newly published models and update our leaderboard to keep track of\nthe progress in conditional image generation.",
+      "published_at": "2023-10-02",
+      "submitted_at": "2023-10-04",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "https://github.com/TIGER-AI-Lab/ImagenHub",
+      "project_page": "https://tiger-ai-lab.github.io/ImagenHub/",
+      "hf_url": "https://huggingface.co/papers/2310.01596",
+      "arxiv_url": "https://arxiv.org/abs/2310.01596"
+    },
+    {
+      "arxiv_id": "2310.01714",
+      "title": "Large Language Models as Analogical Reasoners",
+      "authors": [
+        "Michihiro Yasunaga",
+        "Xinyun Chen",
+        "Yujia Li",
+        "Panupong Pasupat",
+        "Jure Leskovec",
+        "Percy Liang",
+        "Ed H. Chi",
+        "Denny Zhou"
+      ],
+      "abstract": "Chain-of-thought (CoT) prompting for language models demonstrates impressive\nperformance across reasoning tasks, but typically needs labeled exemplars of\nthe reasoning process. In this work, we introduce a new prompting approach,\nAnalogical Prompting, designed to automatically guide the reasoning process of\nlarge language models. Inspired by analogical reasoning, a cognitive process in\nwhich humans draw from relevant past experiences to tackle new problems, our\napproach prompts language models to self-generate relevant exemplars or\nknowledge in the context, before proceeding to solve the given problem. This\nmethod presents several advantages: it obviates the need for labeling or\nretrieving exemplars, offering generality and convenience; it can also tailor\nthe generated exemplars and knowledge to each problem, offering adaptability.\nExperimental results show that our approach outperforms 0-shot CoT and manual\nfew-shot CoT in a variety of reasoning tasks, including math problem solving in\nGSM8K and MATH, code generation in Codeforces, and other reasoning tasks in\nBIG-Bench.",
+      "published_at": "2023-10-03",
+      "submitted_at": "2023-10-04",
+      "submitted_by": "AK",
+      "upvotes": 16,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.01714",
+      "arxiv_url": "https://arxiv.org/abs/2310.01714"
+    },
+    {
+      "arxiv_id": "2310.01557",
+      "title": "SmartPlay : A Benchmark for LLMs as Intelligent Agents",
+      "authors": [
+        "Yue Wu",
+        "Xuan Tang",
+        "Tom M. Mitchell",
+        "Yuanzhi Li"
+      ],
+      "abstract": "Recent large language models (LLMs) have demonstrated great potential toward\nintelligent agents and next-gen automation, but there currently lacks a\nsystematic benchmark for evaluating LLMs' abilities as agents. We introduce\nSmartPlay: both a challenging benchmark and a methodology for evaluating LLMs\nas agents. SmartPlay consists of 6 different games, including\nRock-Paper-Scissors, Tower of Hanoi, Minecraft. Each game features a unique\nsetting, providing up to 20 evaluation settings and infinite environment\nvariations. Each game in SmartPlay uniquely challenges a subset of 9 important\ncapabilities of an intelligent LLM agent, including reasoning with object\ndependencies, planning ahead, spatial reasoning, learning from history, and\nunderstanding randomness. The distinction between the set of capabilities each\ngame test allows us to analyze each capability separately. SmartPlay serves not\nonly as a rigorous testing ground for evaluating the overall performance of LLM\nagents but also as a road-map for identifying gaps in current methodologies. We\nrelease our benchmark at github.com/LLMsmartplay/SmartPlay",
+      "published_at": "2023-10-02",
+      "submitted_at": "2023-10-04",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/microsoft/smartplay",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.01557",
+      "arxiv_url": "https://arxiv.org/abs/2310.01557"
+    }
+  ]
+}

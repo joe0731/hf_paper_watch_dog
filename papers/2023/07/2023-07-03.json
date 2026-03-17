@@ -1,0 +1,127 @@
+{
+  "date": "2023-07-03",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2023-07-03",
+  "papers": [
+    {
+      "arxiv_id": "2306.17843",
+      "title": "Magic123: One Image to High-Quality 3D Object Generation Using Both 2D\n  and 3D Diffusion Priors",
+      "authors": [
+        "Guocheng Qian",
+        "Jinjie Mai",
+        "Abdullah Hamdi",
+        "Jian Ren",
+        "Aliaksandr Siarohin",
+        "Bing Li",
+        "Hsin-Ying Lee",
+        "Ivan Skorokhodov",
+        "Peter Wonka",
+        "Sergey Tulyakov",
+        "Bernard Ghanem"
+      ],
+      "abstract": "We present Magic123, a two-stage coarse-to-fine approach for high-quality,\ntextured 3D meshes generation from a single unposed image in the wild using\nboth2D and 3D priors. In the first stage, we optimize a neural radiance field\nto produce a coarse geometry. In the second stage, we adopt a memory-efficient\ndifferentiable mesh representation to yield a high-resolution mesh with a\nvisually appealing texture. In both stages, the 3D content is learned through\nreference view supervision and novel views guided by a combination of 2D and 3D\ndiffusion priors. We introduce a single trade-off parameter between the 2D and\n3D priors to control exploration (more imaginative) and exploitation (more\nprecise) of the generated geometry. Additionally, we employ textual inversion\nand monocular depth regularization to encourage consistent appearances across\nviews and to prevent degenerate solutions, respectively. Magic123 demonstrates\na significant improvement over previous image-to-3D techniques, as validated\nthrough extensive experiments on synthetic benchmarks and diverse real-world\nimages. Our code, models, and generated 3D assets are available at\nhttps://github.com/guochengqian/Magic123.",
+      "published_at": "2023-06-30",
+      "submitted_at": "2023-07-03",
+      "submitted_by": "AK",
+      "upvotes": 44,
+      "organization": "",
+      "github_repo": "https://github.com/guochengqian/magic123",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17843",
+      "arxiv_url": "https://arxiv.org/abs/2306.17843"
+    },
+    {
+      "arxiv_id": "2306.17840",
+      "title": "Statler: State-Maintaining Language Models for Embodied Reasoning",
+      "authors": [
+        "Takuma Yoneda",
+        "Jiading Fang",
+        "Peng Li",
+        "Huanyu Zhang",
+        "Tianchong Jiang",
+        "Shengjie Lin",
+        "Ben Picker",
+        "David Yunis",
+        "Hongyuan Mei",
+        "Matthew R. Walter"
+      ],
+      "abstract": "Large language models (LLMs) provide a promising tool that enable robots to\nperform complex robot reasoning tasks. However, the limited context window of\ncontemporary LLMs makes reasoning over long time horizons difficult. Embodied\ntasks such as those that one might expect a household robot to perform\ntypically require that the planner consider information acquired a long time\nago (e.g., properties of the many objects that the robot previously encountered\nin the environment). Attempts to capture the world state using an LLM's\nimplicit internal representation is complicated by the paucity of task- and\nenvironment-relevant information available in a robot's action history, while\nmethods that rely on the ability to convey information via the prompt to the\nLLM are subject to its limited context window. In this paper, we propose\nStatler, a framework that endows LLMs with an explicit representation of the\nworld state as a form of ``memory'' that is maintained over time. Integral to\nStatler is its use of two instances of general LLMs -- a world-model reader and\na world-model writer -- that interface with and maintain the world state. By\nproviding access to this world state ``memory'', Statler improves the ability\nof existing LLMs to reason over longer time horizons without the constraint of\ncontext length. We evaluate the effectiveness of our approach on three\nsimulated table-top manipulation domains and a real robot domain, and show that\nit improves the state-of-the-art in LLM-based robot reasoning. Project website:\nhttps://statler-lm.github.io/",
+      "published_at": "2023-06-30",
+      "submitted_at": "2023-07-03",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/ripl/statler",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17840",
+      "arxiv_url": "https://arxiv.org/abs/2306.17840"
+    },
+    {
+      "arxiv_id": "2306.17848",
+      "title": "Hardwiring ViT Patch Selectivity into CNNs using Patch Mixing",
+      "authors": [
+        "Ariel N. Lee",
+        "Sarah Adel Bargal",
+        "Janavi Kasera",
+        "Stan Sclaroff",
+        "Kate Saenko",
+        "Nataniel Ruiz"
+      ],
+      "abstract": "Vision transformers (ViTs) have significantly changed the computer vision\nlandscape and have periodically exhibited superior performance in vision tasks\ncompared to convolutional neural networks (CNNs). Although the jury is still\nout on which model type is superior, each has unique inductive biases that\nshape their learning and generalization performance. For example, ViTs have\ninteresting properties with respect to early layer non-local feature\ndependence, as well as self-attention mechanisms which enhance learning\nflexibility, enabling them to ignore out-of-context image information more\neffectively. We hypothesize that this power to ignore out-of-context\ninformation (which we name patch selectivity), while integrating\nin-context information in a non-local manner in early layers, allows ViTs to\nmore easily handle occlusion. In this study, our aim is to see whether we can\nhave CNNs simulate this ability of patch selectivity by effectively\nhardwiring this inductive bias using Patch Mixing data augmentation, which\nconsists of inserting patches from another image onto a training image and\ninterpolating labels between the two image classes. Specifically, we use Patch\nMixing to train state-of-the-art ViTs and CNNs, assessing its impact on their\nability to ignore out-of-context patches and handle natural occlusions. We find\nthat ViTs do not improve nor degrade when trained using Patch Mixing, but CNNs\nacquire new capabilities to ignore out-of-context information and improve on\nocclusion benchmarks, leaving us to conclude that this training method is a way\nof simulating in CNNs the abilities that ViTs already possess. We will release\nour Patch Mixing implementation and proposed datasets for public use. Project\npage: https://arielnlee.github.io/PatchMixing/",
+      "published_at": "2023-06-30",
+      "submitted_at": "2023-07-03",
+      "submitted_by": "AK",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17848",
+      "arxiv_url": "https://arxiv.org/abs/2306.17848"
+    },
+    {
+      "arxiv_id": "2306.17759",
+      "title": "The Shaped Transformer: Attention Models in the Infinite Depth-and-Width\n  Limit",
+      "authors": [
+        "Lorenzo Noci",
+        "Chuning Li",
+        "Mufan Bill Li",
+        "Bobby He",
+        "Thomas Hofmann",
+        "Chris Maddison",
+        "Daniel M. Roy"
+      ],
+      "abstract": "In deep learning theory, the covariance matrix of the representations serves\nas a proxy to examine the network's trainability. Motivated by the success of\nTransformers, we study the covariance matrix of a modified Softmax-based\nattention model with skip connections in the proportional limit of\ninfinite-depth-and-width. We show that at initialization the limiting\ndistribution can be described by a stochastic differential equation (SDE)\nindexed by the depth-to-width ratio. To achieve a well-defined stochastic\nlimit, the Transformer's attention mechanism is modified by centering the\nSoftmax output at identity, and scaling the Softmax logits by a width-dependent\ntemperature parameter. We examine the stability of the network through the\ncorresponding SDE, showing how the scale of both the drift and diffusion can be\nelegantly controlled with the aid of residual connections. The existence of a\nstable SDE implies that the covariance structure is well-behaved, even for very\nlarge depth and width, thus preventing the notorious issues of rank degeneracy\nin deep attention models. Finally, we show, through simulations, that the SDE\nprovides a surprisingly good description of the corresponding finite-size\nmodel. We coin the name shaped Transformer for these architectural\nmodifications.",
+      "published_at": "2023-06-30",
+      "submitted_at": "2023-07-03",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17759",
+      "arxiv_url": "https://arxiv.org/abs/2306.17759"
+    },
+    {
+      "arxiv_id": "2306.17319",
+      "title": "ReMaX: Relaxing for Better Training on Efficient Panoptic Segmentation",
+      "authors": [
+        "Shuyang Sun",
+        "Weijun Wang",
+        "Qihang Yu",
+        "Andrew Howard",
+        "Philip Torr",
+        "Liang-Chieh Chen"
+      ],
+      "abstract": "This paper presents a new mechanism to facilitate the training of mask\ntransformers for efficient panoptic segmentation, democratizing its deployment.\nWe observe that due to its high complexity, the training objective of panoptic\nsegmentation will inevitably lead to much higher false positive penalization.\nSuch unbalanced loss makes the training process of the end-to-end\nmask-transformer based architectures difficult, especially for efficient\nmodels. In this paper, we present ReMaX that adds relaxation to mask\npredictions and class predictions during training for panoptic segmentation. We\ndemonstrate that via these simple relaxation techniques during training, our\nmodel can be consistently improved by a clear margin without any extra\ncomputational cost on inference. By combining our method with efficient\nbackbones like MobileNetV3-Small, our method achieves new state-of-the-art\nresults for efficient panoptic segmentation on COCO, ADE20K and Cityscapes.\nCode and pre-trained checkpoints will be available at\nhttps://github.com/google-research/deeplab2.",
+      "published_at": "2023-06-29",
+      "submitted_at": "2023-07-03",
+      "submitted_by": "AK",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "https://github.com/google-research/deeplab2",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17319",
+      "arxiv_url": "https://arxiv.org/abs/2306.17319"
+    }
+  ]
+}

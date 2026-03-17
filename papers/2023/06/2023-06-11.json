@@ -1,0 +1,104 @@
+{
+  "date": "2023-06-11",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-06-11",
+  "papers": [
+    {
+      "arxiv_id": "2306.05685",
+      "title": "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena",
+      "authors": [
+        "Lianmin Zheng",
+        "Wei-Lin Chiang",
+        "Ying Sheng",
+        "Siyuan Zhuang",
+        "Zhanghao Wu",
+        "Yonghao Zhuang",
+        "Zi Lin",
+        "Zhuohan Li",
+        "Dacheng Li",
+        "Eric. P Xing",
+        "Hao Zhang",
+        "Joseph E. Gonzalez",
+        "Ion Stoica"
+      ],
+      "abstract": "Evaluating large language model (LLM) based chat assistants is challenging\ndue to their broad capabilities and the inadequacy of existing benchmarks in\nmeasuring human preferences. To address this, we explore using strong LLMs as\njudges to evaluate these models on more open-ended questions. We examine the\nusage and limitations of LLM-as-a-judge, such as position and verbosity biases\nand limited reasoning ability, and propose solutions to migrate some of them.\nWe then verify the agreement between LLM judges and human preferences by\nintroducing two benchmarks: MT-bench, a multi-turn question set; and Chatbot\nArena, a crowdsourced battle platform. Our results reveal that strong LLM\njudges like GPT-4 can match both controlled and crowdsourced human preferences\nwell, achieving over 80\\% agreement, the same level of agreement between\nhumans. Hence, LLM-as-a-judge is a scalable and explainable way to approximate\nhuman preferences, which are otherwise very expensive to obtain. Additionally,\nwe show our benchmark and traditional benchmarks complement each other by\nevaluating several variants of LLaMA/Vicuna. We will publicly release 80\nMT-bench questions, 3K expert votes, and 30K conversations with human\npreferences from Chatbot Arena.",
+      "published_at": "2023-06-09",
+      "submitted_at": "2023-06-11",
+      "submitted_by": "AK",
+      "upvotes": 40,
+      "organization": "",
+      "github_repo": "https://github.com/lm-sys/fastchat",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.05685",
+      "arxiv_url": "https://arxiv.org/abs/2306.05685"
+    },
+    {
+      "arxiv_id": "2306.06070",
+      "title": "Mind2Web: Towards a Generalist Agent for the Web",
+      "authors": [
+        "Xiang Deng",
+        "Yu Gu",
+        "Boyuan Zheng",
+        "Shijie Chen",
+        "Samuel Stevens",
+        "Boshi Wang",
+        "Huan Sun",
+        "Yu Su"
+      ],
+      "abstract": "We introduce Mind2Web, the first dataset for developing and evaluating\ngeneralist agents for the web that can follow language instructions to complete\ncomplex tasks on any website. Existing datasets for web agents either use\nsimulated websites or only cover a limited set of websites and tasks, thus not\nsuitable for generalist web agents. With over 2,000 open-ended tasks collected\nfrom 137 websites spanning 31 domains and crowdsourced action sequences for the\ntasks, Mind2Web provides three necessary ingredients for building generalist\nweb agents: 1) diverse domains, websites, and tasks, 2) use of real-world\nwebsites instead of simulated and simplified ones, and 3) a broad spectrum of\nuser interaction patterns. Based on Mind2Web, we conduct an initial exploration\nof using large language models (LLMs) for building generalist web agents. While\nthe raw HTML of real-world websites are often too large to be fed to LLMs, we\nshow that first filtering it with a small LM significantly improves the\neffectiveness and efficiency of LLMs. Our solution demonstrates a decent level\nof performance, even on websites or entire domains the model has never seen\nbefore, but there is still a substantial room to improve towards truly\ngeneralizable agents. We open-source our dataset, model implementation, and\ntrained models (https://osu-nlp-group.github.io/Mind2Web) to facilitate further\nresearch on building a generalist agent for the web.",
+      "published_at": "2023-06-09",
+      "submitted_at": "2023-06-11",
+      "submitted_by": "AK",
+      "upvotes": 21,
+      "organization": "",
+      "github_repo": "https://github.com/osu-nlp-group/mind2web",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.06070",
+      "arxiv_url": "https://arxiv.org/abs/2306.06070"
+    },
+    {
+      "arxiv_id": "2306.05836",
+      "title": "Can Large Language Models Infer Causation from Correlation?",
+      "authors": [
+        "Zhijing Jin",
+        "Jiarui Liu",
+        "Zhiheng Lyu",
+        "Spencer Poff",
+        "Mrinmaya Sachan",
+        "Rada Mihalcea",
+        "Mona Diab",
+        "Bernhard Schölkopf"
+      ],
+      "abstract": "Causal inference is one of the hallmarks of human intelligence. While the\nfield of CausalNLP has attracted much interest in the recent years, existing\ncausal inference datasets in NLP primarily rely on discovering causality from\nempirical knowledge (e.g., commonsense knowledge). In this work, we propose the\nfirst benchmark dataset to test the pure causal inference skills of large\nlanguage models (LLMs). Specifically, we formulate a novel task Corr2Cause,\nwhich takes a set of correlational statements and determines the causal\nrelationship between the variables. We curate a large-scale dataset of more\nthan 400K samples, on which we evaluate seventeen existing LLMs. Through our\nexperiments, we identify a key shortcoming of LLMs in terms of their causal\ninference skills, and show that these models achieve almost close to random\nperformance on the task. This shortcoming is somewhat mitigated when we try to\nre-purpose LLMs for this skill via finetuning, but we find that these models\nstill fail to generalize -- they can only perform causal inference in\nin-distribution settings when variable names and textual expressions used in\nthe queries are similar to those in the training set, but fail in\nout-of-distribution settings generated by perturbing these queries. Corr2Cause\nis a challenging task for LLMs, and would be helpful in guiding future research\non improving LLMs' pure reasoning skills and generalizability. Our data is at\nhttps://huggingface.co/datasets/causalnlp/corr2cause. Our code is at\nhttps://github.com/causalNLP/corr2cause.",
+      "published_at": "2023-06-09",
+      "submitted_at": "2023-06-11",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/causalnlp/corr2cause",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.05836",
+      "arxiv_url": "https://arxiv.org/abs/2306.05836"
+    },
+    {
+      "arxiv_id": "2306.05696",
+      "title": "Embodied Executable Policy Learning with Language-based Scene\n  Summarization",
+      "authors": [
+        "Jielin Qiu",
+        "Mengdi Xu",
+        "Seungwhan Moon",
+        "Ding Zhao"
+      ],
+      "abstract": "Large Language models (LLMs) have shown remarkable success in assisting robot\nlearning tasks, i.e., complex household planning. However, the performance of\npretrained LLMs heavily relies on domain-specific templated text data, which\nmay be infeasible in real-world robot learning tasks with image-based\nobservations. Moreover, existing LLMs with text inputs lack the capability to\nevolve with non-expert interactions with environments. In this work, we\nintroduce a novel learning paradigm that generates robots' executable actions\nin the form of text, derived solely from visual observations, using\nlanguage-based summarization of these observations as the connecting bridge\nbetween both domains. Our proposed paradigm stands apart from previous works,\nwhich utilized either language instructions or a combination of language and\nvisual data as inputs. Moreover, our method does not require oracle text\nsummarization of the scene, eliminating the need for human involvement in the\nlearning loop, which makes it more practical for real-world robot learning\ntasks. Our proposed paradigm consists of two modules: the SUM module, which\ninterprets the environment using visual observations and produces a text\nsummary of the scene, and the APM module, which generates executable action\npolicies based on the natural language descriptions provided by the SUM module.\nWe demonstrate that our proposed method can employ two fine-tuning strategies,\nincluding imitation learning and reinforcement learning approaches, to adapt to\nthe target test tasks effectively. We conduct extensive experiments involving\nvarious SUM/APM model selections, environments, and tasks across 7 house\nlayouts in the VirtualHome environment. Our experimental results demonstrate\nthat our method surpasses existing baselines, confirming the effectiveness of\nthis novel learning paradigm.",
+      "published_at": "2023-06-09",
+      "submitted_at": "2023-06-11",
+      "submitted_by": "AK",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.05696",
+      "arxiv_url": "https://arxiv.org/abs/2306.05696"
+    }
+  ]
+}

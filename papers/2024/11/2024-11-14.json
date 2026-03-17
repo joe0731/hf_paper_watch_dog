@@ -1,0 +1,163 @@
+{
+  "date": "2024-11-14",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2024-11-14",
+  "papers": [
+    {
+      "arxiv_id": "2411.08147",
+      "title": "Large Language Models Can Self-Improve in Long-context Reasoning",
+      "authors": [
+        "Siheng Li",
+        "Cheng Yang",
+        "Zesen Cheng",
+        "Lemao Liu",
+        "Mo Yu",
+        "Yujiu Yang",
+        "Wai Lam"
+      ],
+      "abstract": "Large language models (LLMs) have achieved substantial progress in processing\nlong contexts but still struggle with long-context reasoning. Existing\napproaches typically involve fine-tuning LLMs with synthetic data, which\ndepends on annotations from human experts or advanced models like GPT-4, thus\nrestricting further advancements. To address this issue, we investigate the\npotential for LLMs to self-improve in long-context reasoning and propose \\ours,\nan approach specifically designed for this purpose. This approach is\nstraightforward: we sample multiple outputs for each question, score them with\nMinimum Bayes Risk, and then apply supervised fine-tuning or preference\noptimization based on these outputs. Extensive experiments on several leading\nLLMs demonstrate the effectiveness of \\ours, with an absolute improvement of\n4.2 points for Llama-3.1-8B-Instruct. Furthermore, \\ours achieves superior\nperformance compared to prior approaches that depend on data produced by human\nexperts or advanced models. We anticipate that this work will open new avenues\nfor self-improvement techniques in long-context scenarios, which are essential\nfor the continual advancement of LLMs.",
+      "published_at": "2024-11-12",
+      "submitted_at": "2024-11-14",
+      "submitted_by": "SihengLi",
+      "upvotes": 65,
+      "organization": "",
+      "github_repo": "https://github.com/sihengli99/sealong",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08147",
+      "arxiv_url": "https://arxiv.org/abs/2411.08147"
+    },
+    {
+      "arxiv_id": "2411.08380",
+      "title": "EgoVid-5M: A Large-Scale Video-Action Dataset for Egocentric Video\n  Generation",
+      "authors": [
+        "Xiaofeng Wang",
+        "Kang Zhao",
+        "Feng Liu",
+        "Jiayu Wang",
+        "Guosheng Zhao",
+        "Xiaoyi Bao",
+        "Zheng Zhu",
+        "Yingya Zhang",
+        "Xingang Wang"
+      ],
+      "abstract": "Video generation has emerged as a promising tool for world simulation,\nleveraging visual data to replicate real-world environments. Within this\ncontext, egocentric video generation, which centers on the human perspective,\nholds significant potential for enhancing applications in virtual reality,\naugmented reality, and gaming. However, the generation of egocentric videos\npresents substantial challenges due to the dynamic nature of egocentric\nviewpoints, the intricate diversity of actions, and the complex variety of\nscenes encountered. Existing datasets are inadequate for addressing these\nchallenges effectively. To bridge this gap, we present EgoVid-5M, the first\nhigh-quality dataset specifically curated for egocentric video generation.\nEgoVid-5M encompasses 5 million egocentric video clips and is enriched with\ndetailed action annotations, including fine-grained kinematic control and\nhigh-level textual descriptions. To ensure the integrity and usability of the\ndataset, we implement a sophisticated data cleaning pipeline designed to\nmaintain frame consistency, action coherence, and motion smoothness under\negocentric conditions. Furthermore, we introduce EgoDreamer, which is capable\nof generating egocentric videos driven simultaneously by action descriptions\nand kinematic control signals. The EgoVid-5M dataset, associated action\nannotations, and all data cleansing metadata will be released for the\nadvancement of research in egocentric video generation.",
+      "published_at": "2024-11-13",
+      "submitted_at": "2024-11-14",
+      "submitted_by": "JeffWang",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08380",
+      "arxiv_url": "https://arxiv.org/abs/2411.08380"
+    },
+    {
+      "arxiv_id": "2411.07618",
+      "title": "Direct Preference Optimization Using Sparse Feature-Level Constraints",
+      "authors": [
+        "Qingyu Yin",
+        "Chak Tou Leong",
+        "Hongbo Zhang",
+        "Minjun Zhu",
+        "Hanqi Yan",
+        "Qiang Zhang",
+        "Yulan He",
+        "Wenjie Li",
+        "Jun Wang",
+        "Yue Zhang",
+        "Linyi Yang"
+      ],
+      "abstract": "The alignment of large language models (LLMs) with human preferences remains\na key challenge. While post-training techniques like Reinforcement Learning\nfrom Human Feedback (RLHF) and Direct Preference Optimization (DPO) have\nachieved notable success, they often introduce computational inefficiencies and\ntraining instability. In this paper, we propose Feature-level constrained\nPreference Optimization (FPO), a novel method designed to simplify the\nalignment process while ensuring stability. FPO leverages pre-trained Sparse\nAutoencoders (SAEs) and introduces feature-level constraints, allowing for\nefficient, sparsity-enforced alignment. Our approach enjoys efficiency by using\nsparse features activated in a well-trained sparse autoencoder and the quality\nof sequential KL divergence by using the feature-level offline reference.\nExperimental results on benchmark datasets demonstrate that FPO achieves a\n5.08% absolute improvement in win rate with much lower computational cost\ncompared to state-of-the-art baselines, making it a promising solution for\nefficient and controllable LLM alignments.",
+      "published_at": "2024-11-12",
+      "submitted_at": "2024-11-14",
+      "submitted_by": "Linyi Yang",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.07618",
+      "arxiv_url": "https://arxiv.org/abs/2411.07618"
+    },
+    {
+      "arxiv_id": "2411.08868",
+      "title": "CamemBERT 2.0: A Smarter French Language Model Aged to Perfection",
+      "authors": [
+        "Wissam Antoun",
+        "Francis Kulumba",
+        "Rian Touchent",
+        "Éric de la Clergerie",
+        "Benoît Sagot",
+        "Djamé Seddah"
+      ],
+      "abstract": "French language models, such as CamemBERT, have been widely adopted across\nindustries for natural language processing (NLP) tasks, with models like\nCamemBERT seeing over 4 million downloads per month. However, these models face\nchallenges due to temporal concept drift, where outdated training data leads to\na decline in performance, especially when encountering new topics and\nterminology. This issue emphasizes the need for updated models that reflect\ncurrent linguistic trends. In this paper, we introduce two new versions of the\nCamemBERT base model-CamemBERTav2 and CamemBERTv2-designed to address these\nchallenges. CamemBERTav2 is based on the DeBERTaV3 architecture and makes use\nof the Replaced Token Detection (RTD) objective for better contextual\nunderstanding, while CamemBERTv2 is built on RoBERTa, which uses the Masked\nLanguage Modeling (MLM) objective. Both models are trained on a significantly\nlarger and more recent dataset with longer context length and an updated\ntokenizer that enhances tokenization performance for French. We evaluate the\nperformance of these models on both general-domain NLP tasks and\ndomain-specific applications, such as medical field tasks, demonstrating their\nversatility and effectiveness across a range of use cases. Our results show\nthat these updated models vastly outperform their predecessors, making them\nvaluable tools for modern NLP systems. All our new models, as well as\nintermediate checkpoints, are made openly available on Huggingface.",
+      "published_at": "2024-11-13",
+      "submitted_at": "2024-11-14",
+      "submitted_by": "Stefan Schweter",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08868",
+      "arxiv_url": "https://arxiv.org/abs/2411.08868"
+    },
+    {
+      "arxiv_id": "2411.08790",
+      "title": "Can sparse autoencoders be used to decompose and interpret steering\n  vectors?",
+      "authors": [
+        "Harry Mayne",
+        "Yushi Yang",
+        "Adam Mahdi"
+      ],
+      "abstract": "Steering vectors are a promising approach to control the behaviour of large\nlanguage models. However, their underlying mechanisms remain poorly understood.\nWhile sparse autoencoders (SAEs) may offer a potential method to interpret\nsteering vectors, recent findings show that SAE-reconstructed vectors often\nlack the steering properties of the original vectors. This paper investigates\nwhy directly applying SAEs to steering vectors yields misleading\ndecompositions, identifying two reasons: (1) steering vectors fall outside the\ninput distribution for which SAEs are designed, and (2) steering vectors can\nhave meaningful negative projections in feature directions, which SAEs are not\ndesigned to accommodate. These limitations hinder the direct use of SAEs for\ninterpreting steering vectors.",
+      "published_at": "2024-11-13",
+      "submitted_at": "2024-11-14",
+      "submitted_by": "YY",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "https://github.com/harrymayne/sv_interpretability",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08790",
+      "arxiv_url": "https://arxiv.org/abs/2411.08790"
+    },
+    {
+      "arxiv_id": "2411.08307",
+      "title": "PerceiverS: A Multi-Scale Perceiver with Effective Segmentation for\n  Long-Term Expressive Symbolic Music Generation",
+      "authors": [
+        "Yungang Yi",
+        "Weihua Li",
+        "Matthew Kuo",
+        "Quan Bai"
+      ],
+      "abstract": "Music generation has progressed significantly, especially in the domain of\naudio generation. However, generating symbolic music that is both\nlong-structured and expressive remains a significant challenge. In this paper,\nwe propose PerceiverS (Segmentation and Scale), a novel architecture designed\nto address this issue by leveraging both Effective Segmentation and Multi-Scale\nattention mechanisms. Our approach enhances symbolic music generation by\nsimultaneously learning long-term structural dependencies and short-term\nexpressive details. By combining cross-attention and self-attention in a\nMulti-Scale setting, PerceiverS captures long-range musical structure while\npreserving performance nuances. The proposed model, evaluated on datasets like\nMaestro, demonstrates improvements in generating coherent and diverse music\nwith both structural consistency and expressive variation. The project demos\nand the generated music samples can be accessed through the link:\nhttps://perceivers.github.io.",
+      "published_at": "2024-11-13",
+      "submitted_at": "2024-11-14",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08307",
+      "arxiv_url": "https://arxiv.org/abs/2411.08307"
+    },
+    {
+      "arxiv_id": "2411.08328",
+      "title": "Motion Control for Enhanced Complex Action Video Generation",
+      "authors": [
+        "Qiang Zhou",
+        "Nianzu Yang",
+        "Ye Qian",
+        "Hao Li"
+      ],
+      "abstract": "Existing text-to-video (T2V) models often struggle with generating videos\nwith sufficiently pronounced or complex actions. A key limitation lies in the\ntext prompt's inability to precisely convey intricate motion details. To\naddress this, we propose a novel framework, MVideo, designed to produce\nlong-duration videos with precise, fluid actions. MVideo overcomes the\nlimitations of text prompts by incorporating mask sequences as an additional\nmotion condition input, providing a clearer, more accurate representation of\nintended actions. Leveraging foundational vision models such as GroundingDINO\nand SAM2, MVideo automatically generates mask sequences, enhancing both\nefficiency and robustness. Our results demonstrate that, after training, MVideo\neffectively aligns text prompts with motion conditions to produce videos that\nsimultaneously meet both criteria. This dual control mechanism allows for more\ndynamic video generation by enabling alterations to either the text prompt or\nmotion condition independently, or both in tandem. Furthermore, MVideo supports\nmotion condition editing and composition, facilitating the generation of videos\nwith more complex actions. MVideo thus advances T2V motion generation, setting\na strong benchmark for improved action depiction in current video diffusion\nmodels. Our project page is available at https://mvideo-v1.github.io/.",
+      "published_at": "2024-11-13",
+      "submitted_at": "2024-11-14",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08328",
+      "arxiv_url": "https://arxiv.org/abs/2411.08328"
+    }
+  ]
+}

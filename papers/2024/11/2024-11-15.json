@@ -1,0 +1,171 @@
+{
+  "date": "2024-11-15",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2024-11-15",
+  "papers": [
+    {
+      "arxiv_id": "2411.09703",
+      "title": "MagicQuill: An Intelligent Interactive Image Editing System",
+      "authors": [
+        "Zichen Liu",
+        "Yue Yu",
+        "Hao Ouyang",
+        "Qiuyu Wang",
+        "Ka Leong Cheng",
+        "Wen Wang",
+        "Zhiheng Liu",
+        "Qifeng Chen",
+        "Yujun Shen"
+      ],
+      "abstract": "Image editing involves a variety of complex tasks and requires efficient and\nprecise manipulation techniques. In this paper, we present MagicQuill, an\nintegrated image editing system that enables swift actualization of creative\nideas. Our system features a streamlined yet functionally robust interface,\nallowing for the articulation of editing operations (e.g., inserting elements,\nerasing objects, altering color) with minimal input. These interactions are\nmonitored by a multimodal large language model (MLLM) to anticipate editing\nintentions in real time, bypassing the need for explicit prompt entry. Finally,\nwe apply a powerful diffusion prior, enhanced by a carefully learned two-branch\nplug-in module, to process editing requests with precise control. Experimental\nresults demonstrate the effectiveness of MagicQuill in achieving high-quality\nimage edits. Please visit https://magic-quill.github.io to try out our system.",
+      "published_at": "2024-11-14",
+      "submitted_at": "2024-11-15",
+      "submitted_by": "AK",
+      "upvotes": 80,
+      "organization": "",
+      "github_repo": "https://github.com/ant-research/MagicQuill",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.09703",
+      "arxiv_url": "https://arxiv.org/abs/2411.09703"
+    },
+    {
+      "arxiv_id": "2411.09595",
+      "title": "LLaMA-Mesh: Unifying 3D Mesh Generation with Language Models",
+      "authors": [
+        "Zhengyi Wang",
+        "Jonathan Lorraine",
+        "Yikai Wang",
+        "Hang Su",
+        "Jun Zhu",
+        "Sanja Fidler",
+        "Xiaohui Zeng"
+      ],
+      "abstract": "This work explores expanding the capabilities of large language models (LLMs)\npretrained on text to generate 3D meshes within a unified model. This offers\nkey advantages of (1) leveraging spatial knowledge already embedded in LLMs,\nderived from textual sources like 3D tutorials, and (2) enabling conversational\n3D generation and mesh understanding. A primary challenge is effectively\ntokenizing 3D mesh data into discrete tokens that LLMs can process seamlessly.\nTo address this, we introduce LLaMA-Mesh, a novel approach that represents the\nvertex coordinates and face definitions of 3D meshes as plain text, allowing\ndirect integration with LLMs without expanding the vocabulary. We construct a\nsupervised fine-tuning (SFT) dataset enabling pretrained LLMs to (1) generate\n3D meshes from text prompts, (2) produce interleaved text and 3D mesh outputs\nas required, and (3) understand and interpret 3D meshes. Our work is the first\nto demonstrate that LLMs can be fine-tuned to acquire complex spatial knowledge\nfor 3D mesh generation in a text-based format, effectively unifying the 3D and\ntext modalities. LLaMA-Mesh achieves mesh generation quality on par with models\ntrained from scratch while maintaining strong text generation performance.",
+      "published_at": "2024-11-14",
+      "submitted_at": "2024-11-15",
+      "submitted_by": "AK",
+      "upvotes": 77,
+      "organization": "",
+      "github_repo": "https://github.com/nv-tlabs/LLaMa-Mesh",
+      "project_page": "https://research.nvidia.com/labs/toronto-ai/LLaMA-Mesh/",
+      "hf_url": "https://huggingface.co/papers/2411.09595",
+      "arxiv_url": "https://arxiv.org/abs/2411.09595"
+    },
+    {
+      "arxiv_id": "2411.09009",
+      "title": "Cut Your Losses in Large-Vocabulary Language Models",
+      "authors": [
+        "Erik Wijmans",
+        "Brody Huval",
+        "Alexander Hertzberg",
+        "Vladlen Koltun",
+        "Philipp Krähenbühl"
+      ],
+      "abstract": "As language models grow ever larger, so do their vocabularies. This has\nshifted the memory footprint of LLMs during training disproportionately to one\nsingle layer: the cross-entropy in the loss computation. Cross-entropy builds\nup a logit matrix with entries for each pair of input tokens and vocabulary\nitems and, for small models, consumes an order of magnitude more memory than\nthe rest of the LLM combined. We propose Cut Cross-Entropy (CCE), a method that\ncomputes the cross-entropy loss without materializing the logits for all tokens\ninto global memory. Rather, CCE only computes the logit for the correct token\nand evaluates the log-sum-exp over all logits on the fly. We implement a custom\nkernel that performs the matrix multiplications and the log-sum-exp reduction\nover the vocabulary in flash memory, making global memory consumption for the\ncross-entropy computation negligible. This has a dramatic effect. Taking the\nGemma 2 (2B) model as an example, CCE reduces the memory footprint of the loss\ncomputation from 24 GB to 1 MB, and the total training-time memory consumption\nof the classifier head from 28 GB to 1 GB. To improve the throughput of CCE, we\nleverage the inherent sparsity of softmax and propose to skip elements of the\ngradient computation that have a negligible (i.e., below numerical precision)\ncontribution to the gradient. Experiments demonstrate that the dramatic\nreduction in memory consumption is accomplished without sacrificing training\nspeed or convergence.",
+      "published_at": "2024-11-13",
+      "submitted_at": "2024-11-15",
+      "submitted_by": "AK",
+      "upvotes": 49,
+      "organization": "",
+      "github_repo": "https://github.com/apple/ml-cross-entropy",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.09009",
+      "arxiv_url": "https://arxiv.org/abs/2411.09009"
+    },
+    {
+      "arxiv_id": "2411.06469",
+      "title": "ClinicalBench: Can LLMs Beat Traditional ML Models in Clinical\n  Prediction?",
+      "authors": [
+        "Canyu Chen",
+        "Jian Yu",
+        "Shan Chen",
+        "Che Liu",
+        "Zhongwei Wan",
+        "Danielle Bitterman",
+        "Fei Wang",
+        "Kai Shu"
+      ],
+      "abstract": "Large Language Models (LLMs) hold great promise to revolutionize current\nclinical systems for their superior capacities on medical text processing tasks\nand medical licensing exams. Meanwhile, traditional ML models such as SVM and\nXGBoost have still been mainly adopted in clinical prediction tasks. An\nemerging question is Can LLMs beat traditional ML models in clinical\nprediction? Thus, we build a new benchmark ClinicalBench to comprehensively\nstudy the clinical predictive modeling capacities of both general-purpose and\nmedical LLMs, and compare them with traditional ML models. ClinicalBench\nembraces three common clinical prediction tasks, two databases, 14\ngeneral-purpose LLMs, 8 medical LLMs, and 11 traditional ML models. Through\nextensive empirical investigation, we discover that both general-purpose and\nmedical LLMs, even with different model scales, diverse prompting or\nfine-tuning strategies, still cannot beat traditional ML models in clinical\nprediction yet, shedding light on their potential deficiency in clinical\nreasoning and decision-making. We call for caution when practitioners adopt\nLLMs in clinical applications. ClinicalBench can be utilized to bridge the gap\nbetween LLMs' development for healthcare and real-world clinical practice.",
+      "published_at": "2024-11-10",
+      "submitted_at": "2024-11-15",
+      "submitted_by": "Canyu Chen",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/canyuchen/ClinicalBench",
+      "project_page": "https://clinicalbench.github.io/",
+      "hf_url": "https://huggingface.co/papers/2411.06469",
+      "arxiv_url": "https://arxiv.org/abs/2411.06469"
+    },
+    {
+      "arxiv_id": "2411.08954",
+      "title": "Inconsistencies In Consistency Models: Better ODE Solving Does Not Imply\n  Better Samples",
+      "authors": [
+        "Noël Vouitsis",
+        "Rasa Hosseinzadeh",
+        "Brendan Leigh Ross",
+        "Valentin Villecroze",
+        "Satya Krishna Gorti",
+        "Jesse C. Cresswell",
+        "Gabriel Loaiza-Ganem"
+      ],
+      "abstract": "Although diffusion models can generate remarkably high-quality samples, they\nare intrinsically bottlenecked by their expensive iterative sampling procedure.\nConsistency models (CMs) have recently emerged as a promising diffusion model\ndistillation method, reducing the cost of sampling by generating high-fidelity\nsamples in just a few iterations. Consistency model distillation aims to solve\nthe probability flow ordinary differential equation (ODE) defined by an\nexisting diffusion model. CMs are not directly trained to minimize error\nagainst an ODE solver, rather they use a more computationally tractable\nobjective. As a way to study how effectively CMs solve the probability flow\nODE, and the effect that any induced error has on the quality of generated\nsamples, we introduce Direct CMs, which directly minimize this error.\nIntriguingly, we find that Direct CMs reduce the ODE solving error compared to\nCMs but also result in significantly worse sample quality, calling into\nquestion why exactly CMs work well in the first place. Full code is available\nat: https://github.com/layer6ai-labs/direct-cms.",
+      "published_at": "2024-11-13",
+      "submitted_at": "2024-11-15",
+      "submitted_by": "Noel Vouitsis",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/layer6ai-labs/direct-cms",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08954",
+      "arxiv_url": "https://arxiv.org/abs/2411.08954"
+    },
+    {
+      "arxiv_id": "2411.08768",
+      "title": "Sharingan: Extract User Action Sequence from Desktop Recordings",
+      "authors": [
+        "Yanting Chen",
+        "Yi Ren",
+        "Xiaoting Qin",
+        "Jue Zhang",
+        "Kehong Yuan",
+        "Lu Han",
+        "Qingwei Lin",
+        "Dongmei Zhang",
+        "Saravan Rajmohan",
+        "Qi Zhang"
+      ],
+      "abstract": "Video recordings of user activities, particularly desktop recordings, offer a\nrich source of data for understanding user behaviors and automating processes.\nHowever, despite advancements in Vision-Language Models (VLMs) and their\nincreasing use in video analysis, extracting user actions from desktop\nrecordings remains an underexplored area. This paper addresses this gap by\nproposing two novel VLM-based methods for user action extraction: the Direct\nFrame-Based Approach (DF), which inputs sampled frames directly into VLMs, and\nthe Differential Frame-Based Approach (DiffF), which incorporates explicit\nframe differences detected via computer vision techniques. We evaluate these\nmethods using a basic self-curated dataset and an advanced benchmark adapted\nfrom prior work. Our results show that the DF approach achieves an accuracy of\n70% to 80% in identifying user actions, with the extracted action sequences\nbeing re-playable though Robotic Process Automation. We find that while VLMs\nshow potential, incorporating explicit UI changes can degrade performance,\nmaking the DF approach more reliable. This work represents the first\napplication of VLMs for extracting user action sequences from desktop\nrecordings, contributing new methods, benchmarks, and insights for future\nresearch.",
+      "published_at": "2024-11-13",
+      "submitted_at": "2024-11-15",
+      "submitted_by": "Jue Zhang",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08768",
+      "arxiv_url": "https://arxiv.org/abs/2411.08768"
+    },
+    {
+      "arxiv_id": "2411.06490",
+      "title": "Hermes: A Large Language Model Framework on the Journey to Autonomous\n  Networks",
+      "authors": [
+        "Fadhel Ayed",
+        "Ali Maatouk",
+        "Nicola Piovesan",
+        "Antonio De Domenico",
+        "Merouane Debbah",
+        "Zhi-Quan Luo"
+      ],
+      "abstract": "The drive toward automating cellular network operations has grown with the\nincreasing complexity of these systems. Despite advancements, full autonomy\ncurrently remains out of reach due to reliance on human intervention for\nmodeling network behaviors and defining policies to meet target requirements.\nNetwork Digital Twins (NDTs) have shown promise in enhancing network\nintelligence, but the successful implementation of this technology is\nconstrained by use case-specific architectures, limiting its role in advancing\nnetwork autonomy. A more capable network intelligence, or \"telecommunications\nbrain\", is needed to enable seamless, autonomous management of cellular\nnetwork. Large Language Models (LLMs) have emerged as potential enablers for\nthis vision but face challenges in network modeling, especially in reasoning\nand handling diverse data types. To address these gaps, we introduce Hermes, a\nchain of LLM agents that uses \"blueprints\" for constructing NDT instances\nthrough structured and explainable logical steps. Hermes allows automatic,\nreliable, and accurate network modeling of diverse use cases and\nconfigurations, thus marking progress toward fully autonomous network\noperations.",
+      "published_at": "2024-11-10",
+      "submitted_at": "2024-11-15",
+      "submitted_by": "Nicola Piovesan",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.06490",
+      "arxiv_url": "https://arxiv.org/abs/2411.06490"
+    }
+  ]
+}

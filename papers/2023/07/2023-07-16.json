@@ -1,0 +1,54 @@
+{
+  "date": "2023-07-16",
+  "total": 2,
+  "source": "https://huggingface.co/papers/date/2023-07-16",
+  "papers": [
+    {
+      "arxiv_id": "2307.06962",
+      "title": "Copy Is All You Need",
+      "authors": [
+        "Tian Lan",
+        "Deng Cai",
+        "Yan Wang",
+        "Heyan Huang",
+        "Xian-Ling Mao"
+      ],
+      "abstract": "The dominant text generation models compose the output by sequentially\nselecting words from a fixed vocabulary. In this paper, we formulate text\ngeneration as progressively copying text segments (e.g., words or phrases) from\nan existing text collection. We compute the contextualized representations of\nmeaningful text segments and index them using efficient vector search toolkits.\nThe task of text generation is then decomposed into a series of copy-and-paste\noperations: at each time step, we seek suitable text spans from the text\ncollection rather than selecting from a standalone vocabulary. Experiments on\nthe standard language modeling benchmark (WikiText-103) show that our approach\nachieves better generation quality according to both automatic and human\nevaluations. Besides, its inference efficiency is comparable to token-level\nautoregressive models thanks to the reduction of decoding steps. We also show\nthat our approach allows for effective domain adaptation by simply switching to\ndomain-specific text collection without extra training. Finally, we observe\nthat our approach attains additional performance gains by simply scaling up to\nlarger text collections, again without further training.Our source\ncodes are publicly available at\n\\url{https://github.com/gmftbyGMFTBY/Copyisallyouneed.}",
+      "published_at": "2023-07-13",
+      "submitted_at": "2023-07-16",
+      "submitted_by": "AK",
+      "upvotes": 36,
+      "organization": "",
+      "github_repo": "https://github.com/um2ii/mist_paper",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.06962",
+      "arxiv_url": "https://arxiv.org/abs/2307.06962"
+    },
+    {
+      "arxiv_id": "2307.07047",
+      "title": "DIALGEN: Collaborative Human-LM Generated Dialogues for Improved\n  Understanding of Human-Human Conversations",
+      "authors": [
+        "Bo-Ru Lu",
+        "Nikita Haduong",
+        "Chia-Hsuan Lee",
+        "Zeqiu Wu",
+        "Hao Cheng",
+        "Paul Koester",
+        "Jean Utke",
+        "Tao Yu",
+        "Noah A. Smith",
+        "Mari Ostendorf"
+      ],
+      "abstract": "Applications that could benefit from automatic understanding of human-human\nconversations often come with challenges associated with private information in\nreal-world data such as call center or clinical conversations. Working with\nprotected data also increases costs of annotation, which limits technology\ndevelopment. To address these challenges, we propose DIALGEN, a\nhuman-in-the-loop semi-automated dialogue generation framework. DIALGEN uses a\nlanguage model (ChatGPT) that can follow schema and style specifications to\nproduce fluent conversational text, generating a complex conversation through\niteratively generating subdialogues and using human feedback to correct\ninconsistencies or redirect the flow. In experiments on structured\nsummarization of agent-client information gathering calls, framed as dialogue\nstate tracking, we show that DIALGEN data enables significant improvement in\nmodel performance.",
+      "published_at": "2023-07-13",
+      "submitted_at": "2023-07-16",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.07047",
+      "arxiv_url": "https://arxiv.org/abs/2307.07047"
+    }
+  ]
+}

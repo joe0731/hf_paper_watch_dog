@@ -1,0 +1,250 @@
+{
+  "date": "2023-09-12",
+  "total": 11,
+  "source": "https://huggingface.co/papers/date/2023-09-12",
+  "papers": [
+    {
+      "arxiv_id": "2309.05463",
+      "title": "Textbooks Are All You Need II: phi-1.5 technical report",
+      "authors": [
+        "Yuanzhi Li",
+        "Sébastien Bubeck",
+        "Ronen Eldan",
+        "Allie Del Giorno",
+        "Suriya Gunasekar",
+        "Yin Tat Lee"
+      ],
+      "abstract": "We continue the investigation into the power of smaller Transformer-based\nlanguage models as initiated by TinyStories -- a 10 million parameter\nmodel that can produce coherent English -- and the follow-up work on\nphi-1, a 1.3 billion parameter model with Python coding performance\nclose to the state-of-the-art. The latter work proposed to use existing Large\nLanguage Models (LLMs) to generate ``textbook quality\" data as a way to enhance\nthe learning process compared to traditional web data. We follow the\n``Textbooks Are All You Need\" approach, focusing this time on common sense\nreasoning in natural language, and create a new 1.3 billion parameter model\nnamed phi-1.5, with performance on natural language tasks comparable\nto models 5x larger, and surpassing most non-frontier LLMs on more complex\nreasoning tasks such as grade-school mathematics and basic coding. More\ngenerally, phi-1.5 exhibits many of the traits of much larger LLMs,\nboth good -- such as the ability to ``think step by step\" or perform some\nrudimentary in-context learning -- and bad, including hallucinations and the\npotential for toxic and biased generations -- encouragingly though, we are\nseeing improvement on that front thanks to the absence of web data. We\nopen-source phi-1.5 to promote further research on these urgent\ntopics.",
+      "published_at": "2023-09-11",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 89,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.05463",
+      "arxiv_url": "https://arxiv.org/abs/2309.05463"
+    },
+    {
+      "arxiv_id": "2309.05519",
+      "title": "NExT-GPT: Any-to-Any Multimodal LLM",
+      "authors": [
+        "Shengqiong Wu",
+        "Hao Fei",
+        "Leigang Qu",
+        "Wei Ji",
+        "Tat-Seng Chua"
+      ],
+      "abstract": "While recently Multimodal Large Language Models (MM-LLMs) have made exciting\nstrides, they mostly fall prey to the limitation of only input-side multimodal\nunderstanding, without the ability to produce content in multiple modalities.\nAs we humans always perceive the world and communicate with people through\nvarious modalities, developing any-to-any MM-LLMs capable of accepting and\ndelivering content in any modality becomes essential to human-level AI. To fill\nthe gap, we present an end-to-end general-purpose any-to-any MM-LLM system,\nNExT-GPT. We connect an LLM with multimodal adaptors and different diffusion\ndecoders, enabling NExT-GPT to perceive inputs and generate outputs in\narbitrary combinations of text, images, videos, and audio. By leveraging the\nexisting well-trained highly-performing encoders and decoders, NExT-GPT is\ntuned with only a small amount of parameter (1%) of certain projection layers,\nwhich not only benefits low-cost training and also facilitates convenient\nexpansion to more potential modalities. Moreover, we introduce a\nmodality-switching instruction tuning (MosIT) and manually curate a\nhigh-quality dataset for MosIT, based on which NExT-GPT is empowered with\ncomplex cross-modal semantic understanding and content generation. Overall, our\nresearch showcases the promising possibility of building an AI agent capable of\nmodeling universal modalities, paving the way for more human-like AI research\nin the community.",
+      "published_at": "2023-09-11",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 79,
+      "organization": "",
+      "github_repo": "https://github.com/NExT-GPT/NExT-GPT",
+      "project_page": "https://next-gpt.github.io/",
+      "hf_url": "https://huggingface.co/papers/2309.05519",
+      "arxiv_url": "https://arxiv.org/abs/2309.05519"
+    },
+    {
+      "arxiv_id": "2309.04662",
+      "title": "MADLAD-400: A Multilingual And Document-Level Large Audited Dataset",
+      "authors": [
+        "Sneha Kudugunta",
+        "Isaac Caswell",
+        "Biao Zhang",
+        "Xavier Garcia",
+        "Christopher A. Choquette-Choo",
+        "Katherine Lee",
+        "Derrick Xin",
+        "Aditya Kusupati",
+        "Romi Stella",
+        "Ankur Bapna",
+        "Orhan Firat"
+      ],
+      "abstract": "We introduce MADLAD-400, a manually audited, general domain 3T token\nmonolingual dataset based on CommonCrawl, spanning 419 languages. We discuss\nthe limitations revealed by self-auditing MADLAD-400, and the role data\nauditing had in the dataset creation process. We then train and release a\n10.7B-parameter multilingual machine translation model on 250 billion tokens\ncovering over 450 languages using publicly available data, and find that it is\ncompetitive with models that are significantly larger, and report the results\non different domains. In addition, we train a 8B-parameter language model, and\nassess the results on few-shot translation. We make the baseline models\navailable to the research community.",
+      "published_at": "2023-09-09",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.04662",
+      "arxiv_url": "https://arxiv.org/abs/2309.04662"
+    },
+    {
+      "arxiv_id": "2309.05689",
+      "title": "Large Language Model for Science: A Study on P vs. NP",
+      "authors": [
+        "Qingxiu Dong",
+        "Li Dong",
+        "Ke Xu",
+        "Yaru Hao",
+        "Zhifang Sui",
+        "Furu Wei"
+      ],
+      "abstract": "In this work, we use large language models (LLMs) to augment and accelerate\nresearch on the P versus NP problem, one of the most important open problems in\ntheoretical computer science and mathematics. Specifically, we propose Socratic\nreasoning, a general framework that promotes in-depth thinking with LLMs for\ncomplex problem-solving. Socratic reasoning encourages LLMs to recursively\ndiscover, solve, and integrate problems while facilitating self-evaluation and\nrefinement. Our pilot study on the P vs. NP problem shows that GPT-4\nsuccessfully produces a proof schema and engages in rigorous reasoning\nthroughout 97 dialogue turns, concluding \"P neq NP\", which is in alignment\nwith (Xu and Zhou, 2023). The investigation uncovers novel insights within the\nextensive solution space of LLMs, shedding light on LLM for Science.",
+      "published_at": "2023-09-11",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 22,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.05689",
+      "arxiv_url": "https://arxiv.org/abs/2309.05689"
+    },
+    {
+      "arxiv_id": "2309.04827",
+      "title": "Neurons in Large Language Models: Dead, N-gram, Positional",
+      "authors": [
+        "Elena Voita",
+        "Javier Ferrando",
+        "Christoforos Nalmpantis"
+      ],
+      "abstract": "We analyze a family of large language models in such a lightweight manner\nthat can be done on a single GPU. Specifically, we focus on the OPT family of\nmodels ranging from 125m to 66b parameters and rely only on whether an FFN\nneuron is activated or not. First, we find that the early part of the network\nis sparse and represents many discrete features. Here, many neurons (more than\n70% in some layers of the 66b model) are \"dead\", i.e. they never activate on a\nlarge collection of diverse data. At the same time, many of the alive neurons\nare reserved for discrete features and act as token and n-gram detectors.\nInterestingly, their corresponding FFN updates not only promote next token\ncandidates as could be expected, but also explicitly focus on removing the\ninformation about triggering them tokens, i.e., current input. To the best of\nour knowledge, this is the first example of mechanisms specialized at removing\n(rather than adding) information from the residual stream. With scale, models\nbecome more sparse in a sense that they have more dead neurons and token\ndetectors. Finally, some neurons are positional: them being activated or not\ndepends largely (or solely) on position and less so (or not at all) on textual\ndata. We find that smaller models have sets of neurons acting as position range\nindicators while larger models operate in a less explicit manner.",
+      "published_at": "2023-09-09",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 18,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.04827",
+      "arxiv_url": "https://arxiv.org/abs/2309.04827"
+    },
+    {
+      "arxiv_id": "2309.04564",
+      "title": "When Less is More: Investigating Data Pruning for Pretraining LLMs at\n  Scale",
+      "authors": [
+        "Max Marion",
+        "Ahmet Üstün",
+        "Luiza Pozzobon",
+        "Alex Wang",
+        "Marzieh Fadaee",
+        "Sara Hooker"
+      ],
+      "abstract": "Large volumes of text data have contributed significantly to the development\nof large language models (LLMs) in recent years. This data is typically\nacquired by scraping the internet, leading to pretraining datasets comprised of\nnoisy web text. To date, efforts to prune these datasets down to a higher\nquality subset have relied on hand-crafted heuristics encoded as rule-based\nfilters. In this work, we take a wider view and explore scalable estimates of\ndata quality that can be used to systematically measure the quality of\npretraining data. We perform a rigorous comparison at scale of the simple data\nquality estimator of perplexity, as well as more sophisticated and\ncomputationally intensive estimates of the Error L2-Norm and memorization.\nThese metrics are used to rank and prune pretraining corpora, and we\nsubsequently compare LLMs trained on these pruned datasets. Surprisingly, we\nfind that the simple technique of perplexity outperforms our more\ncomputationally expensive scoring methods. We improve over our no-pruning\nbaseline while training on as little as 30% of the original training dataset.\nOur work sets the foundation for unexplored strategies in automatically\ncurating high quality corpora and suggests the majority of pretraining data can\nbe removed while retaining performance.",
+      "published_at": "2023-09-08",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.04564",
+      "arxiv_url": "https://arxiv.org/abs/2309.04564"
+    },
+    {
+      "arxiv_id": "2309.05858",
+      "title": "Uncovering mesa-optimization algorithms in Transformers",
+      "authors": [
+        "Johannes von Oswald",
+        "Eyvind Niklasson",
+        "Maximilian Schlegel",
+        "Seijin Kobayashi",
+        "Nicolas Zucchet",
+        "Nino Scherrer",
+        "Nolan Miller",
+        "Mark Sandler",
+        "Blaise Agüera y Arcas",
+        "Max Vladymyrov",
+        "Razvan Pascanu",
+        "João Sacramento"
+      ],
+      "abstract": "Transformers have become the dominant model in deep learning, but the reason\nfor their superior performance is poorly understood. Here, we hypothesize that\nthe strong performance of Transformers stems from an architectural bias towards\nmesa-optimization, a learned process running within the forward pass of a model\nconsisting of the following two steps: (i) the construction of an internal\nlearning objective, and (ii) its corresponding solution found through\noptimization. To test this hypothesis, we reverse-engineer a series of\nautoregressive Transformers trained on simple sequence modeling tasks,\nuncovering underlying gradient-based mesa-optimization algorithms driving the\ngeneration of predictions. Moreover, we show that the learned forward-pass\noptimization algorithm can be immediately repurposed to solve supervised\nfew-shot tasks, suggesting that mesa-optimization might underlie the in-context\nlearning capabilities of large language models. Finally, we propose a novel\nself-attention layer, the mesa-layer, that explicitly and efficiently solves\noptimization problems specified in context. We find that this layer can lead to\nimproved performance in synthetic and preliminary language modeling\nexperiments, adding weight to our hypothesis that mesa-optimization is an\nimportant operation hidden within the weights of trained Transformers.",
+      "published_at": "2023-09-11",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.05858",
+      "arxiv_url": "https://arxiv.org/abs/2309.05858"
+    },
+    {
+      "arxiv_id": "2309.05516",
+      "title": "Optimize Weight Rounding via Signed Gradient Descent for the\n  Quantization of LLMs",
+      "authors": [
+        "Wenhua Cheng",
+        "Weiwei Zhang",
+        "Haihao Shen",
+        "Yiyang Cai",
+        "Xin He",
+        "Kaokao Lv"
+      ],
+      "abstract": "Large Language Models (LLMs) have proven their exceptional capabilities in\nperforming language-related tasks. However, their deployment poses significant\nchallenges due to their considerable memory and storage requirements. In\nresponse to this issue, weight-only quantization, particularly 3 and 4-bit\nweight-only quantization, has emerged as one of the most viable solutions. As\nthe number of bits decreases, the quantization grid broadens, thus emphasizing\nthe importance of up and down rounding. While previous studies have\ndemonstrated that fine-tuning up and down rounding with the addition of\nperturbations can enhance accuracy in some scenarios, our study is driven by\nthe precise and limited boundary of these perturbations, where only the\nthreshold for altering the rounding value is of significance. Consequently, we\npropose a concise and highly effective approach for optimizing the weight\nrounding task. Our method, named SignRound, involves lightweight block-wise\ntuning using signed gradient descent, enabling us to achieve outstanding\nresults within 400 steps. SignRound outperforms the established baseline of\nrounding-to-nearest (RTN) and competes impressively against recent methods,\nwithout introducing additional inference overhead. The source code will be\npublicly available at https://github.com/intel/neural-compressor soon.",
+      "published_at": "2023-09-11",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/intel/neural-compressor",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.05516",
+      "arxiv_url": "https://arxiv.org/abs/2309.05516"
+    },
+    {
+      "arxiv_id": "2309.05767",
+      "title": "Natural Language Supervision for General-Purpose Audio Representations",
+      "authors": [
+        "Benjamin Elizalde",
+        "Soham Deshmukh",
+        "Huaming Wang"
+      ],
+      "abstract": "Audio-Language models jointly learn multimodal text and audio representations\nthat enable Zero-Shot inference. Models rely on the encoders to create powerful\nrepresentations of the input and generalize to multiple tasks ranging from\nsounds, music, and speech. Although models have achieved remarkable\nperformance, there is still a performance gap with task-specific models. In\nthis paper, we propose a Contrastive Language-Audio Pretraining model that is\npretrained with a diverse collection of 4.6M audio-text pairs employing two\ninnovative encoders for Zero-Shot inference. To learn audio representations, we\ntrained an audio encoder on 22 audio tasks, instead of the standard training of\nsound event classification. To learn language representations, we trained an\nautoregressive decoder-only model instead of the standard encoder-only models.\nThen, the audio and language representations are brought into a joint\nmultimodal space using Contrastive Learning. We used our encoders to improve\nthe downstream performance by a margin. We extensively evaluated the\ngeneralization of our representations on 26 downstream tasks, the largest in\nthe literature. Our model achieves state of the art results in several tasks\nleading the way towards general-purpose audio representations.",
+      "published_at": "2023-09-11",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/microsoft/clap",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.05767",
+      "arxiv_url": "https://arxiv.org/abs/2309.05767"
+    },
+    {
+      "arxiv_id": "2309.04581",
+      "title": "Dynamic Mesh-Aware Radiance Fields",
+      "authors": [
+        "Yi-Ling Qiao",
+        "Alexander Gao",
+        "Yiran Xu",
+        "Yue Feng",
+        "Jia-Bin Huang",
+        "Ming C. Lin"
+      ],
+      "abstract": "Embedding polygonal mesh assets within photorealistic Neural Radience Fields\n(NeRF) volumes, such that they can be rendered and their dynamics simulated in\na physically consistent manner with the NeRF, is under-explored from the system\nperspective of integrating NeRF into the traditional graphics pipeline. This\npaper designs a two-way coupling between mesh and NeRF during rendering and\nsimulation. We first review the light transport equations for both mesh and\nNeRF, then distill them into an efficient algorithm for updating radiance and\nthroughput along a cast ray with an arbitrary number of bounces. To resolve the\ndiscrepancy between the linear color space that the path tracer assumes and the\nsRGB color space that standard NeRF uses, we train NeRF with High Dynamic Range\n(HDR) images. We also present a strategy to estimate light sources and cast\nshadows on the NeRF. Finally, we consider how the hybrid surface-volumetric\nformulation can be efficiently integrated with a high-performance physics\nsimulator that supports cloth, rigid and soft bodies. The full rendering and\nsimulation system can be run on a GPU at interactive rates. We show that a\nhybrid system approach outperforms alternatives in visual realism for mesh\ninsertion, because it allows realistic light transport from volumetric NeRF\nmedia onto surfaces, which affects the appearance of reflective/refractive\nsurfaces and illumination of diffuse surfaces informed by the dynamic scene.",
+      "published_at": "2023-09-08",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.04581",
+      "arxiv_url": "https://arxiv.org/abs/2309.04581"
+    },
+    {
+      "arxiv_id": "2309.04663",
+      "title": "FIAT: Fusing learning paradigms with Instruction-Accelerated Tuning",
+      "authors": [
+        "Xinyi Wang",
+        "John Wieting",
+        "Jonathan H. Clark"
+      ],
+      "abstract": "Learning paradigms for large language models (LLMs) currently tend to fall\nwithin either in-context learning (ICL) or full fine-tuning. Each of these\ncomes with their own trade-offs based on available data, model size, compute\ncost, ease-of-use, and final quality with neither solution performing well\nacross-the-board. In this article, we first describe ICL and fine-tuning\nparadigms in a way that highlights their natural connections. Based on these\nconnections, we propose a new learning paradigm called FIAT that fuses the best\nof these paradigms together, enabling prompt-engineered instructions and\nchain-of-thought reasoning with the very largest models while also using\nsimilar methods to perform parameter updates on a modestly-sized LLM with\nparameter-efficient tuning. We evaluate FIAT's effectiveness on a variety of\nmultilingual tasks and observe that FIAT performs better than both ICL and\nfine-tuning at scales ranging from 100-10,000 training examples. We hope that\nFIAT provides a practical way of harnessing the full potential of LLMs without\nneeding to make a hard choice between learning paradigms.",
+      "published_at": "2023-09-09",
+      "submitted_at": "2023-09-12",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.04663",
+      "arxiv_url": "https://arxiv.org/abs/2309.04663"
+    }
+  ]
+}

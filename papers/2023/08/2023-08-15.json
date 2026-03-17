@@ -1,0 +1,212 @@
+{
+  "date": "2023-08-15",
+  "total": 9,
+  "source": "https://huggingface.co/papers/date/2023-08-15",
+  "papers": [
+    {
+      "arxiv_id": "2308.06721",
+      "title": "IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image\n  Diffusion Models",
+      "authors": [
+        "Hu Ye",
+        "Jun Zhang",
+        "Sibo Liu",
+        "Xiao Han",
+        "Wei Yang"
+      ],
+      "abstract": "Recent years have witnessed the strong power of large text-to-image diffusion\nmodels for the impressive generative capability to create high-fidelity images.\nHowever, it is very tricky to generate desired images using only text prompt as\nit often involves complex prompt engineering. An alternative to text prompt is\nimage prompt, as the saying goes: \"an image is worth a thousand words\".\nAlthough existing methods of direct fine-tuning from pretrained models are\neffective, they require large computing resources and are not compatible with\nother base models, text prompt, and structural controls. In this paper, we\npresent IP-Adapter, an effective and lightweight adapter to achieve image\nprompt capability for the pretrained text-to-image diffusion models. The key\ndesign of our IP-Adapter is decoupled cross-attention mechanism that separates\ncross-attention layers for text features and image features. Despite the\nsimplicity of our method, an IP-Adapter with only 22M parameters can achieve\ncomparable or even better performance to a fully fine-tuned image prompt model.\nAs we freeze the pretrained diffusion model, the proposed IP-Adapter can be\ngeneralized not only to other custom models fine-tuned from the same base\nmodel, but also to controllable generation using existing controllable tools.\nWith the benefit of the decoupled cross-attention strategy, the image prompt\ncan also work well with the text prompt to achieve multimodal image generation.\nThe project page is available at https://ip-adapter.github.io.",
+      "published_at": "2023-08-13",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 36,
+      "organization": "",
+      "github_repo": "https://github.com/tencent-ailab/ip-adapter",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.06721",
+      "arxiv_url": "https://arxiv.org/abs/2308.06721"
+    },
+    {
+      "arxiv_id": "2308.07124",
+      "title": "OctoPack: Instruction Tuning Code Large Language Models",
+      "authors": [
+        "Niklas Muennighoff",
+        "Qian Liu",
+        "Armel Zebaze",
+        "Qinkai Zheng",
+        "Binyuan Hui",
+        "Terry Yue Zhuo",
+        "Swayam Singh",
+        "Xiangru Tang",
+        "Leandro von Werra",
+        "Shayne Longpre"
+      ],
+      "abstract": "Finetuning large language models (LLMs) on instructions leads to vast\nperformance improvements on natural language tasks. We apply instruction tuning\nusing code, leveraging the natural structure of Git commits, which pair code\nchanges with human instructions. We compile CommitPack: 4 terabytes of Git\ncommits across 350 programming languages. We benchmark CommitPack against other\nnatural and synthetic code instructions (xP3x, Self-Instruct, OASST) on the 16B\nparameter StarCoder model, and achieve state-of-the-art performance among\nmodels not trained on OpenAI outputs, on the HumanEval Python benchmark (46.2%\npass@1). We further introduce HumanEvalPack, expanding the HumanEval benchmark\nto a total of 3 coding tasks (Code Repair, Code Explanation, Code Synthesis)\nacross 6 languages (Python, JavaScript, Java, Go, C++, Rust). Our models,\nOctoCoder and OctoGeeX, achieve the best performance across HumanEvalPack among\nall permissive models, demonstrating CommitPack's benefits in generalizing to a\nwider set of languages and natural coding tasks. Code, models and data are\nfreely available at https://github.com/bigcode-project/octopack.",
+      "published_at": "2023-08-14",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 32,
+      "organization": "",
+      "github_repo": "https://github.com/bigcode-project/octopack",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.07124",
+      "arxiv_url": "https://arxiv.org/abs/2308.07124"
+    },
+    {
+      "arxiv_id": "2308.06873",
+      "title": "SpeechX: Neural Codec Language Model as a Versatile Speech Transformer",
+      "authors": [
+        "Xiaofei Wang",
+        "Manthan Thakker",
+        "Zhuo Chen",
+        "Naoyuki Kanda",
+        "Sefik Emre Eskimez",
+        "Sanyuan Chen",
+        "Min Tang",
+        "Shujie Liu",
+        "Jinyu Li",
+        "Takuya Yoshioka"
+      ],
+      "abstract": "Recent advancements in generative speech models based on audio-text prompts\nhave enabled remarkable innovations like high-quality zero-shot text-to-speech.\nHowever, existing models still face limitations in handling diverse audio-text\nspeech generation tasks involving transforming input speech and processing\naudio captured in adverse acoustic conditions. This paper introduces SpeechX, a\nversatile speech generation model capable of zero-shot TTS and various speech\ntransformation tasks, dealing with both clean and noisy signals. SpeechX\ncombines neural codec language modeling with multi-task learning using\ntask-dependent prompting, enabling unified and extensible modeling and\nproviding a consistent way for leveraging textual input in speech enhancement\nand transformation tasks. Experimental results show SpeechX's efficacy in\nvarious tasks, including zero-shot TTS, noise suppression, target speaker\nextraction, speech removal, and speech editing with or without background\nnoise, achieving comparable or superior performance to specialized models\nacross tasks. See https://aka.ms/speechx for demo samples.",
+      "published_at": "2023-08-14",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 28,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.06873",
+      "arxiv_url": "https://arxiv.org/abs/2308.06873"
+    },
+    {
+      "arxiv_id": "2308.07317",
+      "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
+      "authors": [
+        "Ariel N. Lee",
+        "Cole J. Hunter",
+        "Nataniel Ruiz"
+      ],
+      "abstract": "We present Platypus, a family of fine-tuned and merged Large\nLanguage Models (LLMs) that achieves the strongest performance and currently\nstands at first place in HuggingFace's Open LLM Leaderboard as of the release\ndate of this work. In this work we describe (1) our curated dataset\nOpen-Platypus, that is a subset of other open datasets and which\nwe release to the public (2) our process of fine-tuning and merging\nLoRA modules in order to conserve the strong prior of pretrained LLMs, while\nbringing specific domain knowledge to the surface (3) our efforts in checking\nfor test data leaks and contamination in the training data, which can inform\nfuture research. Specifically, the Platypus family achieves strong performance\nin quantitative LLM metrics across model sizes, topping the global Open LLM\nleaderboard while using just a fraction of the fine-tuning data and overall\ncompute that are required for other state-of-the-art fine-tuned LLMs. In\nparticular, a 13B Platypus model can be trained on a single A100 GPU\nusing 25k questions in 5 hours. This is a testament of the quality of our\nOpen-Platypus dataset, and opens opportunities for more improvements in the\nfield. Project page: https://platypus-llm.github.io",
+      "published_at": "2023-08-14",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "https://github.com/arielnlee/Platypus",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.07317",
+      "arxiv_url": "https://arxiv.org/abs/2308.07317"
+    },
+    {
+      "arxiv_id": "2308.06912",
+      "title": "CausalLM is not optimal for in-context learning",
+      "authors": [
+        "Nan Ding",
+        "Tomer Levinboim",
+        "Jialin Wu",
+        "Sebastian Goodman",
+        "Radu Soricut"
+      ],
+      "abstract": "Recent empirical evidence indicates that transformer based in-context\nlearning performs better when using a prefix language model (prefixLM), in\nwhich in-context samples can all attend to each other, compared to causal\nlanguage models (causalLM), which use auto-regressive attention that prohibits\nin-context samples to attend to future samples. While this result is intuitive,\nit is not understood from a theoretical perspective. In this paper we take a\ntheoretical approach and analyze the convergence behavior of prefixLM and\ncausalLM under a certain parameter construction. Our analysis shows that both\nLM types converge to their stationary points at a linear rate, but that while\nprefixLM converges to the optimal solution of linear regression, causalLM\nconvergence dynamics follows that of an online gradient descent algorithm,\nwhich is not guaranteed to be optimal even as the number of samples grows\ninfinitely. We supplement our theoretical claims with empirical experiments\nover synthetic and real tasks and using various types of transformers. Our\nexperiments verify that causalLM consistently underperforms prefixLM in all\nsettings.",
+      "published_at": "2023-08-14",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "https://github.com/google-research/causallm_icl",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.06912",
+      "arxiv_url": "https://arxiv.org/abs/2308.06912"
+    },
+    {
+      "arxiv_id": "2308.07228",
+      "title": "RestoreFormer++: Towards Real-World Blind Face Restoration from\n  Undegraded Key-Value Pairs",
+      "authors": [
+        "Zhouxia Wang",
+        "Jiawei Zhang",
+        "Tianshui Chen",
+        "Wenping Wang",
+        "Ping Luo"
+      ],
+      "abstract": "Blind face restoration aims at recovering high-quality face images from those\nwith unknown degradations. Current algorithms mainly introduce priors to\ncomplement high-quality details and achieve impressive progress. However, most\nof these algorithms ignore abundant contextual information in the face and its\ninterplay with the priors, leading to sub-optimal performance. Moreover, they\npay less attention to the gap between the synthetic and real-world scenarios,\nlimiting the robustness and generalization to real-world applications. In this\nwork, we propose RestoreFormer++, which on the one hand introduces\nfully-spatial attention mechanisms to model the contextual information and the\ninterplay with the priors, and on the other hand, explores an extending\ndegrading model to help generate more realistic degraded face images to\nalleviate the synthetic-to-real-world gap. Compared with current algorithms,\nRestoreFormer++ has several crucial benefits. First, instead of using a\nmulti-head self-attention mechanism like the traditional visual transformer, we\nintroduce multi-head cross-attention over multi-scale features to fully explore\nspatial interactions between corrupted information and high-quality priors. In\nthis way, it can facilitate RestoreFormer++ to restore face images with higher\nrealness and fidelity. Second, in contrast to the recognition-oriented\ndictionary, we learn a reconstruction-oriented dictionary as priors, which\ncontains more diverse high-quality facial details and better accords with the\nrestoration target. Third, we introduce an extending degrading model that\ncontains more realistic degraded scenarios for training data synthesizing, and\nthus helps to enhance the robustness and generalization of our RestoreFormer++\nmodel. Extensive experiments show that RestoreFormer++ outperforms\nstate-of-the-art algorithms on both synthetic and real-world datasets.",
+      "published_at": "2023-08-14",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/wzhouxiff/restoreformerplusplus",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.07228",
+      "arxiv_url": "https://arxiv.org/abs/2308.07228"
+    },
+    {
+      "arxiv_id": "2308.07316",
+      "title": "Jurassic World Remake: Bringing Ancient Fossils Back to Life via\n  Zero-Shot Long Image-to-Image Translation",
+      "authors": [
+        "Alexander Martin",
+        "Haitian Zheng",
+        "Jie An",
+        "Jiebo Luo"
+      ],
+      "abstract": "With a strong understanding of the target domain from natural language, we\nproduce promising results in translating across large domain gaps and bringing\nskeletons back to life. In this work, we use text-guided latent diffusion\nmodels for zero-shot image-to-image translation (I2I) across large domain gaps\n(longI2I), where large amounts of new visual features and new geometry need to\nbe generated to enter the target domain. Being able to perform translations\nacross large domain gaps has a wide variety of real-world applications in\ncriminology, astrology, environmental conservation, and paleontology. In this\nwork, we introduce a new task Skull2Animal for translating between skulls and\nliving animals. On this task, we find that unguided Generative Adversarial\nNetworks (GANs) are not capable of translating across large domain gaps.\nInstead of these traditional I2I methods, we explore the use of guided\ndiffusion and image editing models and provide a new benchmark model,\nRevive-2I, capable of performing zero-shot I2I via text-prompting latent\ndiffusion models. We find that guidance is necessary for longI2I because, to\nbridge the large domain gap, prior knowledge about the target domain is needed.\nIn addition, we find that prompting provides the best and most scalable\ninformation about the target domain as classifier-guided diffusion models\nrequire retraining for specific use cases and lack stronger constraints on the\ntarget domain because of the wide variety of images they are trained on.",
+      "published_at": "2023-08-14",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "https://github.com/alexmartin1722/Revive-2I",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.07316",
+      "arxiv_url": "https://arxiv.org/abs/2308.07316"
+    },
+    {
+      "arxiv_id": "2308.07286",
+      "title": "The Devil is in the Errors: Leveraging Large Language Models for\n  Fine-grained Machine Translation Evaluation",
+      "authors": [
+        "Patrick Fernandes",
+        "Daniel Deutsch",
+        "Mara Finkelstein",
+        "Parker Riley",
+        "André F. T. Martins",
+        "Graham Neubig",
+        "Ankush Garg",
+        "Jonathan H. Clark",
+        "Markus Freitag",
+        "Orhan Firat"
+      ],
+      "abstract": "Automatic evaluation of machine translation (MT) is a critical tool driving\nthe rapid iterative development of MT systems. While considerable progress has\nbeen made on estimating a single scalar quality score, current metrics lack the\ninformativeness of more detailed schemes that annotate individual errors, such\nas Multidimensional Quality Metrics (MQM). In this paper, we help fill this gap\nby proposing AutoMQM, a prompting technique which leverages the reasoning and\nin-context learning capabilities of large language models (LLMs) and asks them\nto identify and categorize errors in translations. We start by evaluating\nrecent LLMs, such as PaLM and PaLM-2, through simple score prediction\nprompting, and we study the impact of labeled data through in-context learning\nand finetuning. We then evaluate AutoMQM with PaLM-2 models, and we find that\nit improves performance compared to just prompting for scores (with\nparticularly large gains for larger models) while providing interpretability\nthrough error spans that align with human annotations.",
+      "published_at": "2023-08-14",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.07286",
+      "arxiv_url": "https://arxiv.org/abs/2308.07286"
+    },
+    {
+      "arxiv_id": "2308.06595",
+      "title": "VisIT-Bench: A Benchmark for Vision-Language Instruction Following\n  Inspired by Real-World Use",
+      "authors": [
+        "Yonatan Bitton",
+        "Hritik Bansal",
+        "Jack Hessel",
+        "Rulin Shao",
+        "Wanrong Zhu",
+        "Anas Awadalla",
+        "Josh Gardner",
+        "Rohan Taori",
+        "Ludwig Schimdt"
+      ],
+      "abstract": "We introduce VisIT-Bench (Visual InsTruction Benchmark), a benchmark for\nevaluation of instruction-following vision-language models for real-world use.\nOur starting point is curating 70 'instruction families' that we envision\ninstruction tuned vision-language models should be able to address. Extending\nbeyond evaluations like VQAv2 and COCO, tasks range from basic recognition to\ngame playing and creative generation. Following curation, our dataset comprises\n592 test queries, each with a human-authored instruction-conditioned caption.\nThese descriptions surface instruction-specific factors, e.g., for an\ninstruction asking about the accessibility of a storefront for wheelchair\nusers, the instruction-conditioned caption describes ramps/potential obstacles.\nThese descriptions enable 1) collecting human-verified reference outputs for\neach instance; and 2) automatic evaluation of candidate multimodal generations\nusing a text-only LLM, aligning with human judgment. We quantify quality gaps\nbetween models and references using both human and automatic evaluations; e.g.,\nthe top-performing instruction-following model wins against the GPT-4 reference\nin just 27% of the comparison. VisIT-Bench is dynamic to participate,\npractitioners simply submit their model's response on the project website;\nData, code and leaderboard is available at visit-bench.github.io.",
+      "published_at": "2023-08-12",
+      "submitted_at": "2023-08-15",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/mlfoundations/VisIT-Bench",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.06595",
+      "arxiv_url": "https://arxiv.org/abs/2308.06595"
+    }
+  ]
+}

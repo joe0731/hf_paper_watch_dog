@@ -1,0 +1,169 @@
+{
+  "date": "2023-06-12",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2023-06-12",
+  "papers": [
+    {
+      "arxiv_id": "2306.07075",
+      "title": "Large Language Models as Tax Attorneys: A Case Study in Legal\n  Capabilities Emergence",
+      "authors": [
+        "John J. Nay",
+        "David Karamardian",
+        "Sarah B. Lawsky",
+        "Wenting Tao",
+        "Meghana Bhat",
+        "Raghav Jain",
+        "Aaron Travis Lee",
+        "Jonathan H. Choi",
+        "Jungo Kasai"
+      ],
+      "abstract": "Better understanding of Large Language Models' (LLMs) legal analysis\nabilities can contribute to improving the efficiency of legal services,\ngoverning artificial intelligence, and leveraging LLMs to identify\ninconsistencies in law. This paper explores LLM capabilities in applying tax\nlaw. We choose this area of law because it has a structure that allows us to\nset up automated validation pipelines across thousands of examples, requires\nlogical reasoning and maths skills, and enables us to test LLM capabilities in\na manner relevant to real-world economic lives of citizens and companies. Our\nexperiments demonstrate emerging legal understanding capabilities, with\nimproved performance in each subsequent OpenAI model release. We experiment\nwith retrieving and utilising the relevant legal authority to assess the impact\nof providing additional legal context to LLMs. Few-shot prompting, presenting\nexamples of question-answer pairs, is also found to significantly enhance the\nperformance of the most advanced model, GPT-4. The findings indicate that LLMs,\nparticularly when combined with prompting enhancements and the correct legal\ntexts, can perform at high levels of accuracy but not yet at expert tax lawyer\nlevels. As LLMs continue to advance, their ability to reason about law\nautonomously could have significant implications for the legal profession and\nAI governance.",
+      "published_at": "2023-06-12",
+      "submitted_at": "2023-06-12",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.07075",
+      "arxiv_url": "https://arxiv.org/abs/2306.07075"
+    },
+    {
+      "arxiv_id": "2306.05544",
+      "title": "BOOT: Data-free Distillation of Denoising Diffusion Models with\n  Bootstrapping",
+      "authors": [
+        "Jiatao Gu",
+        "Shuangfei Zhai",
+        "Yizhe Zhang",
+        "Lingjie Liu",
+        "Josh Susskind"
+      ],
+      "abstract": "Diffusion models have demonstrated excellent potential for generating diverse\nimages. However, their performance often suffers from slow generation due to\niterative denoising. Knowledge distillation has been recently proposed as a\nremedy that can reduce the number of inference steps to one or a few without\nsignificant quality degradation. However, existing distillation methods either\nrequire significant amounts of offline computation for generating synthetic\ntraining data from the teacher model or need to perform expensive online\nlearning with the help of real data. In this work, we present a novel technique\ncalled BOOT, that overcomes these limitations with an efficient data-free\ndistillation algorithm. The core idea is to learn a time-conditioned model that\npredicts the output of a pre-trained diffusion model teacher given any time\nstep. Such a model can be efficiently trained based on bootstrapping from two\nconsecutive sampled steps. Furthermore, our method can be easily adapted to\nlarge-scale text-to-image diffusion models, which are challenging for\nconventional methods given the fact that the training sets are often large and\ndifficult to access. We demonstrate the effectiveness of our approach on\nseveral benchmark datasets in the DDIM setting, achieving comparable generation\nquality while being orders of magnitude faster than the diffusion teacher. The\ntext-to-image results show that the proposed approach is able to handle highly\ncomplex distributions, shedding light on more efficient generative modeling.",
+      "published_at": "2023-06-08",
+      "submitted_at": "2023-06-12",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.05544",
+      "arxiv_url": "https://arxiv.org/abs/2306.05544"
+    },
+    {
+      "arxiv_id": "2306.06212",
+      "title": "Aladdin: Zero-Shot Hallucination of Stylized 3D Assets from Abstract\n  Scene Descriptions",
+      "authors": [
+        "Ian Huang",
+        "Vrishab Krishna",
+        "Omoruyi Atekha",
+        "Leonidas Guibas"
+      ],
+      "abstract": "What constitutes the \"vibe\" of a particular scene? What should one find in \"a\nbusy, dirty city street\", \"an idyllic countryside\", or \"a crime scene in an\nabandoned living room\"? The translation from abstract scene descriptions to\nstylized scene elements cannot be done with any generality by extant systems\ntrained on rigid and limited indoor datasets. In this paper, we propose to\nleverage the knowledge captured by foundation models to accomplish this\ntranslation. We present a system that can serve as a tool to generate stylized\nassets for 3D scenes described by a short phrase, without the need to enumerate\nthe objects to be found within the scene or give instructions on their\nappearance. Additionally, it is robust to open-world concepts in a way that\ntraditional methods trained on limited data are not, affording more creative\nfreedom to the 3D artist. Our system demonstrates this using a foundation model\n\"team\" composed of a large language model, a vision-language model and several\nimage diffusion models, which communicate using an interpretable and\nuser-editable intermediate representation, thus allowing for more versatile and\ncontrollable stylized asset generation for 3D artists. We introduce novel\nmetrics for this task, and show through human evaluations that in 91% of the\ncases, our system outputs are judged more faithful to the semantics of the\ninput scene description than the baseline, thus highlighting the potential of\nthis approach to radically accelerate the 3D content creation process for 3D\nartists.",
+      "published_at": "2023-06-09",
+      "submitted_at": "2023-06-12",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/ianhuang0630/aladdin",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.06212",
+      "arxiv_url": "https://arxiv.org/abs/2306.06212"
+    },
+    {
+      "arxiv_id": "2306.05949",
+      "title": "Evaluating the Social Impact of Generative AI Systems in Systems and\n  Society",
+      "authors": [
+        "Irene Solaiman",
+        "Zeerak Talat",
+        "William Agnew",
+        "Lama Ahmad",
+        "Dylan Baker",
+        "Su Lin Blodgett",
+        "Hal Daumé III",
+        "Jesse Dodge",
+        "Ellie Evans",
+        "Sara Hooker",
+        "Yacine Jernite",
+        "Alexandra Sasha Luccioni",
+        "Alberto Lusoli",
+        "Margaret Mitchell",
+        "Jessica Newman",
+        "Marie-Therese Png",
+        "Andrew Strait",
+        "Apostol Vassilev"
+      ],
+      "abstract": "Generative AI systems across modalities, ranging from text (including code),\nimage, audio, and video, have broad social impacts, but there is no official\nstandard for means of evaluating those impacts or for which impacts should be\nevaluated. In this paper, we present a guide that moves toward a standard\napproach in evaluating a base generative AI system for any modality in two\noverarching categories: what can be evaluated in a base system independent of\ncontext and what can be evaluated in a societal context. Importantly, this\nrefers to base systems that have no predetermined application or deployment\ncontext, including a model itself, as well as system components, such as\ntraining data. Our framework for a base system defines seven categories of\nsocial impact: bias, stereotypes, and representational harms; cultural values\nand sensitive content; disparate performance; privacy and data protection;\nfinancial costs; environmental costs; and data and content moderation labor\ncosts. Suggested methods for evaluation apply to listed generative modalities\nand analyses of the limitations of existing evaluations serve as a starting\npoint for necessary investment in future evaluations. We offer five overarching\ncategories for what can be evaluated in a broader societal context, each with\nits own subcategories: trustworthiness and autonomy; inequality,\nmarginalization, and violence; concentration of authority; labor and\ncreativity; and ecosystem and environment. Each subcategory includes\nrecommendations for mitigating harm.",
+      "published_at": "2023-06-09",
+      "submitted_at": "2023-06-12",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.05949",
+      "arxiv_url": "https://arxiv.org/abs/2306.05949"
+    },
+    {
+      "arxiv_id": "2306.05493",
+      "title": "Multi-Modal Classifiers for Open-Vocabulary Object Detection",
+      "authors": [
+        "Prannay Kaul",
+        "Weidi Xie",
+        "Andrew Zisserman"
+      ],
+      "abstract": "The goal of this paper is open-vocabulary object detection (OVOD)\nx2013 building a model that can detect objects beyond the set of\ncategories seen at training, thus enabling the user to specify categories of\ninterest at inference without the need for model retraining. We adopt a\nstandard two-stage object detector architecture, and explore three ways for\nspecifying novel categories: via language descriptions, via image exemplars, or\nvia a combination of the two. We make three contributions: first, we prompt a\nlarge language model (LLM) to generate informative language descriptions for\nobject classes, and construct powerful text-based classifiers; second, we\nemploy a visual aggregator on image exemplars that can ingest any number of\nimages as input, forming vision-based classifiers; and third, we provide a\nsimple method to fuse information from language descriptions and image\nexemplars, yielding a multi-modal classifier. When evaluating on the\nchallenging LVIS open-vocabulary benchmark we demonstrate that: (i) our\ntext-based classifiers outperform all previous OVOD works; (ii) our\nvision-based classifiers perform as well as text-based classifiers in prior\nwork; (iii) using multi-modal classifiers perform better than either modality\nalone; and finally, (iv) our text-based and multi-modal classifiers yield\nbetter performance than a fully-supervised detector.",
+      "published_at": "2023-06-08",
+      "submitted_at": "2023-06-12",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/prannaykaul/mm-ovod",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.05493",
+      "arxiv_url": "https://arxiv.org/abs/2306.05493"
+    },
+    {
+      "arxiv_id": "2306.06092",
+      "title": "Realistic Saliency Guided Image Enhancement",
+      "authors": [
+        "S. Mahdi H. Miangoleh",
+        "Zoya Bylinskii",
+        "Eric Kee",
+        "Eli Shechtman",
+        "Yağız Aksoy"
+      ],
+      "abstract": "Common editing operations performed by professional photographers include the\ncleanup operations: de-emphasizing distracting elements and enhancing subjects.\nThese edits are challenging, requiring a delicate balance between manipulating\nthe viewer's attention while maintaining photo realism. While recent approaches\ncan boast successful examples of attention attenuation or amplification, most\nof them also suffer from frequent unrealistic edits. We propose a realism loss\nfor saliency-guided image enhancement to maintain high realism across varying\nimage types, while attenuating distractors and amplifying objects of interest.\nEvaluations with professional photographers confirm that we achieve the dual\nobjective of realism and effectiveness, and outperform the recent approaches on\ntheir own datasets, while requiring a smaller memory footprint and runtime. We\nthus offer a viable solution for automating image enhancement and photo cleanup\noperations.",
+      "published_at": "2023-06-09",
+      "submitted_at": "2023-06-12",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "https://github.com/compphoto/RealisticImageEnhancement",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.06092",
+      "arxiv_url": "https://arxiv.org/abs/2306.06092"
+    },
+    {
+      "arxiv_id": "2306.06044",
+      "title": "GANeRF: Leveraging Discriminators to Optimize Neural Radiance Fields",
+      "authors": [
+        "Barbara Roessle",
+        "Norman Müller",
+        "Lorenzo Porzi",
+        "Samuel Rota Bulò",
+        "Peter Kontschieder",
+        "Matthias Nießner"
+      ],
+      "abstract": "Neural Radiance Fields (NeRF) have shown impressive novel view synthesis\nresults; nonetheless, even thorough recordings yield imperfections in\nreconstructions, for instance due to poorly observed areas or minor lighting\nchanges. Our goal is to mitigate these imperfections from various sources with\na joint solution: we take advantage of the ability of generative adversarial\nnetworks (GANs) to produce realistic images and use them to enhance realism in\n3D scene reconstruction with NeRFs. To this end, we learn the patch\ndistribution of a scene using an adversarial discriminator, which provides\nfeedback to the radiance field reconstruction, thus improving realism in a\n3D-consistent fashion. Thereby, rendering artifacts are repaired directly in\nthe underlying 3D representation by imposing multi-view path rendering\nconstraints. In addition, we condition a generator with multi-resolution NeRF\nrenderings which is adversarially trained to further improve rendering quality.\nWe demonstrate that our approach significantly improves rendering quality,\ne.g., nearly halving LPIPS scores compared to Nerfacto while at the same time\nimproving PSNR by 1.4dB on the advanced indoor scenes of Tanks and Temples.",
+      "published_at": "2023-06-09",
+      "submitted_at": "2023-06-12",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.06044",
+      "arxiv_url": "https://arxiv.org/abs/2306.06044"
+    }
+  ]
+}

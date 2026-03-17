@@ -1,0 +1,250 @@
+{
+  "date": "2023-05-10",
+  "total": 11,
+  "source": "https://huggingface.co/papers/date/2023-05-10",
+  "papers": [
+    {
+      "arxiv_id": "2305.05065",
+      "title": "Recommender Systems with Generative Retrieval",
+      "authors": [
+        "Shashank Rajput",
+        "Nikhil Mehta",
+        "Anima Singh",
+        "Raghunandan H. Keshavan",
+        "Trung Vu",
+        "Lukasz Heldt",
+        "Lichan Hong",
+        "Yi Tay",
+        "Vinh Q. Tran",
+        "Jonah Samost",
+        "Maciej Kula",
+        "Ed H. Chi",
+        "Maheswaran Sathiamoorthy"
+      ],
+      "abstract": "Modern recommender systems leverage large-scale retrieval models consisting\nof two stages: training a dual-encoder model to embed queries and candidates in\nthe same space, followed by an Approximate Nearest Neighbor (ANN) search to\nselect top candidates given a query's embedding. In this paper, we propose a\nnew single-stage paradigm: a generative retrieval model which autoregressively\ndecodes the identifiers for the target candidates in one phase. To do this,\ninstead of assigning randomly generated atomic IDs to each item, we generate\nSemantic IDs: a semantically meaningful tuple of codewords for each item that\nserves as its unique identifier. We use a hierarchical method called RQ-VAE to\ngenerate these codewords. Once we have the Semantic IDs for all the items, a\nTransformer based sequence-to-sequence model is trained to predict the Semantic\nID of the next item. Since this model predicts the tuple of codewords\nidentifying the next item directly in an autoregressive manner, it can be\nconsidered a generative retrieval model. We show that our recommender system\ntrained in this new paradigm improves the results achieved by current SOTA\nmodels on the Amazon dataset. Moreover, we demonstrate that the\nsequence-to-sequence model coupled with hierarchical Semantic IDs offers better\ngeneralization and hence improves retrieval of cold-start items for\nrecommendations.",
+      "published_at": "2023-05-08",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/EdoardoBotta/RQ-VAE-Recommender",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.05065",
+      "arxiv_url": "https://arxiv.org/abs/2305.05065"
+    },
+    {
+      "arxiv_id": "2304.09355",
+      "title": "To Compress or Not to Compress- Self-Supervised Learning and Information\n  Theory: A Review",
+      "authors": [
+        "Ravid Shwartz-Ziv",
+        "Yann LeCun"
+      ],
+      "abstract": "Deep neural networks have demonstrated remarkable performance in supervised\nlearning tasks but require large amounts of labeled data. Self-supervised\nlearning offers an alternative paradigm, enabling the model to learn from data\nwithout explicit labels. Information theory has been instrumental in\nunderstanding and optimizing deep neural networks. Specifically, the\ninformation bottleneck principle has been applied to optimize the trade-off\nbetween compression and relevant information preservation in supervised\nsettings. However, the optimal information objective in self-supervised\nlearning remains unclear. In this paper, we review various approaches to\nself-supervised learning from an information-theoretic standpoint and present a\nunified framework that formalizes the self-supervised information-theoretic\nlearning problem. We integrate existing research into a coherent framework,\nexamine recent self-supervised methods, and identify research opportunities and\nchallenges. Moreover, we discuss empirical measurement of information-theoretic\nquantities and their estimators. This paper offers a comprehensive review of\nthe intersection between information theory, self-supervised learning, and deep\nneural networks.",
+      "published_at": "2023-04-19",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2304.09355",
+      "arxiv_url": "https://arxiv.org/abs/2304.09355"
+    },
+    {
+      "arxiv_id": "2305.05862",
+      "title": "Are ChatGPT and GPT-4 General-Purpose Solvers for Financial Text\n  Analytics? An Examination on Several Typical Tasks",
+      "authors": [
+        "Xianzhi Li",
+        "Xiaodan Zhu",
+        "Zhiqiang Ma",
+        "Xiaomo Liu",
+        "Sameena Shah"
+      ],
+      "abstract": "The most recent large language models such as ChatGPT and GPT-4 have garnered\nsignificant attention, as they are capable of generating high-quality responses\nto human input. Despite the extensive testing of ChatGPT and GPT-4 on generic\ntext corpora, showcasing their impressive capabilities, a study focusing on\nfinancial corpora has not been conducted. In this study, we aim to bridge this\ngap by examining the potential of ChatGPT and GPT-4 as a solver for typical\nfinancial text analytic problems in the zero-shot or few-shot setting.\nSpecifically, we assess their capabilities on four representative tasks over\nfive distinct financial textual datasets. The preliminary study shows that\nChatGPT and GPT-4 struggle on tasks such as financial named entity recognition\n(NER) and sentiment analysis, where domain-specific knowledge is required,\nwhile they excel in numerical reasoning tasks. We report both the strengths and\nlimitations of the current versions of ChatGPT and GPT-4, comparing them to the\nstate-of-the-art finetuned models as well as pretrained domain-specific\ngenerative models. Our experiments provide qualitative studies, through which\nwe hope to help understand the capability of the existing models and facilitate\nfurther improvements.",
+      "published_at": "2023-05-10",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.05862",
+      "arxiv_url": "https://arxiv.org/abs/2305.05862"
+    },
+    {
+      "arxiv_id": "2305.05591",
+      "title": "AudioSlots: A slot-centric generative model for audio separation",
+      "authors": [
+        "Pradyumna Reddy",
+        "Scott Wisdom",
+        "Klaus Greff",
+        "John R. Hershey",
+        "Thomas Kipf"
+      ],
+      "abstract": "In a range of recent works, object-centric architectures have been shown to\nbe suitable for unsupervised scene decomposition in the vision domain. Inspired\nby these methods we present AudioSlots, a slot-centric generative model for\nblind source separation in the audio domain. AudioSlots is built using\npermutation-equivariant encoder and decoder networks. The encoder network based\non the Transformer architecture learns to map a mixed audio spectrogram to an\nunordered set of independent source embeddings. The spatial broadcast decoder\nnetwork learns to generate the source spectrograms from the source embeddings.\nWe train the model in an end-to-end manner using a permutation invariant loss\nfunction. Our results on Libri2Mix speech separation constitute a proof of\nconcept that this approach shows promise. We discuss the results and\nlimitations of our approach in detail, and further outline potential ways to\novercome the limitations and directions for future work.",
+      "published_at": "2023-05-09",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.05591",
+      "arxiv_url": "https://arxiv.org/abs/2305.05591"
+    },
+    {
+      "arxiv_id": "2305.06077",
+      "title": "Relightify: Relightable 3D Faces from a Single Image via Diffusion\n  Models",
+      "authors": [
+        "Foivos Paraperas Papantoniou",
+        "Alexandros Lattas",
+        "Stylianos Moschoglou",
+        "Stefanos Zafeiriou"
+      ],
+      "abstract": "Following the remarkable success of diffusion models on image generation,\nrecent works have also demonstrated their impressive ability to address a\nnumber of inverse problems in an unsupervised way, by properly constraining the\nsampling process based on a conditioning input. Motivated by this, in this\npaper, we present the first approach to use diffusion models as a prior for\nhighly accurate 3D facial BRDF reconstruction from a single image. We start by\nleveraging a high-quality UV dataset of facial reflectance (diffuse and\nspecular albedo and normals), which we render under varying illumination\nsettings to simulate natural RGB textures and, then, train an unconditional\ndiffusion model on concatenated pairs of rendered textures and reflectance\ncomponents. At test time, we fit a 3D morphable model to the given image and\nunwrap the face in a partial UV texture. By sampling from the diffusion model,\nwhile retaining the observed texture part intact, the model inpaints not only\nthe self-occluded areas but also the unknown reflectance components, in a\nsingle sequence of denoising steps. In contrast to existing methods, we\ndirectly acquire the observed texture from the input image, thus, resulting in\nmore faithful and consistent reflectance estimation. Through a series of\nqualitative and quantitative comparisons, we demonstrate superior performance\nin both texture completion as well as reflectance reconstruction tasks.",
+      "published_at": "2023-05-10",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06077",
+      "arxiv_url": "https://arxiv.org/abs/2305.06077"
+    },
+    {
+      "arxiv_id": "2305.05845",
+      "title": "Sketching the Future (STF): Applying Conditional Control Techniques to\n  Text-to-Video Models",
+      "authors": [
+        "Rohan Dhesikan",
+        "Vignesh Rajmohan"
+      ],
+      "abstract": "The proliferation of video content demands efficient and flexible neural\nnetwork based approaches for generating new video content. In this paper, we\npropose a novel approach that combines zero-shot text-to-video generation with\nControlNet to improve the output of these models. Our method takes multiple\nsketched frames as input and generates video output that matches the flow of\nthese frames, building upon the Text-to-Video Zero architecture and\nincorporating ControlNet to enable additional input conditions. By first\ninterpolating frames between the inputted sketches and then running\nText-to-Video Zero using the new interpolated frames video as the control\ntechnique, we leverage the benefits of both zero-shot text-to-video generation\nand the robust control provided by ControlNet. Experiments demonstrate that our\nmethod excels at producing high-quality and remarkably consistent video content\nthat more accurately aligns with the user's intended motion for the subject\nwithin the video. We provide a comprehensive resource package, including a demo\nvideo, project website, open-source GitHub repository, and a Colab playground\nto foster further research and application of our proposed method.",
+      "published_at": "2023-05-10",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/rohandkn/skribble2vid",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.05845",
+      "arxiv_url": "https://arxiv.org/abs/2305.05845"
+    },
+    {
+      "arxiv_id": "2305.05658",
+      "title": "TidyBot: Personalized Robot Assistance with Large Language Models",
+      "authors": [
+        "Jimmy Wu",
+        "Rika Antonova",
+        "Adam Kan",
+        "Marion Lepert",
+        "Andy Zeng",
+        "Shuran Song",
+        "Jeannette Bohg",
+        "Szymon Rusinkiewicz",
+        "Thomas Funkhouser"
+      ],
+      "abstract": "For a robot to personalize physical assistance effectively, it must learn\nuser preferences that can be generally reapplied to future scenarios. In this\nwork, we investigate personalization of household cleanup with robots that can\ntidy up rooms by picking up objects and putting them away. A key challenge is\ndetermining the proper place to put each object, as people's preferences can\nvary greatly depending on personal taste or cultural background. For instance,\none person may prefer storing shirts in the drawer, while another may prefer\nthem on the shelf. We aim to build systems that can learn such preferences from\njust a handful of examples via prior interactions with a particular person. We\nshow that robots can combine language-based planning and perception with the\nfew-shot summarization capabilities of large language models (LLMs) to infer\ngeneralized user preferences that are broadly applicable to future\ninteractions. This approach enables fast adaptation and achieves 91.2% accuracy\non unseen objects in our benchmark dataset. We also demonstrate our approach on\na real-world mobile manipulator called TidyBot, which successfully puts away\n85.0% of objects in real-world test scenarios.",
+      "published_at": "2023-05-09",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/jimmyyhwu/tidybot",
+      "project_page": "https://tidybot.cs.princeton.edu/",
+      "hf_url": "https://huggingface.co/papers/2305.05658",
+      "arxiv_url": "https://arxiv.org/abs/2305.05658"
+    },
+    {
+      "arxiv_id": "2305.05364",
+      "title": "Large Language Model Programs",
+      "authors": [
+        "Imanol Schlag",
+        "Sainbayar Sukhbaatar",
+        "Asli Celikyilmaz",
+        "Wen-tau Yih",
+        "Jason Weston",
+        "Jürgen Schmidhuber",
+        "Xian Li"
+      ],
+      "abstract": "In recent years, large pre-trained language models (LLMs) have demonstrated\nthe ability to follow instructions and perform novel tasks from a few examples.\nThe possibility to parameterise an LLM through such in-context examples widens\ntheir capability at a much lower cost than finetuning. We extend this line of\nreasoning and present a method which further expands the capabilities of an LLM\nby embedding it within an algorithm or program. To demonstrate the benefits of\nthis approach, we present an illustrative example of evidence-supported\nquestion-answering. We obtain a 6.4\\% improvement over the chain of thought\nbaseline through a more algorithmic approach without any finetuning.\nFurthermore, we highlight recent work from this perspective and discuss the\nadvantages and disadvantages in comparison to the standard approaches.",
+      "published_at": "2023-05-09",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.05364",
+      "arxiv_url": "https://arxiv.org/abs/2305.05364"
+    },
+    {
+      "arxiv_id": "2305.04966",
+      "title": "NerfAcc: Efficient Sampling Accelerates NeRFs",
+      "authors": [
+        "Ruilong Li",
+        "Hang Gao",
+        "Matthew Tancik",
+        "Angjoo Kanazawa"
+      ],
+      "abstract": "Optimizing and rendering Neural Radiance Fields is computationally expensive\ndue to the vast number of samples required by volume rendering. Recent works\nhave included alternative sampling approaches to help accelerate their methods,\nhowever, they are often not the focus of the work. In this paper, we\ninvestigate and compare multiple sampling approaches and demonstrate that\nimproved sampling is generally applicable across NeRF variants under an unified\nconcept of transmittance estimator. To facilitate future experiments, we\ndevelop NerfAcc, a Python toolbox that provides flexible APIs for incorporating\nadvanced sampling methods into NeRF related methods. We demonstrate its\nflexibility by showing that it can reduce the training time of several recent\nNeRF methods by 1.5x to 20x with minimal modifications to the existing\ncodebase. Additionally, highly customized NeRFs, such as Instant-NGP, can be\nimplemented in native PyTorch using NerfAcc.",
+      "published_at": "2023-05-08",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/nerfstudio-project/nerfacc",
+      "project_page": "https://www.nerfacc.com",
+      "hf_url": "https://huggingface.co/papers/2305.04966",
+      "arxiv_url": "https://arxiv.org/abs/2305.04966"
+    },
+    {
+      "arxiv_id": "2305.05383",
+      "title": "Code Execution with Pre-trained Language Models",
+      "authors": [
+        "Chenxiao Liu",
+        "Shuai Lu",
+        "Weizhu Chen",
+        "Daxin Jiang",
+        "Alexey Svyatkovskiy",
+        "Shengyu Fu",
+        "Neel Sundaresan",
+        "Nan Duan"
+      ],
+      "abstract": "Code execution is a fundamental aspect of programming language semantics that\nreflects the exact behavior of the code. However, most pre-trained models for\ncode intelligence ignore the execution trace and only rely on source code and\nsyntactic structures. In this paper, we investigate how well pre-trained models\ncan understand and perform code execution. We develop a mutation-based data\naugmentation technique to create a large-scale and realistic Python dataset and\ntask for code execution, which challenges existing models such as Codex. We\nthen present CodeExecutor, a Transformer model that leverages code execution\npre-training and curriculum learning to enhance its semantic comprehension. We\nevaluate CodeExecutor on code execution and show its promising performance and\nlimitations. We also demonstrate its potential benefits for code intelligence\ntasks such as zero-shot code-to-code search and text-to-code generation. Our\nanalysis provides insights into the learning and generalization abilities of\npre-trained models for code execution.",
+      "published_at": "2023-05-08",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/microsoft/CodeBERT",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.05383",
+      "arxiv_url": "https://arxiv.org/abs/2305.05383"
+    },
+    {
+      "arxiv_id": "2305.05432",
+      "title": "WikiWeb2M: A Page-Level Multimodal Wikipedia Dataset",
+      "authors": [
+        "Andrea Burns",
+        "Krishna Srinivasan",
+        "Joshua Ainslie",
+        "Geoff Brown",
+        "Bryan A. Plummer",
+        "Kate Saenko",
+        "Jianmo Ni",
+        "Mandy Guo"
+      ],
+      "abstract": "Webpages have been a rich resource for language and vision-language tasks.\nYet only pieces of webpages are kept: image-caption pairs, long text articles,\nor raw HTML, never all in one place. Webpage tasks have resultingly received\nlittle attention and structured image-text data underused. To study multimodal\nwebpage understanding, we introduce the Wikipedia Webpage 2M (WikiWeb2M) suite;\nthe first to retain the full set of images, text, and structure data available\nin a page. WikiWeb2M can be used for tasks like page description generation,\nsection summarization, and contextual image captioning.",
+      "published_at": "2023-05-09",
+      "submitted_at": "2023-05-10",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.05432",
+      "arxiv_url": "https://arxiv.org/abs/2305.05432"
+    }
+  ]
+}

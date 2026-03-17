@@ -1,0 +1,79 @@
+{
+  "date": "2023-10-03",
+  "total": 3,
+  "source": "https://huggingface.co/papers/date/2023-10-03",
+  "papers": [
+    {
+      "arxiv_id": "2310.00426",
+      "title": "PixArt-α: Fast Training of Diffusion Transformer for\n  Photorealistic Text-to-Image Synthesis",
+      "authors": [
+        "Junsong Chen",
+        "Jincheng Yu",
+        "Chongjian Ge",
+        "Lewei Yao",
+        "Enze Xie1",
+        "Yue Wu",
+        "Zhongdao Wang",
+        "James Kwok",
+        "Ping Luo",
+        "Huchuan Lu",
+        "Zhenguo Li"
+      ],
+      "abstract": "The most advanced text-to-image (T2I) models require significant training\ncosts (e.g., millions of GPU hours), seriously hindering the fundamental\ninnovation for the AIGC community while increasing CO2 emissions. This paper\nintroduces PIXART-alpha, a Transformer-based T2I diffusion model whose image\ngeneration quality is competitive with state-of-the-art image generators (e.g.,\nImagen, SDXL, and even Midjourney), reaching near-commercial application\nstandards. Additionally, it supports high-resolution image synthesis up to\n1024px resolution with low training cost, as shown in Figure 1 and 2. To\nachieve this goal, three core designs are proposed: (1) Training strategy\ndecomposition: We devise three distinct training steps that separately optimize\npixel dependency, text-image alignment, and image aesthetic quality; (2)\nEfficient T2I Transformer: We incorporate cross-attention modules into\nDiffusion Transformer (DiT) to inject text conditions and streamline the\ncomputation-intensive class-condition branch; (3) High-informative data: We\nemphasize the significance of concept density in text-image pairs and leverage\na large Vision-Language model to auto-label dense pseudo-captions to assist\ntext-image alignment learning. As a result, PIXART-alpha's training speed\nmarkedly surpasses existing large-scale T2I models, e.g., PIXART-alpha only\ntakes 10.8% of Stable Diffusion v1.5's training time (675 vs. 6,250 A100 GPU\ndays), saving nearly \\300,000 (26,000 vs. \\320,000) and reducing 90% CO2\nemissions. Moreover, compared with a larger SOTA model, RAPHAEL, our training\ncost is merely 1%. Extensive experiments demonstrate that PIXART-\\alpha\nexcels in image quality, artistry, and semantic control. We hope\nPIXART-\\alpha$ will provide new insights to the AIGC community and startups to\naccelerate building their own high-quality yet low-cost generative models from\nscratch.",
+      "published_at": "2023-09-30",
+      "submitted_at": "2023-10-03",
+      "submitted_by": "AK",
+      "upvotes": 61,
+      "organization": "",
+      "github_repo": "https://github.com/PixArt-alpha/PixArt-alpha",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.00426",
+      "arxiv_url": "https://arxiv.org/abs/2310.00426"
+    },
+    {
+      "arxiv_id": "2310.00898",
+      "title": "Enable Language Models to Implicitly Learn Self-Improvement From Data",
+      "authors": [
+        "Ziqi Wang",
+        "Le Hou",
+        "Tianjian Lu",
+        "Yuexin Wu",
+        "Yunxuan Li",
+        "Hongkun Yu",
+        "Heng Ji"
+      ],
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in\nopen-ended text generation tasks. However, the inherent open-ended nature of\nthese tasks implies that there is always room for improvement in the quality of\nmodel responses. To address this challenge, various approaches have been\nproposed to enhance the performance of LLMs. There has been a growing focus on\nenabling LLMs to self-improve their response quality, thereby reducing the\nreliance on extensive human annotation efforts for collecting diverse and\nhigh-quality training data. Recently, prompting-based methods have been widely\nexplored among self-improvement methods owing to their effectiveness,\nefficiency, and convenience. However, those methods usually require explicitly\nand thoroughly written rubrics as inputs to LLMs. It is expensive and\nchallenging to manually derive and provide all necessary rubrics with a\nreal-world complex goal for improvement (e.g., being more helpful and less\nharmful). To this end, we propose an ImPlicit Self-ImprovemenT (PIT) framework\nthat implicitly learns the improvement goal from human preference data. PIT\nonly requires preference data that are used to train reward models without\nextra human efforts. Specifically, we reformulate the training objective of\nreinforcement learning from human feedback (RLHF) -- instead of maximizing\nresponse quality for a given input, we maximize the quality gap of the response\nconditioned on a reference response. In this way, PIT is implicitly trained\nwith the improvement goal of better aligning with human preferences.\nExperiments on two real-world datasets and one synthetic dataset show that our\nmethod significantly outperforms prompting-based methods.",
+      "published_at": "2023-10-02",
+      "submitted_at": "2023-10-03",
+      "submitted_by": "AK",
+      "upvotes": 24,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.00898",
+      "arxiv_url": "https://arxiv.org/abs/2310.00898"
+    },
+    {
+      "arxiv_id": "2310.01407",
+      "title": "Conditional Diffusion Distillation",
+      "authors": [
+        "Kangfu Mei",
+        "Mauricio Delbracio",
+        "Hossein Talebi",
+        "Zhengzhong Tu",
+        "Vishal M. Patel",
+        "Peyman Milanfar"
+      ],
+      "abstract": "Generative diffusion models provide strong priors for text-to-image\ngeneration and thereby serve as a foundation for conditional generation tasks\nsuch as image editing, restoration, and super-resolution. However, one major\nlimitation of diffusion models is their slow sampling time. To address this\nchallenge, we present a novel conditional distillation method designed to\nsupplement the diffusion priors with the help of image conditions, allowing for\nconditional sampling with very few steps. We directly distill the unconditional\npre-training in a single stage through joint-learning, largely simplifying the\nprevious two-stage procedures that involve both distillation and conditional\nfinetuning separately. Furthermore, our method enables a new\nparameter-efficient distillation mechanism that distills each task with only a\nsmall number of additional parameters combined with the shared frozen\nunconditional backbone. Experiments across multiple tasks including\nsuper-resolution, image editing, and depth-to-image generation demonstrate that\nour method outperforms existing distillation techniques for the same sampling\ntime. Notably, our method is the first distillation strategy that can match the\nperformance of the much slower fine-tuned conditional diffusion models.",
+      "published_at": "2023-10-02",
+      "submitted_at": "2023-10-03",
+      "submitted_by": "AK",
+      "upvotes": 20,
+      "organization": "",
+      "github_repo": "https://github.com/fast-codi/CoDi",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.01407",
+      "arxiv_url": "https://arxiv.org/abs/2310.01407"
+    }
+  ]
+}

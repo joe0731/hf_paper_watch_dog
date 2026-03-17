@@ -1,0 +1,152 @@
+{
+  "date": "2023-11-19",
+  "total": 6,
+  "source": "https://huggingface.co/papers/date/2023-11-19",
+  "papers": [
+    {
+      "arxiv_id": "2311.10122",
+      "title": "Video-LLaVA: Learning United Visual Representation by Alignment Before\n  Projection",
+      "authors": [
+        "Bin Lin",
+        "Bin Zhu",
+        "Yang Ye",
+        "Munan Ning",
+        "Peng Jin",
+        "Li Yuan"
+      ],
+      "abstract": "The Large Vision-Language Model (LVLM) has enhanced the performance of\nvarious downstream tasks in visual-language understanding. Most existing\napproaches encode images and videos into separate feature spaces, which are\nthen fed as inputs to large language models. However, due to the lack of\nunified tokenization for images and videos, namely misalignment before\nprojection, it becomes challenging for a Large Language Model (LLM) to learn\nmulti-modal interactions from several poor projection layers. In this work, we\nunify visual representation into the language feature space to advance the\nfoundational LLM towards a unified LVLM. As a result, we establish a simple but\nrobust LVLM baseline, Video-LLaVA, which learns from a mixed dataset of images\nand videos, mutually enhancing each other. Video-LLaVA achieves superior\nperformances on a broad range of 9 image benchmarks across 5 image\nquestion-answering datasets and 4 image benchmark toolkits. Additionally, our\nVideo-LLaVA also outperforms Video-ChatGPT by 5.8%, 9.9%, 18.6%, and 10.1% on\nMSRVTT, MSVD, TGIF, and ActivityNet, respectively. Notably, extensive\nexperiments demonstrate that Video-LLaVA mutually benefits images and videos\nwithin a unified visual representation, outperforming models designed\nspecifically for images or videos.",
+      "published_at": "2023-11-16",
+      "submitted_at": "2023-11-19",
+      "submitted_by": "AK",
+      "upvotes": 28,
+      "organization": "",
+      "github_repo": "https://github.com/PKU-YuanGroup/Video-LLaVA",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.10122",
+      "arxiv_url": "https://arxiv.org/abs/2311.10122"
+    },
+    {
+      "arxiv_id": "2311.10709",
+      "title": "Emu Video: Factorizing Text-to-Video Generation by Explicit Image\n  Conditioning",
+      "authors": [
+        "Rohit Girdhar",
+        "Mannat Singh",
+        "Andrew Brown",
+        "Quentin Duval",
+        "Samaneh Azadi",
+        "Sai Saketh Rambhatla",
+        "Akbar Shah",
+        "Xi Yin",
+        "Devi Parikh",
+        "Ishan Misra"
+      ],
+      "abstract": "We present Emu Video, a text-to-video generation model that factorizes the\ngeneration into two steps: first generating an image conditioned on the text,\nand then generating a video conditioned on the text and the generated image. We\nidentify critical design decisions--adjusted noise schedules for diffusion, and\nmulti-stage training--that enable us to directly generate high quality and high\nresolution videos, without requiring a deep cascade of models as in prior work.\nIn human evaluations, our generated videos are strongly preferred in quality\ncompared to all prior work--81% vs. Google's Imagen Video, 90% vs. Nvidia's\nPYOCO, and 96% vs. Meta's Make-A-Video. Our model outperforms commercial\nsolutions such as RunwayML's Gen2 and Pika Labs. Finally, our factorizing\napproach naturally lends itself to animating images based on a user's text\nprompt, where our generations are preferred 96% over prior work.",
+      "published_at": "2023-11-17",
+      "submitted_at": "2023-11-19",
+      "submitted_by": "AK",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.10709",
+      "arxiv_url": "https://arxiv.org/abs/2311.10709"
+    },
+    {
+      "arxiv_id": "2311.10702",
+      "title": "Camels in a Changing Climate: Enhancing LM Adaptation with Tulu 2",
+      "authors": [
+        "Hamish Ivison",
+        "Yizhong Wang",
+        "Valentina Pyatkin",
+        "Nathan Lambert",
+        "Matthew Peters",
+        "Pradeep Dasigi",
+        "Joel Jang",
+        "David Wadden",
+        "Noah A. Smith",
+        "Iz Beltagy",
+        "Hannaneh Hajishirzi"
+      ],
+      "abstract": "Since the release of T\\\"ULU [Wang et al., 2023b], open resources for\ninstruction tuning have developed quickly, from better base models to new\nfinetuning techniques. We test and incorporate a number of these advances into\nT\\\"ULU, resulting in T\\\"ULU 2, a suite of improved T\\\"ULU models for advancing\nthe understanding and best practices of adapting pretrained language models to\ndownstream tasks and user preferences. Concretely, we release: (1)\nT\\\"ULU-V2-mix, an improved collection of high-quality instruction datasets; (2)\nT\\\"ULU 2, LLAMA-2 models finetuned on the V2 mixture; (3) T\\\"ULU 2+DPO, T\\\"ULU\n2 models trained with direct preference optimization (DPO), including the\nlargest DPO-trained model to date (T\\\"ULU 2+DPO 70B); (4) CODE T\\\"ULU 2, CODE\nLLAMA models finetuned on our V2 mix that outperform CODE LLAMA and its\ninstruction-tuned variant, CODE LLAMA-Instruct. Our evaluation from multiple\nperspectives shows that the T\\\"ULU 2 suite achieves state-of-the-art\nperformance among open models and matches or exceeds the performance of\nGPT-3.5-turbo-0301 on several benchmarks. We release all the checkpoints, data,\ntraining and evaluation code to facilitate future open efforts on adapting\nlarge language models.",
+      "published_at": "2023-11-17",
+      "submitted_at": "2023-11-19",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.10702",
+      "arxiv_url": "https://arxiv.org/abs/2311.10702"
+    },
+    {
+      "arxiv_id": "2311.10538",
+      "title": "Testing Language Model Agents Safely in the Wild",
+      "authors": [
+        "Silen Naihin",
+        "David Atkinson",
+        "Marc Green",
+        "Merwane Hamadi",
+        "Craig Swift",
+        "Douglas Schonholtz",
+        "Adam Tauman Kalai",
+        "David Bau"
+      ],
+      "abstract": "A prerequisite for safe autonomy-in-the-wild is safe testing-in-the-wild. Yet\nreal-world autonomous tests face several unique safety challenges, both due to\nthe possibility of causing harm during a test, as well as the risk of\nencountering new unsafe agent behavior through interactions with real-world and\npotentially malicious actors. We propose a framework for conducting safe\nautonomous agent tests on the open internet: agent actions are audited by a\ncontext-sensitive monitor that enforces a stringent safety boundary to stop an\nunsafe test, with suspect behavior ranked and logged to be examined by humans.\nWe a design a basic safety monitor that is flexible enough to monitor existing\nLLM agents, and, using an adversarial simulated agent, we measure its ability\nto identify and stop unsafe situations. Then we apply the safety monitor on a\nbattery of real-world tests of AutoGPT, and we identify several limitations and\nchallenges that will face the creation of safe in-the-wild tests as autonomous\nagents grow more capable.",
+      "published_at": "2023-11-17",
+      "submitted_at": "2023-11-19",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.10538",
+      "arxiv_url": "https://arxiv.org/abs/2311.10538"
+    },
+    {
+      "arxiv_id": "2311.10111",
+      "title": "VideoCon: Robust Video-Language Alignment via Contrast Captions",
+      "authors": [
+        "Hritik Bansal",
+        "Yonatan Bitton",
+        "Idan Szpektor",
+        "Kai-Wei Chang",
+        "Aditya Grover"
+      ],
+      "abstract": "Despite being (pre)trained on a massive amount of data, state-of-the-art\nvideo-language alignment models are not robust to semantically-plausible\ncontrastive changes in the video captions. Our work addresses this by\nidentifying a broad spectrum of contrast misalignments, such as replacing\nentities, actions, and flipping event order, which alignment models should be\nrobust against. To this end, we introduce the VideoCon, a video-language\nalignment dataset constructed by a large language model that generates\nplausible contrast video captions and explanations for differences between\noriginal and contrast video captions. Then, a generative video-language model\nis finetuned with VideoCon to assess video-language entailment and generate\nexplanations. Our VideoCon-based alignment model significantly outperforms\ncurrent models. It exhibits a 12-point increase in AUC for the video-language\nalignment task on human-generated contrast captions. Finally, our model sets\nnew state of the art zero-shot performance in temporally-extensive\nvideo-language tasks such as text-to-video retrieval (SSv2-Temporal) and video\nquestion answering (ATP-Hard). Moreover, our model shows superior performance\non novel videos and human-crafted captions and explanations. Our code and data\nare available at https://github.com/Hritikbansal/videocon.",
+      "published_at": "2023-11-15",
+      "submitted_at": "2023-11-19",
+      "submitted_by": "AK",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "https://github.com/hritikbansal/videocon",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.10111",
+      "arxiv_url": "https://arxiv.org/abs/2311.10111"
+    },
+    {
+      "arxiv_id": "2311.10125",
+      "title": "UnifiedVisionGPT: Streamlining Vision-Oriented AI through Generalized\n  Multimodal Framework",
+      "authors": [
+        "Chris Kelly",
+        "Luhui Hu",
+        "Cindy Yang",
+        "Yu Tian",
+        "Deshun Yang",
+        "Bang Yang",
+        "Zaoshan Huang",
+        "Zihao Li",
+        "Yuexian Zou"
+      ],
+      "abstract": "In the current landscape of artificial intelligence, foundation models serve\nas the bedrock for advancements in both language and vision domains. OpenAI\nGPT-4 has emerged as the pinnacle in large language models (LLMs), while the\ncomputer vision (CV) domain boasts a plethora of state-of-the-art (SOTA) models\nsuch as Meta's SAM and DINO, and YOLOS. However, the financial and\ncomputational burdens of training new models from scratch remain a significant\nbarrier to progress. In response to this challenge, we introduce\nUnifiedVisionGPT, a novel framework designed to consolidate and automate the\nintegration of SOTA vision models, thereby facilitating the development of\nvision-oriented AI. UnifiedVisionGPT distinguishes itself through four key\nfeatures: (1) provides a versatile multimodal framework adaptable to a wide\nrange of applications, building upon the strengths of multimodal foundation\nmodels; (2) seamlessly integrates various SOTA vision models to create a\ncomprehensive multimodal platform, capitalizing on the best components of each\nmodel; (3) prioritizes vision-oriented AI, ensuring a more rapid progression in\nthe CV domain compared to the current trajectory of LLMs; and (4) introduces\nautomation in the selection of SOTA vision models, generating optimal results\nbased on diverse multimodal inputs such as text prompts and images. This paper\noutlines the architecture and capabilities of UnifiedVisionGPT, demonstrating\nits potential to revolutionize the field of computer vision through enhanced\nefficiency, versatility, generalization, and performance. Our implementation,\nalong with the unified multimodal framework and comprehensive dataset, is made\npublicly available at https://github.com/LHBuilder/SA-Segment-Anything.",
+      "published_at": "2023-11-16",
+      "submitted_at": "2023-11-19",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/lhbuilder/sa-segment-anything",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.10125",
+      "arxiv_url": "https://arxiv.org/abs/2311.10125"
+    }
+  ]
+}

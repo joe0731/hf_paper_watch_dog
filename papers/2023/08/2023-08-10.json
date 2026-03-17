@@ -1,0 +1,95 @@
+{
+  "date": "2023-08-10",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-08-10",
+  "papers": [
+    {
+      "arxiv_id": "2308.04729",
+      "title": "JEN-1: Text-Guided Universal Music Generation with Omnidirectional\n  Diffusion Models",
+      "authors": [
+        "Peike Li",
+        "Boyu Chen",
+        "Yao Yao",
+        "Allen Wang",
+        "Alex Wang"
+      ],
+      "abstract": "Music generation has attracted growing interest with the advancement of deep\ngenerative models. However, generating music conditioned on textual\ndescriptions, known as text-to-music, remains challenging due to the complexity\nof musical structures and high sampling rate requirements. Despite the task's\nsignificance, prevailing generative models exhibit limitations in music\nquality, computational efficiency, and generalization. This paper introduces\nJEN-1, a universal high-fidelity model for text-to-music generation. JEN-1 is a\ndiffusion model incorporating both autoregressive and non-autoregressive\ntraining. Through in-context learning, JEN-1 performs various generation tasks\nincluding text-guided music generation, music inpainting, and continuation.\nEvaluations demonstrate JEN-1's superior performance over state-of-the-art\nmethods in text-music alignment and music quality while maintaining\ncomputational efficiency. Our demos are available at\nhttp://futureverse.com/research/jen/demos/jen1",
+      "published_at": "2023-08-09",
+      "submitted_at": "2023-08-10",
+      "submitted_by": "AK",
+      "upvotes": 33,
+      "organization": "",
+      "github_repo": "https://github.com/0417keito/JEN-1-pytorch",
+      "project_page": "https://jenmusic.ai/audio-demos",
+      "hf_url": "https://huggingface.co/papers/2308.04729",
+      "arxiv_url": "https://arxiv.org/abs/2308.04729"
+    },
+    {
+      "arxiv_id": "2308.04592",
+      "title": "Shepherd: A Critic for Language Model Generation",
+      "authors": [
+        "Tianlu Wang",
+        "Ping Yu",
+        "Xiaoqing Ellen Tan",
+        "Sean O'Brien",
+        "Ramakanth Pasunuru",
+        "Jane Dwivedi-Yu",
+        "Olga Golovneva",
+        "Luke Zettlemoyer",
+        "Maryam Fazel-Zarandi",
+        "Asli Celikyilmaz"
+      ],
+      "abstract": "As large language models improve, there is increasing interest in techniques\nthat leverage these models' capabilities to refine their own outputs. In this\nwork, we introduce Shepherd, a language model specifically tuned to critique\nresponses and suggest refinements, extending beyond the capabilities of an\nuntuned model to identify diverse errors and provide suggestions to remedy\nthem. At the core of our approach is a high quality feedback dataset, which we\ncurate from community feedback and human annotations. Even though Shepherd is\nsmall (7B parameters), its critiques are either equivalent or preferred to\nthose from established models including ChatGPT. Using GPT-4 for evaluation,\nShepherd reaches an average win-rate of 53-87% compared to competitive\nalternatives. In human evaluation, Shepherd strictly outperforms other models\nand on average closely ties with ChatGPT.",
+      "published_at": "2023-08-08",
+      "submitted_at": "2023-08-10",
+      "submitted_by": "AK",
+      "upvotes": 33,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/shepherd",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.04592",
+      "arxiv_url": "https://arxiv.org/abs/2308.04592"
+    },
+    {
+      "arxiv_id": "2308.04623",
+      "title": "Accelerating LLM Inference with Staged Speculative Decoding",
+      "authors": [
+        "Benjamin Spector",
+        "Chris Re"
+      ],
+      "abstract": "Recent advances with large language models (LLM) illustrate their diverse\ncapabilities. We propose a novel algorithm, staged speculative decoding, to\naccelerate LLM inference in small-batch, on-device scenarios. We address the\nlow arithmetic intensity of small-batch inference by improving upon previous\nwork in speculative decoding. First, we restructure the speculative batch as a\ntree, which reduces generation costs and increases the expected tokens per\nbatch. Second, we add a second stage of speculative decoding. Taken together,\nwe reduce single-batch decoding latency by 3.16x with a 762M parameter GPT-2-L\nmodel while perfectly preserving output quality.",
+      "published_at": "2023-08-08",
+      "submitted_at": "2023-08-10",
+      "submitted_by": "AK",
+      "upvotes": 26,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.04623",
+      "arxiv_url": "https://arxiv.org/abs/2308.04623"
+    },
+    {
+      "arxiv_id": "2308.04556",
+      "title": "FocalFormer3D : Focusing on Hard Instance for 3D Object Detection",
+      "authors": [
+        "Yilun Chen",
+        "Zhiding Yu",
+        "Yukang Chen",
+        "Shiyi Lan",
+        "Animashree Anandkumar",
+        "Jiaya Jia",
+        "Jose Alvarez"
+      ],
+      "abstract": "False negatives (FN) in 3D object detection, {\\em e.g.}, missing predictions\nof pedestrians, vehicles, or other obstacles, can lead to potentially dangerous\nsituations in autonomous driving. While being fatal, this issue is understudied\nin many current 3D detection methods. In this work, we propose Hard Instance\nProbing (HIP), a general pipeline that identifies FN in a multi-stage\nmanner and guides the models to focus on excavating difficult instances. For 3D\nobject detection, we instantiate this method as FocalFormer3D, a simple yet\neffective detector that excels at excavating difficult objects and improving\nprediction recall. FocalFormer3D features a multi-stage query generation to\ndiscover hard objects and a box-level transformer decoder to efficiently\ndistinguish objects from massive object candidates. Experimental results on the\nnuScenes and Waymo datasets validate the superior performance of FocalFormer3D.\nThe advantage leads to strong performance on both detection and tracking, in\nboth LiDAR and multi-modal settings. Notably, FocalFormer3D achieves a 70.5 mAP\nand 73.9 NDS on nuScenes detection benchmark, while the nuScenes tracking\nbenchmark shows 72.1 AMOTA, both ranking 1st place on the nuScenes LiDAR\nleaderboard. Our code is available at\nhttps://github.com/NVlabs/FocalFormer3D.",
+      "published_at": "2023-08-08",
+      "submitted_at": "2023-08-10",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/NVlabs/FocalFormer3D",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.04556",
+      "arxiv_url": "https://arxiv.org/abs/2308.04556"
+    }
+  ]
+}

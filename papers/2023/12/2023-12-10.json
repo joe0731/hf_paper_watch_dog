@@ -1,0 +1,65 @@
+{
+  "date": "2023-12-10",
+  "total": 2,
+  "source": "https://huggingface.co/papers/date/2023-12-10",
+  "papers": [
+    {
+      "arxiv_id": "2312.04724",
+      "title": "Purple Llama CyberSecEval: A Secure Coding Benchmark for Language Models",
+      "authors": [
+        "Manish Bhatt",
+        "Sahana Chennabasappa",
+        "Cyrus Nikolaidis",
+        "Shengye Wan",
+        "Ivan Evtimov",
+        "Dominik Gabi",
+        "Daniel Song",
+        "Faizan Ahmad",
+        "Cornelius Aschermann",
+        "Lorenzo Fontana",
+        "Sasha Frolov",
+        "Ravi Prakash Giri",
+        "Dhaval Kapil",
+        "Yiannis Kozyrakis",
+        "David LeBlanc",
+        "James Milazzo",
+        "Aleksandar Straumann",
+        "Gabriel Synnaeve",
+        "Varun Vontimitta",
+        "Spencer Whitman",
+        "Joshua Saxe"
+      ],
+      "abstract": "This paper presents CyberSecEval, a comprehensive benchmark developed to help\nbolster the cybersecurity of Large Language Models (LLMs) employed as coding\nassistants. As what we believe to be the most extensive unified cybersecurity\nsafety benchmark to date, CyberSecEval provides a thorough evaluation of LLMs\nin two crucial security domains: their propensity to generate insecure code and\ntheir level of compliance when asked to assist in cyberattacks. Through a case\nstudy involving seven models from the Llama 2, Code Llama, and OpenAI GPT large\nlanguage model families, CyberSecEval effectively pinpointed key cybersecurity\nrisks. More importantly, it offered practical insights for refining these\nmodels. A significant observation from the study was the tendency of more\nadvanced models to suggest insecure code, highlighting the critical need for\nintegrating security considerations in the development of sophisticated LLMs.\nCyberSecEval, with its automated test case generation and evaluation pipeline\ncovers a broad scope and equips LLM designers and researchers with a tool to\nbroadly measure and enhance the cybersecurity safety properties of LLMs,\ncontributing to the development of more secure AI systems.",
+      "published_at": "2023-12-07",
+      "submitted_at": "2023-12-10",
+      "submitted_by": "AK",
+      "upvotes": 21,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.04724",
+      "arxiv_url": "https://arxiv.org/abs/2312.04724"
+    },
+    {
+      "arxiv_id": "2312.04655",
+      "title": "ECLIPSE: A Resource-Efficient Text-to-Image Prior for Image Generations",
+      "authors": [
+        "Maitreya Patel",
+        "Changhoon Kim",
+        "Sheng Cheng",
+        "Chitta Baral",
+        "Yezhou Yang"
+      ],
+      "abstract": "Text-to-image (T2I) diffusion models, notably the unCLIP models (e.g.,\nDALL-E-2), achieve state-of-the-art (SOTA) performance on various compositional\nT2I benchmarks, at the cost of significant computational resources. The unCLIP\nstack comprises T2I prior and diffusion image decoder. The T2I prior model\nalone adds a billion parameters compared to the Latent Diffusion Models, which\nincreases the computational and high-quality data requirements. We introduce\nECLIPSE, a novel contrastive learning method that is both parameter and\ndata-efficient. ECLIPSE leverages pre-trained vision-language models (e.g.,\nCLIP) to distill the knowledge into the prior model. We demonstrate that the\nECLIPSE trained prior, with only 3.3% of the parameters and trained on a mere\n2.8% of the data, surpasses the baseline T2I priors with an average of 71.6%\npreference score under resource-limited setting. It also attains performance on\npar with SOTA big models, achieving an average of 63.36% preference score in\nterms of the ability to follow the text compositions. Extensive experiments on\ntwo unCLIP diffusion image decoders, Karlo and Kandinsky, affirm that ECLIPSE\npriors consistently deliver high performance while significantly reducing\nresource dependency.",
+      "published_at": "2023-12-07",
+      "submitted_at": "2023-12-10",
+      "submitted_by": "AK",
+      "upvotes": 21,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.04655",
+      "arxiv_url": "https://arxiv.org/abs/2312.04655"
+    }
+  ]
+}

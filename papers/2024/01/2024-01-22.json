@@ -1,0 +1,142 @@
+{
+  "date": "2024-01-22",
+  "total": 6,
+  "source": "https://huggingface.co/papers/date/2024-01-22",
+  "papers": [
+    {
+      "arxiv_id": "2401.10891",
+      "title": "Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data",
+      "authors": [
+        "Lihe Yang",
+        "Bingyi Kang",
+        "Zilong Huang",
+        "Xiaogang Xu",
+        "Jiashi Feng",
+        "Hengshuang Zhao"
+      ],
+      "abstract": "This work presents Depth Anything, a highly practical solution for robust\nmonocular depth estimation. Without pursuing novel technical modules, we aim to\nbuild a simple yet powerful foundation model dealing with any images under any\ncircumstances. To this end, we scale up the dataset by designing a data engine\nto collect and automatically annotate large-scale unlabeled data (~62M), which\nsignificantly enlarges the data coverage and thus is able to reduce the\ngeneralization error. We investigate two simple yet effective strategies that\nmake data scaling-up promising. First, a more challenging optimization target\nis created by leveraging data augmentation tools. It compels the model to\nactively seek extra visual knowledge and acquire robust representations.\nSecond, an auxiliary supervision is developed to enforce the model to inherit\nrich semantic priors from pre-trained encoders. We evaluate its zero-shot\ncapabilities extensively, including six public datasets and randomly captured\nphotos. It demonstrates impressive generalization ability. Further, through\nfine-tuning it with metric depth information from NYUv2 and KITTI, new SOTAs\nare set. Our better depth model also results in a better depth-conditioned\nControlNet. Our models are released at\nhttps://github.com/LiheYoung/Depth-Anything.",
+      "published_at": "2024-01-19",
+      "submitted_at": "2024-01-22",
+      "submitted_by": "AK",
+      "upvotes": 62,
+      "organization": "",
+      "github_repo": "https://github.com/LiheYoung/Depth-Anything",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.10891",
+      "arxiv_url": "https://arxiv.org/abs/2401.10891"
+    },
+    {
+      "arxiv_id": "2401.10241",
+      "title": "Zero Bubble Pipeline Parallelism",
+      "authors": [
+        "Penghui Qi",
+        "Xinyi Wan",
+        "Guangxing Huang",
+        "Min Lin"
+      ],
+      "abstract": "Pipeline parallelism is one of the key components for large-scale distributed\ntraining, yet its efficiency suffers from pipeline bubbles which were deemed\ninevitable. In this work, we introduce a scheduling strategy that, to our\nknowledge, is the first to successfully achieve zero pipeline bubbles under\nsynchronous training semantics. The key idea behind this improvement is to\nsplit the backward computation into two parts, one that computes gradient for\nthe input and another that computes for the parameters. Based on this idea, we\nhandcraft novel pipeline schedules that significantly outperform the baseline\nmethods. We further develop an algorithm that automatically finds an optimal\nschedule based on specific model configuration and memory limit. Additionally,\nto truly achieve zero bubble, we introduce a novel technique to bypass\nsynchronizations during the optimizer step. Experimental evaluations show that\nour method outperforms the 1F1B schedule up to 23% in throughput under a\nsimilar memory limit. This number can be further pushed to 31% when the memory\nconstraint is relaxed. We believe our results mark a major step forward in\nharnessing the true potential of pipeline parallelism. We open sourced our\nimplementation based on the popular Megatron-LM repository on\nhttps://github.com/sail-sg/zero-bubble-pipeline-parallelism.",
+      "published_at": "2023-11-30",
+      "submitted_at": "2024-01-22",
+      "submitted_by": "AK",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.10241",
+      "arxiv_url": "https://arxiv.org/abs/2401.10241"
+    },
+    {
+      "arxiv_id": "2401.10822",
+      "title": "ActAnywhere: Subject-Aware Video Background Generation",
+      "authors": [
+        "Boxiao Pan",
+        "Zhan Xu",
+        "Chun-Hao Paul Huang",
+        "Krishna Kumar Singh",
+        "Yang Zhou",
+        "Leonidas J. Guibas",
+        "Jimei Yang"
+      ],
+      "abstract": "Generating video background that tailors to foreground subject motion is an\nimportant problem for the movie industry and visual effects community. This\ntask involves synthesizing background that aligns with the motion and\nappearance of the foreground subject, while also complies with the artist's\ncreative intention. We introduce ActAnywhere, a generative model that automates\nthis process which traditionally requires tedious manual efforts. Our model\nleverages the power of large-scale video diffusion models, and is specifically\ntailored for this task. ActAnywhere takes a sequence of foreground subject\nsegmentation as input and an image that describes the desired scene as\ncondition, to produce a coherent video with realistic foreground-background\ninteractions while adhering to the condition frame. We train our model on a\nlarge-scale dataset of human-scene interaction videos. Extensive evaluations\ndemonstrate the superior performance of our model, significantly outperforming\nbaselines. Moreover, we show that ActAnywhere generalizes to diverse\nout-of-distribution samples, including non-human subjects. Please visit our\nproject webpage at https://actanywhere.github.io.",
+      "published_at": "2024-01-19",
+      "submitted_at": "2024-01-22",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.10822",
+      "arxiv_url": "https://arxiv.org/abs/2401.10822"
+    },
+    {
+      "arxiv_id": "2401.10889",
+      "title": "Synthesizing Moving People with 3D Control",
+      "authors": [
+        "Boyi Li",
+        "Jathushan Rajasegaran",
+        "Yossi Gandelsman",
+        "Alexei A. Efros",
+        "Jitendra Malik"
+      ],
+      "abstract": "In this paper, we present a diffusion model-based framework for animating\npeople from a single image for a given target 3D motion sequence. Our approach\nhas two core components: a) learning priors about invisible parts of the human\nbody and clothing, and b) rendering novel body poses with proper clothing and\ntexture. For the first part, we learn an in-filling diffusion model to\nhallucinate unseen parts of a person given a single image. We train this model\non texture map space, which makes it more sample-efficient since it is\ninvariant to pose and viewpoint. Second, we develop a diffusion-based rendering\npipeline, which is controlled by 3D human poses. This produces realistic\nrenderings of novel poses of the person, including clothing, hair, and\nplausible in-filling of unseen regions. This disentangled approach allows our\nmethod to generate a sequence of images that are faithful to the target motion\nin the 3D pose and, to the input image in terms of visual similarity. In\naddition to that, the 3D control allows various synthetic camera trajectories\nto render a person. Our experiments show that our method is resilient in\ngenerating prolonged motions and varied challenging and complex poses compared\nto prior methods. Please check our website for more details:\nhttps://boyiliee.github.io/3DHM.github.io/.",
+      "published_at": "2024-01-19",
+      "submitted_at": "2024-01-22",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.10889",
+      "arxiv_url": "https://arxiv.org/abs/2401.10889"
+    },
+    {
+      "arxiv_id": "2401.10838",
+      "title": "Rambler: Supporting Writing With Speech via LLM-Assisted Gist\n  Manipulation",
+      "authors": [
+        "Susan Lin",
+        "Jeremy Warner",
+        "J. D. Zamfirescu-Pereira",
+        "Matthew G. Lee",
+        "Sauhard Jain",
+        "Michael Xuelin Huang",
+        "Piyawat Lertvittayakumjorn",
+        "Shanqing Cai",
+        "Shumin Zhai",
+        "Björn Hartmann",
+        "Can Liu"
+      ],
+      "abstract": "Dictation enables efficient text input on mobile devices. However, writing\nwith speech can produce disfluent, wordy, and incoherent text and thus requires\nheavy post-processing. This paper presents Rambler, an LLM-powered graphical\nuser interface that supports gist-level manipulation of dictated text with two\nmain sets of functions: gist extraction and macro revision. Gist extraction\ngenerates keywords and summaries as anchors to support the review and\ninteraction with spoken text. LLM-assisted macro revisions allow users to\nrespeak, split, merge and transform dictated text without specifying precise\nediting locations. Together they pave the way for interactive dictation and\nrevision that help close gaps between spontaneous spoken words and\nwell-structured writing. In a comparative study with 12 participants performing\nverbal composition tasks, Rambler outperformed the baseline of a speech-to-text\neditor + ChatGPT, as it better facilitates iterative revisions with enhanced\nuser control over the content while supporting surprisingly diverse user\nstrategies.",
+      "published_at": "2024-01-19",
+      "submitted_at": "2024-01-22",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/berkeleyhci/rambler",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.10838",
+      "arxiv_url": "https://arxiv.org/abs/2401.10838"
+    },
+    {
+      "arxiv_id": "2401.10831",
+      "title": "Understanding Video Transformers via Universal Concept Discovery",
+      "authors": [
+        "Matthew Kowal",
+        "Achal Dave",
+        "Rares Ambrus",
+        "Adrien Gaidon",
+        "Konstantinos G. Derpanis",
+        "Pavel Tokmakov"
+      ],
+      "abstract": "This paper studies the problem of concept-based interpretability of\ntransformer representations for videos. Concretely, we seek to explain the\ndecision-making process of video transformers based on high-level,\nspatiotemporal concepts that are automatically discovered. Prior research on\nconcept-based interpretability has concentrated solely on image-level tasks.\nComparatively, video models deal with the added temporal dimension, increasing\ncomplexity and posing challenges in identifying dynamic concepts over time. In\nthis work, we systematically address these challenges by introducing the first\nVideo Transformer Concept Discovery (VTCD) algorithm. To this end, we propose\nan efficient approach for unsupervised identification of units of video\ntransformer representations - concepts, and ranking their importance to the\noutput of a model. The resulting concepts are highly interpretable, revealing\nspatio-temporal reasoning mechanisms and object-centric representations in\nunstructured video models. Performing this analysis jointly over a diverse set\nof supervised and self-supervised representations, we discover that some of\nthese mechanism are universal in video transformers. Finally, we demonstrate\nthat VTCDcan be used to improve model performance for fine-grained tasks.",
+      "published_at": "2024-01-19",
+      "submitted_at": "2024-01-22",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.10831",
+      "arxiv_url": "https://arxiv.org/abs/2401.10831"
+    }
+  ]
+}

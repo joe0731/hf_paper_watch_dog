@@ -1,0 +1,189 @@
+{
+  "date": "2023-05-26",
+  "total": 8,
+  "source": "https://huggingface.co/papers/date/2023-05-26",
+  "papers": [
+    {
+      "arxiv_id": "2305.16291",
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+      "authors": [
+        "Guanzhi Wang",
+        "Yuqi Xie",
+        "Yunfan Jiang",
+        "Ajay Mandlekar",
+        "Chaowei Xiao",
+        "Yuke Zhu",
+        "Linxi Fan",
+        "Anima Anandkumar"
+      ],
+      "abstract": "We introduce Voyager, the first LLM-powered embodied lifelong learning agent\nin Minecraft that continuously explores the world, acquires diverse skills, and\nmakes novel discoveries without human intervention. Voyager consists of three\nkey components: 1) an automatic curriculum that maximizes exploration, 2) an\never-growing skill library of executable code for storing and retrieving\ncomplex behaviors, and 3) a new iterative prompting mechanism that incorporates\nenvironment feedback, execution errors, and self-verification for program\nimprovement. Voyager interacts with GPT-4 via blackbox queries, which bypasses\nthe need for model parameter fine-tuning. The skills developed by Voyager are\ntemporally extended, interpretable, and compositional, which compounds the\nagent's abilities rapidly and alleviates catastrophic forgetting. Empirically,\nVoyager shows strong in-context lifelong learning capability and exhibits\nexceptional proficiency in playing Minecraft. It obtains 3.3x more unique\nitems, travels 2.3x longer distances, and unlocks key tech tree milestones up\nto 15.3x faster than prior SOTA. Voyager is able to utilize the learned skill\nlibrary in a new Minecraft world to solve novel tasks from scratch, while other\ntechniques struggle to generalize. We open-source our full codebase and prompts\nat https://voyager.minedojo.org/.",
+      "published_at": "2023-05-25",
+      "submitted_at": "2023-05-26",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/MineDojo/Voyager",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.16291",
+      "arxiv_url": "https://arxiv.org/abs/2305.16291"
+    },
+    {
+      "arxiv_id": "2305.16213",
+      "title": "ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with\n  Variational Score Distillation",
+      "authors": [
+        "Zhengyi Wang",
+        "Cheng Lu",
+        "Yikai Wang",
+        "Fan Bao",
+        "Chongxuan Li",
+        "Hang Su",
+        "Jun Zhu"
+      ],
+      "abstract": "Score distillation sampling (SDS) has shown great promise in text-to-3D\ngeneration by distilling pretrained large-scale text-to-image diffusion models,\nbut suffers from over-saturation, over-smoothing, and low-diversity problems.\nIn this work, we propose to model the 3D parameter as a random variable instead\nof a constant as in SDS and present variational score distillation (VSD), a\nprincipled particle-based variational framework to explain and address the\naforementioned issues in text-to-3D generation. We show that SDS is a special\ncase of VSD and leads to poor samples with both small and large CFG weights. In\ncomparison, VSD works well with various CFG weights as ancestral sampling from\ndiffusion models and simultaneously improves the diversity and sample quality\nwith a common CFG weight (i.e., 7.5). We further present various improvements\nin the design space for text-to-3D such as distillation time schedule and\ndensity initialization, which are orthogonal to the distillation algorithm yet\nnot well explored. Our overall approach, dubbed ProlificDreamer, can generate\nhigh rendering resolution (i.e., 512times512) and high-fidelity NeRF with\nrich structure and complex effects (e.g., smoke and drops). Further,\ninitialized from NeRF, meshes fine-tuned by VSD are meticulously detailed and\nphoto-realistic. Project page: https://ml.cs.tsinghua.edu.cn/prolificdreamer/",
+      "published_at": "2023-05-25",
+      "submitted_at": "2023-05-26",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/yuanzhi-zhu/prolific_dreamer2d",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.16213",
+      "arxiv_url": "https://arxiv.org/abs/2305.16213"
+    },
+    {
+      "arxiv_id": "2305.15717",
+      "title": "The False Promise of Imitating Proprietary LLMs",
+      "authors": [
+        "Arnav Gudibande",
+        "Eric Wallace",
+        "Charlie Snell",
+        "Hao Liu",
+        "Pieter Abbeel",
+        "Sergey Levine",
+        "Dawn Song"
+      ],
+      "abstract": "An emerging method to cheaply improve a weaker language model is to finetune\nit on outputs from a stronger model, such as a proprietary system like ChatGPT\n(e.g., Alpaca, Self-Instruct, and others). This approach looks to cheaply\nimitate the proprietary model's capabilities using a weaker open-source model.\nIn this work, we critically analyze this approach. We first finetune a series\nof LMs that imitate ChatGPT using varying base model sizes (1.5B--13B), data\nsources, and imitation data amounts (0.3M--150M tokens). We then evaluate the\nmodels using crowd raters and canonical NLP benchmarks. Initially, we were\nsurprised by the output quality of our imitation models -- they appear far\nbetter at following instructions, and crowd workers rate their outputs as\ncompetitive with ChatGPT. However, when conducting more targeted automatic\nevaluations, we find that imitation models close little to none of the gap from\nthe base LM to ChatGPT on tasks that are not heavily supported in the imitation\ndata. We show that these performance discrepancies may slip past human raters\nbecause imitation models are adept at mimicking ChatGPT's style but not its\nfactuality. Overall, we conclude that model imitation is a false promise: there\nexists a substantial capabilities gap between open and closed LMs that, with\ncurrent methods, can only be bridged using an unwieldy amount of imitation data\nor by using more capable base LMs. In turn, we argue that the highest leverage\naction for improving open-source models is to tackle the difficult challenge of\ndeveloping better base LMs, rather than taking the shortcut of imitating\nproprietary systems.",
+      "published_at": "2023-05-25",
+      "submitted_at": "2023-05-26",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.15717",
+      "arxiv_url": "https://arxiv.org/abs/2305.15717"
+    },
+    {
+      "arxiv_id": "2305.15798",
+      "title": "On Architectural Compression of Text-to-Image Diffusion Models",
+      "authors": [
+        "Bo-Kyeong Kim",
+        "Hyoung-Kyu Song",
+        "Thibault Castells",
+        "Shinkook Choi"
+      ],
+      "abstract": "Exceptional text-to-image (T2I) generation results of Stable Diffusion models\n(SDMs) come with substantial computational demands. To resolve this issue,\nrecent research on efficient SDMs has prioritized reducing the number of\nsampling steps and utilizing network quantization. Orthogonal to these\ndirections, this study highlights the power of classical architectural\ncompression for general-purpose T2I synthesis by introducing block-removed\nknowledge-distilled SDMs (BK-SDMs). We eliminate several residual and attention\nblocks from the U-Net of SDMs, obtaining over a 30% reduction in the number of\nparameters, MACs per sampling step, and latency. We conduct distillation-based\npretraining with only 0.22M LAION pairs (fewer than 0.1% of the full training\npairs) on a single A100 GPU. Despite being trained with limited resources, our\ncompact models can imitate the original SDM by benefiting from transferred\nknowledge and achieve competitive results against larger multi-billion\nparameter models on the zero-shot MS-COCO benchmark. Moreover, we demonstrate\nthe applicability of our lightweight pretrained models in personalized\ngeneration with DreamBooth finetuning.",
+      "published_at": "2023-05-25",
+      "submitted_at": "2023-05-26",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/Nota-NetsPresso/BK-SDM",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.15798",
+      "arxiv_url": "https://arxiv.org/abs/2305.15798"
+    },
+    {
+      "arxiv_id": "2305.15779",
+      "title": "Custom-Edit: Text-Guided Image Editing with Customized Diffusion Models",
+      "authors": [
+        "Jooyoung Choi",
+        "Yunjey Choi",
+        "Yunji Kim",
+        "Junho Kim",
+        "Sungroh Yoon"
+      ],
+      "abstract": "Text-to-image diffusion models can generate diverse, high-fidelity images\nbased on user-provided text prompts. Recent research has extended these models\nto support text-guided image editing. While text guidance is an intuitive\nediting interface for users, it often fails to ensure the precise concept\nconveyed by users. To address this issue, we propose Custom-Edit, in which we\n(i) customize a diffusion model with a few reference images and then (ii)\nperform text-guided editing. Our key discovery is that customizing only\nlanguage-relevant parameters with augmented prompts improves reference\nsimilarity significantly while maintaining source similarity. Moreover, we\nprovide our recipe for each customization and editing process. We compare\npopular customization methods and validate our findings on two editing methods\nusing various datasets.",
+      "published_at": "2023-05-25",
+      "submitted_at": "2023-05-26",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.15779",
+      "arxiv_url": "https://arxiv.org/abs/2305.15779"
+    },
+    {
+      "arxiv_id": "2305.15719",
+      "title": "Efficient Neural Music Generation",
+      "authors": [
+        "Max W. Y. Lam",
+        "Qiao Tian",
+        "Tang Li",
+        "Zongyu Yin",
+        "Siyuan Feng",
+        "Ming Tu",
+        "Yuliang Ji",
+        "Rui Xia",
+        "Mingbo Ma",
+        "Xuchen Song",
+        "Jitong Chen",
+        "Yuping Wang",
+        "Yuxuan Wang"
+      ],
+      "abstract": "Recent progress in music generation has been remarkably advanced by the\nstate-of-the-art MusicLM, which comprises a hierarchy of three LMs,\nrespectively, for semantic, coarse acoustic, and fine acoustic modelings. Yet,\nsampling with the MusicLM requires processing through these LMs one by one to\nobtain the fine-grained acoustic tokens, making it computationally expensive\nand prohibitive for a real-time generation. Efficient music generation with a\nquality on par with MusicLM remains a significant challenge. In this paper, we\npresent MeLoDy (M for music; L for LM; D for diffusion), an LM-guided diffusion\nmodel that generates music audios of state-of-the-art quality meanwhile\nreducing 95.7% or 99.6% forward passes in MusicLM, respectively, for sampling\n10s or 30s music. MeLoDy inherits the highest-level LM from MusicLM for\nsemantic modeling, and applies a novel dual-path diffusion (DPD) model and an\naudio VAE-GAN to efficiently decode the conditioning semantic tokens into\nwaveform. DPD is proposed to simultaneously model the coarse and fine acoustics\nby incorporating the semantic information into segments of latents effectively\nvia cross-attention at each denoising step. Our experimental results suggest\nthe superiority of MeLoDy, not only in its practical advantages on sampling\nspeed and infinitely continuable generation, but also in its state-of-the-art\nmusicality, audio quality, and text correlation.\n  Our samples are available at https://Efficient-MeLoDy.github.io/.",
+      "published_at": "2023-05-25",
+      "submitted_at": "2023-05-26",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.15719",
+      "arxiv_url": "https://arxiv.org/abs/2305.15719"
+    },
+    {
+      "arxiv_id": "2305.15586",
+      "title": "Manifold Diffusion Fields",
+      "authors": [
+        "Ahmed A. Elhag",
+        "Joshua M. Susskind",
+        "Miguel Angel Bautista"
+      ],
+      "abstract": "We present Manifold Diffusion Fields (MDF), an approach to learn generative\nmodels of continuous functions defined over Riemannian manifolds. Leveraging\ninsights from spectral geometry analysis, we define an intrinsic coordinate\nsystem on the manifold via the eigen-functions of the Laplace-Beltrami\nOperator. MDF represents functions using an explicit parametrization formed by\na set of multiple input-output pairs. Our approach allows to sample continuous\nfunctions on manifolds and is invariant with respect to rigid and isometric\ntransformations of the manifold. Empirical results on several datasets and\nmanifolds show that MDF can capture distributions of such functions with better\ndiversity and fidelity than previous approaches.",
+      "published_at": "2023-05-24",
+      "submitted_at": "2023-05-26",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.15586",
+      "arxiv_url": "https://arxiv.org/abs/2305.15586"
+    },
+    {
+      "arxiv_id": "2305.15581",
+      "title": "Unsupervised Semantic Correspondence Using Stable Diffusion",
+      "authors": [
+        "Eric Hedlin",
+        "Gopal Sharma",
+        "Shweta Mahajan",
+        "Hossam Isack",
+        "Abhishek Kar",
+        "Andrea Tagliasacchi",
+        "Kwang Moo Yi"
+      ],
+      "abstract": "Text-to-image diffusion models are now capable of generating images that are\noften indistinguishable from real images. To generate such images, these models\nmust understand the semantics of the objects they are asked to generate. In\nthis work we show that, without any training, one can leverage this semantic\nknowledge within diffusion models to find semantic correspondences -- locations\nin multiple images that have the same semantic meaning. Specifically, given an\nimage, we optimize the prompt embeddings of these models for maximum attention\non the regions of interest. These optimized embeddings capture semantic\ninformation about the location, which can then be transferred to another image.\nBy doing so we obtain results on par with the strongly supervised state of the\nart on the PF-Willow dataset and significantly outperform (20.9% relative for\nthe SPair-71k dataset) any existing weakly or unsupervised method on PF-Willow,\nCUB-200 and SPair-71k datasets.",
+      "published_at": "2023-05-24",
+      "submitted_at": "2023-05-26",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/ubc-vision/LDM_correspondences",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.15581",
+      "arxiv_url": "https://arxiv.org/abs/2305.15581"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "date": "2023-07-12",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2023-07-12",
+  "papers": [
+    {
+      "arxiv_id": "2307.04787",
+      "title": "Collaborative Score Distillation for Consistent Visual Synthesis",
+      "authors": [
+        "Subin Kim",
+        "Kyungmin Lee",
+        "June Suk Choi",
+        "Jongheon Jeong",
+        "Kihyuk Sohn",
+        "Jinwoo Shin"
+      ],
+      "abstract": "Generative priors of large-scale text-to-image diffusion models enable a wide\nrange of new generation and editing applications on diverse visual modalities.\nHowever, when adapting these priors to complex visual modalities, often\nrepresented as multiple images (e.g., video), achieving consistency across a\nset of images is challenging. In this paper, we address this challenge with a\nnovel method, Collaborative Score Distillation (CSD). CSD is based on the Stein\nVariational Gradient Descent (SVGD). Specifically, we propose to consider\nmultiple samples as \"particles\" in the SVGD update and combine their score\nfunctions to distill generative priors over a set of images synchronously.\nThus, CSD facilitates seamless integration of information across 2D images,\nleading to a consistent visual synthesis across multiple samples. We show the\neffectiveness of CSD in a variety of tasks, encompassing the visual editing of\npanorama images, videos, and 3D scenes. Our results underline the competency of\nCSD as a versatile method for enhancing inter-sample consistency, thereby\nbroadening the applicability of text-to-image diffusion models.",
+      "published_at": "2023-07-04",
+      "submitted_at": "2023-07-12",
+      "submitted_by": "AK",
+      "upvotes": 30,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.04787",
+      "arxiv_url": "https://arxiv.org/abs/2307.04787"
+    },
+    {
+      "arxiv_id": "2307.05432",
+      "title": "Self-Supervised Learning with Lie Symmetries for Partial Differential\n  Equations",
+      "authors": [
+        "Grégoire Mialon",
+        "Quentin Garrido",
+        "Hannah Lawrence",
+        "Danyal Rehman",
+        "Yann LeCun",
+        "Bobak T. Kiani"
+      ],
+      "abstract": "Machine learning for differential equations paves the way for computationally\nefficient alternatives to numerical solvers, with potentially broad impacts in\nscience and engineering. Though current algorithms typically require simulated\ntraining data tailored to a given setting, one may instead wish to learn useful\ninformation from heterogeneous sources, or from real dynamical systems\nobservations that are messy or incomplete. In this work, we learn\ngeneral-purpose representations of PDEs from heterogeneous data by implementing\njoint embedding methods for self-supervised learning (SSL), a framework for\nunsupervised representation learning that has had notable success in computer\nvision. Our representation outperforms baseline approaches to invariant tasks,\nsuch as regressing the coefficients of a PDE, while also improving the\ntime-stepping performance of neural solvers. We hope that our proposed\nmethodology will prove useful in the eventual development of general-purpose\nfoundation models for PDEs.",
+      "published_at": "2023-07-11",
+      "submitted_at": "2023-07-12",
+      "submitted_by": "AK",
+      "upvotes": 18,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/sslforpdes",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.05432",
+      "arxiv_url": "https://arxiv.org/abs/2307.05432"
+    },
+    {
+      "arxiv_id": "2307.05445",
+      "title": "AutoDecoding Latent 3D Diffusion Models",
+      "authors": [
+        "Evangelos Ntavelis",
+        "Aliaksandr Siarohin",
+        "Kyle Olszewski",
+        "Chaoyang Wang",
+        "Luc Van Gool",
+        "Sergey Tulyakov"
+      ],
+      "abstract": "We present a novel approach to the generation of static and articulated 3D\nassets that has a 3D autodecoder at its core. The 3D autodecoder framework\nembeds properties learned from the target dataset in the latent space, which\ncan then be decoded into a volumetric representation for rendering\nview-consistent appearance and geometry. We then identify the appropriate\nintermediate volumetric latent space, and introduce robust normalization and\nde-normalization operations to learn a 3D diffusion from 2D images or monocular\nvideos of rigid or articulated objects. Our approach is flexible enough to use\neither existing camera supervision or no camera information at all -- instead\nefficiently learning it during training. Our evaluations demonstrate that our\ngeneration results outperform state-of-the-art alternatives on various\nbenchmark datasets and metrics, including multi-view image datasets of\nsynthetic objects, real in-the-wild videos of moving people, and a large-scale,\nreal video dataset of static objects.",
+      "published_at": "2023-07-07",
+      "submitted_at": "2023-07-12",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/snap-research/3dvader",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.05445",
+      "arxiv_url": "https://arxiv.org/abs/2307.05445"
+    },
+    {
+      "arxiv_id": "2307.05473",
+      "title": "Differentiable Blocks World: Qualitative 3D Decomposition by Rendering\n  Primitives",
+      "authors": [
+        "Tom Monnier",
+        "Jake Austin",
+        "Angjoo Kanazawa",
+        "Alexei A. Efros",
+        "Mathieu Aubry"
+      ],
+      "abstract": "Given a set of calibrated images of a scene, we present an approach that\nproduces a simple, compact, and actionable 3D world representation by means of\n3D primitives. While many approaches focus on recovering high-fidelity 3D\nscenes, we focus on parsing a scene into mid-level 3D representations made of a\nsmall set of textured primitives. Such representations are interpretable, easy\nto manipulate and suited for physics-based simulations. Moreover, unlike\nexisting primitive decomposition methods that rely on 3D input data, our\napproach operates directly on images through differentiable rendering.\nSpecifically, we model primitives as textured superquadric meshes and optimize\ntheir parameters from scratch with an image rendering loss. We highlight the\nimportance of modeling transparency for each primitive, which is critical for\noptimization and also enables handling varying numbers of primitives. We show\nthat the resulting textured primitives faithfully reconstruct the input images\nand accurately model the visible 3D points, while providing amodal shape\ncompletions of unseen object regions. We compare our approach to the state of\nthe art on diverse scenes from DTU, and demonstrate its robustness on real-life\ncaptures from BlendedMVS and Nerfstudio. We also showcase how our results can\nbe used to effortlessly edit a scene or perform physical simulations. Code and\nvideo results are available at https://www.tmonnier.com/DBW .",
+      "published_at": "2023-07-11",
+      "submitted_at": "2023-07-12",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.05473",
+      "arxiv_url": "https://arxiv.org/abs/2307.05473"
+    },
+    {
+      "arxiv_id": "2307.05463",
+      "title": "EgoVLPv2: Egocentric Video-Language Pre-training with Fusion in the\n  Backbone",
+      "authors": [
+        "Shraman Pramanick",
+        "Yale Song",
+        "Sayan Nag",
+        "Kevin Qinghong Lin",
+        "Hardik Shah",
+        "Mike Zheng Shou",
+        "Rama Chellappa",
+        "Pengchuan Zhang"
+      ],
+      "abstract": "Video-language pre-training (VLP) has become increasingly important due to\nits ability to generalize to various vision and language tasks. However,\nexisting egocentric VLP frameworks utilize separate video and language encoders\nand learn task-specific cross-modal information only during fine-tuning,\nlimiting the development of a unified system. In this work, we introduce the\nsecond generation of egocentric video-language pre-training (EgoVLPv2), a\nsignificant improvement from the previous generation, by incorporating\ncross-modal fusion directly into the video and language backbones. EgoVLPv2\nlearns strong video-text representation during pre-training and reuses the\ncross-modal attention modules to support different downstream tasks in a\nflexible and efficient manner, reducing fine-tuning costs. Moreover, our\nproposed fusion in the backbone strategy is more lightweight and\ncompute-efficient than stacking additional fusion-specific layers. Extensive\nexperiments on a wide range of VL tasks demonstrate the effectiveness of\nEgoVLPv2 by achieving consistent state-of-the-art performance over strong\nbaselines across all downstream. Our project page can be found at\nhttps://shramanpramanick.github.io/EgoVLPv2/.",
+      "published_at": "2023-07-11",
+      "submitted_at": "2023-07-12",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/EgoVLPv2",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.05463",
+      "arxiv_url": "https://arxiv.org/abs/2307.05463"
+    },
+    {
+      "arxiv_id": "2307.05462",
+      "title": "Efficient 3D Articulated Human Generation with Layered Surface Volumes",
+      "authors": [
+        "Yinghao Xu",
+        "Wang Yifan",
+        "Alexander W. Bergman",
+        "Menglei Chai",
+        "Bolei Zhou",
+        "Gordon Wetzstein"
+      ],
+      "abstract": "Access to high-quality and diverse 3D articulated digital human assets is\ncrucial in various applications, ranging from virtual reality to social\nplatforms. Generative approaches, such as 3D generative adversarial networks\n(GANs), are rapidly replacing laborious manual content creation tools. However,\nexisting 3D GAN frameworks typically rely on scene representations that\nleverage either template meshes, which are fast but offer limited quality, or\nvolumes, which offer high capacity but are slow to render, thereby limiting the\n3D fidelity in GAN settings. In this work, we introduce layered surface volumes\n(LSVs) as a new 3D object representation for articulated digital humans. LSVs\nrepresent a human body using multiple textured mesh layers around a\nconventional template. These layers are rendered using alpha compositing with\nfast differentiable rasterization, and they can be interpreted as a volumetric\nrepresentation that allocates its capacity to a manifold of finite thickness\naround the template. Unlike conventional single-layer templates that struggle\nwith representing fine off-surface details like hair or accessories, our\nsurface volumes naturally capture such details. LSVs can be articulated, and\nthey exhibit exceptional efficiency in GAN settings, where a 2D generator\nlearns to synthesize the RGBA textures for the individual layers. Trained on\nunstructured, single-view 2D image datasets, our LSV-GAN generates high-quality\nand view-consistent 3D articulated digital humans without the need for\nview-inconsistent 2D upsampling networks.",
+      "published_at": "2023-07-11",
+      "submitted_at": "2023-07-12",
+      "submitted_by": "AK",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.05462",
+      "arxiv_url": "https://arxiv.org/abs/2307.05462"
+    },
+    {
+      "arxiv_id": "2307.05014",
+      "title": "Test-Time Training on Video Streams",
+      "authors": [
+        "Renhao Wang",
+        "Yu Sun",
+        "Yossi Gandelsman",
+        "Xinlei Chen",
+        "Alexei A. Efros",
+        "Xiaolong Wang"
+      ],
+      "abstract": "Prior work has established test-time training (TTT) as a general framework to\nfurther improve a trained model at test time. Before making a prediction on\neach test instance, the model is trained on the same instance using a\nself-supervised task, such as image reconstruction with masked autoencoders. We\nextend TTT to the streaming setting, where multiple test instances - video\nframes in our case - arrive in temporal order. Our extension is online TTT: The\ncurrent model is initialized from the previous model, then trained on the\ncurrent frame and a small window of frames immediately before. Online TTT\nsignificantly outperforms the fixed-model baseline for four tasks, on three\nreal-world datasets. The relative improvement is 45% and 66% for instance and\npanoptic segmentation. Surprisingly, online TTT also outperforms its offline\nvariant that accesses more information, training on all frames from the entire\ntest video regardless of temporal order. This differs from previous findings\nusing synthetic videos. We conceptualize locality as the advantage of online\nover offline TTT. We analyze the role of locality with ablations and a theory\nbased on bias-variance trade-off.",
+      "published_at": "2023-07-11",
+      "submitted_at": "2023-07-12",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.05014",
+      "arxiv_url": "https://arxiv.org/abs/2307.05014"
+    }
+  ]
+}

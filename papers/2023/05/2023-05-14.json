@@ -1,0 +1,68 @@
+{
+  "date": "2023-05-14",
+  "total": 3,
+  "source": "https://huggingface.co/papers/date/2023-05-14",
+  "papers": [
+    {
+      "arxiv_id": "2305.07185",
+      "title": "MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers",
+      "authors": [
+        "Lili Yu",
+        "Dániel Simig",
+        "Colin Flaherty",
+        "Armen Aghajanyan",
+        "Luke Zettlemoyer",
+        "Mike Lewis"
+      ],
+      "abstract": "Autoregressive transformers are spectacular models for short sequences but\nscale poorly to long sequences such as high-resolution images, podcasts, code,\nor books. We proposed Megabyte, a multi-scale decoder architecture that enables\nend-to-end differentiable modeling of sequences of over one million bytes.\nMegabyte segments sequences into patches and uses a local submodel within\npatches and a global model between patches. This enables sub-quadratic\nself-attention, much larger feedforward layers for the same compute, and\nimproved parallelism during decoding -- unlocking better performance at reduced\ncost for both training and generation. Extensive experiments show that Megabyte\nallows byte-level models to perform competitively with subword models on long\ncontext language modeling, achieve state-of-the-art density estimation on\nImageNet, and model audio from raw files. Together, these results establish the\nviability of tokenization-free autoregressive sequence modeling at scale.",
+      "published_at": "2023-05-12",
+      "submitted_at": "2023-05-14",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07185",
+      "arxiv_url": "https://arxiv.org/abs/2305.07185"
+    },
+    {
+      "arxiv_id": "2305.07243",
+      "title": "Better speech synthesis through scaling",
+      "authors": [
+        "James Betker"
+      ],
+      "abstract": "In recent years, the field of image generation has been revolutionized by the\napplication of autoregressive transformers and DDPMs. These approaches model\nthe process of image generation as a step-wise probabilistic processes and\nleverage large amounts of compute and data to learn the image distribution.\nThis methodology of improving performance need not be confined to images. This\npaper describes a way to apply advances in the image generative domain to\nspeech synthesis. The result is TorToise -- an expressive, multi-voice\ntext-to-speech system.\n  All model code and trained weights have been open-sourced at\nhttps://github.com/neonbjb/tortoise-tts.",
+      "published_at": "2023-05-12",
+      "submitted_at": "2023-05-14",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/neonbjb/tortoise-tts",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07243",
+      "arxiv_url": "https://arxiv.org/abs/2305.07243"
+    },
+    {
+      "arxiv_id": "2305.07490",
+      "title": "ArtGPT-4: Artistic Vision-Language Understanding with Adapter-enhanced\n  MiniGPT-4",
+      "authors": [
+        "Zhengqing Yuan",
+        "Huiwen Xue",
+        "Xinyi Wang",
+        "Yongming Liu",
+        "Zhuanzhe Zhao",
+        "Kun Wang"
+      ],
+      "abstract": "In recent years, large language models (LLMs) have made significant progress\nin natural language processing (NLP), with models like ChatGPT and GPT-4\nachieving impressive capabilities in various linguistic tasks. However,\ntraining models on such a large scale is challenging, and finding datasets that\nmatch the model's scale is often difficult. Fine-tuning and training models\nwith fewer parameters using novel methods have emerged as promising approaches\nto overcome these challenges. One such model is MiniGPT-4, which achieves\ncomparable vision-language understanding to GPT-4 by leveraging novel\npre-training models and innovative training strategies. However, the model\nstill faces some challenges in image understanding, particularly in artistic\npictures. A novel multimodal model called ArtGPT-4 has been proposed to address\nthese limitations. ArtGPT-4 was trained on image-text pairs using a Tesla A100\ndevice in just 2 hours, using only about 200 GB of data. The model can depict\nimages with an artistic flair and generate visual code, including aesthetically\npleasing HTML/CSS web pages. Furthermore, the article proposes novel benchmarks\nfor evaluating the performance of vision-language models. In the subsequent\nevaluation methods, ArtGPT-4 scored more than 1 point higher than the current\nstate-of-the-art model and was only 0.25 points lower than artists on\na 6-point scale. Our code and pre-trained model are available at\nhttps://huggingface.co/Tyrannosaurus/ArtGPT-4.",
+      "published_at": "2023-05-12",
+      "submitted_at": "2023-05-14",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "https://github.com/dlyuangod/artgpt-4",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07490",
+      "arxiv_url": "https://arxiv.org/abs/2305.07490"
+    }
+  ]
+}

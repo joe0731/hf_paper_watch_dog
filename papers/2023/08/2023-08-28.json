@@ -1,0 +1,118 @@
+{
+  "date": "2023-08-28",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2023-08-28",
+  "papers": [
+    {
+      "arxiv_id": "2308.13418",
+      "title": "Nougat: Neural Optical Understanding for Academic Documents",
+      "authors": [
+        "Lukas Blecher",
+        "Guillem Cucurull",
+        "Thomas Scialom",
+        "Robert Stojnic"
+      ],
+      "abstract": "Scientific knowledge is predominantly stored in books and scientific\njournals, often in the form of PDFs. However, the PDF format leads to a loss of\nsemantic information, particularly for mathematical expressions. We propose\nNougat (Neural Optical Understanding for Academic Documents), a Visual\nTransformer model that performs an Optical Character Recognition (OCR) task for\nprocessing scientific documents into a markup language, and demonstrate the\neffectiveness of our model on a new dataset of scientific documents. The\nproposed approach offers a promising solution to enhance the accessibility of\nscientific knowledge in the digital age, by bridging the gap between\nhuman-readable documents and machine-readable text. We release the models and\ncode to accelerate future work on scientific text recognition.",
+      "published_at": "2023-08-25",
+      "submitted_at": "2023-08-28",
+      "submitted_by": "AK",
+      "upvotes": 42,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/nougat",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.13418",
+      "arxiv_url": "https://arxiv.org/abs/2308.13418"
+    },
+    {
+      "arxiv_id": "2308.13137",
+      "title": "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language\n  Models",
+      "authors": [
+        "Wenqi Shao",
+        "Mengzhao Chen",
+        "Peng Xu",
+        "Lirui Zhao",
+        "Zhiqian Li",
+        "Kaipeng Zhang",
+        "Peng Gao",
+        "Yu Qiao",
+        "Ping Luo"
+      ],
+      "abstract": "Large language models (LLMs) have revolutionized natural language processing\ntasks. However, their practical deployment is hindered by their immense memory\nand computation requirements. Although recent post-training quantization (PTQ)\nmethods are effective in reducing memory footprint and improving the\ncomputational efficiency of LLM, they hand-craft quantization parameters, which\nleads to low performance and fails to deal with extremely low-bit quantization.\nTo tackle this issue, we introduce an Omnidirectionally calibrated Quantization\n(OmniQuant) technique for LLMs, which achieves good performance in diverse\nquantization settings while maintaining the computational efficiency of PTQ by\nefficiently optimizing various quantization parameters. OmniQuant comprises two\ninnovative components including Learnable Weight Clipping (LWC) and Learnable\nEquivalent Transformation (LET). LWC modulates the extreme values of weights by\noptimizing the clipping threshold. Meanwhile, LET tackles activation outliers\nby shifting the challenge of quantization from activations to weights through a\nlearnable equivalent transformation. Operating within a differentiable\nframework using block-wise error minimization, OmniQuant can optimize the\nquantization process efficiently for both weight-only and weight-activation\nquantization. For instance, the LLaMA-2 model family with the size of 7-70B can\nbe processed with OmniQuant on a single A100-40G GPU within 1-16 hours using\n128 samples. Extensive experiments validate OmniQuant's superior performance\nacross diverse quantization configurations such as W4A4, W6A6, W4A16, W3A16,\nand W2A16. Additionally, OmniQuant demonstrates effectiveness in\ninstruction-tuned models and delivers notable improvements in inference speed\nand memory reduction on real devices. Codes and models are available at\nhttps://github.com/OpenGVLab/OmniQuant.",
+      "published_at": "2023-08-25",
+      "submitted_at": "2023-08-28",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "https://github.com/opengvlab/omniquant",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.13137",
+      "arxiv_url": "https://arxiv.org/abs/2308.13137"
+    },
+    {
+      "arxiv_id": "2308.13416",
+      "title": "SoTaNa: The Open-Source Software Development Assistant",
+      "authors": [
+        "Ensheng Shi",
+        "Fengji Zhang",
+        "Yanlin Wang",
+        "Bei Chen",
+        "Lun Du",
+        "Hongyu Zhang",
+        "Shi Han",
+        "Dongmei Zhang",
+        "Hongbin Sun"
+      ],
+      "abstract": "Software development plays a crucial role in driving innovation and\nefficiency across modern societies. To meet the demands of this dynamic field,\nthere is a growing need for an effective software development assistant.\nHowever, existing large language models represented by ChatGPT suffer from\nlimited accessibility, including training data and model weights. Although\nother large open-source models like LLaMA have shown promise, they still\nstruggle with understanding human intent. In this paper, we present SoTaNa, an\nopen-source software development assistant. SoTaNa utilizes ChatGPT to generate\nhigh-quality instruction-based data for the domain of software engineering and\nemploys a parameter-efficient fine-tuning approach to enhance the open-source\nfoundation model, LLaMA. We evaluate the effectiveness of  in answering\nStack Overflow questions and demonstrate its capabilities. Additionally, we\ndiscuss its capabilities in code summarization and generation, as well as the\nimpact of varying the volume of generated data on model performance. Notably,\nSoTaNa can run on a single GPU, making it accessible to a broader range of\nresearchers. Our code, model weights, and data are public at\nhttps://github.com/DeepSoftwareAnalytics/SoTaNa.",
+      "published_at": "2023-08-25",
+      "submitted_at": "2023-08-28",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/deepsoftwareanalytics/sotana",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.13416",
+      "arxiv_url": "https://arxiv.org/abs/2308.13416"
+    },
+    {
+      "arxiv_id": "2308.13494",
+      "title": "Eventful Transformers: Leveraging Temporal Redundancy in Vision\n  Transformers",
+      "authors": [
+        "Matthew Dutson",
+        "Yin Li",
+        "Mohit Gupta"
+      ],
+      "abstract": "Vision Transformers achieve impressive accuracy across a range of visual\nrecognition tasks. Unfortunately, their accuracy frequently comes with high\ncomputational costs. This is a particular issue in video recognition, where\nmodels are often applied repeatedly across frames or temporal chunks. In this\nwork, we exploit temporal redundancy between subsequent inputs to reduce the\ncost of Transformers for video processing. We describe a method for identifying\nand re-processing only those tokens that have changed significantly over time.\nOur proposed family of models, Eventful Transformers, can be converted from\nexisting Transformers (often without any re-training) and give adaptive control\nover the compute cost at runtime. We evaluate our method on large-scale\ndatasets for video object detection (ImageNet VID) and action recognition\n(EPIC-Kitchens 100). Our approach leads to significant computational savings\n(on the order of 2-4x) with only minor reductions in accuracy.",
+      "published_at": "2023-08-25",
+      "submitted_at": "2023-08-28",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/WISION-Lab/eventful-transformer",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.13494",
+      "arxiv_url": "https://arxiv.org/abs/2308.13494"
+    },
+    {
+      "arxiv_id": "2308.13404",
+      "title": "Relighting Neural Radiance Fields with Shadow and Highlight Hints",
+      "authors": [
+        "Chong Zeng",
+        "Guojun Chen",
+        "Yue Dong",
+        "Pieter Peers",
+        "Hongzhi Wu",
+        "Xin Tong"
+      ],
+      "abstract": "This paper presents a novel neural implicit radiance representation for free\nviewpoint relighting from a small set of unstructured photographs of an object\nlit by a moving point light source different from the view position. We express\nthe shape as a signed distance function modeled by a multi layer perceptron. In\ncontrast to prior relightable implicit neural representations, we do not\ndisentangle the different reflectance components, but model both the local and\nglobal reflectance at each point by a second multi layer perceptron that, in\naddition, to density features, the current position, the normal (from the\nsigned distace function), view direction, and light position, also takes shadow\nand highlight hints to aid the network in modeling the corresponding high\nfrequency light transport effects. These hints are provided as a suggestion,\nand we leave it up to the network to decide how to incorporate these in the\nfinal relit result. We demonstrate and validate our neural implicit\nrepresentation on synthetic and real scenes exhibiting a wide variety of\nshapes, material properties, and global illumination light transport.",
+      "published_at": "2023-08-25",
+      "submitted_at": "2023-08-28",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/iamNCJ/NRHints",
+      "project_page": "https://nrhints.github.io/",
+      "hf_url": "https://huggingface.co/papers/2308.13404",
+      "arxiv_url": "https://arxiv.org/abs/2308.13404"
+    }
+  ]
+}

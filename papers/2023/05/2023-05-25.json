@@ -1,0 +1,114 @@
+{
+  "date": "2023-05-25",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2023-05-25",
+  "papers": [
+    {
+      "arxiv_id": "2305.15038",
+      "title": "Is GPT-4 a Good Data Analyst?",
+      "authors": [
+        "Liying Cheng",
+        "Xingxuan Li",
+        "Lidong Bing"
+      ],
+      "abstract": "As large language models (LLMs) have demonstrated their powerful capabilities\nin plenty of domains and tasks, including context understanding, code\ngeneration, language generation, data storytelling, etc., many data analysts\nmay raise concerns if their jobs will be replaced by AI. This controversial\ntopic has drawn a lot of attention in public. However, we are still at a stage\nof divergent opinions without any definitive conclusion. Motivated by this, we\nraise the research question of \"is GPT-4 a good data analyst?\" in this work and\naim to answer it by conducting head-to-head comparative studies. In detail, we\nregard GPT-4 as a data analyst to perform end-to-end data analysis with\ndatabases from a wide range of domains. We propose a framework to tackle the\nproblems by carefully designing the prompts for GPT-4 to conduct experiments.\nWe also design several task-specific evaluation metrics to systematically\ncompare the performance between several professional human data analysts and\nGPT-4. Experimental results show that GPT-4 can achieve comparable performance\nto humans. We also provide in-depth discussions about our results to shed light\non further studies before we reach the conclusion that GPT-4 can replace data\nanalysts.",
+      "published_at": "2023-05-24",
+      "submitted_at": "2023-05-25",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/damo-nlp-sg/gpt4-as-dataanalyst",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.15038",
+      "arxiv_url": "https://arxiv.org/abs/2305.15038"
+    },
+    {
+      "arxiv_id": "2305.14540",
+      "title": "LLMs as Factual Reasoners: Insights from Existing Benchmarks and Beyond",
+      "authors": [
+        "Philippe Laban",
+        "Wojciech Kryściński",
+        "Divyansh Agarwal",
+        "Alexander R. Fabbri",
+        "Caiming Xiong",
+        "Shafiq Joty",
+        "Chien-Sheng Wu"
+      ],
+      "abstract": "With the recent appearance of LLMs in practical settings, having methods that\ncan effectively detect factual inconsistencies is crucial to reduce the\npropagation of misinformation and improve trust in model outputs. When testing\non existing factual consistency benchmarks, we find that a few large language\nmodels (LLMs) perform competitively on classification benchmarks for factual\ninconsistency detection compared to traditional non-LLM methods. However, a\ncloser analysis reveals that most LLMs fail on more complex formulations of the\ntask and exposes issues with existing evaluation benchmarks, affecting\nevaluation precision. To address this, we propose a new protocol for\ninconsistency detection benchmark creation and implement it in a 10-domain\nbenchmark called SummEdits. This new benchmark is 20 times more cost-effective\nper sample than previous benchmarks and highly reproducible, as we estimate\ninter-annotator agreement at about 0.9. Most LLMs struggle on SummEdits, with\nperformance close to random chance. The best-performing model, GPT-4, is still\n8\\% below estimated human performance, highlighting the gaps in LLMs' ability\nto reason about facts and detect inconsistencies when they occur.",
+      "published_at": "2023-05-23",
+      "submitted_at": "2023-05-25",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/salesforce/factualnlg",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.14540",
+      "arxiv_url": "https://arxiv.org/abs/2305.14540"
+    },
+    {
+      "arxiv_id": "2305.15486",
+      "title": "SPRING: GPT-4 Out-performs RL Algorithms by Studying Papers and\n  Reasoning",
+      "authors": [
+        "Yue Wu",
+        "So Yeon Min",
+        "Shrimai Prabhumoye",
+        "Yonatan Bisk",
+        "Ruslan Salakhutdinov",
+        "Amos Azaria",
+        "Tom Mitchell",
+        "Yuanzhi Li"
+      ],
+      "abstract": "Open-world survival games pose significant challenges for AI algorithms due\nto their multi-tasking, deep exploration, and goal prioritization requirements.\nDespite reinforcement learning (RL) being popular for solving games, its high\nsample complexity limits its effectiveness in complex open-world games like\nCrafter or Minecraft. We propose a novel approach, SPRING, to read the game's\noriginal academic paper and use the knowledge learned to reason and play the\ngame through a large language model (LLM). Prompted with the LaTeX source as\ngame context and a description of the agent's current observation, our SPRING\nframework employs a directed acyclic graph (DAG) with game-related questions as\nnodes and dependencies as edges. We identify the optimal action to take in the\nenvironment by traversing the DAG and calculating LLM responses for each node\nin topological order, with the LLM's answer to final node directly translating\nto environment actions. In our experiments, we study the quality of in-context\n\"reasoning\" induced by different forms of prompts under the setting of the\nCrafter open-world environment. Our experiments suggest that LLMs, when\nprompted with consistent chain-of-thought, have great potential in completing\nsophisticated high-level trajectories. Quantitatively, SPRING with GPT-4\noutperforms all state-of-the-art RL baselines, trained for 1M steps, without\nany training. Finally, we show the potential of games as a test bed for LLMs.",
+      "published_at": "2023-05-24",
+      "submitted_at": "2023-05-25",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "https://github.com/holmeswww/spring",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.15486",
+      "arxiv_url": "https://arxiv.org/abs/2305.15486"
+    },
+    {
+      "arxiv_id": "2305.14878",
+      "title": "Leveraging GPT-4 for Automatic Translation Post-Editing",
+      "authors": [
+        "Vikas Raunak",
+        "Amr Sharaf",
+        "Hany Hassan Awadallah",
+        "Arul Menezes"
+      ],
+      "abstract": "While Neural Machine Translation (NMT) represents the leading approach to\nMachine Translation (MT), the outputs of NMT models still require translation\npost-editing to rectify errors and enhance quality, particularly under critical\nsettings. In this work, we formalize the task of translation post-editing with\nLarge Language Models (LLMs) and explore the use of GPT-4 to automatically\npost-edit NMT outputs across several language pairs. Our results demonstrate\nthat GPT-4 is adept at translation post-editing and produces meaningful edits\neven when the target language is not English. Notably, we achieve\nstate-of-the-art performance on WMT-22 English-Chinese, English-German,\nChinese-English and German-English language pairs using GPT-4 based\npost-editing, as evaluated by state-of-the-art MT quality metrics.",
+      "published_at": "2023-05-24",
+      "submitted_at": "2023-05-25",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.14878",
+      "arxiv_url": "https://arxiv.org/abs/2305.14878"
+    },
+    {
+      "arxiv_id": "2305.14564",
+      "title": "PEARL: Prompting Large Language Models to Plan and Execute Actions Over\n  Long Documents",
+      "authors": [
+        "Simeng Sun",
+        "Yang Liu",
+        "Shuohang Wang",
+        "Chenguang Zhu",
+        "Mohit Iyyer"
+      ],
+      "abstract": "Strategies such as chain-of-thought prompting improve the performance of\nlarge language models (LLMs) on complex reasoning tasks by decomposing input\nexamples into intermediate steps. However, it remains unclear how to apply such\nmethods to reason over long input documents, in which both the decomposition\nand the output of each intermediate step are non-trivial to obtain. In this\nwork, we propose PEARL, a prompting framework to improve reasoning over long\ndocuments, which consists of three stages: action mining, plan formulation, and\nplan execution. More specifically, given a question about a long document,\nPEARL decomposes the question into a sequence of actions (e.g., SUMMARIZE,\nFIND_EVENT, FIND_RELATION) and then executes them over the document to obtain\nthe answer. Each stage of PEARL is implemented via zero-shot or few-shot\nprompting of LLMs (in our work, GPT-4) with minimal human input. We evaluate\nPEARL on a challenging subset of the QuALITY dataset, which contains questions\nthat require complex reasoning over long narrative texts. PEARL outperforms\nzero-shot and chain-of-thought prompting on this dataset, and ablation\nexperiments show that each stage of PEARL is critical to its performance.\nOverall, PEARL is a first step towards leveraging LLMs to reason over long\ndocuments.",
+      "published_at": "2023-05-23",
+      "submitted_at": "2023-05-25",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "https://github.com/simengsun/pearl",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.14564",
+      "arxiv_url": "https://arxiv.org/abs/2305.14564"
+    }
+  ]
+}

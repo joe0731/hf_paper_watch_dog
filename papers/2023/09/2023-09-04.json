@@ -1,0 +1,54 @@
+{
+  "date": "2023-09-04",
+  "total": 2,
+  "source": "https://huggingface.co/papers/date/2023-09-04",
+  "papers": [
+    {
+      "arxiv_id": "2309.00610",
+      "title": "CityDreamer: Compositional Generative Model of Unbounded 3D Cities",
+      "authors": [
+        "Haozhe Xie",
+        "Zhaoxi Chen",
+        "Fangzhou Hong",
+        "Ziwei Liu"
+      ],
+      "abstract": "In recent years, extensive research has focused on 3D natural scene\ngeneration, but the domain of 3D city generation has not received as much\nexploration. This is due to the greater challenges posed by 3D city generation,\nmainly because humans are more sensitive to structural distortions in urban\nenvironments. Additionally, generating 3D cities is more complex than 3D\nnatural scenes since buildings, as objects of the same class, exhibit a wider\nrange of appearances compared to the relatively consistent appearance of\nobjects like trees in natural scenes. To address these challenges, we propose\nCityDreamer, a compositional generative model designed specifically for\nunbounded 3D cities, which separates the generation of building instances from\nother background objects, such as roads, green lands, and water areas, into\ndistinct modules. Furthermore, we construct two datasets, OSM and GoogleEarth,\ncontaining a vast amount of real-world city imagery to enhance the realism of\nthe generated 3D cities both in their layouts and appearances. Through\nextensive experiments, CityDreamer has proven its superiority over\nstate-of-the-art methods in generating a wide range of lifelike 3D cities.",
+      "published_at": "2023-09-01",
+      "submitted_at": "2023-09-04",
+      "submitted_by": "AK",
+      "upvotes": 21,
+      "organization": "",
+      "github_repo": "https://github.com/hzxie/CityDreamer",
+      "project_page": "https://haozhexie.com/project/city-dreamer",
+      "hf_url": "https://huggingface.co/papers/2309.00610",
+      "arxiv_url": "https://arxiv.org/abs/2309.00610"
+    },
+    {
+      "arxiv_id": "2309.00615",
+      "title": "Point-Bind & Point-LLM: Aligning Point Cloud with Multi-modality for 3D\n  Understanding, Generation, and Instruction Following",
+      "authors": [
+        "Ziyu Guo",
+        "Renrui Zhang",
+        "Xiangyang Zhu",
+        "Yiwen Tang",
+        "Xianzheng Ma",
+        "Jiaming Han",
+        "Kexin Chen",
+        "Peng Gao",
+        "Xianzhi Li",
+        "Hongsheng Li",
+        "Pheng-Ann Heng"
+      ],
+      "abstract": "We introduce Point-Bind, a 3D multi-modality model aligning point clouds with\n2D image, language, audio, and video. Guided by ImageBind, we construct a joint\nembedding space between 3D and multi-modalities, enabling many promising\napplications, e.g., any-to-3D generation, 3D embedding arithmetic, and 3D\nopen-world understanding. On top of this, we further present Point-LLM, the\nfirst 3D large language model (LLM) following 3D multi-modal instructions. By\nparameter-efficient fine-tuning techniques, Point-LLM injects the semantics of\nPoint-Bind into pre-trained LLMs, e.g., LLaMA, which requires no 3D instruction\ndata, but exhibits superior 3D and multi-modal question-answering capacity. We\nhope our work may cast a light on the community for extending 3D point clouds\nto multi-modality applications. Code is available at\nhttps://github.com/ZiyuGuo99/Point-Bind_Point-LLM.",
+      "published_at": "2023-09-01",
+      "submitted_at": "2023-09-04",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/ziyuguo99/point-bind_point-llm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.00615",
+      "arxiv_url": "https://arxiv.org/abs/2309.00615"
+    }
+  ]
+}

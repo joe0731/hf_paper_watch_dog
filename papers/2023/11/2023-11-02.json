@@ -1,0 +1,203 @@
+{
+  "date": "2023-11-02",
+  "total": 9,
+  "source": "https://huggingface.co/papers/date/2023-11-02",
+  "papers": [
+    {
+      "arxiv_id": "2311.00430",
+      "title": "Distil-Whisper: Robust Knowledge Distillation via Large-Scale Pseudo\n  Labelling",
+      "authors": [
+        "Sanchit Gandhi",
+        "Patrick von Platen",
+        "Alexander M. Rush"
+      ],
+      "abstract": "As the size of pre-trained speech recognition models increases, running these\nlarge models in low-latency or resource-constrained environments becomes\nchallenging. In this work, we leverage pseudo-labelling to assemble a\nlarge-scale open-source dataset which we use to distill the Whisper model into\na smaller variant, called Distil-Whisper. Using a simple word error rate (WER)\nheuristic, we select only the highest quality pseudo-labels for training. The\ndistilled model is 5.8 times faster with 51% fewer parameters, while performing\nto within 1% WER on out-of-distribution test data in a zero-shot transfer\nsetting. Distil-Whisper maintains the robustness of the Whisper model to\ndifficult acoustic conditions, while being less prone to hallucination errors\non long-form audio. Distil-Whisper is designed to be paired with Whisper for\nspeculative decoding, yielding a 2 times speed-up while mathematically ensuring\nthe same outputs as the original model. To facilitate further research in this\ndomain, we make our training code, inference code and models publicly\naccessible.",
+      "published_at": "2023-11-01",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 56,
+      "organization": "",
+      "github_repo": "https://github.com/innerNULL/simpler-distil-whisper",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00430",
+      "arxiv_url": "https://arxiv.org/abs/2311.00430"
+    },
+    {
+      "arxiv_id": "2311.00571",
+      "title": "LLaVA-Interactive: An All-in-One Demo for Image Chat, Segmentation,\n  Generation and Editing",
+      "authors": [
+        "Wei-Ge Chen",
+        "Irina Spiridonova",
+        "Jianwei Yang",
+        "Chunyuan Li"
+      ],
+      "abstract": "LLaVA-Interactive is a research prototype for multimodal human-AI\ninteraction. The system can have multi-turn dialogues with human users by\ntaking multimodal user inputs and generating multimodal responses. Importantly,\nLLaVA-Interactive goes beyond language prompt, where visual prompt is enabled\nto align human intents in the interaction. The development of LLaVA-Interactive\nis extremely cost-efficient as the system combines three multimodal skills of\npre-built AI models without additional model training: visual chat of LLaVA,\nimage segmentation from SEEM, as well as image generation and editing from\nGLIGEN. A diverse set of application scenarios is presented to demonstrate the\npromises of LLaVA-Interactive and to inspire future research in multimodal\ninteractive systems.",
+      "published_at": "2023-11-01",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 43,
+      "organization": "",
+      "github_repo": "https://github.com/LLaVA-VL/LLaVA-Interactive-Demo",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00571",
+      "arxiv_url": "https://arxiv.org/abs/2311.00571"
+    },
+    {
+      "arxiv_id": "2311.00613",
+      "title": "Controllable Music Production with Diffusion Models and Guidance\n  Gradients",
+      "authors": [
+        "Mark Levy",
+        "Bruno Di Giorgi",
+        "Floris Weers",
+        "Angelos Katharopoulos",
+        "Tom Nickson"
+      ],
+      "abstract": "We demonstrate how conditional generation from diffusion models can be used\nto tackle a variety of realistic tasks in the production of music in 44.1kHz\nstereo audio with sampling-time guidance. The scenarios we consider include\ncontinuation, inpainting and regeneration of musical audio, the creation of\nsmooth transitions between two different music tracks, and the transfer of\ndesired stylistic characteristics to existing audio clips. We achieve this by\napplying guidance at sampling time in a simple framework that supports both\nreconstruction and classification losses, or any combination of the two. This\napproach ensures that generated audio can match its surrounding context, or\nconform to a class distribution or latent representation specified relative to\nany suitable pre-trained classifier or embedding model.",
+      "published_at": "2023-11-01",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 26,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00613",
+      "arxiv_url": "https://arxiv.org/abs/2311.00613"
+    },
+    {
+      "arxiv_id": "2311.00618",
+      "title": "De-Diffusion Makes Text a Strong Cross-Modal Interface",
+      "authors": [
+        "Chen Wei",
+        "Chenxi Liu",
+        "Siyuan Qiao",
+        "Zhishuai Zhang",
+        "Alan Yuille",
+        "Jiahui Yu"
+      ],
+      "abstract": "We demonstrate text as a strong cross-modal interface. Rather than relying on\ndeep embeddings to connect image and language as the interface representation,\nour approach represents an image as text, from which we enjoy the\ninterpretability and flexibility inherent to natural language. We employ an\nautoencoder that uses a pre-trained text-to-image diffusion model for decoding.\nThe encoder is trained to transform an input image into text, which is then fed\ninto the fixed text-to-image diffusion decoder to reconstruct the original\ninput -- a process we term De-Diffusion. Experiments validate both the\nprecision and comprehensiveness of De-Diffusion text representing images, such\nthat it can be readily ingested by off-the-shelf text-to-image tools and LLMs\nfor diverse multi-modal tasks. For example, a single De-Diffusion model can\ngeneralize to provide transferable prompts for different text-to-image tools,\nand also achieves a new state of the art on open-ended vision-language tasks by\nsimply prompting large language models with few-shot examples.",
+      "published_at": "2023-11-01",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 23,
+      "organization": "",
+      "github_repo": "https://github.com/Yaxin9Luo/my_dediffusion",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00618",
+      "arxiv_url": "https://arxiv.org/abs/2311.00618"
+    },
+    {
+      "arxiv_id": "2311.00059",
+      "title": "The Generative AI Paradox: \"What It Can Create, It May Not Understand\"",
+      "authors": [
+        "Peter West",
+        "Ximing Lu",
+        "Nouha Dziri",
+        "Faeze Brahman",
+        "Linjie Li",
+        "Jena D. Hwang",
+        "Liwei Jiang",
+        "Jillian Fisher",
+        "Abhilasha Ravichander",
+        "Khyathi Chandu",
+        "Benjamin Newman",
+        "Pang Wei Koh",
+        "Allyson Ettinger",
+        "Yejin Choi"
+      ],
+      "abstract": "The recent wave of generative AI has sparked unprecedented global attention,\nwith both excitement and concern over potentially superhuman levels of\nartificial intelligence: models now take only seconds to produce outputs that\nwould challenge or exceed the capabilities even of expert humans. At the same\ntime, models still show basic errors in understanding that would not be\nexpected even in non-expert humans. This presents us with an apparent paradox:\nhow do we reconcile seemingly superhuman capabilities with the persistence of\nerrors that few humans would make? In this work, we posit that this tension\nreflects a divergence in the configuration of intelligence in today's\ngenerative models relative to intelligence in humans. Specifically, we propose\nand test the Generative AI Paradox hypothesis: generative models, having been\ntrained directly to reproduce expert-like outputs, acquire generative\ncapabilities that are not contingent upon -- and can therefore exceed -- their\nability to understand those same types of outputs. This contrasts with humans,\nfor whom basic understanding almost always precedes the ability to generate\nexpert-level outputs. We test this hypothesis through controlled experiments\nanalyzing generation vs. understanding in generative models, across both\nlanguage and image modalities. Our results show that although models can\noutperform humans in generation, they consistently fall short of human\ncapabilities in measures of understanding, as well as weaker correlation\nbetween generation and understanding performance, and more brittleness to\nadversarial inputs. Our findings support the hypothesis that models' generative\ncapability may not be contingent upon understanding capability, and call for\ncaution in interpreting artificial intelligence by analogy to human\nintelligence.",
+      "published_at": "2023-10-31",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 20,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00059",
+      "arxiv_url": "https://arxiv.org/abs/2311.00059"
+    },
+    {
+      "arxiv_id": "2311.00522",
+      "title": "Text Rendering Strategies for Pixel Language Models",
+      "authors": [
+        "Jonas F. Lotz",
+        "Elizabeth Salesky",
+        "Phillip Rust",
+        "Desmond Elliott"
+      ],
+      "abstract": "Pixel-based language models process text rendered as images, which allows\nthem to handle any script, making them a promising approach to open vocabulary\nlanguage modelling. However, recent approaches use text renderers that produce\na large set of almost-equivalent input patches, which may prove sub-optimal for\ndownstream tasks, due to redundancy in the input representations. In this\npaper, we investigate four approaches to rendering text in the PIXEL model\n(Rust et al., 2023), and find that simple character bigram rendering brings\nimproved performance on sentence-level tasks without compromising performance\non token-level or multilingual tasks. This new rendering strategy also makes it\npossible to train a more compact model with only 22M parameters that performs\non par with the original 86M parameter model. Our analyses show that character\nbigram rendering leads to a consistently better model but with an anisotropic\npatch embedding space, driven by a patch frequency bias, highlighting the\nconnections between image patch- and tokenization-based language models.",
+      "published_at": "2023-11-01",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00522",
+      "arxiv_url": "https://arxiv.org/abs/2311.00522"
+    },
+    {
+      "arxiv_id": "2311.00272",
+      "title": "ChatCoder: Chat-based Refine Requirement Improves LLMs' Code Generation",
+      "authors": [
+        "Zejun Wang",
+        "Jia Li",
+        "Ge Li",
+        "Zhi Jin"
+      ],
+      "abstract": "Large language models have shown good performances in generating code to meet\nhuman requirements. However, human requirements expressed in natural languages\ncan be vague, incomplete, and ambiguous, leading large language models to\nmisunderstand human requirements and make mistakes. Worse, it is difficult for\na human user to refine the requirement. To help human users refine their\nrequirements and improve large language models' code generation performances,\nwe propose ChatCoder: a method to refine the requirements via chatting with\nlarge language models. We design a chat scheme in which the large language\nmodels will guide the human users to refine their expression of requirements to\nbe more precise, unambiguous, and complete than before. Experiments show that\nChatCoder has improved existing large language models' performance by a large\nmargin. Besides, ChatCoder has the advantage over refine-based methods and LLMs\nfine-tuned via human response.",
+      "published_at": "2023-11-01",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00272",
+      "arxiv_url": "https://arxiv.org/abs/2311.00272"
+    },
+    {
+      "arxiv_id": "2311.00257",
+      "title": "AMSP: Super-Scaling LLM Training via Advanced Model States Partitioning",
+      "authors": [
+        "Qiaoling Chen",
+        "Qinghao Hu",
+        "Zhisheng Ye",
+        "Guoteng Wang",
+        "Peng Sun",
+        "Yonggang Wen",
+        "Tianwei Zhang"
+      ],
+      "abstract": "Large Language Models (LLMs) have demonstrated impressive performance across\nvarious downstream tasks. When training these models, there is a growing\ninclination to process more tokens on larger training scales but with\nrelatively smaller model sizes. Zero Redundancy Optimizer (ZeRO), although\neffective in conventional training environments, grapples with scaling\nchallenges when confronted with this emerging paradigm. To this end, we propose\na novel LLM training framework AMSP, which undertakes a granular partitioning\nof model states, encompassing parameters (P), gradient (G), and optimizer\nstates (OS). Specifically, AMSP(1) builds a unified partitioning space,\nenabling independent partitioning strategies for P, G, and OS; (2)\nincorporates a scale-aware partitioner to autonomously search for optimal\npartitioning strategies: (3) designs a dedicated communication optimizer to\nensure proficient management of data placement discrepancies arising from\ndiverse partitioning strategies. Our evaluations show that AMSP achieves up to\n90.3% scaling efficiency across 1024 GPUs.",
+      "published_at": "2023-11-01",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/internlm/internevo",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00257",
+      "arxiv_url": "https://arxiv.org/abs/2311.00257"
+    },
+    {
+      "arxiv_id": "2311.00047",
+      "title": "Grounding Visual Illusions in Language: Do Vision-Language Models\n  Perceive Illusions Like Humans?",
+      "authors": [
+        "Yichi Zhang",
+        "Jiayi Pan",
+        "Yuchen Zhou",
+        "Rui Pan",
+        "Joyce Chai"
+      ],
+      "abstract": "Vision-Language Models (VLMs) are trained on vast amounts of data captured by\nhumans emulating our understanding of the world. However, known as visual\nillusions, human's perception of reality isn't always faithful to the physical\nworld. This raises a key question: do VLMs have the similar kind of illusions\nas humans do, or do they faithfully learn to represent reality? To investigate\nthis question, we build a dataset containing five types of visual illusions and\nformulate four tasks to examine visual illusions in state-of-the-art VLMs. Our\nfindings have shown that although the overall alignment is low, larger models\nare closer to human perception and more susceptible to visual illusions. Our\ndataset and initial findings will promote a better understanding of visual\nillusions in humans and machines and provide a stepping stone for future\ncomputational models that can better align humans and machines in perceiving\nand communicating about the shared visual world. The code and data are\navailable at https://github.com/vl-illusion/dataset.",
+      "published_at": "2023-10-31",
+      "submitted_at": "2023-11-02",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/vl-illusion/dataset",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.00047",
+      "arxiv_url": "https://arxiv.org/abs/2311.00047"
+    }
+  ]
+}

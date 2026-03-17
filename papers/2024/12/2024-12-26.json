@@ -1,0 +1,162 @@
+{
+  "date": "2024-12-26",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2024-12-26",
+  "papers": [
+    {
+      "arxiv_id": "2412.18547",
+      "title": "Token-Budget-Aware LLM Reasoning",
+      "authors": [
+        "Tingxu Han",
+        "Chunrong Fang",
+        "Shiyu Zhao",
+        "Shiqing Ma",
+        "Zhenyu Chen",
+        "Zhenting Wang"
+      ],
+      "abstract": "Reasoning is critical for large language models (LLMs) to excel in a wide\nrange of tasks. While methods like Chain-of-Thought (CoT) reasoning enhance LLM\nperformance by decomposing problems into intermediate steps, they also incur\nsignificant overhead in token usage, leading to increased costs. We find that\nthe reasoning process of current LLMs is unnecessarily lengthy and it can be\ncompressed by including a reasonable token budget in the prompt, but the choice\nof token budget plays a crucial role in the actual compression effectiveness.\nWe then propose a token-budget-aware LLM reasoning framework, which dynamically\nestimates token budgets for different problems based on reasoning complexity\nand uses the estimated token budgets to guide the reasoning process.\nExperiments show that our method effectively reduces token costs in CoT\nreasoning with only a slight performance reduction, offering a practical\nsolution to balance efficiency and accuracy in LLM reasoning. Code:\nhttps://github.com/GeniusHTX/TALE.",
+      "published_at": "2024-12-24",
+      "submitted_at": "2024-12-26",
+      "submitted_by": "Zhenting Wang",
+      "upvotes": 46,
+      "organization": "",
+      "github_repo": "https://github.com/geniushtx/tale",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.18547",
+      "arxiv_url": "https://arxiv.org/abs/2412.18547"
+    },
+    {
+      "arxiv_id": "2412.18319",
+      "title": "Mulberry: Empowering MLLM with o1-like Reasoning and Reflection via\n  Collective Monte Carlo Tree Search",
+      "authors": [
+        "Huanjin Yao",
+        "Jiaxing Huang",
+        "Wenhao Wu",
+        "Jingyi Zhang",
+        "Yibo Wang",
+        "Shunyu Liu",
+        "Yingjie Wang",
+        "Yuxin Song",
+        "Haocheng Feng",
+        "Li Shen",
+        "Dacheng Tao"
+      ],
+      "abstract": "In this work, we aim to develop an MLLM that understands and solves questions\nby learning to create each intermediate step of the reasoning involved till the\nfinal answer. To this end, we propose Collective Monte Carlo Tree Search\n(CoMCTS), a new learning-to-reason method for MLLMs, which introduces the\nconcept of collective learning into ``tree search'' for effective and efficient\nreasoning-path searching and learning. The core idea of CoMCTS is to leverage\ncollective knowledge from multiple models to collaboratively conjecture, search\nand identify effective reasoning paths toward correct answers via four\niterative operations including Expansion, Simulation and Error Positioning,\nBackpropagation, and Selection. Using CoMCTS, we construct Mulberry-260k, a\nmultimodal dataset with a tree of rich, explicit and well-defined reasoning\nnodes for each question. With Mulberry-260k, we perform collective SFT to train\nour model, Mulberry, a series of MLLMs with o1-like step-by-step Reasoning and\nReflection capabilities. Extensive experiments demonstrate the superiority of\nour proposed methods on various benchmarks. Code will be available at\nhttps://github.com/HJYao00/Mulberry",
+      "published_at": "2024-12-24",
+      "submitted_at": "2024-12-26",
+      "submitted_by": "AK",
+      "upvotes": 39,
+      "organization": "",
+      "github_repo": "https://github.com/hjyao00/mulberry",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.18319",
+      "arxiv_url": "https://arxiv.org/abs/2412.18319"
+    },
+    {
+      "arxiv_id": "2412.18609",
+      "title": "Video-Panda: Parameter-efficient Alignment for Encoder-free\n  Video-Language Models",
+      "authors": [
+        "Jinhui Yi",
+        "Syed Talal Wasim",
+        "Yanan Luo",
+        "Muzammal Naseer",
+        "Juergen Gall"
+      ],
+      "abstract": "We present an efficient encoder-free approach for video-language\nunderstanding that achieves competitive performance while significantly\nreducing computational overhead. Current video-language models typically rely\non heavyweight image encoders (300M-1.1B parameters) or video encoders (1B-1.4B\nparameters), creating a substantial computational burden when processing\nmulti-frame videos. Our method introduces a novel Spatio-Temporal Alignment\nBlock (STAB) that directly processes video inputs without requiring pre-trained\nencoders while using only 45M parameters for visual processing - at least a\n6.5times reduction compared to traditional approaches. The STAB architecture\ncombines Local Spatio-Temporal Encoding for fine-grained feature extraction,\nefficient spatial downsampling through learned attention and separate\nmechanisms for modeling frame-level and video-level relationships. Our model\nachieves comparable or superior performance to encoder-based approaches for\nopen-ended video question answering on standard benchmarks. The fine-grained\nvideo question-answering evaluation demonstrates our model's effectiveness,\noutperforming the encoder-based approaches Video-ChatGPT and Video-LLaVA in key\naspects like correctness and temporal understanding. Extensive ablation studies\nvalidate our architectural choices and demonstrate the effectiveness of our\nspatio-temporal modeling approach while achieving 3-4times faster processing\nspeeds than previous methods. Code is available at\nhttps://github.com/jh-yi/Video-Panda.",
+      "published_at": "2024-12-24",
+      "submitted_at": "2024-12-26",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/jh-yi/video-panda",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.18609",
+      "arxiv_url": "https://arxiv.org/abs/2412.18609"
+    },
+    {
+      "arxiv_id": "2412.17998",
+      "title": "WavePulse: Real-time Content Analytics of Radio Livestreams",
+      "authors": [
+        "Govind Mittal",
+        "Sarthak Gupta",
+        "Shruti Wagle",
+        "Chirag Chopra",
+        "Anthony J DeMattee",
+        "Nasir Memon",
+        "Mustaque Ahamad",
+        "Chinmay Hegde"
+      ],
+      "abstract": "Radio remains a pervasive medium for mass information dissemination, with\nAM/FM stations reaching more Americans than either smartphone-based social\nnetworking or live television. Increasingly, radio broadcasts are also streamed\nonline and accessed over the Internet. We present WavePulse, a framework that\nrecords, documents, and analyzes radio content in real-time. While our\nframework is generally applicable, we showcase the efficacy of WavePulse in a\ncollaborative project with a team of political scientists focusing on the 2024\nPresidential Elections. We use WavePulse to monitor livestreams of 396 news\nradio stations over a period of three months, processing close to 500,000 hours\nof audio streams. These streams were converted into time-stamped, diarized\ntranscripts and analyzed to track answer key political science questions at\nboth the national and state levels. Our analysis revealed how local issues\ninteracted with national trends, providing insights into information flow. Our\nresults demonstrate WavePulse's efficacy in capturing and analyzing content\nfrom radio livestreams sourced from the Web. Code and dataset can be accessed\nat https://wave-pulse.io.",
+      "published_at": "2024-12-23",
+      "submitted_at": "2024-12-26",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.17998",
+      "arxiv_url": "https://arxiv.org/abs/2412.17998"
+    },
+    {
+      "arxiv_id": "2412.18495",
+      "title": "How \"Real\" is Your Real-Time Simultaneous Speech-to-Text Translation\n  System?",
+      "authors": [
+        "Sara Papi",
+        "Peter Polak",
+        "Ondřej Bojar",
+        "Dominik Macháček"
+      ],
+      "abstract": "Simultaneous speech-to-text translation (SimulST) translates source-language\nspeech into target-language text concurrently with the speaker's speech,\nensuring low latency for better user comprehension. Despite its intended\napplication to unbounded speech, most research has focused on human\npre-segmented speech, simplifying the task and overlooking significant\nchallenges. This narrow focus, coupled with widespread terminological\ninconsistencies, is limiting the applicability of research outcomes to\nreal-world applications, ultimately hindering progress in the field. Our\nextensive literature review of 110 papers not only reveals these critical\nissues in current research but also serves as the foundation for our key\ncontributions. We 1) define the steps and core components of a SimulST system,\nproposing a standardized terminology and taxonomy; 2) conduct a thorough\nanalysis of community trends, and 3) offer concrete recommendations and future\ndirections to bridge the gaps in existing literature, from evaluation\nframeworks to system architectures, for advancing the field towards more\nrealistic and effective SimulST solutions.",
+      "published_at": "2024-12-24",
+      "submitted_at": "2024-12-26",
+      "submitted_by": "Sara Papi",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.18495",
+      "arxiv_url": "https://arxiv.org/abs/2412.18495"
+    },
+    {
+      "arxiv_id": "2412.17726",
+      "title": "VidTwin: Video VAE with Decoupled Structure and Dynamics",
+      "authors": [
+        "Yuchi Wang",
+        "Junliang Guo",
+        "Xinyi Xie",
+        "Tianyu He",
+        "Xu Sun",
+        "Jiang Bian"
+      ],
+      "abstract": "Recent advancements in video autoencoders (Video AEs) have significantly\nimproved the quality and efficiency of video generation. In this paper, we\npropose a novel and compact video autoencoder, VidTwin, that decouples video\ninto two distinct latent spaces: Structure latent vectors, which capture\noverall content and global movement, and Dynamics latent vectors, which\nrepresent fine-grained details and rapid movements. Specifically, our approach\nleverages an Encoder-Decoder backbone, augmented with two submodules for\nextracting these latent spaces, respectively. The first submodule employs a\nQ-Former to extract low-frequency motion trends, followed by downsampling\nblocks to remove redundant content details. The second averages the latent\nvectors along the spatial dimension to capture rapid motion. Extensive\nexperiments show that VidTwin achieves a high compression rate of 0.20% with\nhigh reconstruction quality (PSNR of 28.14 on the MCL-JCV dataset), and\nperforms efficiently and effectively in downstream generative tasks. Moreover,\nour model demonstrates explainability and scalability, paving the way for\nfuture research in video latent representation and generation. Our code has\nbeen released at https://github.com/microsoft/VidTok/tree/main/vidtwin.",
+      "published_at": "2024-12-23",
+      "submitted_at": "2024-12-26",
+      "submitted_by": "wangyuchi",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/microsoft/vidtok",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.17726",
+      "arxiv_url": "https://arxiv.org/abs/2412.17726"
+    },
+    {
+      "arxiv_id": "2412.17780",
+      "title": "PepTune: De Novo Generation of Therapeutic Peptides with\n  Multi-Objective-Guided Discrete Diffusion",
+      "authors": [
+        "Sophia Tang",
+        "Yinuo Zhang",
+        "Pranam Chatterjee"
+      ],
+      "abstract": "Peptide therapeutics, a major class of medicines, have achieved remarkable\nsuccess across diseases such as diabetes and cancer, with landmark examples\nsuch as GLP-1 receptor agonists revolutionizing the treatment of type-2\ndiabetes and obesity. Despite their success, designing peptides that satisfy\nmultiple conflicting objectives, such as target binding affinity, solubility,\nand membrane permeability, remains a major challenge. Classical drug\ndevelopment and structure-based design are ineffective for such tasks, as they\nfail to optimize global functional properties critical for therapeutic\nefficacy. Existing generative frameworks are largely limited to continuous\nspaces, unconditioned outputs, or single-objective guidance, making them\nunsuitable for discrete sequence optimization across multiple properties. To\naddress this, we present PepTune, a multi-objective discrete diffusion model\nfor the simultaneous generation and optimization of therapeutic peptide SMILES.\nBuilt on the Masked Discrete Language Model (MDLM) framework, PepTune ensures\nvalid peptide structures with state-dependent masking schedules and\npenalty-based objectives. To guide the diffusion process, we propose a Monte\nCarlo Tree Search (MCTS)-based strategy that balances exploration and\nexploitation to iteratively refine Pareto-optimal sequences. MCTS integrates\nclassifier-based rewards with search-tree expansion, overcoming gradient\nestimation challenges and data sparsity inherent to discrete spaces. Using\nPepTune, we generate diverse, chemically-modified peptides optimized for\nmultiple therapeutic properties, including target binding affinity, membrane\npermeability, solubility, hemolysis, and non-fouling characteristics on various\ndisease-relevant targets. In total, our results demonstrate that MCTS-guided\ndiscrete diffusion is a powerful and modular approach for multi-objective\nsequence design in discrete state spaces.",
+      "published_at": "2024-12-23",
+      "submitted_at": "2024-12-26",
+      "submitted_by": "Pranam Chatterjee",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.17780",
+      "arxiv_url": "https://arxiv.org/abs/2412.17780"
+    }
+  ]
+}

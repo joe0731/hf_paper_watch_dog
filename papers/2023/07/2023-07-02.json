@@ -1,0 +1,121 @@
+{
+  "date": "2023-07-02",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2023-07-02",
+  "papers": [
+    {
+      "arxiv_id": "2306.17806",
+      "title": "Stay on topic with Classifier-Free Guidance",
+      "authors": [
+        "Guillaume Sanchez",
+        "Honglu Fan",
+        "Alexander Spangher",
+        "Elad Levi",
+        "Pawan Sasanka Ammanamanchi",
+        "Stella Biderman"
+      ],
+      "abstract": "Classifier-Free Guidance (CFG) has recently emerged in text-to-image\ngeneration as a lightweight technique to encourage prompt-adherence in\ngenerations. In this work, we demonstrate that CFG can be used broadly as an\ninference-time technique in pure language modeling. We show that CFG (1)\nimproves the performance of Pythia, GPT-2 and LLaMA-family models across an\narray of tasks: Q\\&A, reasoning, code generation, and machine translation,\nachieving SOTA on LAMBADA with LLaMA-7B over PaLM-540B; (2) brings improvements\nequivalent to a model with twice the parameter-count; (3) can stack alongside\nother inference-time methods like Chain-of-Thought and Self-Consistency,\nyielding further improvements in difficult tasks; (4) can be used to increase\nthe faithfulness and coherence of assistants in challenging form-driven and\ncontent-driven prompts: in a human evaluation we show a 75\\% preference for\nGPT4All using CFG over baseline.",
+      "published_at": "2023-06-30",
+      "submitted_at": "2023-07-02",
+      "submitted_by": "AK",
+      "upvotes": 29,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17806",
+      "arxiv_url": "https://arxiv.org/abs/2306.17806"
+    },
+    {
+      "arxiv_id": "2306.17582",
+      "title": "ChatGPT for Robotics: Design Principles and Model Abilities",
+      "authors": [
+        "Sai Vemprala",
+        "Rogerio Bonatti",
+        "Arthur Bucker",
+        "Ashish Kapoor"
+      ],
+      "abstract": "This paper presents an experimental study regarding the use of OpenAI's\nChatGPT for robotics applications. We outline a strategy that combines design\nprinciples for prompt engineering and the creation of a high-level function\nlibrary which allows ChatGPT to adapt to different robotics tasks, simulators,\nand form factors. We focus our evaluations on the effectiveness of different\nprompt engineering techniques and dialog strategies towards the execution of\nvarious types of robotics tasks. We explore ChatGPT's ability to use free-form\ndialog, parse XML tags, and to synthesize code, in addition to the use of\ntask-specific prompting functions and closed-loop reasoning through dialogues.\nOur study encompasses a range of tasks within the robotics domain, from basic\nlogical, geometrical, and mathematical reasoning all the way to complex domains\nsuch as aerial navigation, manipulation, and embodied agents. We show that\nChatGPT can be effective at solving several of such tasks, while allowing users\nto interact with it primarily via natural language instructions. In addition to\nthese studies, we introduce an open-sourced research tool called PromptCraft,\nwhich contains a platform where researchers can collaboratively upload and vote\non examples of good prompting schemes for robotics applications, as well as a\nsample robotics simulator with ChatGPT integration, making it easier for users\nto get started with using ChatGPT for robotics.",
+      "published_at": "2023-02-20",
+      "submitted_at": "2023-07-02",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/microsoft/promptcraft-robotics",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17582",
+      "arxiv_url": "https://arxiv.org/abs/2306.17582"
+    },
+    {
+      "arxiv_id": "2306.17563",
+      "title": "Large Language Models are Effective Text Rankers with Pairwise Ranking\n  Prompting",
+      "authors": [
+        "Zhen Qin",
+        "Rolf Jagerman",
+        "Kai Hui",
+        "Honglei Zhuang",
+        "Junru Wu",
+        "Jiaming Shen",
+        "Tianqi Liu",
+        "Jialu Liu",
+        "Donald Metzler",
+        "Xuanhui Wang",
+        "Michael Bendersky"
+      ],
+      "abstract": "Ranking documents using Large Language Models (LLMs) by directly feeding the\nquery and candidate documents into the prompt is an interesting and practical\nproblem. However, there has been limited success so far, as researchers have\nfound it difficult to outperform fine-tuned baseline rankers on benchmark\ndatasets. We analyze pointwise and listwise ranking prompts used by existing\nmethods and argue that off-the-shelf LLMs do not fully understand these ranking\nformulations, possibly due to the nature of how LLMs are trained. In this\npaper, we propose to significantly reduce the burden on LLMs by using a new\ntechnique called Pairwise Ranking Prompting (PRP). Our results are the first in\nthe literature to achieve state-of-the-art ranking performance on standard\nbenchmarks using moderate-sized open-sourced LLMs. On TREC-DL2020, PRP based on\nthe Flan-UL2 model with 20B parameters outperforms the previous best approach\nin the literature, which is based on the blackbox commercial GPT-4 that has 50x\n(estimated) model size, by over 5% at NDCG@1. On TREC-DL2019, PRP is only\ninferior to the GPT-4 solution on the NDCG@5 and NDCG@10 metrics, while\noutperforming other existing solutions, such as InstructGPT which has 175B\nparameters, by over 10% for nearly all ranking metrics. Furthermore, we propose\nseveral variants of PRP to improve efficiency and show that it is possible to\nachieve competitive results even with linear complexity. We also discuss other\nbenefits of PRP, such as supporting both generation and scoring LLM APIs, as\nwell as being insensitive to input ordering.",
+      "published_at": "2023-06-30",
+      "submitted_at": "2023-07-02",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17563",
+      "arxiv_url": "https://arxiv.org/abs/2306.17563"
+    },
+    {
+      "arxiv_id": "2306.17194",
+      "title": "On the Exploitability of Instruction Tuning",
+      "authors": [
+        "Manli Shu",
+        "Jiongxiao Wang",
+        "Chen Zhu",
+        "Jonas Geiping",
+        "Chaowei Xiao",
+        "Tom Goldstein"
+      ],
+      "abstract": "Instruction tuning is an effective technique to align large language models\n(LLMs) with human intents. In this work, we investigate how an adversary can\nexploit instruction tuning by injecting specific instruction-following examples\ninto the training data that intentionally changes the model's behavior. For\nexample, an adversary can achieve content injection by injecting training\nexamples that mention target content and eliciting such behavior from\ndownstream models. To achieve this goal, we propose AutoPoison, an\nautomated data poisoning pipeline. It naturally and coherently incorporates\nversatile attack goals into poisoned data with the help of an oracle LLM. We\nshowcase two example attacks: content injection and over-refusal attacks, each\naiming to induce a specific exploitable behavior. We quantify and benchmark the\nstrength and the stealthiness of our data poisoning scheme. Our results show\nthat AutoPoison allows an adversary to change a model's behavior by poisoning\nonly a small fraction of data while maintaining a high level of stealthiness in\nthe poisoned examples. We hope our work sheds light on how data quality affects\nthe behavior of instruction-tuned models and raises awareness of the importance\nof data quality for responsible deployments of LLMs. Code is available at\nhttps://github.com/azshue/AutoPoison.",
+      "published_at": "2023-06-28",
+      "submitted_at": "2023-07-02",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/azshue/autopoison",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17194",
+      "arxiv_url": "https://arxiv.org/abs/2306.17194"
+    },
+    {
+      "arxiv_id": "2306.17492",
+      "title": "Preference Ranking Optimization for Human Alignment",
+      "authors": [
+        "Feifan Song",
+        "Bowen Yu",
+        "Minghao Li",
+        "Haiyang Yu",
+        "Fei Huang",
+        "Yongbin Li",
+        "Houfeng Wang"
+      ],
+      "abstract": "Large language models (LLMs) often contain misleading content, emphasizing\nthe need to align them with human values to ensure secur AI systems.\nReinforcement learning from human feedback (RLHF) has been employed to achieve\nthis alignment by combining a reward model, typically based on Bradley-Terry\npaired comparison, with an RL algorithm such as Proximal Policy Optimization\n(PPO) to optimize LLM responses. However, RLHF exhibits complexity,\ninstability, and sensitivity to hyperparameters. In this paper, we propose\nPreference Ranking Optimization (PRO) as an alternative to PPO for directly\naligning LLMs with the Bradley-Terry comparison. PRO extends the pairwise\nBradley-Terry comparison to accommodate preference rankings of any length. By\niteratively contrasting the likelihood of generating responses, PRO instructs\nthe LLM to prioritize the best response while progressively ranking the\nremaining responses. In this manner, PRO effectively transforms human alignment\ninto aligning the probability ranking of n responses generated by LLM with\nthe preference ranking of humans towards these responses. Experiments have\nshown that PRO outperforms existing alignment algorithms, achieving comparable\nresults to ChatGPT and human responses through automatic-based, reward-based,\nGPT-4, and human evaluations. Furthermore, we demonstrate that longer, more\ndiverse, and higher-quality preference ranking sequences can consistently\nenhance the performance of human alignment.",
+      "published_at": "2023-06-30",
+      "submitted_at": "2023-07-02",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.17492",
+      "arxiv_url": "https://arxiv.org/abs/2306.17492"
+    }
+  ]
+}

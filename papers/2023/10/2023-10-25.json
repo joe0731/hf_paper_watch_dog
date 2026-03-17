@@ -1,0 +1,187 @@
+{
+  "date": "2023-10-25",
+  "total": 8,
+  "source": "https://huggingface.co/papers/date/2023-10-25",
+  "papers": [
+    {
+      "arxiv_id": "2310.15916",
+      "title": "In-Context Learning Creates Task Vectors",
+      "authors": [
+        "Roee Hendel",
+        "Mor Geva",
+        "Amir Globerson"
+      ],
+      "abstract": "In-context learning (ICL) in Large Language Models (LLMs) has emerged as a\npowerful new learning paradigm. However, its underlying mechanism is still not\nwell understood. In particular, it is challenging to map it to the \"standard\"\nmachine learning framework, where one uses a training set S to find a\nbest-fitting function f(x) in some hypothesis class. Here we make progress on\nthis problem by showing that the functions learned by ICL often have a very\nsimple structure: they correspond to the transformer LLM whose only inputs are\nthe query x and a single \"task vector\" calculated from the training set.\nThus, ICL can be seen as compressing S into a single task vector\ntheta(S) and then using this task vector to modulate the\ntransformer to produce the output. We support the above claim via comprehensive\nexperiments across a range of models and tasks.",
+      "published_at": "2023-10-24",
+      "submitted_at": "2023-10-25",
+      "submitted_by": "AK",
+      "upvotes": 44,
+      "organization": "",
+      "github_repo": "https://github.com/roeehendel/icl_task_vectors",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.15916",
+      "arxiv_url": "https://arxiv.org/abs/2310.15916"
+    },
+    {
+      "arxiv_id": "2310.15308",
+      "title": "SAM-CLIP: Merging Vision Foundation Models towards Semantic and Spatial\n  Understanding",
+      "authors": [
+        "Haoxiang Wang",
+        "Pavan Kumar Anasosalu Vasu",
+        "Fartash Faghri",
+        "Raviteja Vemulapalli",
+        "Mehrdad Farajtabar",
+        "Sachin Mehta",
+        "Mohammad Rastegari",
+        "Oncel Tuzel",
+        "Hadi Pouransari"
+      ],
+      "abstract": "The landscape of publicly available vision foundation models (VFMs), such as\nCLIP and Segment Anything Model (SAM), is expanding rapidly. VFMs are endowed\nwith distinct capabilities stemming from their pre-training objectives. For\ninstance, CLIP excels in semantic understanding, while SAM specializes in\nspatial understanding for segmentation. In this work, we introduce a simple\nrecipe to efficiently merge VFMs into a unified model that assimilates their\nexpertise. Our proposed method integrates multi-task learning, continual\nlearning techniques, and teacher-student distillation. This strategy entails\nsignificantly less computational cost compared to traditional multi-task\ntraining from scratch. Additionally, it only demands a small fraction of the\npre-training datasets that were initially used to train individual models. By\napplying our method to SAM and CLIP, we derive SAM-CLIP: a unified model that\namalgamates the strengths of SAM and CLIP into a single backbone, making it apt\nfor edge device applications. We show that SAM-CLIP learns richer visual\nrepresentations, equipped with both localization and semantic features,\nsuitable for a broad range of vision tasks. SAM-CLIP obtains improved\nperformance on several head probing tasks when compared with SAM and CLIP. We\nfurther show that SAM-CLIP not only retains the foundational strengths of its\nprecursor models but also introduces synergistic functionalities, most notably\nin zero-shot semantic segmentation, where SAM-CLIP establishes new\nstate-of-the-art results on 5 benchmarks. It outperforms previous models that\nare specifically designed for this task by a large margin, including +6.8% and\n+5.9% mean IoU improvement on Pascal-VOC and COCO-Stuff datasets, respectively.",
+      "published_at": "2023-10-23",
+      "submitted_at": "2023-10-25",
+      "submitted_by": "AK",
+      "upvotes": 23,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.15308",
+      "arxiv_url": "https://arxiv.org/abs/2310.15308"
+    },
+    {
+      "arxiv_id": "2310.16045",
+      "title": "Woodpecker: Hallucination Correction for Multimodal Large Language\n  Models",
+      "authors": [
+        "Shukang Yin",
+        "Chaoyou Fu",
+        "Sirui Zhao",
+        "Tong Xu",
+        "Hao Wang",
+        "Dianbo Sui",
+        "Yunhang Shen",
+        "Ke Li",
+        "Xing Sun",
+        "Enhong Chen"
+      ],
+      "abstract": "Hallucination is a big shadow hanging over the rapidly evolving Multimodal\nLarge Language Models (MLLMs), referring to the phenomenon that the generated\ntext is inconsistent with the image content. In order to mitigate\nhallucinations, existing studies mainly resort to an instruction-tuning manner\nthat requires retraining the models with specific data. In this paper, we pave\na different way, introducing a training-free method named Woodpecker. Like a\nwoodpecker heals trees, it picks out and corrects hallucinations from the\ngenerated text. Concretely, Woodpecker consists of five stages: key concept\nextraction, question formulation, visual knowledge validation, visual claim\ngeneration, and hallucination correction. Implemented in a post-remedy manner,\nWoodpecker can easily serve different MLLMs, while being interpretable by\naccessing intermediate outputs of the five stages. We evaluate Woodpecker both\nquantitatively and qualitatively and show the huge potential of this new\nparadigm. On the POPE benchmark, our method obtains a 30.66%/24.33% improvement\nin accuracy over the baseline MiniGPT-4/mPLUG-Owl. The source code is released\nat https://github.com/BradyFU/Woodpecker.",
+      "published_at": "2023-10-24",
+      "submitted_at": "2023-10-25",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/bradyfu/woodpecker",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.16045",
+      "arxiv_url": "https://arxiv.org/abs/2310.16045"
+    },
+    {
+      "arxiv_id": "2310.15987",
+      "title": "Dissecting In-Context Learning of Translations in GPTs",
+      "authors": [
+        "Vikas Raunak",
+        "Hany Hassan Awadalla",
+        "Arul Menezes"
+      ],
+      "abstract": "Most of the recent work in leveraging Large Language Models (LLMs) such as\nGPT-3 for Machine Translation (MT) has focused on selecting the few-shot\nsamples for prompting. In this work, we try to better understand the role of\ndemonstration attributes for the in-context learning of translations through\nperturbations of high-quality, in-domain demonstrations. We find that\nasymmetric perturbation of the source-target mappings yield vastly different\nresults. We show that the perturbation of the source side has surprisingly\nlittle impact, while target perturbation can drastically reduce translation\nquality, suggesting that it is the output text distribution that provides the\nmost important learning signal during in-context learning of translations. We\npropose a method named Zero-Shot-Context to add this signal automatically in\nZero-Shot prompting. We demonstrate that it improves upon the zero-shot\ntranslation performance of GPT-3, even making it competitive with few-shot\nprompted translations.",
+      "published_at": "2023-10-24",
+      "submitted_at": "2023-10-25",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.15987",
+      "arxiv_url": "https://arxiv.org/abs/2310.15987"
+    },
+    {
+      "arxiv_id": "2310.15200",
+      "title": "Inject Semantic Concepts into Image Tagging for Open-Set Recognition",
+      "authors": [
+        "Xinyu Huang",
+        "Yi-Jie Huang",
+        "Youcai Zhang",
+        "Weiwei Tian",
+        "Rui Feng",
+        "Yuejie Zhang",
+        "Yanchun Xie",
+        "Yaqian Li",
+        "Lei Zhang"
+      ],
+      "abstract": "In this paper, we introduce the Recognize Anything Plus Model~(RAM++), a\nfundamental image recognition model with strong open-set recognition\ncapabilities, by injecting semantic concepts into image tagging training\nframework. Previous approaches are either image tagging models constrained by\nlimited semantics, or vision-language models with shallow interaction for\nsuboptimal performance in multi-tag recognition. In contrast, RAM++ integrates\nimage-text alignment and image-tagging within a unified fine-grained\ninteraction framework based on image-tags-text triplets. This design enables\nRAM++ not only excel in identifying predefined categories, but also\nsignificantly augment the recognition ability in open-set categories. Moreover,\nRAM++ employs large language models~(LLMs) to generate diverse visual tag\ndescriptions, pioneering the integration of LLM's knowledge into image tagging\ntraining. This approach empowers RAM++ to integrate visual description concepts\nfor open-set recognition during inference. Evaluations on comprehensive image\nrecognition benchmarks demonstrate RAM++ exceeds existing state-of-the-art\n(SOTA) fundamental image recognition models on most aspects. Specifically, for\npredefined common-used tag categories, RAM++ showcases 10.2 mAP and 15.4 mAP\nenhancements over CLIP on OpenImages and ImageNet. For open-set categories\nbeyond predefined, RAM++ records improvements of 5 mAP and 6.4 mAP over CLIP\nand RAM respectively on OpenImages. For diverse human-object interaction\nphrases, RAM++ achieves 7.8 mAP and 4.7 mAP improvements on the HICO benchmark.\nCode, datasets and pre-trained models are available at\nhttps://github.com/xinyu1205/recognize-anything.",
+      "published_at": "2023-10-23",
+      "submitted_at": "2023-10-25",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/xinyu1205/recognize-anything",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.15200",
+      "arxiv_url": "https://arxiv.org/abs/2310.15200"
+    },
+    {
+      "arxiv_id": "2310.15511",
+      "title": "KITAB: Evaluating LLMs on Constraint Satisfaction for Information\n  Retrieval",
+      "authors": [
+        "Marah I Abdin",
+        "Suriya Gunasekar",
+        "Varun Chandrasekaran",
+        "Jerry Li",
+        "Mert Yuksekgonul",
+        "Rahee Ghosh Peshawaria",
+        "Ranjita Naik",
+        "Besmira Nushi"
+      ],
+      "abstract": "We study the ability of state-of-the art models to answer constraint\nsatisfaction queries for information retrieval (e.g., 'a list of ice cream\nshops in San Diego'). In the past, such queries were considered to be tasks\nthat could only be solved via web-search or knowledge bases. More recently,\nlarge language models (LLMs) have demonstrated initial emergent abilities in\nthis task. However, many current retrieval benchmarks are either saturated or\ndo not measure constraint satisfaction. Motivated by rising concerns around\nfactual incorrectness and hallucinations of LLMs, we present KITAB, a new\ndataset for measuring constraint satisfaction abilities of language models.\nKITAB consists of book-related data across more than 600 authors and 13,000\nqueries, and also offers an associated dynamic data collection and constraint\nverification approach for acquiring similar test data for other authors. Our\nextended experiments on GPT4 and GPT3.5 characterize and decouple common\nfailure modes across dimensions such as information popularity, constraint\ntypes, and context availability. Results show that in the absence of context,\nmodels exhibit severe limitations as measured by irrelevant information,\nfactual errors, and incompleteness, many of which exacerbate as information\npopularity decreases. While context availability mitigates irrelevant\ninformation, it is not helpful for satisfying constraints, identifying\nfundamental barriers to constraint satisfaction. We open source our\ncontributions to foster further research on improving constraint satisfaction\nabilities of future models.",
+      "published_at": "2023-10-24",
+      "submitted_at": "2023-10-25",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.15511",
+      "arxiv_url": "https://arxiv.org/abs/2310.15511"
+    },
+    {
+      "arxiv_id": "2310.15494",
+      "title": "TRAMS: Training-free Memory Selection for Long-range Language Modeling",
+      "authors": [
+        "Haofei Yu",
+        "Cunxiang wang",
+        "Yue Zhang",
+        "Wei Bi"
+      ],
+      "abstract": "The Transformer architecture is crucial for numerous AI models, but it still\nfaces challenges in long-range language modeling. Though several specific\ntransformer architectures have been designed to tackle issues of long-range\ndependencies, existing methods like Transformer-XL are plagued by a high\npercentage of ineffective memories. In this study, we present a plug-and-play\nstrategy, known as TRAining-free Memory Selection (TRAMS), that selects tokens\nparticipating in attention calculation based on one simple metric. This\nstrategy allows us to keep tokens that are likely to have a high attention\nscore with the current queries and ignore the other ones. We have tested our\napproach on the word-level benchmark (WikiText-103) and the character-level\nbenchmark (enwik8), and the results indicate an improvement without having\nadditional training or adding additional parameters.",
+      "published_at": "2023-10-24",
+      "submitted_at": "2023-10-25",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/lwaekfjlk/trams",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.15494",
+      "arxiv_url": "https://arxiv.org/abs/2310.15494"
+    },
+    {
+      "arxiv_id": "2310.15337",
+      "title": "Moral Foundations of Large Language Models",
+      "authors": [
+        "Marwa Abdulhai",
+        "Gregory Serapio-Garcia",
+        "Clément Crepy",
+        "Daria Valter",
+        "John Canny",
+        "Natasha Jaques"
+      ],
+      "abstract": "Moral foundations theory (MFT) is a psychological assessment tool that\ndecomposes human moral reasoning into five factors, including care/harm,\nliberty/oppression, and sanctity/degradation (Graham et al., 2009). People vary\nin the weight they place on these dimensions when making moral decisions, in\npart due to their cultural upbringing and political ideology. As large language\nmodels (LLMs) are trained on datasets collected from the internet, they may\nreflect the biases that are present in such corpora. This paper uses MFT as a\nlens to analyze whether popular LLMs have acquired a bias towards a particular\nset of moral values. We analyze known LLMs and find they exhibit particular\nmoral foundations, and show how these relate to human moral foundations and\npolitical affiliations. We also measure the consistency of these biases, or\nwhether they vary strongly depending on the context of how the model is\nprompted. Finally, we show that we can adversarially select prompts that\nencourage the moral to exhibit a particular set of moral foundations, and that\nthis can affect the model's behavior on downstream tasks. These findings help\nillustrate the potential risks and unintended consequences of LLMs assuming a\nparticular moral stance.",
+      "published_at": "2023-10-23",
+      "submitted_at": "2023-10-25",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "https://github.com/abdulhaim/moral_foundations_llm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.15337",
+      "arxiv_url": "https://arxiv.org/abs/2310.15337"
+    }
+  ]
+}

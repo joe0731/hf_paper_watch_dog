@@ -1,0 +1,53 @@
+{
+  "date": "2024-11-17",
+  "total": 2,
+  "source": "https://huggingface.co/papers/date/2024-11-17",
+  "papers": [
+    {
+      "arxiv_id": "2411.10440",
+      "title": "LLaVA-o1: Let Vision Language Models Reason Step-by-Step",
+      "authors": [
+        "Guowei Xu",
+        "Peng Jin",
+        "Li Hao",
+        "Yibing Song",
+        "Lichao Sun",
+        "Li Yuan"
+      ],
+      "abstract": "Large language models have demonstrated substantial advancements in reasoning\ncapabilities, particularly through inference-time scaling, as illustrated by\nmodels such as OpenAI's o1. However, current Vision-Language Models (VLMs)\noften struggle to perform systematic and structured reasoning, especially when\nhandling complex visual question-answering tasks. In this work, we introduce\nLLaVA-o1, a novel VLM designed to conduct autonomous multistage reasoning.\nUnlike chain-of-thought prompting, LLaVA-o1 independently engages in sequential\nstages of summarization, visual interpretation, logical reasoning, and\nconclusion generation. This structured approach enables LLaVA-o1 to achieve\nmarked improvements in precision on reasoning-intensive tasks. To accomplish\nthis, we compile the LLaVA-o1-100k dataset, integrating samples from various\nvisual question answering sources and providing structured reasoning\nannotations. Besides, we propose an inference-time stage-level beam search\nmethod, which enables effective inference-time scaling. Remarkably, with only\n100k training samples and a simple yet effective inference time scaling method,\nLLaVA-o1 not only outperforms its base model by 8.9% on a wide range of\nmultimodal reasoning benchmarks, but also surpasses the performance of larger\nand even closed-source models, such as Gemini-1.5-pro, GPT-4o-mini, and\nLlama-3.2-90B-Vision-Instruct.",
+      "published_at": "2024-11-15",
+      "submitted_at": "2024-11-17",
+      "submitted_by": "Guowei Xu",
+      "upvotes": 129,
+      "organization": "",
+      "github_repo": "https://github.com/PKU-YuanGroup/LLaVA-CoT",
+      "project_page": "https://github.com/PKU-YuanGroup/LLaVA-CoT",
+      "hf_url": "https://huggingface.co/papers/2411.10440",
+      "arxiv_url": "https://arxiv.org/abs/2411.10440"
+    },
+    {
+      "arxiv_id": "2411.08033",
+      "title": "GaussianAnything: Interactive Point Cloud Latent Diffusion for 3D\n  Generation",
+      "authors": [
+        "Yushi Lan",
+        "Shangchen Zhou",
+        "Zhaoyang Lyu",
+        "Fangzhou Hong",
+        "Shuai Yang",
+        "Bo Dai",
+        "Xingang Pan",
+        "Chen Change Loy"
+      ],
+      "abstract": "While 3D content generation has advanced significantly, existing methods\nstill face challenges with input formats, latent space design, and output\nrepresentations. This paper introduces a novel 3D generation framework that\naddresses these challenges, offering scalable, high-quality 3D generation with\nan interactive Point Cloud-structured Latent space. Our framework employs a\nVariational Autoencoder (VAE) with multi-view posed RGB-D(epth)-N(ormal)\nrenderings as input, using a unique latent space design that preserves 3D shape\ninformation, and incorporates a cascaded latent diffusion model for improved\nshape-texture disentanglement. The proposed method, GaussianAnything, supports\nmulti-modal conditional 3D generation, allowing for point cloud, caption, and\nsingle/multi-view image inputs. Notably, the newly proposed latent space\nnaturally enables geometry-texture disentanglement, thus allowing 3D-aware\nediting. Experimental results demonstrate the effectiveness of our approach on\nmultiple datasets, outperforming existing methods in both text- and\nimage-conditioned 3D generation.",
+      "published_at": "2024-11-12",
+      "submitted_at": "2024-11-17",
+      "submitted_by": "LAN YUSHI",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.08033",
+      "arxiv_url": "https://arxiv.org/abs/2411.08033"
+    }
+  ]
+}

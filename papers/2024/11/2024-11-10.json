@@ -1,0 +1,31 @@
+{
+  "date": "2024-11-10",
+  "total": 1,
+  "source": "https://huggingface.co/papers/date/2024-11-10",
+  "papers": [
+    {
+      "arxiv_id": "2411.05738",
+      "title": "StdGEN: Semantic-Decomposed 3D Character Generation from Single Images",
+      "authors": [
+        "Yuze He",
+        "Yanning Zhou",
+        "Wang Zhao",
+        "Zhongkai Wu",
+        "Kaiwen Xiao",
+        "Wei Yang",
+        "Yong-Jin Liu",
+        "Xiao Han"
+      ],
+      "abstract": "We present StdGEN, an innovative pipeline for generating semantically\ndecomposed high-quality 3D characters from single images, enabling broad\napplications in virtual reality, gaming, and filmmaking, etc. Unlike previous\nmethods which struggle with limited decomposability, unsatisfactory quality,\nand long optimization times, StdGEN features decomposability, effectiveness and\nefficiency; i.e., it generates intricately detailed 3D characters with\nseparated semantic components such as the body, clothes, and hair, in three\nminutes. At the core of StdGEN is our proposed Semantic-aware Large\nReconstruction Model (S-LRM), a transformer-based generalizable model that\njointly reconstructs geometry, color and semantics from multi-view images in a\nfeed-forward manner. A differentiable multi-layer semantic surface extraction\nscheme is introduced to acquire meshes from hybrid implicit fields\nreconstructed by our S-LRM. Additionally, a specialized efficient multi-view\ndiffusion model and an iterative multi-layer surface refinement module are\nintegrated into the pipeline to facilitate high-quality, decomposable 3D\ncharacter generation. Extensive experiments demonstrate our state-of-the-art\nperformance in 3D anime character generation, surpassing existing baselines by\na significant margin in geometry, texture and decomposability. StdGEN offers\nready-to-use semantic-decomposed 3D characters and enables flexible\ncustomization for a wide range of applications. Project page:\nhttps://stdgen.github.io",
+      "published_at": "2024-11-08",
+      "submitted_at": "2024-11-10",
+      "submitted_by": "Yuze He",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/hyz317/StdGEN",
+      "project_page": "https://stdgen.github.io/",
+      "hf_url": "https://huggingface.co/papers/2411.05738",
+      "arxiv_url": "https://arxiv.org/abs/2411.05738"
+    }
+  ]
+}

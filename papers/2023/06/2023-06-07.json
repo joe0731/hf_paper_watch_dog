@@ -1,0 +1,206 @@
+{
+  "date": "2023-06-07",
+  "total": 9,
+  "source": "https://huggingface.co/papers/date/2023-06-07",
+  "papers": [
+    {
+      "arxiv_id": "2306.03514",
+      "title": "Recognize Anything: A Strong Image Tagging Model",
+      "authors": [
+        "Youcai Zhang",
+        "Xinyu Huang",
+        "Jinyu Ma",
+        "Zhaoyang Li",
+        "Zhaochuan Luo",
+        "Yanchun Xie",
+        "Yuzhuo Qin",
+        "Tong Luo",
+        "Yaqian Li",
+        "Shilong Liu",
+        "Yandong Guo",
+        "Lei Zhang"
+      ],
+      "abstract": "We present the Recognize Anything Model (RAM): a strong foundation model for\nimage tagging. RAM can recognize any common category with high accuracy. RAM\nintroduces a new paradigm for image tagging, leveraging large-scale image-text\npairs for training instead of manual annotations. The development of RAM\ncomprises four key steps. Firstly, annotation-free image tags are obtained at\nscale through automatic text semantic parsing. Subsequently, a preliminary\nmodel is trained for automatic annotation by unifying the caption and tagging\ntasks, supervised by the original texts and parsed tags, respectively. Thirdly,\na data engine is employed to generate additional annotations and clean\nincorrect ones. Lastly, the model is retrained with the processed data and\nfine-tuned using a smaller but higher-quality dataset. We evaluate the tagging\ncapabilities of RAM on numerous benchmarks and observe impressive zero-shot\nperformance, significantly outperforming CLIP and BLIP. Remarkably, RAM even\nsurpasses the fully supervised manners and exhibits competitive performance\nwith the Google API. We are releasing the RAM at\nhttps://recognize-anything.github.io/ to foster the advancements of large\nmodels in computer vision.",
+      "published_at": "2023-06-06",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/xinyu1205/Recognize_Anything-Tag2Text",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.03514",
+      "arxiv_url": "https://arxiv.org/abs/2306.03514"
+    },
+    {
+      "arxiv_id": "2306.04387",
+      "title": "M^3IT: A Large-Scale Dataset towards Multi-Modal Multilingual\n  Instruction Tuning",
+      "authors": [
+        "Lei Li",
+        "Yuwei Yin",
+        "Shicheng Li",
+        "Liang Chen",
+        "Peiyi Wang",
+        "Shuhuai Ren",
+        "Mukai Li",
+        "Yazheng Yang",
+        "Jingjing Xu",
+        "Xu Sun",
+        "Lingpeng Kong",
+        "Qi Liu"
+      ],
+      "abstract": "Instruction tuning has significantly advanced large language models (LLMs)\nsuch as ChatGPT, enabling them to align with human instructions across diverse\ntasks. However, progress in open vision-language models (VLMs) has been limited\ndue to the scarcity of high-quality instruction datasets. To tackle this\nchallenge and promote research in the vision-language field, we introduce the\nMulti-Modal, Multilingual Instruction Tuning (M^3IT) dataset, designed to\noptimize VLM alignment with human instructions. Our M^3IT dataset comprises\n40 carefully curated datasets, including 2.4 million instances and 400 manually\nwritten task instructions, reformatted into a vision-to-text structure. Key\ntasks are translated into 80 languages with an advanced translation system,\nensuring broader accessibility. M^3IT surpasses previous datasets regarding\ntask coverage, instruction number and instance scale. Moreover, we develop\nYing-VLM, a VLM model trained on our M^3IT dataset, showcasing its potential\nto answer complex questions requiring world knowledge, generalize to unseen\nvideo tasks, and comprehend unseen instructions in Chinese. To encourage\nfurther research, we have open-sourced both the dataset and trained models.",
+      "published_at": "2023-06-07",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.04387",
+      "arxiv_url": "https://arxiv.org/abs/2306.04387"
+    },
+    {
+      "arxiv_id": "2306.03504",
+      "title": "Ada-TTA: Towards Adaptive High-Quality Text-to-Talking Avatar Synthesis",
+      "authors": [
+        "Zhenhui Ye",
+        "Ziyue Jiang",
+        "Yi Ren",
+        "Jinglin Liu",
+        "Chen Zhang",
+        "Xiang Yin",
+        "Zejun Ma",
+        "Zhou Zhao"
+      ],
+      "abstract": "We are interested in a novel task, namely low-resource text-to-talking\navatar. Given only a few-minute-long talking person video with the audio track\nas the training data and arbitrary texts as the driving input, we aim to\nsynthesize high-quality talking portrait videos corresponding to the input\ntext. This task has broad application prospects in the digital human industry\nbut has not been technically achieved yet due to two challenges: (1) It is\nchallenging to mimic the timbre from out-of-domain audio for a traditional\nmulti-speaker Text-to-Speech system. (2) It is hard to render high-fidelity and\nlip-synchronized talking avatars with limited training data. In this paper, we\nintroduce Adaptive Text-to-Talking Avatar (Ada-TTA), which (1) designs a\ngeneric zero-shot multi-speaker TTS model that well disentangles the text\ncontent, timbre, and prosody; and (2) embraces recent advances in neural\nrendering to achieve realistic audio-driven talking face video generation. With\nthese designs, our method overcomes the aforementioned two challenges and\nachieves to generate identity-preserving speech and realistic talking person\nvideo. Experiments demonstrate that our method could synthesize realistic,\nidentity-preserving, and audio-visual synchronized talking avatar videos.",
+      "published_at": "2023-06-06",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.03504",
+      "arxiv_url": "https://arxiv.org/abs/2306.03504"
+    },
+    {
+      "arxiv_id": "2306.03881",
+      "title": "Emergent Correspondence from Image Diffusion",
+      "authors": [
+        "Luming Tang",
+        "Menglin Jia",
+        "Qianqian Wang",
+        "Cheng Perng Phoo",
+        "Bharath Hariharan"
+      ],
+      "abstract": "Finding correspondences between images is a fundamental problem in computer\nvision. In this paper, we show that correspondence emerges in image diffusion\nmodels without any explicit supervision. We propose a simple strategy to\nextract this implicit knowledge out of diffusion networks as image features,\nnamely DIffusion FeaTures (DIFT), and use them to establish correspondences\nbetween real images. Without any additional fine-tuning or supervision on the\ntask-specific data or annotations, DIFT is able to outperform both\nweakly-supervised methods and competitive off-the-shelf features in identifying\nsemantic, geometric, and temporal correspondences. Particularly for semantic\ncorrespondence, DIFT from Stable Diffusion is able to outperform DINO and\nOpenCLIP by 19 and 14 accuracy points respectively on the challenging SPair-71k\nbenchmark. It even outperforms the state-of-the-art supervised methods on 9 out\nof 18 categories while remaining on par for the overall performance. Project\npage: https://diffusionfeatures.github.io",
+      "published_at": "2023-06-06",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/Tsingularity/dift",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.03881",
+      "arxiv_url": "https://arxiv.org/abs/2306.03881"
+    },
+    {
+      "arxiv_id": "2306.04031",
+      "title": "Certified Reasoning with Language Models",
+      "authors": [
+        "Gabriel Poesia",
+        "Kanishk Gandhi",
+        "Eric Zelikman",
+        "Noah D. Goodman"
+      ],
+      "abstract": "Language models often achieve higher accuracy when reasoning step-by-step in\ncomplex tasks. However, their reasoning can be unsound, inconsistent, or rely\non undesirable prior assumptions. To tackle these issues, we introduce a class\nof tools for language models called guides that use state and incremental\nconstraints to guide generation. A guide can be invoked by the model to\nconstrain its own generation to a set of valid statements given by the tool. In\nturn, the model's choices can change the guide's state. We show how a general\nsystem for logical reasoning can be used as a guide, which we call LogicGuide.\nGiven a reasoning problem in natural language, a model can formalize its\nassumptions for LogicGuide and then guarantee that its reasoning steps are\nsound. In experiments with the PrOntoQA and ProofWriter reasoning datasets,\nLogicGuide significantly improves the performance of GPT-3, GPT-3.5 Turbo and\nLLaMA (accuracy gains up to 35%). LogicGuide also drastically reduces content\neffects: the interference of prior and current assumptions that both humans and\nlanguage models have been shown to suffer from. Finally, we explore\nbootstrapping LLaMA 13B from its own reasoning and find that LogicGuide is\ncritical: by training only on certified self-generated reasoning, LLaMA can\nself-improve, avoiding learning from its own hallucinations.",
+      "published_at": "2023-06-06",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "https://github.com/gpoesia/certified-reasoning",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.04031",
+      "arxiv_url": "https://arxiv.org/abs/2306.04031"
+    },
+    {
+      "arxiv_id": "2306.04140",
+      "title": "Increasing Diversity While Maintaining Accuracy: Text Data Generation\n  with Large Language Models and Human Interventions",
+      "authors": [
+        "John Joon Young Chung",
+        "Ece Kamar",
+        "Saleema Amershi"
+      ],
+      "abstract": "Large language models (LLMs) can be used to generate text data for training\nand evaluating other models. However, creating high-quality datasets with LLMs\ncan be challenging. In this work, we explore human-AI partnerships to\nfacilitate high diversity and accuracy in LLM-based text data generation. We\nfirst examine two approaches to diversify text generation: 1) logit\nsuppression, which minimizes the generation of languages that have already been\nfrequently generated, and 2) temperature sampling, which flattens the token\nsampling probability. We found that diversification approaches can increase\ndata diversity but often at the cost of data accuracy (i.e., text and labels\nbeing appropriate for the target domain). To address this issue, we examined\ntwo human interventions, 1) label replacement (LR), correcting misaligned\nlabels, and 2) out-of-scope filtering (OOSF), removing instances that are out\nof the user's domain of interest or to which no considered label applies. With\noracle studies, we found that LR increases the absolute accuracy of models\ntrained with diversified datasets by 14.4%. Moreover, we found that some models\ntrained with data generated with LR interventions outperformed LLM-based\nfew-shot classification. In contrast, OOSF was not effective in increasing\nmodel accuracy, implying the need for future work in human-in-the-loop text\ndata generation.",
+      "published_at": "2023-06-07",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.04140",
+      "arxiv_url": "https://arxiv.org/abs/2306.04140"
+    },
+    {
+      "arxiv_id": "2306.04076",
+      "title": "Text-only Domain Adaptation using Unified Speech-Text Representation in\n  Transducer",
+      "authors": [
+        "Lu Huang",
+        "Boyu Li",
+        "Jun Zhang",
+        "Lu Lu",
+        "Zejun Ma"
+      ],
+      "abstract": "Domain adaptation using text-only corpus is challenging in end-to-end(E2E)\nspeech recognition. Adaptation by synthesizing audio from text through TTS is\nresource-consuming. We present a method to learn Unified Speech-Text\nRepresentation in Conformer Transducer(USTR-CT) to enable fast domain\nadaptation using the text-only corpus. Different from the previous textogram\nmethod, an extra text encoder is introduced in our work to learn text\nrepresentation and is removed during inference, so there is no modification for\nonline deployment. To improve the efficiency of adaptation, single-step and\nmulti-step adaptations are also explored. The experiments on adapting\nLibriSpeech to SPGISpeech show the proposed method reduces the word error\nrate(WER) by relatively 44% on the target domain, which is better than those of\nTTS method and textogram method. Also, it is shown the proposed method can be\ncombined with internal language model estimation(ILME) to further improve the\nperformance.",
+      "published_at": "2023-06-07",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.04076",
+      "arxiv_url": "https://arxiv.org/abs/2306.04076"
+    },
+    {
+      "arxiv_id": "2306.04009",
+      "title": "Triggering Multi-Hop Reasoning for Question Answering in Language Models\n  using Soft Prompts and Random Walks",
+      "authors": [
+        "Kanishka Misra",
+        "Cicero Nogueira dos Santos",
+        "Siamak Shakeri"
+      ],
+      "abstract": "Despite readily memorizing world knowledge about entities, pre-trained\nlanguage models (LMs) struggle to compose together two or more facts to perform\nmulti-hop reasoning in question-answering tasks. In this work, we propose\ntechniques that improve upon this limitation by relying on random walks over\nstructured knowledge graphs. Specifically, we use soft prompts to guide LMs to\nchain together their encoded knowledge by learning to map multi-hop questions\nto random walk paths that lead to the answer. Applying our methods on two T5\nLMs shows substantial improvements over standard tuning approaches in answering\nquestions that require 2-hop reasoning.",
+      "published_at": "2023-06-06",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.04009",
+      "arxiv_url": "https://arxiv.org/abs/2306.04009"
+    },
+    {
+      "arxiv_id": "2306.03802",
+      "title": "Learning to Ground Instructional Articles in Videos through Narrations",
+      "authors": [
+        "Effrosyni Mavroudi",
+        "Triantafyllos Afouras",
+        "Lorenzo Torresani"
+      ],
+      "abstract": "In this paper we present an approach for localizing steps of procedural\nactivities in narrated how-to videos. To deal with the scarcity of labeled data\nat scale, we source the step descriptions from a language knowledge base\n(wikiHow) containing instructional articles for a large variety of procedural\ntasks. Without any form of manual supervision, our model learns to temporally\nground the steps of procedural articles in how-to videos by matching three\nmodalities: frames, narrations, and step descriptions. Specifically, our method\naligns steps to video by fusing information from two distinct pathways: i) {\\em\ndirect} alignment of step descriptions to frames, ii) {\\em indirect} alignment\nobtained by composing steps-to-narrations with narrations-to-video\ncorrespondences. Notably, our approach performs global temporal grounding of\nall steps in an article at once by exploiting order information, and is trained\nwith step pseudo-labels which are iteratively refined and aggressively\nfiltered. In order to validate our model we introduce a new evaluation\nbenchmark -- HT-Step -- obtained by manually annotating a 124-hour subset of\nHowTo100MA test server is accessible at\n\\url{https://eval.ai/web/challenges/challenge-page/2082.} with steps sourced\nfrom wikiHow articles. Experiments on this benchmark as well as zero-shot\nevaluations on CrossTask demonstrate that our multi-modality alignment yields\ndramatic gains over several baselines and prior works. Finally, we show that\nour inner module for matching narration-to-video outperforms by a large margin\nthe state of the art on the HTM-Align narration-video alignment benchmark.",
+      "published_at": "2023-06-06",
+      "submitted_at": "2023-06-07",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.03802",
+      "arxiv_url": "https://arxiv.org/abs/2306.03802"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "date": "2023-12-20",
+  "total": 12,
+  "source": "https://huggingface.co/papers/date/2023-12-20",
+  "papers": [
+    {
+      "arxiv_id": "2312.11514",
+      "title": "LLM in a flash: Efficient Large Language Model Inference with Limited\n  Memory",
+      "authors": [
+        "Iman Mirzadeh",
+        "Dmitry Belenko",
+        "Karen Khatamifard",
+        "Minsik Cho",
+        "Carlo C Del Mundo",
+        "Mohammad Rastegari",
+        "Mehrdad Farajtabar"
+      ],
+      "abstract": "Large language models (LLMs) are central to modern natural language\nprocessing, delivering exceptional performance in various tasks. However, their\nintensive computational and memory requirements present challenges, especially\nfor devices with limited DRAM capacity. This paper tackles the challenge of\nefficiently running LLMs that exceed the available DRAM capacity by storing the\nmodel parameters on flash memory but bringing them on demand to DRAM. Our\nmethod involves constructing an inference cost model that harmonizes with the\nflash memory behavior, guiding us to optimize in two critical areas: reducing\nthe volume of data transferred from flash and reading data in larger, more\ncontiguous chunks. Within this flash memory-informed framework, we introduce\ntwo principal techniques. First, \"windowing'\" strategically reduces data\ntransfer by reusing previously activated neurons, and second, \"row-column\nbundling\", tailored to the sequential data access strengths of flash memory,\nincreases the size of data chunks read from flash memory. These methods\ncollectively enable running models up to twice the size of the available DRAM,\nwith a 4-5x and 20-25x increase in inference speed compared to naive loading\napproaches in CPU and GPU, respectively. Our integration of sparsity awareness,\ncontext-adaptive loading, and a hardware-oriented design paves the way for\neffective inference of LLMs on devices with limited memory.",
+      "published_at": "2023-12-12",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 260,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11514",
+      "arxiv_url": "https://arxiv.org/abs/2312.11514"
+    },
+    {
+      "arxiv_id": "2312.11556",
+      "title": "StarVector: Generating Scalable Vector Graphics Code from Images",
+      "authors": [
+        "Juan A. Rodriguez",
+        "Shubham Agarwal",
+        "Issam H. Laradji",
+        "Pau Rodriguez",
+        "David Vazquez",
+        "Christopher Pal",
+        "Marco Pedersoli"
+      ],
+      "abstract": "Scalable Vector Graphics (SVGs) have become integral in modern image\nrendering applications due to their infinite scalability in resolution,\nversatile usability, and editing capabilities. SVGs are particularly popular in\nthe fields of web development and graphic design. Existing approaches for SVG\nmodeling using deep learning often struggle with generating complex SVGs and\nare restricted to simpler ones that require extensive processing and\nsimplification. This paper introduces StarVector, a multimodal SVG generation\nmodel that effectively integrates Code Generation Large Language Models\n(CodeLLMs) and vision models. Our approach utilizes a CLIP image encoder to\nextract visual representations from pixel-based images, which are then\ntransformed into visual tokens via an adapter module. These visual tokens are\npre-pended to the SVG token embeddings, and the sequence is modeled by the\nStarCoder model using next-token prediction, effectively learning to align the\nvisual and code tokens. This enables StarVector to generate unrestricted SVGs\nthat accurately represent pixel images. To evaluate StarVector's performance,\nwe present SVG-Bench, a comprehensive benchmark for evaluating SVG methods\nacross multiple datasets and relevant metrics. Within this benchmark, we\nintroduce novel datasets including SVG-Stack, a large-scale dataset of\nreal-world SVG examples, and use it to pre-train StarVector as a large\nfoundation model for SVGs. Our results demonstrate significant enhancements in\nvisual quality and complexity handling over current methods, marking a notable\nadvancement in SVG generation technology. Code and models:\nhttps://github.com/joanrod/star-vector",
+      "published_at": "2023-12-17",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 38,
+      "organization": "",
+      "github_repo": "https://github.com/visioncortex/vtracer",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11556",
+      "arxiv_url": "https://arxiv.org/abs/2312.11556"
+    },
+    {
+      "arxiv_id": "2312.11894",
+      "title": "3D-LFM: Lifting Foundation Model",
+      "authors": [
+        "Mosam Dabhi",
+        "Laszlo A. Jeni",
+        "Simon Lucey"
+      ],
+      "abstract": "The lifting of 3D structure and camera from 2D landmarks is at the\ncornerstone of the entire discipline of computer vision. Traditional methods\nhave been confined to specific rigid objects, such as those in\nPerspective-n-Point (PnP) problems, but deep learning has expanded our\ncapability to reconstruct a wide range of object classes (e.g. C3PDO and PAUL)\nwith resilience to noise, occlusions, and perspective distortions. All these\ntechniques, however, have been limited by the fundamental need to establish\ncorrespondences across the 3D training data -- significantly limiting their\nutility to applications where one has an abundance of \"in-correspondence\" 3D\ndata. Our approach harnesses the inherent permutation equivariance of\ntransformers to manage varying number of points per 3D data instance,\nwithstands occlusions, and generalizes to unseen categories. We demonstrate\nstate of the art performance across 2D-3D lifting task benchmarks. Since our\napproach can be trained across such a broad class of structures we refer to it\nsimply as a 3D Lifting Foundation Model (3D-LFM) -- the first of its kind.",
+      "published_at": "2023-12-19",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/mosamdabhi/3dlfm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11894",
+      "arxiv_url": "https://arxiv.org/abs/2312.11894"
+    },
+    {
+      "arxiv_id": "2312.12423",
+      "title": "Jack of All Tasks, Master of Many: Designing General-purpose\n  Coarse-to-Fine Vision-Language Model",
+      "authors": [
+        "Shraman Pramanick",
+        "Guangxing Han",
+        "Rui Hou",
+        "Sayan Nag",
+        "Ser-Nam Lim",
+        "Nicolas Ballas",
+        "Qifan Wang",
+        "Rama Chellappa",
+        "Amjad Almahairi"
+      ],
+      "abstract": "The ability of large language models (LLMs) to process visual inputs has\ngiven rise to general-purpose vision systems, unifying various vision-language\n(VL) tasks by instruction tuning. However, due to the enormous diversity in\ninput-output formats in the vision domain, existing general-purpose models fail\nto successfully integrate segmentation and multi-image inputs with coarse-level\ntasks into a single framework. In this work, we introduce VistaLLM, a powerful\nvisual system that addresses coarse- and fine-grained VL tasks over single and\nmultiple input images using a unified framework. VistaLLM utilizes an\ninstruction-guided image tokenizer that filters global embeddings using task\ndescriptions to extract compressed and refined features from numerous images.\nMoreover, VistaLLM employs a gradient-aware adaptive sampling technique to\nrepresent binary segmentation masks as sequences, significantly improving over\npreviously used uniform sampling. To bolster the desired capability of\nVistaLLM, we curate CoinIt, a comprehensive coarse-to-fine instruction tuning\ndataset with 6.8M samples. We also address the lack of multi-image grounding\ndatasets by introducing a novel task, AttCoSeg (Attribute-level\nCo-Segmentation), which boosts the model's reasoning and grounding capability\nover multiple input images. Extensive experiments on a wide range of V- and VL\ntasks demonstrate the effectiveness of VistaLLM by achieving consistent\nstate-of-the-art performance over strong baselines across all downstream tasks.\nOur project page can be found at https://shramanpramanick.github.io/VistaLLM/.",
+      "published_at": "2023-12-19",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.12423",
+      "arxiv_url": "https://arxiv.org/abs/2312.12423"
+    },
+    {
+      "arxiv_id": "2312.11666",
+      "title": "HAAR: Text-Conditioned Generative Model of 3D Strand-based Human\n  Hairstyles",
+      "authors": [
+        "Vanessa Sklyarova",
+        "Egor Zakharov",
+        "Otmar Hilliges",
+        "Michael J. Black",
+        "Justus Thies"
+      ],
+      "abstract": "We present HAAR, a new strand-based generative model for 3D human hairstyles.\nSpecifically, based on textual inputs, HAAR produces 3D hairstyles that could\nbe used as production-level assets in modern computer graphics engines. Current\nAI-based generative models take advantage of powerful 2D priors to reconstruct\n3D content in the form of point clouds, meshes, or volumetric functions.\nHowever, by using the 2D priors, they are intrinsically limited to only\nrecovering the visual parts. Highly occluded hair structures can not be\nreconstructed with those methods, and they only model the ''outer shell'',\nwhich is not ready to be used in physics-based rendering or simulation\npipelines. In contrast, we propose a first text-guided generative method that\nuses 3D hair strands as an underlying representation. Leveraging 2D visual\nquestion-answering (VQA) systems, we automatically annotate synthetic hair\nmodels that are generated from a small set of artist-created hairstyles. This\nallows us to train a latent diffusion model that operates in a common hairstyle\nUV space. In qualitative and quantitative studies, we demonstrate the\ncapabilities of the proposed model and compare it to existing hairstyle\ngeneration approaches.",
+      "published_at": "2023-12-18",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/Vanessik/HAAR",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11666",
+      "arxiv_url": "https://arxiv.org/abs/2312.11666"
+    },
+    {
+      "arxiv_id": "2312.12433",
+      "title": "Tracking Any Object Amodally",
+      "authors": [
+        "Cheng-Yen Hsieh",
+        "Tarasha Khurana",
+        "Achal Dave",
+        "Deva Ramanan"
+      ],
+      "abstract": "Amodal perception, the ability to comprehend complete object structures from\npartial visibility, is a fundamental skill, even for infants. Its significance\nextends to applications like autonomous driving, where a clear understanding of\nheavily occluded objects is essential. However, modern detection and tracking\nalgorithms often overlook this critical capability, perhaps due to the\nprevalence of modal annotations in most datasets. To address the scarcity of\namodal data, we introduce the TAO-Amodal benchmark, featuring 880 diverse\ncategories in thousands of video sequences. Our dataset includes amodal and\nmodal bounding boxes for visible and occluded objects, including objects that\nare partially out-of-frame. To enhance amodal tracking with object permanence,\nwe leverage a lightweight plug-in module, the amodal expander, to transform\nstandard, modal trackers into amodal ones through fine-tuning on a few hundred\nvideo sequences with data augmentation. We achieve a 3.3\\% and 1.6\\%\nimprovement on the detection and tracking of occluded objects on TAO-Amodal.\nWhen evaluated on people, our method produces dramatic improvements of 2x\ncompared to state-of-the-art modal baselines.",
+      "published_at": "2023-12-19",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/WesleyHsieh0806/TAO-Amodal",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.12433",
+      "arxiv_url": "https://arxiv.org/abs/2312.12433"
+    },
+    {
+      "arxiv_id": "2312.11841",
+      "title": "MixRT: Mixed Neural Representations For Real-Time NeRF Rendering",
+      "authors": [
+        "Chaojian Li",
+        "Bichen Wu",
+        "Peter Vajda",
+        "Yingyan",
+        "Lin"
+      ],
+      "abstract": "Neural Radiance Field (NeRF) has emerged as a leading technique for novel\nview synthesis, owing to its impressive photorealistic reconstruction and\nrendering capability. Nevertheless, achieving real-time NeRF rendering in\nlarge-scale scenes has presented challenges, often leading to the adoption of\neither intricate baked mesh representations with a substantial number of\ntriangles or resource-intensive ray marching in baked representations. We\nchallenge these conventions, observing that high-quality geometry, represented\nby meshes with substantial triangles, is not necessary for achieving\nphotorealistic rendering quality. Consequently, we propose MixRT, a novel NeRF\nrepresentation that includes a low-quality mesh, a view-dependent displacement\nmap, and a compressed NeRF model. This design effectively harnesses the\ncapabilities of existing graphics hardware, thus enabling real-time NeRF\nrendering on edge devices. Leveraging a highly-optimized WebGL-based rendering\nframework, our proposed MixRT attains real-time rendering speeds on edge\ndevices (over 30 FPS at a resolution of 1280 x 720 on a MacBook M1 Pro laptop),\nbetter rendering quality (0.2 PSNR higher in indoor scenes of the Unbounded-360\ndatasets), and a smaller storage size (less than 80% compared to\nstate-of-the-art methods).",
+      "published_at": "2023-12-19",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11841",
+      "arxiv_url": "https://arxiv.org/abs/2312.11841"
+    },
+    {
+      "arxiv_id": "2312.11537",
+      "title": "FastSR-NeRF: Improving NeRF Efficiency on Consumer Devices with A Simple\n  Super-Resolution Pipeline",
+      "authors": [
+        "Chien-Yu Lin",
+        "Qichen Fu",
+        "Thomas Merth",
+        "Karren Yang",
+        "Anurag Ranjan"
+      ],
+      "abstract": "Super-resolution (SR) techniques have recently been proposed to upscale the\noutputs of neural radiance fields (NeRF) and generate high-quality images with\nenhanced inference speeds. However, existing NeRF+SR methods increase training\noverhead by using extra input features, loss functions, and/or expensive\ntraining procedures such as knowledge distillation. In this paper, we aim to\nleverage SR for efficiency gains without costly training or architectural\nchanges. Specifically, we build a simple NeRF+SR pipeline that directly\ncombines existing modules, and we propose a lightweight augmentation technique,\nrandom patch sampling, for training. Compared to existing NeRF+SR methods, our\npipeline mitigates the SR computing overhead and can be trained up to 23x\nfaster, making it feasible to run on consumer devices such as the Apple\nMacBook. Experiments show our pipeline can upscale NeRF outputs by 2-4x while\nmaintaining high quality, increasing inference speeds by up to 18x on an NVIDIA\nV100 GPU and 12.8x on an M1 Pro chip. We conclude that SR can be a simple but\neffective technique for improving the efficiency of NeRF models for consumer\ndevices.",
+      "published_at": "2023-12-15",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11537",
+      "arxiv_url": "https://arxiv.org/abs/2312.11537"
+    },
+    {
+      "arxiv_id": "2312.11535",
+      "title": "Customize-It-3D: High-Quality 3D Creation from A Single Image Using\n  Subject-Specific Knowledge Prior",
+      "authors": [
+        "Nan Huang",
+        "Ting Zhang",
+        "Yuhui Yuan",
+        "Dong Chen",
+        "Shanghang Zhang"
+      ],
+      "abstract": "In this paper, we present a novel two-stage approach that fully utilizes the\ninformation provided by the reference image to establish a customized knowledge\nprior for image-to-3D generation. While previous approaches primarily rely on a\ngeneral diffusion prior, which struggles to yield consistent results with the\nreference image, we propose a subject-specific and multi-modal diffusion model.\nThis model not only aids NeRF optimization by considering the shading mode for\nimproved geometry but also enhances texture from the coarse results to achieve\nsuperior refinement. Both aspects contribute to faithfully aligning the 3D\ncontent with the subject. Extensive experiments showcase the superiority of our\nmethod, Customize-It-3D, outperforming previous works by a substantial margin.\nIt produces faithful 360-degree reconstructions with impressive visual quality,\nmaking it well-suited for various applications, including text-to-3D creation.",
+      "published_at": "2023-12-15",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11535",
+      "arxiv_url": "https://arxiv.org/abs/2312.11535"
+    },
+    {
+      "arxiv_id": "2312.11897",
+      "title": "Text-Conditioned Resampler For Long Form Video Understanding",
+      "authors": [
+        "Bruno Korbar",
+        "Yongqin Xian",
+        "Alessio Tonioni",
+        "Andrew Zisserman",
+        "Federico Tombari"
+      ],
+      "abstract": "Videos are highly redundant data source and it is often enough to identify a\nfew key moments to solve any given task. In this paper, we present a\ntext-conditioned video resampler (TCR) module that uses a pre-trained and\nfrozen visual encoder and large language model (LLM) to process long video\nsequences for a task. TCR localises relevant visual features from the video\ngiven a text condition and provides them to a LLM to generate a text response.\nDue to its lightweight design and use of cross-attention, TCR can process more\nthan 100 frames at a time allowing the model to use much longer chunks of video\nthan earlier works. We make the following contributions: (i) we design a\ntransformer-based sampling architecture that can process long videos\nconditioned on a task, together with a training method that enables it to\nbridge pre-trained visual and language models; (ii) we empirically validate its\nefficacy on a wide variety of evaluation tasks, and set a new state-of-the-art\non NextQA, EgoSchema, and the EGO4D-LTA challenge; and (iii) we determine tasks\nwhich require longer video contexts and that can thus be used effectively for\nfurther evaluation of long-range video models.",
+      "published_at": "2023-12-19",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11897",
+      "arxiv_url": "https://arxiv.org/abs/2312.11897"
+    },
+    {
+      "arxiv_id": "2312.11595",
+      "title": "TIP: Text-Driven Image Processing with Semantic and Restoration\n  Instructions",
+      "authors": [
+        "Chenyang Qi",
+        "Zhengzhong Tu",
+        "Keren Ye",
+        "Mauricio Delbracio",
+        "Peyman Milanfar",
+        "Qifeng Chen",
+        "Hossein Talebi"
+      ],
+      "abstract": "Text-driven diffusion models have become increasingly popular for various\nimage editing tasks, including inpainting, stylization, and object replacement.\nHowever, it still remains an open research problem to adopt this\nlanguage-vision paradigm for more fine-level image processing tasks, such as\ndenoising, super-resolution, deblurring, and compression artifact removal. In\nthis paper, we develop TIP, a Text-driven Image Processing framework that\nleverages natural language as a user-friendly interface to control the image\nrestoration process. We consider the capacity of text information in two\ndimensions. First, we use content-related prompts to enhance the semantic\nalignment, effectively alleviating identity ambiguity in the restoration\noutcomes. Second, our approach is the first framework that supports fine-level\ninstruction through language-based quantitative specification of the\nrestoration strength, without the need for explicit task-specific design. In\naddition, we introduce a novel fusion mechanism that augments the existing\nControlNet architecture by learning to rescale the generative prior, thereby\nachieving better restoration fidelity. Our extensive experiments demonstrate\nthe superior restoration performance of TIP compared to the state of the arts,\nalongside offering the flexibility of text-based control over the restoration\neffects.",
+      "published_at": "2023-12-18",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11595",
+      "arxiv_url": "https://arxiv.org/abs/2312.11595"
+    },
+    {
+      "arxiv_id": "2312.11532",
+      "title": "Topic-VQ-VAE: Leveraging Latent Codebooks for Flexible Topic-Guided\n  Document Generation",
+      "authors": [
+        "YoungJoon Yoo",
+        "Jongwon Choi"
+      ],
+      "abstract": "This paper introduces a novel approach for topic modeling utilizing latent\ncodebooks from Vector-Quantized Variational Auto-Encoder~(VQ-VAE), discretely\nencapsulating the rich information of the pre-trained embeddings such as the\npre-trained language model. From the novel interpretation of the latent\ncodebooks and embeddings as conceptual bag-of-words, we propose a new\ngenerative topic model called Topic-VQ-VAE~(TVQ-VAE) which inversely generates\nthe original documents related to the respective latent codebook. The TVQ-VAE\ncan visualize the topics with various generative distributions including the\ntraditional BoW distribution and the autoregressive image generation. Our\nexperimental results on document analysis and image generation demonstrate that\nTVQ-VAE effectively captures the topic context which reveals the underlying\nstructures of the dataset and supports flexible forms of document generation.\nOfficial implementation of the proposed TVQ-VAE is available at\nhttps://github.com/clovaai/TVQ-VAE.",
+      "published_at": "2023-12-15",
+      "submitted_at": "2023-12-20",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/clovaai/tvq-vae",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.11532",
+      "arxiv_url": "https://arxiv.org/abs/2312.11532"
+    }
+  ]
+}

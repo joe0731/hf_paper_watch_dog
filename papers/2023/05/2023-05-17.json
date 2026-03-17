@@ -1,0 +1,134 @@
+{
+  "date": "2023-05-17",
+  "total": 6,
+  "source": "https://huggingface.co/papers/date/2023-05-17",
+  "papers": [
+    {
+      "arxiv_id": "2305.08891",
+      "title": "Common Diffusion Noise Schedules and Sample Steps are Flawed",
+      "authors": [
+        "Shanchuan Lin",
+        "Bingchen Liu",
+        "Jiashi Li",
+        "Xiao Yang"
+      ],
+      "abstract": "We discover that common diffusion noise schedules do not enforce the last\ntimestep to have zero signal-to-noise ratio (SNR), and some implementations of\ndiffusion samplers do not start from the last timestep. Such designs are flawed\nand do not reflect the fact that the model is given pure Gaussian noise at\ninference, creating a discrepancy between training and inference. We show that\nthe flawed design causes real problems in existing implementations. In Stable\nDiffusion, it severely limits the model to only generate images with medium\nbrightness and prevents it from generating very bright and dark samples. We\npropose a few simple fixes: (1) rescale the noise schedule to enforce zero\nterminal SNR; (2) train the model with v prediction; (3) change the sampler to\nalways start from the last timestep; (4) rescale classifier-free guidance to\nprevent over-exposure. These simple changes ensure the diffusion process is\ncongruent between training and inference and allow the model to generate\nsamples more faithful to the original data distribution.",
+      "published_at": "2023-05-15",
+      "submitted_at": "2023-05-17",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.08891",
+      "arxiv_url": "https://arxiv.org/abs/2305.08891"
+    },
+    {
+      "arxiv_id": "2305.09641",
+      "title": "FitMe: Deep Photorealistic 3D Morphable Model Avatars",
+      "authors": [
+        "Alexandros Lattas",
+        "Stylianos Moschoglou",
+        "Stylianos Ploumpis",
+        "Baris Gecer",
+        "Jiankang Deng",
+        "Stefanos Zafeiriou"
+      ],
+      "abstract": "In this paper, we introduce FitMe, a facial reflectance model and a\ndifferentiable rendering optimization pipeline, that can be used to acquire\nhigh-fidelity renderable human avatars from single or multiple images. The\nmodel consists of a multi-modal style-based generator, that captures facial\nappearance in terms of diffuse and specular reflectance, and a PCA-based shape\nmodel. We employ a fast differentiable rendering process that can be used in an\noptimization pipeline, while also achieving photorealistic facial shading. Our\noptimization process accurately captures both the facial reflectance and shape\nin high-detail, by exploiting the expressivity of the style-based latent\nrepresentation and of our shape model. FitMe achieves state-of-the-art\nreflectance acquisition and identity preservation on single \"in-the-wild\"\nfacial images, while it produces impressive scan-like results, when given\nmultiple unconstrained facial images pertaining to the same identity. In\ncontrast with recent implicit avatar reconstructions, FitMe requires only one\nminute and produces relightable mesh and texture-based avatars, that can be\nused by end-user applications.",
+      "published_at": "2023-05-16",
+      "submitted_at": "2023-05-17",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "https://github.com/lattas/pytorch3d-Me",
+      "project_page": "https://lattas.github.io/fitme",
+      "hf_url": "https://huggingface.co/papers/2305.09641",
+      "arxiv_url": "https://arxiv.org/abs/2305.09641"
+    },
+    {
+      "arxiv_id": "2305.09253",
+      "title": "Online Continual Learning Without the Storage Constraint",
+      "authors": [
+        "Ameya Prabhu",
+        "Zhipeng Cai",
+        "Puneet Dokania",
+        "Philip Torr",
+        "Vladlen Koltun",
+        "Ozan Sener"
+      ],
+      "abstract": "Online continual learning (OCL) research has primarily focused on mitigating\ncatastrophic forgetting with fixed and limited storage allocation throughout\nthe agent's lifetime. However, the growing affordability of data storage\nhighlights a broad range of applications that do not adhere to these\nassumptions. In these cases, the primary concern lies in managing computational\nexpenditures rather than storage. In this paper, we target such settings,\ninvestigating the online continual learning problem by relaxing storage\nconstraints and emphasizing fixed, limited economical budget. We provide a\nsimple algorithm that can compactly store and utilize the entirety of the\nincoming data stream under tiny computational budgets using a kNN classifier\nand universal pre-trained feature extractors. Our algorithm provides a\nconsistency property attractive to continual learning: It will never forget\npast seen data. We set a new state of the art on two large-scale OCL datasets:\nContinual LOCalization (CLOC), which has 39M images over 712 classes, and\nContinual Google Landmarks V2 (CGLM), which has 580K images over 10,788 classes\n-- beating methods under far higher computational budgets than ours in terms of\nboth reducing catastrophic forgetting of past data and quickly adapting to\nrapidly changing data streams. We provide code to reproduce our results at\nhttps://github.com/drimpossible/ACM.",
+      "published_at": "2023-05-16",
+      "submitted_at": "2023-05-17",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "https://github.com/drimpossible/acm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.09253",
+      "arxiv_url": "https://arxiv.org/abs/2305.09253"
+    },
+    {
+      "arxiv_id": "2305.10431",
+      "title": "FastComposer: Tuning-Free Multi-Subject Image Generation with Localized\n  Attention",
+      "authors": [
+        "Guangxuan Xiao",
+        "Tianwei Yin",
+        "William T. Freeman",
+        "Frédo Durand",
+        "Song Han"
+      ],
+      "abstract": "Diffusion models excel at text-to-image generation, especially in\nsubject-driven generation for personalized images. However, existing methods\nare inefficient due to the subject-specific fine-tuning, which is\ncomputationally intensive and hampers efficient deployment. Moreover, existing\nmethods struggle with multi-subject generation as they often blend features\namong subjects. We present FastComposer which enables efficient, personalized,\nmulti-subject text-to-image generation without fine-tuning. FastComposer uses\nsubject embeddings extracted by an image encoder to augment the generic text\nconditioning in diffusion models, enabling personalized image generation based\non subject images and textual instructions with only forward passes. To address\nthe identity blending problem in the multi-subject generation, FastComposer\nproposes cross-attention localization supervision during training, enforcing\nthe attention of reference subjects localized to the correct regions in the\ntarget images. Naively conditioning on subject embeddings results in subject\noverfitting. FastComposer proposes delayed subject conditioning in the\ndenoising step to maintain both identity and editability in subject-driven\nimage generation. FastComposer generates images of multiple unseen individuals\nwith different styles, actions, and contexts. It achieves\n300times-2500times speedup compared to fine-tuning-based methods and\nrequires zero extra storage for new subjects. FastComposer paves the way for\nefficient, personalized, and high-quality multi-subject image creation. Code,\nmodel, and dataset are available at\nhttps://github.com/mit-han-lab/fastcomposer.",
+      "published_at": "2023-05-17",
+      "submitted_at": "2023-05-17",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/mit-han-lab/fastcomposer",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.10431",
+      "arxiv_url": "https://arxiv.org/abs/2305.10431"
+    },
+    {
+      "arxiv_id": "2305.10400",
+      "title": "What You See is What You Read? Improving Text-Image Alignment Evaluation",
+      "authors": [
+        "Michal Yarom",
+        "Yonatan Bitton",
+        "Soravit Changpinyo",
+        "Roee Aharoni",
+        "Jonathan Herzig",
+        "Oran Lang",
+        "Eran Ofek",
+        "Idan Szpektor"
+      ],
+      "abstract": "Automatically determining whether a text and a corresponding image are\nsemantically aligned is a significant challenge for vision-language models,\nwith applications in generative text-to-image and image-to-text tasks. In this\nwork, we study methods for automatic text-image alignment evaluation. We first\nintroduce SeeTRUE: a comprehensive evaluation set, spanning multiple datasets\nfrom both text-to-image and image-to-text generation tasks, with human\njudgements for whether a given text-image pair is semantically aligned. We then\ndescribe two automatic methods to determine alignment: the first involving a\npipeline based on question generation and visual question answering models, and\nthe second employing an end-to-end classification approach by finetuning\nmultimodal pretrained models. Both methods surpass prior approaches in various\ntext-image alignment tasks, with significant improvements in challenging cases\nthat involve complex composition or unnatural images. Finally, we demonstrate\nhow our approaches can localize specific misalignments between an image and a\ngiven text, and how they can be used to automatically re-rank candidates in\ntext-to-image generation.",
+      "published_at": "2023-05-17",
+      "submitted_at": "2023-05-17",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/yonatanbitton/wysiwyr",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.10400",
+      "arxiv_url": "https://arxiv.org/abs/2305.10400"
+    },
+    {
+      "arxiv_id": "2305.09664",
+      "title": "Understanding 3D Object Interaction from a Single Image",
+      "authors": [
+        "Shengyi Qian",
+        "David F. Fouhey"
+      ],
+      "abstract": "Humans can easily understand a single image as depicting multiple potential\nobjects permitting interaction. We use this skill to plan our interactions with\nthe world and accelerate understanding new objects without engaging in\ninteraction. In this paper, we would like to endow machines with the similar\nability, so that intelligent agents can better explore the 3D scene or\nmanipulate objects. Our approach is a transformer-based model that predicts the\n3D location, physical properties and affordance of objects. To power this\nmodel, we collect a dataset with Internet videos, egocentric videos and indoor\nimages to train and validate our approach. Our model yields strong performance\non our data, and generalizes well to robotics data.",
+      "published_at": "2023-05-16",
+      "submitted_at": "2023-05-17",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/JasonQSY/3DOI",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.09664",
+      "arxiv_url": "https://arxiv.org/abs/2305.09664"
+    }
+  ]
+}

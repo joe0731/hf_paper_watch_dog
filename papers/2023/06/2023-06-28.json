@@ -1,0 +1,205 @@
+{
+  "date": "2023-06-28",
+  "total": 9,
+  "source": "https://huggingface.co/papers/date/2023-06-28",
+  "papers": [
+    {
+      "arxiv_id": "2306.15595",
+      "title": "Extending Context Window of Large Language Models via Positional\n  Interpolation",
+      "authors": [
+        "Shouyuan Chen",
+        "Sherman Wong",
+        "Liangjian Chen",
+        "Yuandong Tian"
+      ],
+      "abstract": "We present Position Interpolation (PI) that extends the context window sizes\nof RoPE-based pretrained LLMs such as LLaMA models to up to 32768 with minimal\nfine-tuning (within 1000 steps), while demonstrating strong empirical results\non various tasks that require long context, including passkey retrieval,\nlanguage modeling, and long document summarization from LLaMA 7B to 65B.\nMeanwhile, the extended model by Position Interpolation preserve quality\nrelatively well on tasks within its original context window. To achieve this\ngoal, Position Interpolation linearly down-scales the input position indices to\nmatch the original context window size, rather than extrapolating beyond the\ntrained context length which may lead to catastrophically high attention scores\nthat completely ruin the self-attention mechanism. Our theoretical study shows\nthat the upper bound of interpolation is at least sim 600 times smaller\nthan that of extrapolation, further demonstrating its stability. Models\nextended via Position Interpolation retain its original architecture and can\nreuse most pre-existing optimization and infrastructure.",
+      "published_at": "2023-06-27",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 54,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15595",
+      "arxiv_url": "https://arxiv.org/abs/2306.15595"
+    },
+    {
+      "arxiv_id": "2306.15626",
+      "title": "LeanDojo: Theorem Proving with Retrieval-Augmented Language Models",
+      "authors": [
+        "Kaiyu Yang",
+        "Aidan M. Swope",
+        "Alex Gu",
+        "Rahul Chalamala",
+        "Peiyang Song",
+        "Shixing Yu",
+        "Saad Godil",
+        "Ryan Prenger",
+        "Anima Anandkumar"
+      ],
+      "abstract": "Large language models (LLMs) have shown promise in proving formal theorems\nusing proof assistants such as Lean. However, existing methods are difficult to\nreproduce or build on, due to private code, data, and large compute\nrequirements. This has created substantial barriers to research on machine\nlearning methods for theorem proving. This paper removes these barriers by\nintroducing LeanDojo: an open-source Lean playground consisting of toolkits,\ndata, models, and benchmarks. LeanDojo extracts data from Lean and enables\ninteraction with the proof environment programmatically. It contains\nfine-grained annotations of premises in proofs, providing valuable data for\npremise selection: a key bottleneck in theorem proving. Using this data, we\ndevelop ReProver (Retrieval-Augmented Prover): the first LLM-based prover that\nis augmented with retrieval for selecting premises from a vast math library. It\nis inexpensive and needs only one GPU week of training. Our retriever leverages\nLeanDojo's program analysis capability to identify accessible premises and hard\nnegative examples, which makes retrieval much more effective. Furthermore, we\nconstruct a new benchmark consisting of 96,962 theorems and proofs extracted\nfrom Lean's math library. It features challenging data split requiring the\nprover to generalize to theorems relying on novel premises that are never used\nin training. We use this benchmark for training and evaluation, and\nexperimental results demonstrate the effectiveness of ReProver over\nnon-retrieval baselines and GPT-4. We thus provide the first set of open-source\nLLM-based theorem provers without any proprietary datasets and release it under\na permissive MIT license to facilitate further research.",
+      "published_at": "2023-06-27",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 18,
+      "organization": "",
+      "github_repo": "https://github.com/lean-dojo/leandojo",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15626",
+      "arxiv_url": "https://arxiv.org/abs/2306.15626"
+    },
+    {
+      "arxiv_id": "2306.15658",
+      "title": "CLIPA-v2: Scaling CLIP Training with 81.1% Zero-shot ImageNet Accuracy\n  within a \\10,000 Budget; An Extra 4,000 Unlocks 81.8% Accuracy",
+      "authors": [
+        "Xianhang Li",
+        "Zeyu Wang",
+        "Cihang Xie"
+      ],
+      "abstract": "The recent work CLIPA presents an inverse scaling law for CLIP training --\nwhereby the larger the image/text encoders used, the shorter the sequence\nlength of image/text tokens that can be applied in training. This finding\nenables us to train high-performance CLIP models with significantly reduced\ncomputations. Building upon this work, we hereby present CLIPA-v2 with two key\ncontributions. Technically, we find this inverse scaling law is also applicable\nin the finetuning stage, enabling further reduction in computational needs.\nEmpirically, we explore CLIPA at scale, extending the experiments up to the\nH/14 model with ~13B image-text pairs seen during training.\n  Our results are exciting -- by only allocating a budget of \\10,000, our CLIP\nmodel achieves an impressive zero-shot ImageNet accuracy of 81.1%, surpassing\nthe prior best CLIP model (from OpenCLIP, 80.1%) by 1.0% and meanwhile reducing\nthe computational cost by ~39X. Moreover, with an additional investment of\n4,000, we can further elevate the zero-shot ImageNet accuracy to 81.8%. Our\ncode and models are available at https://github.com/UCSC-VLAA/CLIPA.",
+      "published_at": "2023-06-27",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15658",
+      "arxiv_url": "https://arxiv.org/abs/2306.15658"
+    },
+    {
+      "arxiv_id": "2306.15667",
+      "title": "PoseDiffusion: Solving Pose Estimation via Diffusion-aided Bundle\n  Adjustment",
+      "authors": [
+        "Jianyuan Wang",
+        "Christian Rupprecht",
+        "David Novotny"
+      ],
+      "abstract": "Camera pose estimation is a long-standing computer vision problem that to\ndate often relies on classical methods, such as handcrafted keypoint matching,\nRANSAC and bundle adjustment. In this paper, we propose to formulate the\nStructure from Motion (SfM) problem inside a probabilistic diffusion framework,\nmodelling the conditional distribution of camera poses given input images. This\nnovel view of an old problem has several advantages. (i) The nature of the\ndiffusion framework mirrors the iterative procedure of bundle adjustment. (ii)\nThe formulation allows a seamless integration of geometric constraints from\nepipolar geometry. (iii) It excels in typically difficult scenarios such as\nsparse views with wide baselines. (iv) The method can predict intrinsics and\nextrinsics for an arbitrary amount of images. We demonstrate that our method\nPoseDiffusion significantly improves over the classic SfM pipelines and the\nlearned approaches on two real-world datasets. Finally, it is observed that our\nmethod can generalize across datasets without further training. Project page:\nhttps://posediffusion.github.io/",
+      "published_at": "2023-06-27",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/posediffusion",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15667",
+      "arxiv_url": "https://arxiv.org/abs/2306.15667"
+    },
+    {
+      "arxiv_id": "2306.15354",
+      "title": "3D-Speaker: A Large-Scale Multi-Device, Multi-Distance, and\n  Multi-Dialect Corpus for Speech Representation Disentanglement",
+      "authors": [
+        "Siqi Zheng",
+        "Luyao Cheng",
+        "Yafeng Chen",
+        "Hui Wang",
+        "Qian Chen"
+      ],
+      "abstract": "Disentangling uncorrelated information in speech utterances is a crucial\nresearch topic within speech community. Different speech-related tasks focus on\nextracting distinct speech representations while minimizing the affects of\nother uncorrelated information. We present a large-scale speech corpus to\nfacilitate the research of speech representation disentanglement. 3D-Speaker\ncontains over 10,000 speakers, each of whom are simultaneously recorded by\nmultiple Devices, locating at different Distances, and some speakers are\nspeaking multiple Dialects. The controlled combinations of multi-dimensional\naudio data yield a matrix of a diverse blend of speech representation\nentanglement, thereby motivating intriguing methods to untangle them. The\nmulti-domain nature of 3D-Speaker also makes it a suitable resource to evaluate\nlarge universal speech models and experiment methods of out-of-domain learning\nand self-supervised learning. https://3dspeaker.github.io/",
+      "published_at": "2023-06-27",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "https://github.com/alibaba-damo-academy/3D-Speaker",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15354",
+      "arxiv_url": "https://arxiv.org/abs/2306.15354"
+    },
+    {
+      "arxiv_id": "2306.15128",
+      "title": "MIMIC: Masked Image Modeling with Image Correspondences",
+      "authors": [
+        "Kalyani Marathe",
+        "Mahtab Bigverdi",
+        "Nishat Khan",
+        "Tuhin Kundu",
+        "Aniruddha Kembhavi",
+        "Linda G. Shapiro",
+        "Ranjay Krishna"
+      ],
+      "abstract": "Many pixelwise dense prediction tasks-depth estimation and semantic\nsegmentation in computer vision today rely on pretrained image representations.\nTherefore, curating effective pretraining datasets is vital. Unfortunately, the\neffective pretraining datasets are those with multi-view scenes and have only\nbeen curated using annotated 3D meshes, point clouds, and camera parameters\nfrom simulated environments. We propose a dataset-curation mechanism that does\nnot require any annotations. We mine two datasets: MIMIC-1M with 1.3M and\nMIMIC-3M with 3.1M multi-view image pairs from open-sourced video datasets and\nfrom synthetic 3D environments. We train multiple self-supervised models with\ndifferent masked image modeling objectives to showcase the following findings:\nRepresentations trained on MIMIC-3M outperform those mined using annotations on\nmultiple downstream tasks, including depth estimation, semantic segmentation,\nsurface normals, and pose estimation. They also outperform representations that\nare frozen and when downstream training data is limited to few-shot. Larger\ndataset (MIMIC-3M) significantly improves performance, which is promising since\nour curation method can arbitrarily scale to produce even larger datasets.\nMIMIC code, dataset, and pretrained models are open-sourced at\nhttps://github.com/RAIVNLab/MIMIC.",
+      "published_at": "2023-06-27",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "https://github.com/raivnlab/mimic",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15128",
+      "arxiv_url": "https://arxiv.org/abs/2306.15128"
+    },
+    {
+      "arxiv_id": "2306.15091",
+      "title": "Understanding In-Context Learning via Supportive Pretraining Data",
+      "authors": [
+        "Xiaochuang Han",
+        "Daniel Simig",
+        "Todor Mihaylov",
+        "Yulia Tsvetkov",
+        "Asli Celikyilmaz",
+        "Tianlu Wang"
+      ],
+      "abstract": "In-context learning (ICL) improves language models' performance on a variety\nof NLP tasks by simply demonstrating a handful of examples at inference time.\nIt is not well understood why ICL ability emerges, as the model has never been\nspecifically trained on such demonstrations. Unlike prior work that explores\nimplicit mechanisms behind ICL, we study ICL via investigating the pretraining\ndata. Specifically, we first adapt an iterative, gradient-based approach to\nfind a small subset of pretraining data that supports ICL. We observe that a\ncontinued pretraining on this small subset significantly improves the model's\nICL ability, by up to 18%. We then compare the supportive subset constrastively\nwith random subsets of pretraining data and discover: (1) The supportive\npretraining data to ICL do not have a higher domain relevance to downstream\ntasks. (2) The supportive pretraining data have a higher mass of rarely\noccurring, long-tail tokens. (3) The supportive pretraining data are\nchallenging examples where the information gain from long-range context is\nbelow average, indicating learning to incorporate difficult long-range context\nencourages ICL. Our work takes a first step towards understanding ICL via\nanalyzing instance-level pretraining data. Our insights have a potential to\nenhance the ICL ability of language models by actively guiding the construction\nof pretraining data in the future.",
+      "published_at": "2023-06-26",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15091",
+      "arxiv_url": "https://arxiv.org/abs/2306.15091"
+    },
+    {
+      "arxiv_id": "2306.15447",
+      "title": "Are aligned neural networks adversarially aligned?",
+      "authors": [
+        "Nicholas Carlini",
+        "Milad Nasr",
+        "Christopher A. Choquette-Choo",
+        "Matthew Jagielski",
+        "Irena Gao",
+        "Anas Awadalla",
+        "Pang Wei Koh",
+        "Daphne Ippolito",
+        "Katherine Lee",
+        "Florian Tramer",
+        "Ludwig Schmidt"
+      ],
+      "abstract": "Large language models are now tuned to align with the goals of their\ncreators, namely to be \"helpful and harmless.\" These models should respond\nhelpfully to user questions, but refuse to answer requests that could cause\nharm. However, adversarial users can construct inputs which circumvent attempts\nat alignment. In this work, we study to what extent these models remain\naligned, even when interacting with an adversarial user who constructs\nworst-case inputs (adversarial examples). These inputs are designed to cause\nthe model to emit harmful content that would otherwise be prohibited. We show\nthat existing NLP-based optimization attacks are insufficiently powerful to\nreliably attack aligned text models: even when current NLP-based attacks fail,\nwe can find adversarial inputs with brute force. As a result, the failure of\ncurrent attacks should not be seen as proof that aligned text models remain\naligned under adversarial inputs.\n  However the recent trend in large-scale ML models is multimodal models that\nallow users to provide images that influence the text that is generated. We\nshow these models can be easily attacked, i.e., induced to perform arbitrary\nun-aligned behavior through adversarial perturbation of the input image. We\nconjecture that improved NLP attacks may demonstrate this same level of\nadversarial control over text-only models.",
+      "published_at": "2023-06-26",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15447",
+      "arxiv_url": "https://arxiv.org/abs/2306.15447"
+    },
+    {
+      "arxiv_id": "2306.15400",
+      "title": "Length Generalization in Arithmetic Transformers",
+      "authors": [
+        "Samy Jelassi",
+        "Stéphane d'Ascoli",
+        "Carles Domingo-Enrich",
+        "Yuhuai Wu",
+        "Yuanzhi Li",
+        "François Charton"
+      ],
+      "abstract": "We examine how transformers cope with two challenges: learning basic integer\narithmetic, and generalizing to longer sequences than seen during training. We\nfind that relative position embeddings enable length generalization for simple\ntasks, such as addition: models trained on 5-digit numbers can perform\n15-digit sums. However, this method fails for multiplication, and we propose\ntrain set priming: adding a few (10 to 50) long sequences to the training\nset. We show that priming allows models trained on 5-digit times 3-digit\nmultiplications to generalize to 35times 3 examples. We also show that\nmodels can be primed for different generalization lengths, and that the priming\nsample size scales as the logarithm of the training set size. Finally, we\ndiscuss potential applications of priming beyond arithmetic.",
+      "published_at": "2023-06-27",
+      "submitted_at": "2023-06-28",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2306.15400",
+      "arxiv_url": "https://arxiv.org/abs/2306.15400"
+    }
+  ]
+}

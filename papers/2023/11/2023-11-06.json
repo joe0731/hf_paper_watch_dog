@@ -1,0 +1,76 @@
+{
+  "date": "2023-11-06",
+  "total": 3,
+  "source": "https://huggingface.co/papers/date/2023-11-06",
+  "papers": [
+    {
+      "arxiv_id": "2311.01767",
+      "title": "PPTC Benchmark: Evaluating Large Language Models for PowerPoint Task\n  Completion",
+      "authors": [
+        "Yiduo Guo",
+        "Zekai Zhang",
+        "Yaobo Liang",
+        "Dongyan Zhao",
+        "Duan Nan"
+      ],
+      "abstract": "Recent evaluations of Large Language Models (LLMs) have centered around\ntesting their zero-shot/few-shot capabilities for basic natural language tasks\nand their ability to translate instructions into tool APIs. However, the\nevaluation of LLMs utilizing complex tools to finish multi-turn, multi-modal\ninstructions in a complex multi-modal environment has not been investigated. To\naddress this gap, we introduce the PowerPoint Task Completion (PPTC) benchmark\nto assess LLMs' ability to create and edit PPT files based on user\ninstructions. It contains 279 multi-turn sessions covering diverse topics and\nhundreds of instructions involving multi-modal operations. We also propose the\nPPTX-Match Evaluation System that evaluates if LLMs finish the instruction\nbased on the prediction file rather than the label API sequence, thus it\nsupports various LLM-generated API sequences. We measure 3 closed LLMs and 6\nopen-source LLMs. The results show that GPT-4 outperforms other LLMs with\n75.1\\% accuracy in single-turn dialogue testing but faces challenges in\ncompleting entire sessions, achieving just 6\\% session accuracy. We find three\nmain error causes in our benchmark: error accumulation in the multi-turn\nsession, long PPT template processing, and multi-modality perception. These\npose great challenges for future LLM and agent systems. We release the data,\ncode, and evaluation system of PPTC at https://github.com/gydpku/PPTC.",
+      "published_at": "2023-11-03",
+      "submitted_at": "2023-11-06",
+      "submitted_by": "AK",
+      "upvotes": 20,
+      "organization": "",
+      "github_repo": "https://github.com/gydpku/pptc",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.01767",
+      "arxiv_url": "https://arxiv.org/abs/2311.01767"
+    },
+    {
+      "arxiv_id": "2311.01615",
+      "title": "FLAP: Fast Language-Audio Pre-training",
+      "authors": [
+        "Ching-Feng Yeh",
+        "Po-Yao Huang",
+        "Vasu Sharma",
+        "Shang-Wen Li",
+        "Gargi Gosh"
+      ],
+      "abstract": "We propose Fast Language-Audio Pre-training (FLAP), a self-supervised\napproach that efficiently and effectively learns aligned audio and language\nrepresentations through masking, contrastive learning and reconstruction. For\nefficiency, FLAP randomly drops audio spectrogram tokens, focusing solely on\nthe remaining ones for self-supervision. Through inter-modal contrastive\nlearning, FLAP learns to align paired audio and text representations in a\nshared latent space. Notably, FLAP leverages multiple augmented views via\nmasking for inter-modal contrast and learns to reconstruct the masked portion\nof audio tokens. Moreover, FLAP leverages large language models (LLMs) to\naugment the text inputs, contributing to improved performance. These approaches\nlead to more robust and informative audio-text representations, enabling FLAP\nto achieve state-of-the-art (SoTA) performance on audio-text retrieval tasks on\nAudioCaps (achieving 53.0% R@1) and Clotho (achieving 25.5% R@1).",
+      "published_at": "2023-11-02",
+      "submitted_at": "2023-11-06",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.01615",
+      "arxiv_url": "https://arxiv.org/abs/2311.01615"
+    },
+    {
+      "arxiv_id": "2311.02077",
+      "title": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via\n  Self-Supervision",
+      "authors": [
+        "Jiawei Yang",
+        "Boris Ivanovic",
+        "Or Litany",
+        "Xinshuo Weng",
+        "Seung Wook Kim",
+        "Boyi Li",
+        "Tong Che",
+        "Danfei Xu",
+        "Sanja Fidler",
+        "Marco Pavone",
+        "Yue Wang"
+      ],
+      "abstract": "We present EmerNeRF, a simple yet powerful approach for learning\nspatial-temporal representations of dynamic driving scenes. Grounded in neural\nfields, EmerNeRF simultaneously captures scene geometry, appearance, motion,\nand semantics via self-bootstrapping. EmerNeRF hinges upon two core components:\nFirst, it stratifies scenes into static and dynamic fields. This decomposition\nemerges purely from self-supervision, enabling our model to learn from general,\nin-the-wild data sources. Second, EmerNeRF parameterizes an induced flow field\nfrom the dynamic field and uses this flow field to further aggregate\nmulti-frame features, amplifying the rendering precision of dynamic objects.\nCoupling these three fields (static, dynamic, and flow) enables EmerNeRF to\nrepresent highly-dynamic scenes self-sufficiently, without relying on ground\ntruth object annotations or pre-trained models for dynamic object segmentation\nor optical flow estimation. Our method achieves state-of-the-art performance in\nsensor simulation, significantly outperforming previous methods when\nreconstructing static (+2.93 PSNR) and dynamic (+3.70 PSNR) scenes. In\naddition, to bolster EmerNeRF's semantic generalization, we lift 2D visual\nfoundation model features into 4D space-time and address a general positional\nbias in modern Transformers, significantly boosting 3D perception performance\n(e.g., 37.50% relative improvement in occupancy prediction accuracy on\naverage). Finally, we construct a diverse and challenging 120-sequence dataset\nto benchmark neural fields under extreme and highly-dynamic settings.",
+      "published_at": "2023-11-03",
+      "submitted_at": "2023-11-06",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/nvlabs/emernerf",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.02077",
+      "arxiv_url": "https://arxiv.org/abs/2311.02077"
+    }
+  ]
+}

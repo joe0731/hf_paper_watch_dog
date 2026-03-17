@@ -1,0 +1,119 @@
+{
+  "date": "2023-08-02",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2023-08-02",
+  "papers": [
+    {
+      "arxiv_id": "2308.00675",
+      "title": "Tool Documentation Enables Zero-Shot Tool-Usage with Large Language\n  Models",
+      "authors": [
+        "Cheng-Yu Hsieh",
+        "Si-An Chen",
+        "Chun-Liang Li",
+        "Yasuhisa Fujii",
+        "Alexander Ratner",
+        "Chen-Yu Lee",
+        "Ranjay Krishna",
+        "Tomas Pfister"
+      ],
+      "abstract": "Today, large language models (LLMs) are taught to use new tools by providing\na few demonstrations of the tool's usage. Unfortunately, demonstrations are\nhard to acquire, and can result in undesirable biased usage if the wrong\ndemonstration is chosen. Even in the rare scenario that demonstrations are\nreadily available, there is no principled selection protocol to determine how\nmany and which ones to provide. As tasks grow more complex, the selection\nsearch grows combinatorially and invariably becomes intractable. Our work\nprovides an alternative to demonstrations: tool documentation. We advocate the\nuse of tool documentation, descriptions for the individual tool usage, over\ndemonstrations. We substantiate our claim through three main empirical findings\non 6 tasks across both vision and language modalities. First, on existing\nbenchmarks, zero-shot prompts with only tool documentation are sufficient for\neliciting proper tool usage, achieving performance on par with few-shot\nprompts. Second, on a newly collected realistic tool-use dataset with hundreds\nof available tool APIs, we show that tool documentation is significantly more\nvaluable than demonstrations, with zero-shot documentation significantly\noutperforming few-shot without documentation. Third, we highlight the benefits\nof tool documentations by tackling image generation and video tracking using\njust-released unseen state-of-the-art models as tools. Finally, we highlight\nthe possibility of using tool documentation to automatically enable new\napplications: by using nothing more than the documentation of GroundingDino,\nStable Diffusion, XMem, and SAM, LLMs can re-invent the functionalities of the\njust-released Grounded-SAM and Track Anything models.",
+      "published_at": "2023-08-01",
+      "submitted_at": "2023-08-02",
+      "submitted_by": "AK",
+      "upvotes": 37,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.00675",
+      "arxiv_url": "https://arxiv.org/abs/2308.00675"
+    },
+    {
+      "arxiv_id": "2308.00436",
+      "title": "SelfCheck: Using LLMs to Zero-Shot Check Their Own Step-by-Step\n  Reasoning",
+      "authors": [
+        "Ning Miao",
+        "Yee Whye Teh",
+        "Tom Rainforth"
+      ],
+      "abstract": "The recent progress in large language models (LLMs), especially the invention\nof chain-of-thoughts (CoT) prompting, makes it possible to solve reasoning\nproblems. However, even the strongest LLMs are still struggling with more\ncomplicated problems that require non-linear thinking and multi-step reasoning.\nIn this work, we explore whether LLMs have the ability to recognize their own\nerrors, without resorting to external resources. In particular, we investigate\nwhether they can be used to identify individual errors within a step-by-step\nreasoning. To this end, we propose a zero-shot verification scheme to recognize\nsuch errors. We then use this verification scheme to improve question-answering\nperformance, by using it to perform weighted voting on different generated\nanswers. We test the method on three math datasets-GSM8K, MathQA, and MATH-and\nfind that it successfully recognizes errors and, in turn, increases final\npredictive performance.",
+      "published_at": "2023-08-01",
+      "submitted_at": "2023-08-02",
+      "submitted_by": "AK",
+      "upvotes": 24,
+      "organization": "",
+      "github_repo": "https://github.com/ningmiao/selfcheck",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.00436",
+      "arxiv_url": "https://arxiv.org/abs/2308.00436"
+    },
+    {
+      "arxiv_id": "2308.00304",
+      "title": "Skills-in-Context Prompting: Unlocking Compositionality in Large\n  Language Models",
+      "authors": [
+        "Jiaao Chen",
+        "Xiaoman Pan",
+        "Dian Yu",
+        "Kaiqiang Song",
+        "Xiaoyang Wang",
+        "Dong Yu",
+        "Jianshu Chen"
+      ],
+      "abstract": "We consider the problem of eliciting compositional generalization\ncapabilities in large language models (LLMs) with a novel type of prompting\nstrategy. Compositional generalization empowers the LLMs to solve problems that\nare harder than the ones they have seen (i.e., easy-to-hard generalization),\nwhich is a critical reasoning capability of human-like intelligence. However,\neven the current state-of-the-art LLMs still struggle with this form of\nreasoning. To bridge this gap, we propose skills-in-context (SKiC) prompting,\nwhich instructs LLMs how to compose basic skills to resolve more complex\nproblems. We find that it is crucial to demonstrate both the skills and the\ncompositional examples within the same prompting context. With as few as two\nexamplars, our SKiC prompting initiates strong synergies between skills and\ntheir composition capabilities. Notably, it empowers LLMs to solve unseen\nproblems that require innovative skill compositions, achieving near-perfect\ngeneralization on a broad range of challenging compositionality tasks.\nIntriguingly, SKiC prompting unlocks the latent potential of LLMs, enabling\nthem to leverage pre-existing internal skills acquired during earlier\npre-training stages, even when these skills are not explicitly presented in the\nprompting context. This results in the capability of LLMs to solve unseen\ncomplex problems by activating and composing internal competencies. With such\nprominent features, SKiC prompting is able to achieve state-of-the-art\nperformance on challenging mathematical reasoning benchmarks (e.g., MATH).",
+      "published_at": "2023-08-01",
+      "submitted_at": "2023-08-02",
+      "submitted_by": "AK",
+      "upvotes": 24,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.00304",
+      "arxiv_url": "https://arxiv.org/abs/2308.00304"
+    },
+    {
+      "arxiv_id": "2308.00566",
+      "title": "Predicting masked tokens in stochastic locations improves masked image\n  modeling",
+      "authors": [
+        "Amir Bar",
+        "Florian Bordes",
+        "Assaf Shocher",
+        "Mahmoud Assran",
+        "Pascal Vincent",
+        "Nicolas Ballas",
+        "Trevor Darrell",
+        "Amir Globerson",
+        "Yann LeCun"
+      ],
+      "abstract": "Self-supervised learning is a promising paradigm in deep learning that\nenables learning from unlabeled data by constructing pretext tasks that require\nlearning useful representations. In natural language processing, the dominant\npretext task has been masked language modeling (MLM), while in computer vision\nthere exists an equivalent called Masked Image Modeling (MIM). However, MIM is\nchallenging because it requires predicting semantic content in accurate\nlocations. E.g, given an incomplete picture of a dog, we can guess that there\nis a tail, but we cannot determine its exact location. In this work, we propose\nFlexPredict, a stochastic model that addresses this challenge by incorporating\nlocation uncertainty into the model. Specifically, we condition the model on\nstochastic masked token positions to guide the model toward learning features\nthat are more robust to location uncertainties. Our approach improves\ndownstream performance on a range of tasks, e.g, compared to MIM baselines,\nFlexPredict boosts ImageNet linear probing by 1.6% with ViT-B and by 2.5% for\nsemi-supervised video segmentation using ViT-L.",
+      "published_at": "2023-07-31",
+      "submitted_at": "2023-08-02",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/amirbar/stop",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.00566",
+      "arxiv_url": "https://arxiv.org/abs/2308.00566"
+    },
+    {
+      "arxiv_id": "2308.00113",
+      "title": "Three Bricks to Consolidate Watermarks for Large Language Models",
+      "authors": [
+        "Pierre Fernandez",
+        "Antoine Chaffin",
+        "Karim Tit",
+        "Vivien Chappelier",
+        "Teddy Furon"
+      ],
+      "abstract": "The task of discerning between generated and natural texts is increasingly\nchallenging. In this context, watermarking emerges as a promising technique for\nascribing generated text to a specific model. It alters the sampling generation\nprocess so as to leave an invisible trace in the generated output, facilitating\nlater detection. This research consolidates watermarks for large language\nmodels based on three theoretical and empirical considerations. First, we\nintroduce new statistical tests that offer robust theoretical guarantees which\nremain valid even at low false-positive rates (less than 10^{-6}).\nSecond, we compare the effectiveness of watermarks using classical benchmarks\nin the field of natural language processing, gaining insights into their\nreal-world applicability. Third, we develop advanced detection schemes for\nscenarios where access to the LLM is available, as well as multi-bit\nwatermarking.",
+      "published_at": "2023-07-26",
+      "submitted_at": "2023-08-02",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/three_bricks",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.00113",
+      "arxiv_url": "https://arxiv.org/abs/2308.00113"
+    }
+  ]
+}

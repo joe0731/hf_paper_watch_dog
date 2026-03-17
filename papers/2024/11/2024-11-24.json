@@ -1,0 +1,28 @@
+{
+  "date": "2024-11-24",
+  "total": 1,
+  "source": "https://huggingface.co/papers/date/2024-11-24",
+  "papers": [
+    {
+      "arxiv_id": "2411.14793",
+      "title": "Style-Friendly SNR Sampler for Style-Driven Generation",
+      "authors": [
+        "Jooyoung Choi",
+        "Chaehun Shin",
+        "Yeongtak Oh",
+        "Heeseung Kim",
+        "Sungroh Yoon"
+      ],
+      "abstract": "Recent large-scale diffusion models generate high-quality images but struggle\nto learn new, personalized artistic styles, which limits the creation of unique\nstyle templates. Fine-tuning with reference images is the most promising\napproach, but it often blindly utilizes objectives and noise level\ndistributions used for pre-training, leading to suboptimal style alignment. We\npropose the Style-friendly SNR sampler, which aggressively shifts the\nsignal-to-noise ratio (SNR) distribution toward higher noise levels during\nfine-tuning to focus on noise levels where stylistic features emerge. This\nenables models to better capture unique styles and generate images with higher\nstyle alignment. Our method allows diffusion models to learn and share new\n\"style templates\", enhancing personalized content creation. We demonstrate the\nability to generate styles such as personal watercolor paintings, minimal flat\ncartoons, 3D renderings, multi-panel images, and memes with text, thereby\nbroadening the scope of style-driven generation.",
+      "published_at": "2024-11-22",
+      "submitted_at": "2024-11-24",
+      "submitted_by": "Jooyoung Choi",
+      "upvotes": 39,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.14793",
+      "arxiv_url": "https://arxiv.org/abs/2411.14793"
+    }
+  ]
+}

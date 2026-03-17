@@ -1,0 +1,331 @@
+{
+  "date": "2023-05-12",
+  "total": 15,
+  "source": "https://huggingface.co/papers/date/2023-05-12",
+  "papers": [
+    {
+      "arxiv_id": "2305.06908",
+      "title": "CoMoSpeech: One-Step Speech and Singing Voice Synthesis via Consistency\n  Model",
+      "authors": [
+        "Zhen Ye",
+        "Xu Tan",
+        "Jie Chen",
+        "Qifeng Liu",
+        "Yike Guo"
+      ],
+      "abstract": "Denoising diffusion probabilistic models (DDPMs) have shown promising\nperformance for speech synthesis. However, a large number of iterative steps\nare required to achieve high sample quality, which restricts the inference\nspeed. Maintaining sample quality while increasing sampling speed has become a\nchallenging task. In this paper, we propose a \"Co\"nsistency \"Mo\"del-based\n\"Speech\" synthesis method, CoMoSpeech, which achieve speech synthesis through a\nsingle diffusion sampling step while achieving high audio quality. The\nconsistency constraint is applied to distill a consistency model from a\nwell-designed diffusion-based teacher model, which ultimately yields superior\nperformances in the distilled CoMoSpeech. Our experiments show that by\ngenerating audio recordings by a single sampling step, the CoMoSpeech achieves\nan inference speed more than 150 times faster than real-time on a single NVIDIA\nA100 GPU, which is comparable to FastSpeech2, making diffusion-sampling based\nspeech synthesis truly practical. Meanwhile, objective and subjective\nevaluations on text-to-speech and singing voice synthesis show that the\nproposed teacher models yield the best audio quality, and the one-step sampling\nbased CoMoSpeech achieves the best inference speed with better or comparable\naudio quality to other conventional multi-step diffusion model baselines. Audio\nsamples are available at https://comospeech.github.io/.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06908",
+      "arxiv_url": "https://arxiv.org/abs/2305.06908"
+    },
+    {
+      "arxiv_id": "2305.07011",
+      "title": "Region-Aware Pretraining for Open-Vocabulary Object Detection with\n  Vision Transformers",
+      "authors": [
+        "Dahun Kim",
+        "Anelia Angelova",
+        "Weicheng Kuo"
+      ],
+      "abstract": "We present Region-aware Open-vocabulary Vision Transformers (RO-ViT) - a\ncontrastive image-text pretraining recipe to bridge the gap between image-level\npretraining and open-vocabulary object detection. At the pretraining phase, we\npropose to randomly crop and resize regions of positional embeddings instead of\nusing the whole image positional embeddings. This better matches the use of\npositional embeddings at region-level in the detection finetuning phase. In\naddition, we replace the common softmax cross entropy loss in contrastive\nlearning with focal loss to better learn the informative yet difficult\nexamples. Finally, we leverage recent advances in novel object proposals to\nimprove open-vocabulary detection finetuning. We evaluate our full model on the\nLVIS and COCO open-vocabulary detection benchmarks and zero-shot transfer.\nRO-ViT achieves a state-of-the-art 32.1 AP_r on LVIS, surpassing the best\nexisting approach by +5.8 points in addition to competitive zero-shot transfer\ndetection. Surprisingly, RO-ViT improves the image-level representation as well\nand achieves the state of the art on 9 out of 12 metrics on COCO and Flickr\nimage-text retrieval benchmarks, outperforming competitive approaches with\nlarger models.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07011",
+      "arxiv_url": "https://arxiv.org/abs/2305.07011"
+    },
+    {
+      "arxiv_id": "2305.06500",
+      "title": "InstructBLIP: Towards General-purpose Vision-Language Models with\n  Instruction Tuning",
+      "authors": [
+        "Wenliang Dai",
+        "Junnan Li",
+        "Dongxu Li",
+        "Anthony Meng Huat Tiong",
+        "Junqi Zhao",
+        "Weisheng Wang",
+        "Boyang Li",
+        "Pascale Fung",
+        "Steven Hoi"
+      ],
+      "abstract": "General-purpose language models that can solve various language-domain tasks\nhave emerged driven by the pre-training and instruction-tuning pipeline.\nHowever, building general-purpose vision-language models is challenging due to\nthe increased task discrepancy introduced by the additional visual input.\nAlthough vision-language pre-training has been widely studied, vision-language\ninstruction tuning remains relatively less explored. In this paper, we conduct\na systematic and comprehensive study on vision-language instruction tuning\nbased on the pre-trained BLIP-2 models. We gather a wide variety of 26 publicly\navailable datasets, transform them into instruction tuning format and\ncategorize them into two clusters for held-in instruction tuning and held-out\nzero-shot evaluation. Additionally, we introduce instruction-aware visual\nfeature extraction, a crucial method that enables the model to extract\ninformative features tailored to the given instruction. The resulting\nInstructBLIP models achieve state-of-the-art zero-shot performance across all\n13 held-out datasets, substantially outperforming BLIP-2 and the larger\nFlamingo. Our models also lead to state-of-the-art performance when finetuned\non individual downstream tasks (e.g., 90.7% accuracy on ScienceQA IMG).\nFurthermore, we qualitatively demonstrate the advantages of InstructBLIP over\nconcurrent multimodal models. All InstructBLIP models have been open-sourced at\nhttps://github.com/salesforce/LAVIS/tree/main/projects/instructblip.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06500",
+      "arxiv_url": "https://arxiv.org/abs/2305.06500"
+    },
+    {
+      "arxiv_id": "2305.07027",
+      "title": "EfficientViT: Memory Efficient Vision Transformer with Cascaded Group\n  Attention",
+      "authors": [
+        "Xinyu Liu",
+        "Houwen Peng",
+        "Ningxin Zheng",
+        "Yuqing Yang",
+        "Han Hu"
+      ],
+      "abstract": "Vision transformers have shown great success due to their high model\ncapabilities. However, their remarkable performance is accompanied by heavy\ncomputation costs, which makes them unsuitable for real-time applications. In\nthis paper, we propose a family of high-speed vision transformers named\nEfficientViT. We find that the speed of existing transformer models is commonly\nbounded by memory inefficient operations, especially the tensor reshaping and\nelement-wise functions in MHSA. Therefore, we design a new building block with\na sandwich layout, i.e., using a single memory-bound MHSA between efficient FFN\nlayers, which improves memory efficiency while enhancing channel communication.\nMoreover, we discover that the attention maps share high similarities across\nheads, leading to computational redundancy. To address this, we present a\ncascaded group attention module feeding attention heads with different splits\nof the full feature, which not only saves computation cost but also improves\nattention diversity. Comprehensive experiments demonstrate EfficientViT\noutperforms existing efficient models, striking a good trade-off between speed\nand accuracy. For instance, our EfficientViT-M5 surpasses MobileNetV3-Large by\n1.9% in accuracy, while getting 40.4% and 45.2% higher throughput on Nvidia\nV100 GPU and Intel Xeon CPU, respectively. Compared to the recent efficient\nmodel MobileViT-XXS, EfficientViT-M2 achieves 1.8% superior accuracy, while\nrunning 5.8x/3.7x faster on the GPU/CPU, and 7.4x faster when converted to ONNX\nformat. Code and models are available at\nhttps://github.com/microsoft/Cream/tree/main/EfficientViT.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/microsoft/cream",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07027",
+      "arxiv_url": "https://arxiv.org/abs/2305.07027"
+    },
+    {
+      "arxiv_id": "2305.07015",
+      "title": "Exploiting Diffusion Prior for Real-World Image Super-Resolution",
+      "authors": [
+        "Jianyi Wang",
+        "Zongsheng Yue",
+        "Shangchen Zhou",
+        "Kelvin C. K. Chan",
+        "Chen Change Loy"
+      ],
+      "abstract": "We present a novel approach to leverage prior knowledge encapsulated in\npre-trained text-to-image diffusion models for blind super-resolution (SR).\nSpecifically, by employing our time-aware encoder, we can achieve promising\nrestoration results without altering the pre-trained synthesis model, thereby\npreserving the generative prior and minimizing training cost. To remedy the\nloss of fidelity caused by the inherent stochasticity of diffusion models, we\nintroduce a controllable feature wrapping module that allows users to balance\nquality and fidelity by simply adjusting a scalar value during the inference\nprocess. Moreover, we develop a progressive aggregation sampling strategy to\novercome the fixed-size constraints of pre-trained diffusion models, enabling\nadaptation to resolutions of any size. A comprehensive evaluation of our method\nusing both synthetic and real-world benchmarks demonstrates its superiority\nover current state-of-the-art approaches.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/pkuliyi2015/sd-webui-stablesr",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07015",
+      "arxiv_url": "https://arxiv.org/abs/2305.07015"
+    },
+    {
+      "arxiv_id": "2305.07017",
+      "title": "An Inverse Scaling Law for CLIP Training",
+      "authors": [
+        "Xianhang Li",
+        "Zeyu Wang",
+        "Cihang Xie"
+      ],
+      "abstract": "CLIP, the first foundation model that connects images and text, has enabled\nmany recent breakthroughs in computer vision. However, its associated training\ncost is prohibitively high, imposing a significant barrier to its widespread\nexploration. In this paper, we present a surprising finding that there exists\nan inverse scaling law for CLIP training, whereby the larger the image/text\nencoders used, the shorter the sequence length of image/text tokens that can be\napplied in training. Moreover, we showcase that the strategy for reducing\nimage/text token length plays a crucial role in determining the quality of this\nscaling law.\n  As a result of this finding, we are able to successfully train CLIP even by\nusing academic resources. For example, on an A100 eight-GPU server, our CLIP\nmodels achieve zero-shot top-1 ImageNet accuracies of 63.2% in ~2 days, 67.8%\nin ~3 days, and 69.3% in ~4 days. By reducing the computation barrier\nassociated with CLIP, we hope to inspire more research in this field,\nparticularly from academics. Our code is available at\nhttps://github.com/UCSC-VLAA/CLIPA.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "https://github.com/ucsc-vlaa/clipa",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07017",
+      "arxiv_url": "https://arxiv.org/abs/2305.07017"
+    },
+    {
+      "arxiv_id": "2305.06575",
+      "title": "Chain-of-Dictionary Prompting Elicits Translation in Large Language\n  Models",
+      "authors": [
+        "Hongyuan Lu",
+        "Haoyang Huang",
+        "Dongdong Zhang",
+        "Haoran Yang",
+        "Wai Lam",
+        "Furu Wei"
+      ],
+      "abstract": "Large language models (LLMs) have shown surprisingly good performance in\nmultilingual neural machine translation (MNMT) even when trained without\nparallel data. Yet, despite the fact that the amount of training data is\ngigantic, they still struggle with translating rare words, particularly for\nlow-resource languages. Even worse, it is usually unrealistic to retrieve\nrelevant demonstrations for in-context learning with low-resource languages on\nLLMs, which restricts the practical use of LLMs for translation -- how should\nwe mitigate this problem? To this end, we present a novel method, CoD, which\naugments LLMs with prior knowledge with the chains of multilingual dictionaries\nfor a subset of input words to elicit translation abilities for LLMs. Extensive\nexperiments indicate that augmenting ChatGPT with CoD elicits large gains by up\nto 13x ChrF++ points for MNMT (3.08 to 42.63 for English to Serbian written in\nCyrillic script) on FLORES-200 full devtest set. We further demonstrate the\nimportance of chaining the multilingual dictionaries, as well as the\nsuperiority of CoD to few-shot demonstration for low-resource languages.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/hongyuanluke/chain-of-dictionary",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06575",
+      "arxiv_url": "https://arxiv.org/abs/2305.06575"
+    },
+    {
+      "arxiv_id": "2305.06424",
+      "title": "Bot or Human? Detecting ChatGPT Imposters with A Single Question",
+      "authors": [
+        "Hong Wang",
+        "Xuan Luo",
+        "Weizhi Wang",
+        "Xifeng Yan"
+      ],
+      "abstract": "Large language models like ChatGPT have recently demonstrated impressive\ncapabilities in natural language understanding and generation, enabling various\napplications including translation, essay writing, and chit-chatting. However,\nthere is a concern that they can be misused for malicious purposes, such as\nfraud or denial-of-service attacks. Therefore, it is crucial to develop methods\nfor detecting whether the party involved in a conversation is a bot or a human.\nIn this paper, we propose a framework named FLAIR, Finding Large language model\nAuthenticity via a single Inquiry and Response, to detect conversational bots\nin an online manner. Specifically, we target a single question scenario that\ncan effectively differentiate human users from bots. The questions are divided\ninto two categories: those that are easy for humans but difficult for bots\n(e.g., counting, substitution, positioning, noise filtering, and ASCII art),\nand those that are easy for bots but difficult for humans (e.g., memorization\nand computation). Our approach shows different strengths of these questions in\ntheir effectiveness, providing a new way for online service providers to\nprotect themselves against nefarious activities and ensure that they are\nserving real users. We open-sourced our dataset on\nhttps://github.com/hongwang600/FLAIR and welcome contributions from the\ncommunity to enrich such detection datasets.",
+      "published_at": "2023-05-10",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 2,
+      "organization": "",
+      "github_repo": "https://github.com/hongwang600/flair",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06424",
+      "arxiv_url": "https://arxiv.org/abs/2305.06424"
+    },
+    {
+      "arxiv_id": "2305.07021",
+      "title": "Simple Token-Level Confidence Improves Caption Correctness",
+      "authors": [
+        "Suzanne Petryk",
+        "Spencer Whitehead",
+        "Joseph E. Gonzalez",
+        "Trevor Darrell",
+        "Anna Rohrbach",
+        "Marcus Rohrbach"
+      ],
+      "abstract": "The ability to judge whether a caption correctly describes an image is a\ncritical part of vision-language understanding. However, state-of-the-art\nmodels often misinterpret the correctness of fine-grained details, leading to\nerrors in outputs such as hallucinating objects in generated captions or poor\ncompositional reasoning. In this work, we explore Token-Level Confidence, or\nTLC, as a simple yet surprisingly effective method to assess caption\ncorrectness. Specifically, we fine-tune a vision-language model on image\ncaptioning, input an image and proposed caption to the model, and aggregate\neither algebraic or learned token confidences over words or sequences to\nestimate image-caption consistency. Compared to sequence-level scores from\npretrained models, TLC with algebraic confidence measures achieves a relative\nimprovement in accuracy by 10% on verb understanding in SVO-Probes and\noutperforms prior state-of-the-art in image and group scores for compositional\nreasoning in Winoground by a relative 37% and 9%, respectively. When training\ndata are available, a learned confidence estimator provides further improved\nperformance, reducing object hallucination rates in MS COCO Captions by a\nrelative 30% over the original model and setting a new state-of-the-art.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07021",
+      "arxiv_url": "https://arxiv.org/abs/2305.07021"
+    },
+    {
+      "arxiv_id": "2305.07004",
+      "title": "Not All Languages Are Created Equal in LLMs: Improving Multilingual\n  Capability by Cross-Lingual-Thought Prompting",
+      "authors": [
+        "Haoyang Huang",
+        "Tianyi Tang",
+        "Dongdong Zhang",
+        "Wayne Xin Zhao",
+        "Ting Song",
+        "Yan Xia",
+        "Furu Wei"
+      ],
+      "abstract": "Large language models (LLMs) demonstrate impressive multilingual capability,\nbut their performance varies substantially across different languages. In this\nwork, we introduce a simple yet effective method, called cross-lingual-thought\nprompting (XLT), to systematically improve the multilingual capability of LLMs.\nSpecifically, XLT is a generic template prompt that stimulates cross-lingual\nand logical reasoning skills to enhance task performance across languages. We\nconduct comprehensive evaluations on 7 typical benchmarks related to reasoning,\nunderstanding, and generation tasks, covering both high-resource and\nlow-resource languages. Experimental results show that XLT not only remarkably\nenhances the performance of various multilingual tasks but also significantly\nreduces the gap between the average performance and the best performance of\neach task in different languages. Notably, XLT brings over 10 points of average\nimprovement in arithmetic reasoning and open-domain question-answering tasks.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.07004",
+      "arxiv_url": "https://arxiv.org/abs/2305.07004"
+    },
+    {
+      "arxiv_id": "2305.06594",
+      "title": "V2Meow: Meowing to the Visual Beat via Music Generation",
+      "authors": [
+        "Kun Su",
+        "Judith Yue Li",
+        "Qingqing Huang",
+        "Dima Kuzmin",
+        "Joonseok Lee",
+        "Chris Donahue",
+        "Fei Sha",
+        "Aren Jansen",
+        "Yu Wang",
+        "Mauro Verzetti",
+        "Timo I. Denk"
+      ],
+      "abstract": "Generating high quality music that complements the visual content of a video\nis a challenging task. Most existing visual conditioned music generation\nsystems generate symbolic music data, such as MIDI files, instead of raw audio\nwaveform. Given the limited availability of symbolic music data, such methods\ncan only generate music for a few instruments or for specific types of visual\ninput. In this paper, we propose a novel approach called V2Meow that can\ngenerate high-quality music audio that aligns well with the visual semantics of\na diverse range of video input types. Specifically, the proposed music\ngeneration system is a multi-stage autoregressive model which is trained with a\nnumber of O(100K) music audio clips paired with video frames, which are mined\nfrom in-the-wild music videos, and no parallel symbolic music data is involved.\nV2Meow is able to synthesize high-fidelity music audio waveform solely\nconditioned on pre-trained visual features extracted from an arbitrary silent\nvideo clip, and it also allows high-level control over the music style of\ngeneration examples via supporting text prompts in addition to the video frames\nconditioning. Through both qualitative and quantitative evaluations, we\ndemonstrate that our model outperforms several existing music generation\nsystems in terms of both visual-audio correspondence and audio quality.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06594",
+      "arxiv_url": "https://arxiv.org/abs/2305.06594"
+    },
+    {
+      "arxiv_id": "2305.06555",
+      "title": "Domain Incremental Lifelong Learning in an Open World",
+      "authors": [
+        "Yi Dai",
+        "Hao Lang",
+        "Yinhe Zheng",
+        "Bowen Yu",
+        "Yongbin Li"
+      ],
+      "abstract": "Lifelong learning (LL) is an important ability for NLP models to learn new\ntasks continuously. Architecture-based approaches are reported to be effective\nimplementations for LL models. However, it is non-trivial to extend previous\napproaches to domain incremental LL scenarios since they either require access\nto task identities in the testing phase or cannot handle samples from unseen\ntasks. In this paper, we propose Diana: a\ndynamic architecture-based\nlifelong learning model that tries to learn a sequence\nof tasks with a prompt-enhanced language model. Four types of hierarchically\norganized prompts are used in Diana to capture knowledge from different\ngranularities. Specifically, we dedicate task-level prompts to capture\ntask-specific knowledge to retain high LL performances and maintain\ninstance-level prompts to learn knowledge shared across input samples to\nimprove the model's generalization performance. Moreover, we dedicate separate\nprompts to explicitly model unseen tasks and introduce a set of prompt key\nvectors to facilitate knowledge sharing between tasks. Extensive experiments\ndemonstrate that Diana outperforms state-of-the-art LL models, especially in\nhandling unseen tasks. We release the code and data at\nhttps://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/diana.",
+      "published_at": "2023-05-11",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06555",
+      "arxiv_url": "https://arxiv.org/abs/2305.06555"
+    },
+    {
+      "arxiv_id": "2305.06474",
+      "title": "Do LLMs Understand User Preferences? Evaluating LLMs On User Rating\n  Prediction",
+      "authors": [
+        "Wang-Cheng Kang",
+        "Jianmo Ni",
+        "Nikhil Mehta",
+        "Maheswaran Sathiamoorthy",
+        "Lichan Hong",
+        "Ed Chi",
+        "Derek Zhiyuan Cheng"
+      ],
+      "abstract": "Large Language Models (LLMs) have demonstrated exceptional capabilities in\ngeneralizing to new tasks in a zero-shot or few-shot manner. However, the\nextent to which LLMs can comprehend user preferences based on their previous\nbehavior remains an emerging and still unclear research question.\nTraditionally, Collaborative Filtering (CF) has been the most effective method\nfor these tasks, predominantly relying on the extensive volume of rating data.\nIn contrast, LLMs typically demand considerably less data while maintaining an\nexhaustive world knowledge about each item, such as movies or products. In this\npaper, we conduct a thorough examination of both CF and LLMs within the classic\ntask of user rating prediction, which involves predicting a user's rating for a\ncandidate item based on their past ratings. We investigate various LLMs in\ndifferent sizes, ranging from 250M to 540B parameters and evaluate their\nperformance in zero-shot, few-shot, and fine-tuning scenarios. We conduct\ncomprehensive analysis to compare between LLMs and strong CF methods, and find\nthat zero-shot LLMs lag behind traditional recommender models that have the\naccess to user interaction data, indicating the importance of user interaction\ndata. However, through fine-tuning, LLMs achieve comparable or even better\nperformance with only a small fraction of the training data, demonstrating\ntheir potential through data efficiency.",
+      "published_at": "2023-05-10",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06474",
+      "arxiv_url": "https://arxiv.org/abs/2305.06474"
+    },
+    {
+      "arxiv_id": "2305.06456",
+      "title": "Perpetual Humanoid Control for Real-time Simulated Avatars",
+      "authors": [
+        "Zhengyi Luo",
+        "Jinkun Cao",
+        "Alexander Winkler",
+        "Kris Kitani",
+        "Weipeng Xu"
+      ],
+      "abstract": "We present a physics-based humanoid controller that achieves high-fidelity\nmotion imitation and fault-tolerant behavior in the presence of noisy input\n(e.g. pose estimates from video or generated from language) and unexpected\nfalls. Our controller scales up to learning ten thousand motion clips without\nusing any external stabilizing forces and learns to naturally recover from\nfail-state. Given reference motion, our controller can perpetually control\nsimulated avatars without requiring resets. At its core, we propose the\nprogressive multiplicative control policy (PMCP), which dynamically allocates\nnew network capacity to learn harder and harder motion sequences. PMCP allows\nefficient scaling for learning from large-scale motion databases and adding new\ntasks, such as fail-state recovery, without catastrophic forgetting. We\ndemonstrate the effectiveness of our controller by using it to imitate noisy\nposes from video-based pose estimators and language-based motion generators in\na live and real-time multi-person avatar use case.",
+      "published_at": "2023-05-10",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "https://zhengyiluo.github.io/PHC/",
+      "hf_url": "https://huggingface.co/papers/2305.06456",
+      "arxiv_url": "https://arxiv.org/abs/2305.06456"
+    },
+    {
+      "arxiv_id": "2305.06404",
+      "title": "LACoS-BLOOM: Low-rank Adaptation with Contrastive objective on 8 bits\n  Siamese-BLOOM",
+      "authors": [
+        "Wen-Yu Hua",
+        "Brian Williams",
+        "Davood Shamsi"
+      ],
+      "abstract": "Text embeddings are useful features for several NLP applications, such as\nsentence similarity, text clustering, and semantic search. In this paper, we\npresent a Low-rank Adaptation with a Contrastive objective on top of 8-bit\nSiamese-BLOOM, a multilingual large language model optimized to produce\nsemantically meaningful word embeddings. The innovation is threefold. First, we\ncast BLOOM weights to 8-bit values. Second, we fine-tune BLOOM with a scalable\nadapter (LoRA) and 8-bit Adam optimizer for sentence similarity classification.\nThird, we apply a Siamese architecture on BLOOM model with a contrastive\nobjective to ease the multi-lingual labeled data scarcity. The experiment\nresults show the quality of learned embeddings from LACoS-BLOOM is proportional\nto the number of model parameters and the amount of unlabeled training data.\nWith the parameter efficient fine-tuning design, we are able to run BLOOM 7.1\nbillion parameters end-to-end on a single GPU machine with 32GB memory.\nCompared to previous solution Sentence-BERT, we achieve significant improvement\non both English and multi-lingual STS tasks.",
+      "published_at": "2023-05-10",
+      "submitted_at": "2023-05-12",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.06404",
+      "arxiv_url": "https://arxiv.org/abs/2305.06404"
+    }
+  ]
+}

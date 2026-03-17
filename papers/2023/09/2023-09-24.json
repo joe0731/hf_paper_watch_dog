@@ -1,0 +1,32 @@
+{
+  "date": "2023-09-24",
+  "total": 1,
+  "source": "https://huggingface.co/papers/date/2023-09-24",
+  "papers": [
+    {
+      "arxiv_id": "2309.12499",
+      "title": "CodePlan: Repository-level Coding using LLMs and Planning",
+      "authors": [
+        "Ramakrishna Bairi",
+        "Atharv Sonwane",
+        "Aditya Kanade",
+        "Vageesh D C",
+        "Arun Iyer",
+        "Suresh Parthasarathy",
+        "Sriram Rajamani",
+        "B. Ashok",
+        "Shashank Shet"
+      ],
+      "abstract": "Software engineering activities such as package migration, fixing errors\nreports from static analysis or testing, and adding type annotations or other\nspecifications to a codebase, involve pervasively editing the entire repository\nof code. We formulate these activities as repository-level coding tasks.\n  Recent tools like GitHub Copilot, which are powered by Large Language Models\n(LLMs), have succeeded in offering high-quality solutions to localized coding\nproblems. Repository-level coding tasks are more involved and cannot be solved\ndirectly using LLMs, since code within a repository is inter-dependent and the\nentire repository may be too large to fit into the prompt. We frame\nrepository-level coding as a planning problem and present a task-agnostic\nframework, called CodePlan to solve it. CodePlan synthesizes a multi-step chain\nof edits (plan), where each step results in a call to an LLM on a code location\nwith context derived from the entire repository, previous code changes and\ntask-specific instructions. CodePlan is based on a novel combination of an\nincremental dependency analysis, a change may-impact analysis and an adaptive\nplanning algorithm.\n  We evaluate the effectiveness of CodePlan on two repository-level tasks:\npackage migration (C#) and temporal code edits (Python). Each task is evaluated\non multiple code repositories, each of which requires inter-dependent changes\nto many files (between 2-97 files). Coding tasks of this level of complexity\nhave not been automated using LLMs before. Our results show that CodePlan has\nbetter match with the ground truth compared to baselines. CodePlan is able to\nget 5/6 repositories to pass the validity checks (e.g., to build without errors\nand make correct code edits) whereas the baselines (without planning but with\nthe same type of contextual information as CodePlan) cannot get any of the\nrepositories to pass them.",
+      "published_at": "2023-09-21",
+      "submitted_at": "2023-09-24",
+      "submitted_by": "AK",
+      "upvotes": 80,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.12499",
+      "arxiv_url": "https://arxiv.org/abs/2309.12499"
+    }
+  ]
+}

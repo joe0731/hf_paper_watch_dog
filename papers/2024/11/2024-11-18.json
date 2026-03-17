@@ -1,0 +1,116 @@
+{
+  "date": "2024-11-18",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2024-11-18",
+  "papers": [
+    {
+      "arxiv_id": "2411.06558",
+      "title": "Region-Aware Text-to-Image Generation via Hard Binding and Soft\n  Refinement",
+      "authors": [
+        "Zhennan Chen",
+        "Yajie Li",
+        "Haofan Wang",
+        "Zhibo Chen",
+        "Zhengkai Jiang",
+        "Jun Li",
+        "Qian Wang",
+        "Jian Yang",
+        "Ying Tai"
+      ],
+      "abstract": "In this paper, we present RAG, a Regional-Aware text-to-image Generation\nmethod conditioned on regional descriptions for precise layout composition.\nRegional prompting, or compositional generation, which enables fine-grained\nspatial control, has gained increasing attention for its practicality in\nreal-world applications. However, previous methods either introduce additional\ntrainable modules, thus only applicable to specific models, or manipulate on\nscore maps within cross-attention layers using attention masks, resulting in\nlimited control strength when the number of regions increases. To handle these\nlimitations, we decouple the multi-region generation into two sub-tasks, the\nconstruction of individual region (Regional Hard Binding) that ensures the\nregional prompt is properly executed, and the overall detail refinement\n(Regional Soft Refinement) over regions that dismiss the visual boundaries and\nenhance adjacent interactions. Furthermore, RAG novelly makes repainting\nfeasible, where users can modify specific unsatisfied regions in the last\ngeneration while keeping all other regions unchanged, without relying on\nadditional inpainting models. Our approach is tuning-free and applicable to\nother frameworks as an enhancement to the prompt following property.\nQuantitative and qualitative experiments demonstrate that RAG achieves superior\nperformance over attribute binding and object relationship than previous\ntuning-free methods.",
+      "published_at": "2024-11-10",
+      "submitted_at": "2024-11-18",
+      "submitted_by": "AK",
+      "upvotes": 36,
+      "organization": "",
+      "github_repo": "https://github.com/NJU-PCALab/RAG-Diffusion",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.06558",
+      "arxiv_url": "https://arxiv.org/abs/2411.06558"
+    },
+    {
+      "arxiv_id": "2411.10323",
+      "title": "The Dawn of GUI Agent: A Preliminary Case Study with Claude 3.5 Computer\n  Use",
+      "authors": [
+        "Mingyu Ouyang",
+        "Difei Gao",
+        "Mike Zheng Shou"
+      ],
+      "abstract": "The recently released model, Claude 3.5 Computer Use, stands out as the first\nfrontier AI model to offer computer use in public beta as a graphical user\ninterface (GUI) agent. As an early beta, its capability in the real-world\ncomplex environment remains unknown. In this case study to explore Claude 3.5\nComputer Use, we curate and organize a collection of carefully designed tasks\nspanning a variety of domains and software. Observations from these cases\ndemonstrate Claude 3.5 Computer Use's unprecedented ability in end-to-end\nlanguage to desktop actions. Along with this study, we provide an\nout-of-the-box agent framework for deploying API-based GUI automation models\nwith easy implementation. Our case studies aim to showcase a groundwork of\ncapabilities and limitations of Claude 3.5 Computer Use with detailed analyses\nand bring to the fore questions about planning, action, and critic, which must\nbe considered for future improvement. We hope this preliminary exploration will\ninspire future research into the GUI agent community. All the test cases in the\npaper can be tried through the project:\nhttps://github.com/showlab/computer_use_ootb.",
+      "published_at": "2024-11-15",
+      "submitted_at": "2024-11-18",
+      "submitted_by": "AK",
+      "upvotes": 34,
+      "organization": "",
+      "github_repo": "https://github.com/showlab/computer_use_ootb",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.10323",
+      "arxiv_url": "https://arxiv.org/abs/2411.10323"
+    },
+    {
+      "arxiv_id": "2411.10332",
+      "title": "Number it: Temporal Grounding Videos like Flipping Manga",
+      "authors": [
+        "Yongliang Wu",
+        "Xinting Hu",
+        "Yuyang Sun",
+        "Yizhou Zhou",
+        "Wenbo Zhu",
+        "Fengyun Rao",
+        "Bernt Schiele",
+        "Xu Yang"
+      ],
+      "abstract": "Video Large Language Models (Vid-LLMs) have made remarkable advancements in\ncomprehending video content for QA dialogue. However, they struggle to extend\nthis visual understanding to tasks requiring precise temporal localization,\nknown as Video Temporal Grounding (VTG). To address this gap, we introduce\nNumber-Prompt (NumPro), a novel method that empowers Vid-LLMs to bridge visual\ncomprehension with temporal grounding by adding unique numerical identifiers to\neach video frame. Treating a video as a sequence of numbered frame images,\nNumPro transforms VTG into an intuitive process: flipping through manga panels\nin sequence. This allows Vid-LLMs to \"read\" event timelines, accurately linking\nvisual content with corresponding temporal information. Our experiments\ndemonstrate that NumPro significantly boosts VTG performance of top-tier\nVid-LLMs without additional computational cost. Furthermore, fine-tuning on a\nNumPro-enhanced dataset defines a new state-of-the-art for VTG, surpassing\nprevious top-performing methods by up to 6.9\\% in mIoU for moment retrieval and\n8.5\\% in mAP for highlight detection. The code will be available at\nhttps://github.com/yongliang-wu/NumPro.",
+      "published_at": "2024-11-15",
+      "submitted_at": "2024-11-18",
+      "submitted_by": "Yongliang Wu",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/yongliang-wu/numpro",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.10332",
+      "arxiv_url": "https://arxiv.org/abs/2411.10332"
+    },
+    {
+      "arxiv_id": "2411.10083",
+      "title": "Xmodel-1.5: An 1B-scale Multilingual LLM",
+      "authors": [
+        "Wang Qun",
+        "Liu Yang",
+        "Lin Qingquan",
+        "Jiang Ling"
+      ],
+      "abstract": "We introduce Xmodel-1.5, a novel 1-billion-parameter multilingual large model\npretrained on approximately 2 trillion tokens. The model demonstrates strong\nperformance across several languages, with particularly notable results in\nThai, Arabic, and French, alongside its effectiveness in Chinese and English.\nIn addition, we contribute to the research community by releasing a Thai\nevaluation dataset, which includes hundreds of questions annotated by students\nfrom Chulalongkorn University's School of Integrated Innovation. While the\nresults are promising, we acknowledge that there is still room for improvement.\nWe hope this work advances ongoing efforts in multilingual AI research and\npromotes better cross-linguistic understanding in various natural language\nprocessing tasks. Our models and code are publicly available on GitHub at\nhttps://github.com/XiaoduoAILab/XmodelLM.",
+      "published_at": "2024-11-15",
+      "submitted_at": "2024-11-18",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/XiaoduoAILab/XmodelLM-1.5",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.10083",
+      "arxiv_url": "https://arxiv.org/abs/2411.10083"
+    },
+    {
+      "arxiv_id": "2411.10438",
+      "title": "MARS: Unleashing the Power of Variance Reduction for Training Large\n  Models",
+      "authors": [
+        "Huizhuo Yuan",
+        "Yifeng Liu",
+        "Shuang Wu",
+        "Xun Zhou",
+        "Quanquan Gu"
+      ],
+      "abstract": "Training deep neural networks--and more recently, large models--demands\nefficient and scalable optimizers. Adaptive gradient algorithms like Adam,\nAdamW, and their variants have been central to this task. Despite the\ndevelopment of numerous variance reduction algorithms in the past decade aimed\nat accelerating stochastic optimization in both convex and nonconvex settings,\nvariance reduction has not found widespread success in training deep neural\nnetworks or large language models. Consequently, it has remained a less favored\napproach in modern AI. In this paper, to unleash the power of variance\nreduction for efficient training of large models, we propose a unified\noptimization framework, MARS (Make vAriance Reduction Shine), which reconciles\npreconditioned gradient methods with variance reduction via a scaled stochastic\nrecursive momentum technique. Within our framework, we introduce three\ninstances of MARS that leverage preconditioned gradient updates based on AdamW,\nLion, and Shampoo, respectively. We also draw a connection between our\nalgorithms and existing optimizers. Experimental results on training GPT-2\nmodels indicate that MARS consistently outperforms AdamW by a large margin.",
+      "published_at": "2024-11-15",
+      "submitted_at": "2024-11-18",
+      "submitted_by": "Angela Yuan",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/AGI-Arena/MARS",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2411.10438",
+      "arxiv_url": "https://arxiv.org/abs/2411.10438"
+    }
+  ]
+}

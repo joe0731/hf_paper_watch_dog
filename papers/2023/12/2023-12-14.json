@@ -1,0 +1,190 @@
+{
+  "date": "2023-12-14",
+  "total": 8,
+  "source": "https://huggingface.co/papers/date/2023-12-14",
+  "papers": [
+    {
+      "arxiv_id": "2312.08361",
+      "title": "Distributed Inference and Fine-tuning of Large Language Models Over The\n  Internet",
+      "authors": [
+        "Alexander Borzunov",
+        "Max Ryabinin",
+        "Artem Chumachenko",
+        "Dmitry Baranchuk",
+        "Tim Dettmers",
+        "Younes Belkada",
+        "Pavel Samygin",
+        "Colin Raffel"
+      ],
+      "abstract": "Large language models (LLMs) are useful in many NLP tasks and become more\ncapable with size, with the best open-source models having over 50 billion\nparameters. However, using these 50B+ models requires high-end hardware, making\nthem inaccessible to most researchers. In this work, we investigate methods for\ncost-efficient inference and fine-tuning of LLMs, comparing local and\ndistributed strategies. We observe that a large enough model (50B+) can run\nefficiently even on geodistributed devices in a consumer-grade network. This\ncould allow running LLM efficiently by pooling together idle compute resources\nof multiple research groups and volunteers. We address two open problems: (1)\nhow to perform inference and fine-tuning reliably if any device can disconnect\nabruptly and (2) how to partition LLMs between devices with uneven hardware,\njoining and leaving at will. In order to do that, we develop special\nfault-tolerant inference algorithms and load-balancing protocols that\nautomatically assign devices to maximize the total system throughput. We\nshowcase these algorithms in Petals - a decentralized system that runs Llama 2\n(70B) and BLOOM (176B) over the Internet up to 10x faster than offloading for\ninteractive generation. We evaluate the performance of our system in simulated\nconditions and a real-world setup spanning two continents.",
+      "published_at": "2023-12-13",
+      "submitted_at": "2023-12-14",
+      "submitted_by": "AK",
+      "upvotes": 27,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.08361",
+      "arxiv_url": "https://arxiv.org/abs/2312.08361"
+    },
+    {
+      "arxiv_id": "2312.07661",
+      "title": "CLIP as RNN: Segment Countless Visual Concepts without Training Endeavor",
+      "authors": [
+        "Shuyang Sun",
+        "Runjia Li",
+        "Philip Torr",
+        "Xiuye Gu",
+        "Siyang Li"
+      ],
+      "abstract": "Existing open-vocabulary image segmentation methods require a fine-tuning\nstep on mask annotations and/or image-text datasets. Mask labels are\nlabor-intensive, which limits the number of categories in segmentation\ndatasets. As a result, the open-vocabulary capacity of pre-trained VLMs is\nseverely reduced after fine-tuning. However, without fine-tuning, VLMs trained\nunder weak image-text supervision tend to make suboptimal mask predictions when\nthere are text queries referring to non-existing concepts in the image. To\nalleviate these issues, we introduce a novel recurrent framework that\nprogressively filters out irrelevant texts and enhances mask quality without\ntraining efforts. The recurrent unit is a two-stage segmenter built upon a VLM\nwith frozen weights. Thus, our model retains the VLM's broad vocabulary space\nand strengthens its segmentation capability. Experimental results show that our\nmethod outperforms not only the training-free counterparts, but also those\nfine-tuned with millions of additional data samples, and sets new\nstate-of-the-art records for both zero-shot semantic and referring image\nsegmentation tasks. Specifically, we improve the current record by 28.8, 16.0,\nand 6.9 mIoU on Pascal VOC, COCO Object, and Pascal Context.",
+      "published_at": "2023-12-12",
+      "submitted_at": "2023-12-14",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.07661",
+      "arxiv_url": "https://arxiv.org/abs/2312.07661"
+    },
+    {
+      "arxiv_id": "2312.09067",
+      "title": "Holodeck: Language Guided Generation of 3D Embodied AI Environments",
+      "authors": [
+        "Yue Yang",
+        "Fan-Yun Sun",
+        "Luca Weihs",
+        "Eli VanderBilt",
+        "Alvaro Herrasti",
+        "Winson Han",
+        "Jiajun Wu",
+        "Nick Haber",
+        "Ranjay Krishna",
+        "Lingjie Liu",
+        "Chris Callison-Burch",
+        "Mark Yatskar",
+        "Aniruddha Kembhavi",
+        "Christopher Clark"
+      ],
+      "abstract": "3D simulated environments play a critical role in Embodied AI, but their\ncreation requires expertise and extensive manual effort, restricting their\ndiversity and scope. To mitigate this limitation, we present Holodeck, a system\nthat generates 3D environments to match a user-supplied prompt fully\nautomatedly. Holodeck can generate diverse scenes, e.g., arcades, spas, and\nmuseums, adjust the designs for styles, and can capture the semantics of\ncomplex queries such as \"apartment for a researcher with a cat\" and \"office of\na professor who is a fan of Star Wars\". Holodeck leverages a large language\nmodel (GPT-4) for common sense knowledge about what the scene might look like\nand uses a large collection of 3D assets from Objaverse to populate the scene\nwith diverse objects. To address the challenge of positioning objects\ncorrectly, we prompt GPT-4 to generate spatial relational constraints between\nobjects and then optimize the layout to satisfy those constraints. Our\nlarge-scale human evaluation shows that annotators prefer Holodeck over\nmanually designed procedural baselines in residential scenes and that Holodeck\ncan produce high-quality outputs for diverse scene types. We also demonstrate\nan exciting application of Holodeck in Embodied AI, training agents to navigate\nin novel scenes like music rooms and daycares without human-constructed data,\nwhich is a significant step forward in developing general-purpose embodied\nagents.",
+      "published_at": "2023-12-14",
+      "submitted_at": "2023-12-14",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/allenai/Holodeck",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.09067",
+      "arxiv_url": "https://arxiv.org/abs/2312.09067"
+    },
+    {
+      "arxiv_id": "2312.08344",
+      "title": "FoundationPose: Unified 6D Pose Estimation and Tracking of Novel Objects",
+      "authors": [
+        "Bowen Wen",
+        "Wei Yang",
+        "Jan Kautz",
+        "Stan Birchfield"
+      ],
+      "abstract": "We present FoundationPose, a unified foundation model for 6D object pose\nestimation and tracking, supporting both model-based and model-free setups. Our\napproach can be instantly applied at test-time to a novel object without\nfine-tuning, as long as its CAD model is given, or a small number of reference\nimages are captured. We bridge the gap between these two setups with a neural\nimplicit representation that allows for effective novel view synthesis, keeping\nthe downstream pose estimation modules invariant under the same unified\nframework. Strong generalizability is achieved via large-scale synthetic\ntraining, aided by a large language model (LLM), a novel transformer-based\narchitecture, and contrastive learning formulation. Extensive evaluation on\nmultiple public datasets involving challenging scenarios and objects indicate\nour unified approach outperforms existing methods specialized for each task by\na large margin. In addition, it even achieves comparable results to\ninstance-level methods despite the reduced assumptions. Project page:\nhttps://nvlabs.github.io/FoundationPose/",
+      "published_at": "2023-12-13",
+      "submitted_at": "2023-12-14",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/NVlabs/FoundationPose",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.08344",
+      "arxiv_url": "https://arxiv.org/abs/2312.08344"
+    },
+    {
+      "arxiv_id": "2312.08128",
+      "title": "Clockwork Diffusion: Efficient Generation With Model-Step Distillation",
+      "authors": [
+        "Amirhossein Habibian",
+        "Amir Ghodrati",
+        "Noor Fathima",
+        "Guillaume Sautiere",
+        "Risheek Garrepalli",
+        "Fatih Porikli",
+        "Jens Petersen"
+      ],
+      "abstract": "This work aims to improve the efficiency of text-to-image diffusion models.\nWhile diffusion models use computationally expensive UNet-based denoising\noperations in every generation step, we identify that not all operations are\nequally relevant for the final output quality. In particular, we observe that\nUNet layers operating on high-res feature maps are relatively sensitive to\nsmall perturbations. In contrast, low-res feature maps influence the semantic\nlayout of the final image and can often be perturbed with no noticeable change\nin the output. Based on this observation, we propose Clockwork Diffusion, a\nmethod that periodically reuses computation from preceding denoising steps to\napproximate low-res feature maps at one or more subsequent steps. For multiple\nbaselines, and for both text-to-image generation and image editing, we\ndemonstrate that Clockwork leads to comparable or improved perceptual scores\nwith drastically reduced computational complexity. As an example, for Stable\nDiffusion v1.5 with 8 DPM++ steps we save 32% of FLOPs with negligible FID and\nCLIP change.",
+      "published_at": "2023-12-13",
+      "submitted_at": "2023-12-14",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/qualcomm-ai-research/clockwork-diffusion",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.08128",
+      "arxiv_url": "https://arxiv.org/abs/2312.08128"
+    },
+    {
+      "arxiv_id": "2312.08926",
+      "title": "Modeling Complex Mathematical Reasoning via Large Language Model based\n  MathAgent",
+      "authors": [
+        "Haoran Liao",
+        "Qinyi Du",
+        "Shaohua Hu",
+        "Hao He",
+        "Yanyan Xu",
+        "Jidong Tian",
+        "Yaohui Jin"
+      ],
+      "abstract": "Large language models (LLMs) face challenges in solving complex mathematical\nproblems that require comprehensive capacities to parse the statements,\nassociate domain knowledge, perform compound logical reasoning, and integrate\nthe intermediate rationales. Tackling all these problems once could be arduous\nfor LLMs, thus leading to confusion in generation. In this work, we explore the\npotential of enhancing LLMs with agents by meticulous decomposition and\nmodeling of mathematical reasoning process. Specifically, we propose a formal\ndescription of the mathematical solving and extend LLMs with an agent-based\nzero-shot framework named\nPlanner-Reasoner-Executor-Reflector (PRER). We\nfurther provide and implement two MathAgents that define the logical forms and\ninherent relations via a pool of actions in different grains and orientations:\nMathAgent-M adapts its actions to LLMs, while MathAgent-H aligns with\nhumankind. Experiments on miniF2F and MATH have demonstrated the effectiveness\nof PRER and proposed MathAgents, achieving an increase of\n12.3%(53.9%66.2%) on the MiniF2F, 9.2%\n(49.8%59.0%) on MATH, and\n13.2%(23.2%35.4%) for level-5 problems of MATH against\nGPT-4. Further analytical results provide more insightful perspectives on\nexploiting the behaviors of LLMs as agents.",
+      "published_at": "2023-12-14",
+      "submitted_at": "2023-12-14",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/oashua/mathagent",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.08926",
+      "arxiv_url": "https://arxiv.org/abs/2312.08926"
+    },
+    {
+      "arxiv_id": "2312.07859",
+      "title": "Invariant Graph Transformer",
+      "authors": [
+        "Zhe Xu",
+        "Menghai Pan",
+        "Yuzhong Chen",
+        "Huiyuan Chen",
+        "Yuchen Yan",
+        "Mahashweta Das",
+        "Hanghang Tong"
+      ],
+      "abstract": "Rationale discovery is defined as finding a subset of the input data that\nmaximally supports the prediction of downstream tasks. In graph machine\nlearning context, graph rationale is defined to locate the critical subgraph in\nthe given graph topology, which fundamentally determines the prediction\nresults. In contrast to the rationale subgraph, the remaining subgraph is named\nthe environment subgraph. Graph rationalization can enhance the model\nperformance as the mapping between the graph rationale and prediction label is\nviewed as invariant, by assumption. To ensure the discriminative power of the\nextracted rationale subgraphs, a key technique named \"intervention\" is applied.\nThe core idea of intervention is that given any changing environment subgraphs,\nthe semantics from the rationale subgraph is invariant, which guarantees the\ncorrect prediction result. However, most, if not all, of the existing\nrationalization works on graph data develop their intervention strategies on\nthe graph level, which is coarse-grained. In this paper, we propose\nwell-tailored intervention strategies on graph data. Our idea is driven by the\ndevelopment of Transformer models, whose self-attention module provides rich\ninteractions between input nodes. Based on the self-attention module, our\nproposed invariant graph Transformer (IGT) can achieve fine-grained, more\nspecifically, node-level and virtual node-level intervention. Our comprehensive\nexperiments involve 7 real-world datasets, and the proposed IGT shows\nsignificant performance advantages compared to 13 baseline methods.",
+      "published_at": "2023-12-13",
+      "submitted_at": "2023-12-14",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.07859",
+      "arxiv_url": "https://arxiv.org/abs/2312.07859"
+    },
+    {
+      "arxiv_id": "2312.08136",
+      "title": "ProNeRF: Learning Efficient Projection-Aware Ray Sampling for\n  Fine-Grained Implicit Neural Radiance Fields",
+      "authors": [
+        "Juan Luis Gonzalez Bello",
+        "Minh-Quan Viet Bui",
+        "Munchurl Kim"
+      ],
+      "abstract": "Recent advances in neural rendering have shown that, albeit slow, implicit\ncompact models can learn a scene's geometries and view-dependent appearances\nfrom multiple views. To maintain such a small memory footprint but achieve\nfaster inference times, recent works have adopted `sampler' networks that\nadaptively sample a small subset of points along each ray in the implicit\nneural radiance fields. Although these methods achieve up to a 10times\nreduction in rendering time, they still suffer from considerable quality\ndegradation compared to the vanilla NeRF. In contrast, we propose ProNeRF,\nwhich provides an optimal trade-off between memory footprint (similar to NeRF),\nspeed (faster than HyperReel), and quality (better than K-Planes). ProNeRF is\nequipped with a novel projection-aware sampling (PAS) network together with a\nnew training strategy for ray exploration and exploitation, allowing for\nefficient fine-grained particle sampling. Our ProNeRF yields state-of-the-art\nmetrics, being 15-23x faster with 0.65dB higher PSNR than NeRF and yielding\n0.95dB higher PSNR than the best published sampler-based method, HyperReel. Our\nexploration and exploitation training strategy allows ProNeRF to learn the full\nscenes' color and density distributions while also learning efficient ray\nsampling focused on the highest-density regions. We provide extensive\nexperimental results that support the effectiveness of our method on the widely\nadopted forward-facing and 360 datasets, LLFF and Blender, respectively.",
+      "published_at": "2023-12-13",
+      "submitted_at": "2023-12-14",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/KAIST-VICLab/pronerf",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.08136",
+      "arxiv_url": "https://arxiv.org/abs/2312.08136"
+    }
+  ]
+}

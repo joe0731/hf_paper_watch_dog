@@ -1,0 +1,84 @@
+{
+  "date": "2023-09-11",
+  "total": 3,
+  "source": "https://huggingface.co/papers/date/2023-09-11",
+  "papers": [
+    {
+      "arxiv_id": "2309.03926",
+      "title": "Large-Scale Automatic Audiobook Creation",
+      "authors": [
+        "Brendan Walsh",
+        "Mark Hamilton",
+        "Greg Newby",
+        "Xi Wang",
+        "Serena Ruan",
+        "Sheng Zhao",
+        "Lei He",
+        "Shaofei Zhang",
+        "Eric Dettinger",
+        "William T. Freeman",
+        "Markus Weimer"
+      ],
+      "abstract": "An audiobook can dramatically improve a work of literature's accessibility\nand improve reader engagement. However, audiobooks can take hundreds of hours\nof human effort to create, edit, and publish. In this work, we present a system\nthat can automatically generate high-quality audiobooks from online e-books. In\nparticular, we leverage recent advances in neural text-to-speech to create and\nrelease thousands of human-quality, open-license audiobooks from the Project\nGutenberg e-book collection. Our method can identify the proper subset of\ne-book content to read for a wide collection of diversely structured books and\ncan operate on hundreds of books in parallel. Our system allows users to\ncustomize an audiobook's speaking speed and style, emotional intonation, and\ncan even match a desired voice using a small amount of sample audio. This work\ncontributed over five thousand open-license audiobooks and an interactive demo\nthat allows users to quickly create their own customized audiobooks. To listen\nto the audiobook collection visit https://aka.ms/audiobook.",
+      "published_at": "2023-09-07",
+      "submitted_at": "2023-09-11",
+      "submitted_by": "AK",
+      "upvotes": 56,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.03926",
+      "arxiv_url": "https://arxiv.org/abs/2309.03926"
+    },
+    {
+      "arxiv_id": "2309.04354",
+      "title": "Mobile V-MoEs: Scaling Down Vision Transformers via Sparse\n  Mixture-of-Experts",
+      "authors": [
+        "Erik Daxberger",
+        "Floris Weers",
+        "Bowen Zhang",
+        "Tom Gunter",
+        "Ruoming Pang",
+        "Marcin Eichner",
+        "Michael Emmersberger",
+        "Yinfei Yang",
+        "Alexander Toshev",
+        "Xianzhi Du"
+      ],
+      "abstract": "Sparse Mixture-of-Experts models (MoEs) have recently gained popularity due\nto their ability to decouple model size from inference efficiency by only\nactivating a small subset of the model parameters for any given input token. As\nsuch, sparse MoEs have enabled unprecedented scalability, resulting in\ntremendous successes across domains such as natural language processing and\ncomputer vision. In this work, we instead explore the use of sparse MoEs to\nscale-down Vision Transformers (ViTs) to make them more attractive for\nresource-constrained vision applications. To this end, we propose a simplified\nand mobile-friendly MoE design where entire images rather than individual\npatches are routed to the experts. We also propose a stable MoE training\nprocedure that uses super-class information to guide the router. We empirically\nshow that our sparse Mobile Vision MoEs (V-MoEs) can achieve a better trade-off\nbetween performance and efficiency than the corresponding dense ViTs. For\nexample, for the ViT-Tiny model, our Mobile V-MoE outperforms its dense\ncounterpart by 3.39% on ImageNet-1k. For an even smaller ViT variant with only\n54M FLOPs inference cost, our MoE achieves an improvement of 4.66%.",
+      "published_at": "2023-09-08",
+      "submitted_at": "2023-09-11",
+      "submitted_by": "AK",
+      "upvotes": 16,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.04354",
+      "arxiv_url": "https://arxiv.org/abs/2309.04354"
+    },
+    {
+      "arxiv_id": "2309.04247",
+      "title": "Towards Practical Capture of High-Fidelity Relightable Avatars",
+      "authors": [
+        "Haotian Yang",
+        "Mingwu Zheng",
+        "Wanquan Feng",
+        "Haibin Huang",
+        "Yu-Kun Lai",
+        "Pengfei Wan",
+        "Zhongyuan Wang",
+        "Chongyang Ma"
+      ],
+      "abstract": "In this paper, we propose a novel framework, Tracking-free Relightable Avatar\n(TRAvatar), for capturing and reconstructing high-fidelity 3D avatars. Compared\nto previous methods, TRAvatar works in a more practical and efficient setting.\nSpecifically, TRAvatar is trained with dynamic image sequences captured in a\nLight Stage under varying lighting conditions, enabling realistic relighting\nand real-time animation for avatars in diverse scenes. Additionally, TRAvatar\nallows for tracking-free avatar capture and obviates the need for accurate\nsurface tracking under varying illumination conditions. Our contributions are\ntwo-fold: First, we propose a novel network architecture that explicitly builds\non and ensures the satisfaction of the linear nature of lighting. Trained on\nsimple group light captures, TRAvatar can predict the appearance in real-time\nwith a single forward pass, achieving high-quality relighting effects under\nilluminations of arbitrary environment maps. Second, we jointly optimize the\nfacial geometry and relightable appearance from scratch based on image\nsequences, where the tracking is implicitly learned. This tracking-free\napproach brings robustness for establishing temporal correspondences between\nframes under different lighting conditions. Extensive qualitative and\nquantitative experiments demonstrate that our framework achieves superior\nperformance for photorealistic avatar animation and relighting.",
+      "published_at": "2023-09-08",
+      "submitted_at": "2023-09-11",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.04247",
+      "arxiv_url": "https://arxiv.org/abs/2309.04247"
+    }
+  ]
+}

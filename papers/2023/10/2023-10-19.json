@@ -1,0 +1,75 @@
+{
+  "date": "2023-10-19",
+  "total": 3,
+  "source": "https://huggingface.co/papers/date/2023-10-19",
+  "papers": [
+    {
+      "arxiv_id": "2310.11511",
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through\n  Self-Reflection",
+      "authors": [
+        "Akari Asai",
+        "Zeqiu Wu",
+        "Yizhong Wang",
+        "Avirup Sil",
+        "Hannaneh Hajishirzi"
+      ],
+      "abstract": "Despite their remarkable capabilities, large language models (LLMs) often\nproduce responses containing factual inaccuracies due to their sole reliance on\nthe parametric knowledge they encapsulate. Retrieval-Augmented Generation\n(RAG), an ad hoc approach that augments LMs with retrieval of relevant\nknowledge, decreases such issues. However, indiscriminately retrieving and\nincorporating a fixed number of retrieved passages, regardless of whether\nretrieval is necessary, or passages are relevant, diminishes LM versatility or\ncan lead to unhelpful response generation. We introduce a new framework called\nSelf-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's\nquality and factuality through retrieval and self-reflection. Our framework\ntrains a single arbitrary LM that adaptively retrieves passages on-demand, and\ngenerates and reflects on retrieved passages and its own generations using\nspecial tokens, called reflection tokens. Generating reflection tokens makes\nthe LM controllable during the inference phase, enabling it to tailor its\nbehavior to diverse task requirements. Experiments show that Self-RAG (7B and\n13B parameters) significantly outperforms state-of-the-art LLMs and\nretrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG\noutperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA,\nreasoning and fact verification tasks, and it shows significant gains in\nimproving factuality and citation accuracy for long-form generations relative\nto these models.",
+      "published_at": "2023-10-17",
+      "submitted_at": "2023-10-19",
+      "submitted_by": "AK",
+      "upvotes": 78,
+      "organization": "",
+      "github_repo": "https://github.com/AkariAsai/self-rag",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.11511",
+      "arxiv_url": "https://arxiv.org/abs/2310.11511"
+    },
+    {
+      "arxiv_id": "2310.11954",
+      "title": "MusicAgent: An AI Agent for Music Understanding and Generation with\n  Large Language Models",
+      "authors": [
+        "Dingyao Yu",
+        "Kaitao Song",
+        "Peiling Lu",
+        "Tianyu He",
+        "Xu Tan",
+        "Wei Ye",
+        "Shikun Zhang",
+        "Jiang Bian"
+      ],
+      "abstract": "AI-empowered music processing is a diverse field that encompasses dozens of\ntasks, ranging from generation tasks (e.g., timbre synthesis) to comprehension\ntasks (e.g., music classification). For developers and amateurs, it is very\ndifficult to grasp all of these task to satisfy their requirements in music\nprocessing, especially considering the huge differences in the representations\nof music data and the model applicability across platforms among various tasks.\nConsequently, it is necessary to build a system to organize and integrate these\ntasks, and thus help practitioners to automatically analyze their demand and\ncall suitable tools as solutions to fulfill their requirements. Inspired by the\nrecent success of large language models (LLMs) in task automation, we develop a\nsystem, named MusicAgent, which integrates numerous music-related tools and an\nautonomous workflow to address user requirements. More specifically, we build\n1) toolset that collects tools from diverse sources, including Hugging Face,\nGitHub, and Web API, etc. 2) an autonomous workflow empowered by LLMs (e.g.,\nChatGPT) to organize these tools and automatically decompose user requests into\nmultiple sub-tasks and invoke corresponding music tools. The primary goal of\nthis system is to free users from the intricacies of AI-music tools, enabling\nthem to concentrate on the creative aspect. By granting users the freedom to\neffortlessly combine tools, the system offers a seamless and enriching music\nexperience.",
+      "published_at": "2023-10-18",
+      "submitted_at": "2023-10-19",
+      "submitted_by": "AK",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.11954",
+      "arxiv_url": "https://arxiv.org/abs/2310.11954"
+    },
+    {
+      "arxiv_id": "2310.11784",
+      "title": "Progressive3D: Progressively Local Editing for Text-to-3D Content\n  Creation with Complex Semantic Prompts",
+      "authors": [
+        "Xinhua Cheng",
+        "Tianyu Yang",
+        "Jianan Wang",
+        "Yu Li",
+        "Lei Zhang",
+        "Jian Zhang",
+        "Li Yuan"
+      ],
+      "abstract": "Recent text-to-3D generation methods achieve impressive 3D content creation\ncapacity thanks to the advances in image diffusion models and optimizing\nstrategies. However, current methods struggle to generate correct 3D content\nfor a complex prompt in semantics, i.e., a prompt describing multiple\ninteracted objects binding with different attributes. In this work, we propose\na general framework named Progressive3D, which decomposes the entire generation\ninto a series of locally progressive editing steps to create precise 3D content\nfor complex prompts, and we constrain the content change to only occur in\nregions determined by user-defined region prompts in each editing step.\nFurthermore, we propose an overlapped semantic component suppression technique\nto encourage the optimization process to focus more on the semantic differences\nbetween prompts. Extensive experiments demonstrate that the proposed\nProgressive3D framework generates precise 3D content for prompts with complex\nsemantics and is general for various text-to-3D methods driven by different 3D\nrepresentations.",
+      "published_at": "2023-10-18",
+      "submitted_at": "2023-10-19",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.11784",
+      "arxiv_url": "https://arxiv.org/abs/2310.11784"
+    }
+  ]
+}

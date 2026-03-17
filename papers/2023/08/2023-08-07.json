@@ -1,0 +1,153 @@
+{
+  "date": "2023-08-07",
+  "total": 6,
+  "source": "https://huggingface.co/papers/date/2023-08-07",
+  "papers": [
+    {
+      "arxiv_id": "2308.02151",
+      "title": "Retroformer: Retrospective Large Language Agents with Policy Gradient\n  Optimization",
+      "authors": [
+        "Weiran Yao",
+        "Shelby Heinecke",
+        "Juan Carlos Niebles",
+        "Zhiwei Liu",
+        "Yihao Feng",
+        "Le Xue",
+        "Rithesh Murthy",
+        "Zeyuan Chen",
+        "Jianguo Zhang",
+        "Devansh Arpit",
+        "Ran Xu",
+        "Phil Mui",
+        "Huan Wang",
+        "Caiming Xiong",
+        "Silvio Savarese"
+      ],
+      "abstract": "Recent months have seen the emergence of a powerful new trend in which large\nlanguage models (LLMs) are augmented to become autonomous language agents\ncapable of performing objective oriented multi-step tasks on their own, rather\nthan merely responding to queries from human users. Most existing language\nagents, however, are not optimized using environment-specific rewards. Although\nsome agents enable iterative refinement through verbal feedback, they do not\nreason and plan in ways that are compatible with gradient-based learning from\nrewards. This paper introduces a principled framework for reinforcing large\nlanguage agents by learning a retrospective model, which automatically tunes\nthe language agent prompts from environment feedback through policy gradient.\nSpecifically, our proposed agent architecture learns from rewards across\nmultiple environments and tasks, for fine-tuning a pre-trained language model\nwhich refines the language agent prompt by summarizing the root cause of prior\nfailed attempts and proposing action plans. Experimental results on various\ntasks demonstrate that the language agents improve over time and that our\napproach considerably outperforms baselines that do not properly leverage\ngradients from the environment. This demonstrates that using policy gradient\noptimization to improve language agents, for which we believe our work is one\nof the first, seems promising and can be applied to optimize other models in\nthe agent architecture to enhance agent performances over time.",
+      "published_at": "2023-08-04",
+      "submitted_at": "2023-08-07",
+      "submitted_by": "AK",
+      "upvotes": 21,
+      "organization": "",
+      "github_repo": "https://github.com/weirayao/retroformer",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.02151",
+      "arxiv_url": "https://arxiv.org/abs/2308.02151"
+    },
+    {
+      "arxiv_id": "2308.02490",
+      "title": "MM-Vet: Evaluating Large Multimodal Models for Integrated Capabilities",
+      "authors": [
+        "Weihao Yu",
+        "Zhengyuan Yang",
+        "Linjie Li",
+        "Jianfeng Wang",
+        "Kevin Lin",
+        "Zicheng Liu",
+        "Xinchao Wang",
+        "Lijuan Wang"
+      ],
+      "abstract": "We propose MM-Vet, an evaluation benchmark that examines large multimodal\nmodels (LMMs) on complicated multimodal tasks. Recent LMMs have shown various\nintriguing abilities, such as solving math problems written on the blackboard,\nreasoning about events and celebrities in news images, and explaining visual\njokes. Rapid model advancements pose challenges to evaluation benchmark\ndevelopment. Problems include: (1) How to systematically structure and evaluate\nthe complicated multimodal tasks; (2) How to design evaluation metrics that\nwork well across question and answer types; and (3) How to give model insights\nbeyond a simple performance ranking. To this end, we present MM-Vet, designed\nbased on the insight that the intriguing ability to solve complicated tasks is\noften achieved by a generalist model being able to integrate different core\nvision-language (VL) capabilities. MM-Vet defines 6 core VL capabilities and\nexamines the 16 integrations of interest derived from the capability\ncombination. For evaluation metrics, we propose an LLM-based evaluator for\nopen-ended outputs. The evaluator enables the evaluation across different\nquestion types and answer styles, resulting in a unified scoring metric. We\nevaluate representative LMMs on MM-Vet, providing insights into the\ncapabilities of different LMM system paradigms and models. Code and data are\navailable at https://github.com/yuweihao/MM-Vet.",
+      "published_at": "2023-08-04",
+      "submitted_at": "2023-08-07",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "https://github.com/yuweihao/mm-vet",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.02490",
+      "arxiv_url": "https://arxiv.org/abs/2308.02490"
+    },
+    {
+      "arxiv_id": "2308.02487",
+      "title": "Convolutions Die Hard: Open-Vocabulary Segmentation with Single Frozen\n  Convolutional CLIP",
+      "authors": [
+        "Qihang Yu",
+        "Ju He",
+        "Xueqing Deng",
+        "Xiaohui Shen",
+        "Liang-Chieh Chen"
+      ],
+      "abstract": "Open-vocabulary segmentation is a challenging task requiring segmenting and\nrecognizing objects from an open set of categories. One way to address this\nchallenge is to leverage multi-modal models, such as CLIP, to provide image and\ntext features in a shared embedding space, which bridges the gap between\nclosed-vocabulary and open-vocabulary recognition. Hence, existing methods\noften adopt a two-stage framework to tackle the problem, where the inputs first\ngo through a mask generator and then through the CLIP model along with the\npredicted masks. This process involves extracting features from images multiple\ntimes, which can be ineffective and inefficient. By contrast, we propose to\nbuild everything into a single-stage framework using a shared Frozen\nConvolutional CLIP backbone, which not only significantly simplifies the\ncurrent two-stage pipeline, but also remarkably yields a better accuracy-cost\ntrade-off. The proposed FC-CLIP, benefits from the following observations: the\nfrozen CLIP backbone maintains the ability of open-vocabulary classification\nand can also serve as a strong mask generator, and the convolutional CLIP\ngeneralizes well to a larger input resolution than the one used during\ncontrastive image-text pretraining. When training on COCO panoptic data only\nand testing in a zero-shot manner, FC-CLIP achieve 26.8 PQ, 16.8 AP, and 34.1\nmIoU on ADE20K, 18.2 PQ, 27.9 mIoU on Mapillary Vistas, 44.0 PQ, 26.8 AP, 56.2\nmIoU on Cityscapes, outperforming the prior art by +4.2 PQ, +2.4 AP, +4.2 mIoU\non ADE20K, +4.0 PQ on Mapillary Vistas and +20.1 PQ on Cityscapes,\nrespectively. Additionally, the training and testing time of FC-CLIP is 7.5x\nand 6.6x significantly faster than the same prior art, while using 5.9x fewer\nparameters. FC-CLIP also sets a new state-of-the-art performance across various\nopen-vocabulary semantic segmentation datasets. Code at\nhttps://github.com/bytedance/fc-clip",
+      "published_at": "2023-08-04",
+      "submitted_at": "2023-08-07",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/bytedance/fc-clip",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.02487",
+      "arxiv_url": "https://arxiv.org/abs/2308.02487"
+    },
+    {
+      "arxiv_id": "2308.02180",
+      "title": "Scaling Clinical Trial Matching Using Large Language Models: A Case\n  Study in Oncology",
+      "authors": [
+        "Cliff Wong",
+        "Sheng Zheng",
+        "Yu Gu",
+        "Christine Moung",
+        "Jacob Abel",
+        "Naoto Usuyama",
+        "Roshanthi Weerasinghe",
+        "Brian Piening",
+        "Tristan Naumann",
+        "Carlo Bifulco",
+        "Hoifung Poon"
+      ],
+      "abstract": "Clinical trial matching is a key process in health delivery and discovery. In\npractice, it is plagued by overwhelming unstructured data and unscalable manual\nprocessing. In this paper, we conduct a systematic study on scaling clinical\ntrial matching using large language models (LLMs), with oncology as the focus\narea. Our study is grounded in a clinical trial matching system currently in\ntest deployment at a large U.S. health network. Initial findings are promising:\nout of box, cutting-edge LLMs, such as GPT-4, can already structure elaborate\neligibility criteria of clinical trials and extract complex matching logic\n(e.g., nested AND/OR/NOT). While still far from perfect, LLMs substantially\noutperform prior strong baselines and may serve as a preliminary solution to\nhelp triage patient-trial candidates with humans in the loop. Our study also\nreveals a few significant growth areas for applying LLMs to end-to-end clinical\ntrial matching, such as context limitation and accuracy, especially in\nstructuring patient information from longitudinal medical records.",
+      "published_at": "2023-08-04",
+      "submitted_at": "2023-08-07",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.02180",
+      "arxiv_url": "https://arxiv.org/abs/2308.02180"
+    },
+    {
+      "arxiv_id": "2308.02453",
+      "title": "Getting the Ball Rolling: Learning a Dexterous Policy for a Biomimetic\n  Tendon-Driven Hand with Rolling Contact Joints",
+      "authors": [
+        "Yasunori Toshimitsu",
+        "Benedek Forrai",
+        "Barnabas Gavin Cangan",
+        "Ulrich Steger",
+        "Manuel Knecht",
+        "Stefan Weirich",
+        "Robert K. Katzschmann"
+      ],
+      "abstract": "Biomimetic, dexterous robotic hands have the potential to replicate much of\nthe tasks that a human can do, and to achieve status as a general manipulation\nplatform. Recent advances in reinforcement learning (RL) frameworks have\nachieved remarkable performance in quadrupedal locomotion and dexterous\nmanipulation tasks. Combined with GPU-based highly parallelized simulations\ncapable of simulating thousands of robots in parallel, RL-based controllers\nhave become more scalable and approachable. However, in order to bring\nRL-trained policies to the real world, we require training frameworks that\noutput policies that can work with physical actuators and sensors as well as a\nhardware platform that can be manufactured with accessible materials yet is\nrobust enough to run interactive policies. This work introduces the biomimetic\ntendon-driven Faive Hand and its system architecture, which uses tendon-driven\nrolling contact joints to achieve a 3D printable, robust high-DoF hand design.\nWe model each element of the hand and integrate it into a GPU simulation\nenvironment to train a policy with RL, and achieve zero-shot transfer of a\ndexterous in-hand sphere rotation skill to the physical robot hand.",
+      "published_at": "2023-08-04",
+      "submitted_at": "2023-08-07",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/srl-ethz/faive_gym_oss",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.02453",
+      "arxiv_url": "https://arxiv.org/abs/2308.02453"
+    },
+    {
+      "arxiv_id": "2308.01937",
+      "title": "Training Data Protection with Compositional Diffusion Models",
+      "authors": [
+        "Aditya Golatkar",
+        "Alessandro Achille",
+        "Ashwin Swaminathan",
+        "Stefano Soatto"
+      ],
+      "abstract": "We introduce Compartmentalized Diffusion Models (CDM), a method to train\ndifferent diffusion models (or prompts) on distinct data sources and\narbitrarily compose them at inference time. The individual models can be\ntrained in isolation, at different times, and on different distributions and\ndomains and can be later composed to achieve performance comparable to a\nparagon model trained on all data simultaneously. Furthermore, each model only\ncontains information about the subset of the data it was exposed to during\ntraining, enabling several forms of training data protection. In particular,\nCDMs are the first method to enable both selective forgetting and continual\nlearning for large-scale diffusion models, as well as allowing serving\ncustomized models based on the user's access rights. CDMs also allow\ndetermining the importance of a subset of the data in generating particular\nsamples.",
+      "published_at": "2023-08-02",
+      "submitted_at": "2023-08-07",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.01937",
+      "arxiv_url": "https://arxiv.org/abs/2308.01937"
+    }
+  ]
+}

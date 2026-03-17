@@ -1,0 +1,103 @@
+{
+  "date": "2023-09-25",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-09-25",
+  "papers": [
+    {
+      "arxiv_id": "2309.12424",
+      "title": "DualToken-ViT: Position-aware Efficient Vision Transformer with Dual\n  Token Fusion",
+      "authors": [
+        "Zhenzhen Chu",
+        "Jiayu Chen",
+        "Cen Chen",
+        "Chengyu Wang",
+        "Ziheng Wu",
+        "Jun Huang",
+        "Weining Qian"
+      ],
+      "abstract": "Self-attention-based vision transformers (ViTs) have emerged as a highly\ncompetitive architecture in computer vision. Unlike convolutional neural\nnetworks (CNNs), ViTs are capable of global information sharing. With the\ndevelopment of various structures of ViTs, ViTs are increasingly advantageous\nfor many vision tasks. However, the quadratic complexity of self-attention\nrenders ViTs computationally intensive, and their lack of inductive biases of\nlocality and translation equivariance demands larger model sizes compared to\nCNNs to effectively learn visual features. In this paper, we propose a\nlight-weight and efficient vision transformer model called DualToken-ViT that\nleverages the advantages of CNNs and ViTs. DualToken-ViT effectively fuses the\ntoken with local information obtained by convolution-based structure and the\ntoken with global information obtained by self-attention-based structure to\nachieve an efficient attention structure. In addition, we use position-aware\nglobal tokens throughout all stages to enrich the global information, which\nfurther strengthening the effect of DualToken-ViT. Position-aware global tokens\nalso contain the position information of the image, which makes our model\nbetter for vision tasks. We conducted extensive experiments on image\nclassification, object detection and semantic segmentation tasks to demonstrate\nthe effectiveness of DualToken-ViT. On the ImageNet-1K dataset, our models of\ndifferent scales achieve accuracies of 75.4% and 79.4% with only 0.5G and 1.0G\nFLOPs, respectively, and our model with 1.0G FLOPs outperforms LightViT-T using\nglobal tokens by 0.7%.",
+      "published_at": "2023-09-21",
+      "submitted_at": "2023-09-25",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.12424",
+      "arxiv_url": "https://arxiv.org/abs/2309.12424"
+    },
+    {
+      "arxiv_id": "2309.13042",
+      "title": "MosaicFusion: Diffusion Models as Data Augmenters for Large Vocabulary\n  Instance Segmentation",
+      "authors": [
+        "Jiahao Xie",
+        "Wei Li",
+        "Xiangtai Li",
+        "Ziwei Liu",
+        "Yew Soon Ong",
+        "Chen Change Loy"
+      ],
+      "abstract": "We present MosaicFusion, a simple yet effective diffusion-based data\naugmentation approach for large vocabulary instance segmentation. Our method is\ntraining-free and does not rely on any label supervision. Two key designs\nenable us to employ an off-the-shelf text-to-image diffusion model as a useful\ndataset generator for object instances and mask annotations. First, we divide\nan image canvas into several regions and perform a single round of diffusion\nprocess to generate multiple instances simultaneously, conditioning on\ndifferent text prompts. Second, we obtain corresponding instance masks by\naggregating cross-attention maps associated with object prompts across layers\nand diffusion time steps, followed by simple thresholding and edge-aware\nrefinement processing. Without bells and whistles, our MosaicFusion can produce\na significant amount of synthetic labeled data for both rare and novel\ncategories. Experimental results on the challenging LVIS long-tailed and\nopen-vocabulary benchmarks demonstrate that MosaicFusion can significantly\nimprove the performance of existing instance segmentation models, especially\nfor rare and novel categories. Code will be released at\nhttps://github.com/Jiahao000/MosaicFusion.",
+      "published_at": "2023-09-22",
+      "submitted_at": "2023-09-25",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/jiahao000/mosaicfusion",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.13042",
+      "arxiv_url": "https://arxiv.org/abs/2309.13042"
+    },
+    {
+      "arxiv_id": "2309.13041",
+      "title": "Robotic Offline RL from Internet Videos via Value-Function Pre-Training",
+      "authors": [
+        "Chethan Bhateja",
+        "Derek Guo",
+        "Dibya Ghosh",
+        "Anikait Singh",
+        "Manan Tomar",
+        "Quan Vuong",
+        "Yevgen Chebotar",
+        "Sergey Levine",
+        "Aviral Kumar"
+      ],
+      "abstract": "Pre-training on Internet data has proven to be a key ingredient for broad\ngeneralization in many modern ML systems. What would it take to enable such\ncapabilities in robotic reinforcement learning (RL)? Offline RL methods, which\nlearn from datasets of robot experience, offer one way to leverage prior data\ninto the robotic learning pipeline. However, these methods have a \"type\nmismatch\" with video data (such as Ego4D), the largest prior datasets available\nfor robotics, since video offers observation-only experience without the action\nor reward annotations needed for RL methods. In this paper, we develop a system\nfor leveraging large-scale human video datasets in robotic offline RL, based\nentirely on learning value functions via temporal-difference learning. We show\nthat value learning on video datasets learns representations that are more\nconducive to downstream robotic offline RL than other approaches for learning\nfrom video data. Our system, called V-PTR, combines the benefits of\npre-training on video data with robotic offline RL approaches that train on\ndiverse robot data, resulting in value functions and policies for manipulation\ntasks that perform better, act robustly, and generalize broadly. On several\nmanipulation tasks on a real WidowX robot, our framework produces policies that\ngreatly improve over prior methods. Our video and additional details can be\nfound at https://dibyaghosh.com/vptr/",
+      "published_at": "2023-09-22",
+      "submitted_at": "2023-09-25",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.13041",
+      "arxiv_url": "https://arxiv.org/abs/2309.13041"
+    },
+    {
+      "arxiv_id": "2309.13018",
+      "title": "Dynamic ASR Pathways: An Adaptive Masking Approach Towards Efficient\n  Pruning of A Multilingual ASR Model",
+      "authors": [
+        "Jiamin Xie",
+        "Ke Li",
+        "Jinxi Guo",
+        "Andros Tjandra",
+        "Yuan Shangguan",
+        "Leda Sari",
+        "Chunyang Wu",
+        "Junteng Jia",
+        "Jay Mahadeokar",
+        "Ozlem Kalinli"
+      ],
+      "abstract": "Neural network pruning offers an effective method for compressing a\nmultilingual automatic speech recognition (ASR) model with minimal performance\nloss. However, it entails several rounds of pruning and re-training needed to\nbe run for each language. In this work, we propose the use of an adaptive\nmasking approach in two scenarios for pruning a multilingual ASR model\nefficiently, each resulting in sparse monolingual models or a sparse\nmultilingual model (named as Dynamic ASR Pathways). Our approach dynamically\nadapts the sub-network, avoiding premature decisions about a fixed sub-network\nstructure. We show that our approach outperforms existing pruning methods when\ntargeting sparse monolingual models. Further, we illustrate that Dynamic ASR\nPathways jointly discovers and trains better sub-networks (pathways) of a\nsingle multilingual model by adapting from different sub-network\ninitializations, thereby reducing the need for language-specific pruning.",
+      "published_at": "2023-09-22",
+      "submitted_at": "2023-09-25",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.13018",
+      "arxiv_url": "https://arxiv.org/abs/2309.13018"
+    }
+  ]
+}

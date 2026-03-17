@@ -1,0 +1,161 @@
+{
+  "date": "2023-09-18",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2023-09-18",
+  "papers": [
+    {
+      "arxiv_id": "2309.08532",
+      "title": "Connecting Large Language Models with Evolutionary Algorithms Yields\n  Powerful Prompt Optimizers",
+      "authors": [
+        "Qingyan Guo",
+        "Rui Wang",
+        "Junliang Guo",
+        "Bei Li",
+        "Kaitao Song",
+        "Xu Tan",
+        "Guoqing Liu",
+        "Jiang Bian",
+        "Yujiu Yang"
+      ],
+      "abstract": "Large Language Models (LLMs) excel in various tasks, but they rely on\ncarefully crafted prompts that often demand substantial human effort. To\nautomate this process, in this paper, we propose a novel framework for discrete\nprompt optimization, called EvoPrompt, which borrows the idea of evolutionary\nalgorithms (EAs) as they exhibit good performance and fast convergence. To\nenable EAs to work on discrete prompts, which are natural language expressions\nthat need to be coherent and human-readable, we connect LLMs with EAs. This\napproach allows us to simultaneously leverage the powerful language processing\ncapabilities of LLMs and the efficient optimization performance of EAs.\nSpecifically, abstaining from any gradients or parameters, EvoPrompt starts\nfrom a population of prompts and iteratively generates new prompts with LLMs\nbased on the evolutionary operators, improving the population based on the\ndevelopment set. We optimize prompts for both closed- and open-source LLMs\nincluding GPT-3.5 and Alpaca, on 9 datasets spanning language understanding and\ngeneration tasks. EvoPrompt significantly outperforms human-engineered prompts\nand existing methods for automatic prompt generation by up to 25% and 14%\nrespectively. Furthermore, EvoPrompt demonstrates that connecting LLMs with EAs\ncreates synergies, which could inspire further research on the combination of\nLLMs and conventional algorithms.",
+      "published_at": "2023-09-15",
+      "submitted_at": "2023-09-18",
+      "submitted_by": "AK",
+      "upvotes": 54,
+      "organization": "",
+      "github_repo": "https://github.com/beeevita/EvoPrompt",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.08532",
+      "arxiv_url": "https://arxiv.org/abs/2309.08532"
+    },
+    {
+      "arxiv_id": "2309.08586",
+      "title": "Replacing softmax with ReLU in Vision Transformers",
+      "authors": [
+        "Mitchell Wortsman",
+        "Jaehoon Lee",
+        "Justin Gilmer",
+        "Simon Kornblith"
+      ],
+      "abstract": "Previous research observed accuracy degradation when replacing the attention\nsoftmax with a point-wise activation such as ReLU. In the context of vision\ntransformers, we find that this degradation is mitigated when dividing by\nsequence length. Our experiments training small to large vision transformers on\nImageNet-21k indicate that ReLU-attention can approach or match the performance\nof softmax-attention in terms of scaling behavior as a function of compute.",
+      "published_at": "2023-09-15",
+      "submitted_at": "2023-09-18",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.08586",
+      "arxiv_url": "https://arxiv.org/abs/2309.08586"
+    },
+    {
+      "arxiv_id": "2309.08600",
+      "title": "Sparse Autoencoders Find Highly Interpretable Features in Language\n  Models",
+      "authors": [
+        "Hoagy Cunningham",
+        "Aidan Ewart",
+        "Logan Riggs",
+        "Robert Huben",
+        "Lee Sharkey"
+      ],
+      "abstract": "One of the roadblocks to a better understanding of neural networks' internals\nis polysemanticity, where neurons appear to activate in multiple,\nsemantically distinct contexts. Polysemanticity prevents us from identifying\nconcise, human-understandable explanations for what neural networks are doing\ninternally. One hypothesised cause of polysemanticity is\nsuperposition, where neural networks represent more features than they\nhave neurons by assigning features to an overcomplete set of directions in\nactivation space, rather than to individual neurons. Here, we attempt to\nidentify those directions, using sparse autoencoders to reconstruct the\ninternal activations of a language model. These autoencoders learn sets of\nsparsely activating features that are more interpretable and monosemantic than\ndirections identified by alternative approaches, where interpretability is\nmeasured by automated methods. Ablating these features enables precise model\nediting, for example, by removing capabilities such as pronoun prediction,\nwhile disrupting model behaviour less than prior techniques. This work\nindicates that it is possible to resolve superposition in language models using\na scalable, unsupervised method. Our method may serve as a foundation for\nfuture mechanistic interpretability work, which we hope will enable greater\nmodel transparency and steerability.",
+      "published_at": "2023-09-15",
+      "submitted_at": "2023-09-18",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/hoagyc/sparse_coding",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.08600",
+      "arxiv_url": "https://arxiv.org/abs/2309.08600"
+    },
+    {
+      "arxiv_id": "2309.08520",
+      "title": "Scaling Laws for Sparsely-Connected Foundation Models",
+      "authors": [
+        "Elias Frantar",
+        "Carlos Riquelme",
+        "Neil Houlsby",
+        "Dan Alistarh",
+        "Utku Evci"
+      ],
+      "abstract": "We explore the impact of parameter sparsity on the scaling behavior of\nTransformers trained on massive datasets (i.e., \"foundation models\"), in both\nvision and language domains. In this setting, we identify the first scaling law\ndescribing the relationship between weight sparsity, number of non-zero\nparameters, and amount of training data, which we validate empirically across\nmodel and data scales; on ViT/JFT-4B and T5/C4. These results allow us to\ncharacterize the \"optimal sparsity\", the sparsity level which yields the best\nperformance for a given effective model size and training budget. For a fixed\nnumber of non-zero parameters, we identify that the optimal sparsity increases\nwith the amount of data used for training. We also extend our study to\ndifferent sparsity structures (such as the hardware-friendly n:m pattern) and\nstrategies (such as starting from a pretrained dense model). Our findings shed\nlight on the power and limitations of weight sparsity across various parameter\nand computational settings, offering both theoretical understanding and\npractical implications for leveraging sparsity towards computational efficiency\nimprovements.",
+      "published_at": "2023-09-15",
+      "submitted_at": "2023-09-18",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.08520",
+      "arxiv_url": "https://arxiv.org/abs/2309.08520"
+    },
+    {
+      "arxiv_id": "2309.08587",
+      "title": "Compositional Foundation Models for Hierarchical Planning",
+      "authors": [
+        "Anurag Ajay",
+        "Seungwook Han",
+        "Yilun Du",
+        "Shaung Li",
+        "Abhi Gupta",
+        "Tommi Jaakkola",
+        "Josh Tenenbaum",
+        "Leslie Kaelbling",
+        "Akash Srivastava",
+        "Pulkit Agrawal"
+      ],
+      "abstract": "To make effective decisions in novel environments with long-horizon goals, it\nis crucial to engage in hierarchical reasoning across spatial and temporal\nscales. This entails planning abstract subgoal sequences, visually reasoning\nabout the underlying plans, and executing actions in accordance with the\ndevised plan through visual-motor control. We propose Compositional Foundation\nModels for Hierarchical Planning (HiP), a foundation model which leverages\nmultiple expert foundation model trained on language, vision and action data\nindividually jointly together to solve long-horizon tasks. We use a large\nlanguage model to construct symbolic plans that are grounded in the environment\nthrough a large video diffusion model. Generated video plans are then grounded\nto visual-motor control, through an inverse dynamics model that infers actions\nfrom generated videos. To enable effective reasoning within this hierarchy, we\nenforce consistency between the models via iterative refinement. We illustrate\nthe efficacy and adaptability of our approach in three different long-horizon\ntable-top manipulation tasks.",
+      "published_at": "2023-09-15",
+      "submitted_at": "2023-09-18",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.08587",
+      "arxiv_url": "https://arxiv.org/abs/2309.08587"
+    },
+    {
+      "arxiv_id": "2309.08051",
+      "title": "Retrieval-Augmented Text-to-Audio Generation",
+      "authors": [
+        "Yi Yuan",
+        "Haohe Liu",
+        "Xubo Liu",
+        "Qiushi Huang",
+        "Mark D. Plumbley",
+        "Wenwu Wang"
+      ],
+      "abstract": "Despite recent progress in text-to-audio (TTA) generation, we show that the\nstate-of-the-art models, such as AudioLDM, trained on datasets with an\nimbalanced class distribution, such as AudioCaps, are biased in their\ngeneration performance. Specifically, they excel in generating common audio\nclasses while underperforming in the rare ones, thus degrading the overall\ngeneration performance. We refer to this problem as long-tailed text-to-audio\ngeneration. To address this issue, we propose a simple retrieval-augmented\napproach for TTA models. Specifically, given an input text prompt, we first\nleverage a Contrastive Language Audio Pretraining (CLAP) model to retrieve\nrelevant text-audio pairs. The features of the retrieved audio-text data are\nthen used as additional conditions to guide the learning of TTA models. We\nenhance AudioLDM with our proposed approach and denote the resulting augmented\nsystem as Re-AudioLDM. On the AudioCaps dataset, Re-AudioLDM achieves a\nstate-of-the-art Frechet Audio Distance (FAD) of 1.37, outperforming the\nexisting approaches by a large margin. Furthermore, we show that Re-AudioLDM\ncan generate realistic audio for complex scenes, rare audio classes, and even\nunseen audio types, indicating its potential in TTA tasks.",
+      "published_at": "2023-09-14",
+      "submitted_at": "2023-09-18",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.08051",
+      "arxiv_url": "https://arxiv.org/abs/2309.08051"
+    },
+    {
+      "arxiv_id": "2309.07986",
+      "title": "Viewpoint Textual Inversion: Unleashing Novel View Synthesis with\n  Pretrained 2D Diffusion Models",
+      "authors": [
+        "James Burgess",
+        "Kuan-Chieh Wang",
+        "Serena Yeung"
+      ],
+      "abstract": "Text-to-image diffusion models understand spatial relationship between\nobjects, but do they represent the true 3D structure of the world from only 2D\nsupervision? We demonstrate that yes, 3D knowledge is encoded in 2D image\ndiffusion models like Stable Diffusion, and we show that this structure can be\nexploited for 3D vision tasks. Our method, Viewpoint Neural Textual Inversion\n(ViewNeTI), controls the 3D viewpoint of objects in generated images from\nfrozen diffusion models. We train a small neural mapper to take camera\nviewpoint parameters and predict text encoder latents; the latents then\ncondition the diffusion generation process to produce images with the desired\ncamera viewpoint.\n  ViewNeTI naturally addresses Novel View Synthesis (NVS). By leveraging the\nfrozen diffusion model as a prior, we can solve NVS with very few input views;\nwe can even do single-view novel view synthesis. Our single-view NVS\npredictions have good semantic details and photorealism compared to prior\nmethods. Our approach is well suited for modeling the uncertainty inherent in\nsparse 3D vision problems because it can efficiently generate diverse samples.\nOur view-control mechanism is general, and can even change the camera view in\nimages generated by user-defined prompts.",
+      "published_at": "2023-09-14",
+      "submitted_at": "2023-09-18",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "https://github.com/jmhb0/view_neti",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.07986",
+      "arxiv_url": "https://arxiv.org/abs/2309.07986"
+    }
+  ]
+}

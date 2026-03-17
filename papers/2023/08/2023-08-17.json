@@ -1,0 +1,141 @@
+{
+  "date": "2023-08-17",
+  "total": 6,
+  "source": "https://huggingface.co/papers/date/2023-08-17",
+  "papers": [
+    {
+      "arxiv_id": "2308.08545",
+      "title": "TeCH: Text-guided Reconstruction of Lifelike Clothed Humans",
+      "authors": [
+        "Yangyi Huang",
+        "Hongwei Yi",
+        "Yuliang Xiu",
+        "Tingting Liao",
+        "Jiaxiang Tang",
+        "Justus Thies"
+      ],
+      "abstract": "Despite recent research advancements in reconstructing clothed humans from a\nsingle image, accurately restoring the \"unseen regions\" with high-level details\nremains an unsolved challenge that lacks attention. Existing methods often\ngenerate overly smooth back-side surfaces with a blurry texture. But how to\neffectively capture all visual attributes of an individual from a single image,\nwhich are sufficient to reconstruct unseen areas (e.g., the back view)?\nMotivated by the power of foundation models, TeCH reconstructs the 3D human by\nleveraging 1) descriptive text prompts (e.g., garments, colors, hairstyles)\nwhich are automatically generated via a garment parsing model and Visual\nQuestion Answering (VQA), 2) a personalized fine-tuned Text-to-Image diffusion\nmodel (T2I) which learns the \"indescribable\" appearance. To represent\nhigh-resolution 3D clothed humans at an affordable cost, we propose a hybrid 3D\nrepresentation based on DMTet, which consists of an explicit body shape grid\nand an implicit distance field. Guided by the descriptive prompts +\npersonalized T2I diffusion model, the geometry and texture of the 3D humans are\noptimized through multi-view Score Distillation Sampling (SDS) and\nreconstruction losses based on the original observation. TeCH produces\nhigh-fidelity 3D clothed humans with consistent & delicate texture, and\ndetailed full-body geometry. Quantitative and qualitative experiments\ndemonstrate that TeCH outperforms the state-of-the-art methods in terms of\nreconstruction accuracy and rendering quality. The code will be publicly\navailable for research purposes at https://huangyangyi.github.io/tech",
+      "published_at": "2023-08-16",
+      "submitted_at": "2023-08-17",
+      "submitted_by": "AK",
+      "upvotes": 35,
+      "organization": "",
+      "github_repo": "https://github.com/huangyangyi/TeCH",
+      "project_page": "https://huangyangyi.github.io/TeCH/",
+      "hf_url": "https://huggingface.co/papers/2308.08545",
+      "arxiv_url": "https://arxiv.org/abs/2308.08545"
+    },
+    {
+      "arxiv_id": "2308.07968",
+      "title": "Teach LLMs to Personalize -- An Approach inspired by Writing Education",
+      "authors": [
+        "Cheng Li",
+        "Mingyang Zhang",
+        "Qiaozhu Mei",
+        "Yaqing Wang",
+        "Spurthi Amba Hombaiah",
+        "Yi Liang",
+        "Michael Bendersky"
+      ],
+      "abstract": "Personalized text generation is an emerging research area that has attracted\nmuch attention in recent years. Most studies in this direction focus on a\nparticular domain by designing bespoke features or models. In this work, we\npropose a general approach for personalized text generation using large\nlanguage models (LLMs). Inspired by the practice of writing education, we\ndevelop a multistage and multitask framework to teach LLMs for personalized\ngeneration. In writing instruction, the task of writing from sources is often\ndecomposed into multiple steps that involve finding, evaluating, summarizing,\nsynthesizing, and integrating information. Analogously, our approach to\npersonalized text generation consists of multiple stages: retrieval, ranking,\nsummarization, synthesis, and generation. In addition, we introduce a multitask\nsetting that helps the model improve its generation ability further, which is\ninspired by the observation in education that a student's reading proficiency\nand writing ability are often correlated. We evaluate our approach on three\npublic datasets, each of which covers a different and representative domain.\nOur results show significant improvements over a variety of baselines.",
+      "published_at": "2023-08-15",
+      "submitted_at": "2023-08-17",
+      "submitted_by": "AK",
+      "upvotes": 27,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.07968",
+      "arxiv_url": "https://arxiv.org/abs/2308.07968"
+    },
+    {
+      "arxiv_id": "2308.08316",
+      "title": "Dual-Stream Diffusion Net for Text-to-Video Generation",
+      "authors": [
+        "Binhui Liu",
+        "Xin Liu",
+        "Anbo Dai",
+        "Zhiyong Zeng",
+        "Zhen Cui",
+        "Jian Yang"
+      ],
+      "abstract": "With the emerging diffusion models, recently, text-to-video generation has\naroused increasing attention. But an important bottleneck therein is that\ngenerative videos often tend to carry some flickers and artifacts. In this\nwork, we propose a dual-stream diffusion net (DSDN) to improve the consistency\nof content variations in generating videos. In particular, the designed two\ndiffusion streams, video content and motion branches, could not only run\nseparately in their private spaces for producing personalized video variations\nas well as content, but also be well-aligned between the content and motion\ndomains through leveraging our designed cross-transformer interaction module,\nwhich would benefit the smoothness of generated videos. Besides, we also\nintroduce motion decomposer and combiner to faciliate the operation on video\nmotion. Qualitative and quantitative experiments demonstrate that our method\ncould produce amazing continuous videos with fewer flickers.",
+      "published_at": "2023-08-16",
+      "submitted_at": "2023-08-17",
+      "submitted_by": "AK",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.08316",
+      "arxiv_url": "https://arxiv.org/abs/2308.08316"
+    },
+    {
+      "arxiv_id": "2308.08089",
+      "title": "DragNUWA: Fine-grained Control in Video Generation by Integrating Text,\n  Image, and Trajectory",
+      "authors": [
+        "Shengming Yin",
+        "Chenfei Wu",
+        "Jian Liang",
+        "Jie Shi",
+        "Houqiang Li",
+        "Gong Ming",
+        "Nan Duan"
+      ],
+      "abstract": "Controllable video generation has gained significant attention in recent\nyears. However, two main limitations persist: Firstly, most existing works\nfocus on either text, image, or trajectory-based control, leading to an\ninability to achieve fine-grained control in videos. Secondly, trajectory\ncontrol research is still in its early stages, with most experiments being\nconducted on simple datasets like Human3.6M. This constraint limits the models'\ncapability to process open-domain images and effectively handle complex curved\ntrajectories. In this paper, we propose DragNUWA, an open-domain\ndiffusion-based video generation model. To tackle the issue of insufficient\ncontrol granularity in existing works, we simultaneously introduce text, image,\nand trajectory information to provide fine-grained control over video content\nfrom semantic, spatial, and temporal perspectives. To resolve the problem of\nlimited open-domain trajectory control in current research, We propose\ntrajectory modeling with three aspects: a Trajectory Sampler (TS) to enable\nopen-domain control of arbitrary trajectories, a Multiscale Fusion (MF) to\ncontrol trajectories in different granularities, and an Adaptive Training (AT)\nstrategy to generate consistent videos following trajectories. Our experiments\nvalidate the effectiveness of DragNUWA, demonstrating its superior performance\nin fine-grained control in video generation. The homepage link is\nhttps://www.microsoft.com/en-us/research/project/dragnuwa/",
+      "published_at": "2023-08-16",
+      "submitted_at": "2023-08-17",
+      "submitted_by": "AK",
+      "upvotes": 23,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.08089",
+      "arxiv_url": "https://arxiv.org/abs/2308.08089"
+    },
+    {
+      "arxiv_id": "2308.07931",
+      "title": "Distilled Feature Fields Enable Few-Shot Language-Guided Manipulation",
+      "authors": [
+        "William Shen",
+        "Ge Yang",
+        "Alan Yu",
+        "Jansen Wong",
+        "Leslie Pack Kaelbling",
+        "Phillip Isola"
+      ],
+      "abstract": "Self-supervised and language-supervised image models contain rich knowledge\nof the world that is important for generalization. Many robotic tasks, however,\nrequire a detailed understanding of 3D geometry, which is often lacking in 2D\nimage features. This work bridges this 2D-to-3D gap for robotic manipulation by\nleveraging distilled feature fields to combine accurate 3D geometry with rich\nsemantics from 2D foundation models. We present a few-shot learning method for\n6-DOF grasping and placing that harnesses these strong spatial and semantic\npriors to achieve in-the-wild generalization to unseen objects. Using features\ndistilled from a vision-language model, CLIP, we present a way to designate\nnovel objects for manipulation via free-text natural language, and demonstrate\nits ability to generalize to unseen expressions and novel categories of\nobjects.",
+      "published_at": "2023-07-27",
+      "submitted_at": "2023-08-17",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/f3rm/f3rm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.07931",
+      "arxiv_url": "https://arxiv.org/abs/2308.07931"
+    },
+    {
+      "arxiv_id": "2308.08258",
+      "title": "SceNeRFlow: Time-Consistent Reconstruction of General Dynamic Scenes",
+      "authors": [
+        "Edith Tretschk",
+        "Vladislav Golyanik",
+        "Michael Zollhoefer",
+        "Aljaz Bozic",
+        "Christoph Lassner",
+        "Christian Theobalt"
+      ],
+      "abstract": "Existing methods for the 4D reconstruction of general, non-rigidly deforming\nobjects focus on novel-view synthesis and neglect correspondences. However,\ntime consistency enables advanced downstream tasks like 3D editing, motion\nanalysis, or virtual-asset creation. We propose SceNeRFlow to reconstruct a\ngeneral, non-rigid scene in a time-consistent manner. Our dynamic-NeRF method\ntakes multi-view RGB videos and background images from static cameras with\nknown camera parameters as input. It then reconstructs the deformations of an\nestimated canonical model of the geometry and appearance in an online fashion.\nSince this canonical model is time-invariant, we obtain correspondences even\nfor long-term, long-range motions. We employ neural scene representations to\nparametrize the components of our method. Like prior dynamic-NeRF methods, we\nuse a backwards deformation model. We find non-trivial adaptations of this\nmodel necessary to handle larger motions: We decompose the deformations into a\nstrongly regularized coarse component and a weakly regularized fine component,\nwhere the coarse component also extends the deformation field into the space\nsurrounding the object, which enables tracking over time. We show\nexperimentally that, unlike prior work that only handles small motion, our\nmethod enables the reconstruction of studio-scale motions.",
+      "published_at": "2023-08-16",
+      "submitted_at": "2023-08-17",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.08258",
+      "arxiv_url": "https://arxiv.org/abs/2308.08258"
+    }
+  ]
+}

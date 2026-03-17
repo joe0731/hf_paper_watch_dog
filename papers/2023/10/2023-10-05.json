@@ -1,0 +1,105 @@
+{
+  "date": "2023-10-05",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-10-05",
+  "papers": [
+    {
+      "arxiv_id": "2310.03714",
+      "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving\n  Pipelines",
+      "authors": [
+        "Omar Khattab",
+        "Arnav Singhvi",
+        "Paridhi Maheshwari",
+        "Zhiyuan Zhang",
+        "Keshav Santhanam",
+        "Sri Vardhamanan",
+        "Saiful Haq",
+        "Ashutosh Sharma",
+        "Thomas T. Joshi",
+        "Hanna Moazam",
+        "Heather Miller",
+        "Matei Zaharia",
+        "Christopher Potts"
+      ],
+      "abstract": "The ML community is rapidly exploring techniques for prompting language\nmodels (LMs) and for stacking them into pipelines that solve complex tasks.\nUnfortunately, existing LM pipelines are typically implemented using hard-coded\n\"prompt templates\", i.e. lengthy strings discovered via trial and error. Toward\na more systematic approach for developing and optimizing LM pipelines, we\nintroduce DSPy, a programming model that abstracts LM pipelines as text\ntransformation graphs, i.e. imperative computational graphs where LMs are\ninvoked through declarative modules. DSPy modules are parameterized, meaning\nthey can learn (by creating and collecting demonstrations) how to apply\ncompositions of prompting, finetuning, augmentation, and reasoning techniques.\nWe design a compiler that will optimize any DSPy pipeline to maximize a given\nmetric. We conduct two case studies, showing that succinct DSPy programs can\nexpress and optimize sophisticated LM pipelines that reason about math word\nproblems, tackle multi-hop retrieval, answer complex questions, and control\nagent loops. Within minutes of compiling, a few lines of DSPy allow GPT-3.5 and\nllama2-13b-chat to self-bootstrap pipelines that outperform standard few-shot\nprompting (generally by over 25% and 65%, respectively) and pipelines with\nexpert-created demonstrations (by up to 5-46% and 16-40%, respectively). On top\nof that, DSPy programs compiled to open and relatively small LMs like\n770M-parameter T5 and llama2-13b-chat are competitive with approaches that rely\non expert-written prompt chains for proprietary GPT-3.5. DSPy is available at\nhttps://github.com/stanfordnlp/dspy",
+      "published_at": "2023-10-05",
+      "submitted_at": "2023-10-05",
+      "submitted_by": "AK",
+      "upvotes": 37,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.03714",
+      "arxiv_url": "https://arxiv.org/abs/2310.03714"
+    },
+    {
+      "arxiv_id": "2310.03051",
+      "title": "How FaR Are Large Language Models From Agents with Theory-of-Mind?",
+      "authors": [
+        "Pei Zhou",
+        "Aman Madaan",
+        "Srividya Pranavi Potharaju",
+        "Aditya Gupta",
+        "Kevin R. McKee",
+        "Ari Holtzman",
+        "Jay Pujara",
+        "Xiang Ren",
+        "Swaroop Mishra",
+        "Aida Nematzadeh",
+        "Shyam Upadhyay",
+        "Manaal Faruqui"
+      ],
+      "abstract": "\"Thinking is for Doing.\" Humans can infer other people's mental states from\nobservations--an ability called Theory-of-Mind (ToM)--and subsequently act\npragmatically on those inferences. Existing question answering benchmarks such\nas ToMi ask models questions to make inferences about beliefs of characters in\na story, but do not test whether models can then use these inferences to guide\ntheir actions. We propose a new evaluation paradigm for large language models\n(LLMs): Thinking for Doing (T4D), which requires models to connect inferences\nabout others' mental states to actions in social scenarios. Experiments on T4D\ndemonstrate that LLMs such as GPT-4 and PaLM 2 seemingly excel at tracking\ncharacters' beliefs in stories, but they struggle to translate this capability\ninto strategic action. Our analysis reveals the core challenge for LLMs lies in\nidentifying the implicit inferences about mental states without being\nexplicitly asked about as in ToMi, that lead to choosing the correct action in\nT4D. To bridge this gap, we introduce a zero-shot prompting framework, Foresee\nand Reflect (FaR), which provides a reasoning structure that encourages LLMs to\nanticipate future challenges and reason about potential actions. FaR boosts\nGPT-4's performance from 50% to 71% on T4D, outperforming other prompting\nmethods such as Chain-of-Thought and Self-Ask. Moreover, FaR generalizes to\ndiverse out-of-distribution story structures and scenarios that also require\nToM inferences to choose an action, consistently outperforming other methods\nincluding few-shot in-context learning.",
+      "published_at": "2023-10-04",
+      "submitted_at": "2023-10-05",
+      "submitted_by": "AK",
+      "upvotes": 35,
+      "organization": "",
+      "github_repo": "https://github.com/sachith-gunasekara/t4d",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.03051",
+      "arxiv_url": "https://arxiv.org/abs/2310.03051"
+    },
+    {
+      "arxiv_id": "2310.03094",
+      "title": "Large Language Model Cascades with Mixture of Thoughts Representations\n  for Cost-efficient Reasoning",
+      "authors": [
+        "Murong Yue",
+        "Jie Zhao",
+        "Min Zhang",
+        "Liang Du",
+        "Ziyu Yao"
+      ],
+      "abstract": "Large language models (LLMs) such as GPT-4 have exhibited remarkable\nperformance in a variety of tasks, but this strong performance often comes with\nthe high expense of using paid API services. In this paper, we are motivated to\nstudy building an LLM cascade to save the cost of using LLMs, particularly for\nperforming reasoning (e.g., mathematical, causal) tasks. Our cascade pipeline\nfollows the intuition that simpler questions can be addressed by a weaker but\nmore affordable LLM, whereas only the challenging questions necessitate the\nstronger and more expensive LLM. To realize this decision-making, we consider\nthe \"answer consistency\" of the weaker LLM as a signal of the question\ndifficulty and propose several methods for the answer sampling and consistency\nchecking, including one leveraging a mixture of two thought representations\n(i.e., Chain-of-Thought and Program-of-Thought). Through experiments on six\nreasoning benchmark datasets, with GPT-3.5-turbo and GPT-4 being the weaker and\nstronger LLMs, respectively, we demonstrate that our proposed LLM cascades can\nachieve performance comparable to using solely the stronger LLM but require\nonly 40% of its cost.",
+      "published_at": "2023-10-04",
+      "submitted_at": "2023-10-05",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "https://github.com/murongyue/llm_mot_cascade",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.03094",
+      "arxiv_url": "https://arxiv.org/abs/2310.03094"
+    },
+    {
+      "arxiv_id": "2310.03046",
+      "title": "EcoAssistant: Using LLM Assistant More Affordably and Accurately",
+      "authors": [
+        "Jieyu Zhang",
+        "Ranjay Krishna",
+        "Ahmed H. Awadallah",
+        "Chi Wang"
+      ],
+      "abstract": "Today, users ask Large language models (LLMs) as assistants to answer queries\nthat require external knowledge; they ask about the weather in a specific city,\nabout stock prices, and even about where specific locations are within their\nneighborhood. These queries require the LLM to produce code that invokes\nexternal APIs to answer the user's question, yet LLMs rarely produce correct\ncode on the first try, requiring iterative code refinement upon execution\nresults. In addition, using LLM assistants to support high query volumes can be\nexpensive. In this work, we contribute a framework, EcoAssistant, that enables\nLLMs to answer code-driven queries more affordably and accurately. EcoAssistant\ncontains three components. First, it allows the LLM assistants to converse with\nan automatic code executor to iteratively refine code or to produce answers\nbased on the execution results. Second, we use a hierarchy of LLM assistants,\nwhich attempts to answer the query with weaker, cheaper LLMs before backing off\nto stronger, expensive ones. Third, we retrieve solutions from past successful\nqueries as in-context demonstrations to help subsequent queries. Empirically,\nwe show that EcoAssistant offers distinct advantages for affordability and\naccuracy, surpassing GPT-4 by 10 points of success rate with less than 50% of\nGPT-4's cost.",
+      "published_at": "2023-10-03",
+      "submitted_at": "2023-10-05",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/jieyuz2/ecoassistant",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2310.03046",
+      "arxiv_url": "https://arxiv.org/abs/2310.03046"
+    }
+  ]
+}

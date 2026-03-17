@@ -1,0 +1,149 @@
+{
+  "date": "2023-11-09",
+  "total": 6,
+  "source": "https://huggingface.co/papers/date/2023-11-09",
+  "papers": [
+    {
+      "arxiv_id": "2311.04400",
+      "title": "LRM: Large Reconstruction Model for Single Image to 3D",
+      "authors": [
+        "Yicong Hong",
+        "Kai Zhang",
+        "Jiuxiang Gu",
+        "Sai Bi",
+        "Yang Zhou",
+        "Difan Liu",
+        "Feng Liu",
+        "Kalyan Sunkavalli",
+        "Trung Bui",
+        "Hao Tan"
+      ],
+      "abstract": "We propose the first Large Reconstruction Model (LRM) that predicts the 3D\nmodel of an object from a single input image within just 5 seconds. In contrast\nto many previous methods that are trained on small-scale datasets such as\nShapeNet in a category-specific fashion, LRM adopts a highly scalable\ntransformer-based architecture with 500 million learnable parameters to\ndirectly predict a neural radiance field (NeRF) from the input image. We train\nour model in an end-to-end manner on massive multi-view data containing around\n1 million objects, including both synthetic renderings from Objaverse and real\ncaptures from MVImgNet. This combination of a high-capacity model and\nlarge-scale training data empowers our model to be highly generalizable and\nproduce high-quality 3D reconstructions from various testing inputs including\nreal-world in-the-wild captures and images from generative models. Video demos\nand interactable 3D meshes can be found on this website:\nhttps://yiconghong.me/LRM/.",
+      "published_at": "2023-11-08",
+      "submitted_at": "2023-11-09",
+      "submitted_by": "AK",
+      "upvotes": 52,
+      "organization": "",
+      "github_repo": "https://github.com/3dtopia/openlrm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.04400",
+      "arxiv_url": "https://arxiv.org/abs/2311.04400"
+    },
+    {
+      "arxiv_id": "2311.04589",
+      "title": "TEAL: Tokenize and Embed ALL for Multi-modal Large Language Models",
+      "authors": [
+        "Zhen Yang",
+        "Yingxue Zhang",
+        "Fandong Meng",
+        "Jie Zhou"
+      ],
+      "abstract": "Despite Multi-modal Large Language Models (MM-LLMs) have made exciting\nstrides recently, they are still struggling to efficiently model the\ninteractions among multi-modal inputs and the generation in non-textual\nmodalities. In this work, we propose TEAL (Tokenize and Embed ALl)}, an\napproach to treat the input from any modality as a token sequence and learn a\njoint embedding space for all modalities. Specifically, for the input from any\nmodality, TEAL first discretizes it into a token sequence with the\noff-the-shelf tokenizer and embeds the token sequence into a joint embedding\nspace with a learnable embedding matrix. MM-LLMs just need to predict the\nmulti-modal tokens autoregressively as the textual LLMs do. Finally, the\ncorresponding de-tokenizer is applied to generate the output in each modality\nbased on the predicted token sequence. With the joint embedding space, TEAL\nenables the frozen LLMs to perform both understanding and generation tasks\ninvolving non-textual modalities, such as image and audio. Thus, the textual\nLLM can just work as an interface and maintain its high performance in textual\nunderstanding and generation. Experiments show that TEAL achieves substantial\nimprovements in multi-modal understanding, and implements a simple scheme for\nmulti-modal generations.",
+      "published_at": "2023-11-08",
+      "submitted_at": "2023-11-09",
+      "submitted_by": "AK",
+      "upvotes": 21,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.04589",
+      "arxiv_url": "https://arxiv.org/abs/2311.04589"
+    },
+    {
+      "arxiv_id": "2311.04287",
+      "title": "Holistic Evaluation of Text-To-Image Models",
+      "authors": [
+        "Tony Lee",
+        "Michihiro Yasunaga",
+        "Chenlin Meng",
+        "Yifan Mai",
+        "Joon Sung Park",
+        "Agrim Gupta",
+        "Yunzhi Zhang",
+        "Deepak Narayanan",
+        "Hannah Benita Teufel",
+        "Marco Bellagente",
+        "Minguk Kang",
+        "Taesung Park",
+        "Jure Leskovec",
+        "Jun-Yan Zhu",
+        "Li Fei-Fei",
+        "Jiajun Wu",
+        "Stefano Ermon",
+        "Percy Liang"
+      ],
+      "abstract": "The stunning qualitative improvement of recent text-to-image models has led\nto their widespread attention and adoption. However, we lack a comprehensive\nquantitative understanding of their capabilities and risks. To fill this gap,\nwe introduce a new benchmark, Holistic Evaluation of Text-to-Image Models\n(HEIM). Whereas previous evaluations focus mostly on text-image alignment and\nimage quality, we identify 12 aspects, including text-image alignment, image\nquality, aesthetics, originality, reasoning, knowledge, bias, toxicity,\nfairness, robustness, multilinguality, and efficiency. We curate 62 scenarios\nencompassing these aspects and evaluate 26 state-of-the-art text-to-image\nmodels on this benchmark. Our results reveal that no single model excels in all\naspects, with different models demonstrating different strengths. We release\nthe generated images and human evaluation results for full transparency at\nhttps://crfm.stanford.edu/heim/v1.1.0 and the code at\nhttps://github.com/stanford-crfm/helm, which is integrated with the HELM\ncodebase.",
+      "published_at": "2023-11-07",
+      "submitted_at": "2023-11-09",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.04287",
+      "arxiv_url": "https://arxiv.org/abs/2311.04287"
+    },
+    {
+      "arxiv_id": "2311.04498",
+      "title": "NExT-Chat: An LMM for Chat, Detection and Segmentation",
+      "authors": [
+        "Ao Zhang",
+        "Chen-Wei Xie",
+        "Yun Zheng",
+        "Wei Ji",
+        "Tat-Seng Chua"
+      ],
+      "abstract": "The development of large language models (LLMs) has greatly advanced the\nfield of multimodal understanding, leading to the emergence of large multimodal\nmodels (LMMs). In order to enhance the level of visual comprehension, recent\nstudies have equipped LMMs with region-level understanding capabilities by\nrepresenting object bounding box coordinates as a series of text sequences\n(pixel2seq). In this paper, we introduce a novel paradigm for object location\nmodeling called pixel2emb method, where we ask the LMM to output the location\nembeddings and then decoded by different decoders. This paradigm allows for\ndifferent location formats (such as bounding boxes and masks) to be used in\nmultimodal conversations Furthermore, this kind of embedding based location\nmodeling enables the utilization of existing practices in localization tasks,\nsuch as detection and segmentation. In scenarios with limited resources, our\npixel2emb demonstrates superior performance compared to existing\nstate-of-the-art (SOTA) approaches in both the location input and output tasks\nunder fair comparison. Leveraging the proposed pixel2emb method, we train an\nLMM named NExT-Chat and demonstrate its capability of handling multiple tasks\nlike visual grounding, region caption, and grounded reasoning.",
+      "published_at": "2023-11-08",
+      "submitted_at": "2023-11-09",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/next-chatv/next-chat",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.04498",
+      "arxiv_url": "https://arxiv.org/abs/2311.04498"
+    },
+    {
+      "arxiv_id": "2311.04391",
+      "title": "3DiffTection: 3D Object Detection with Geometry-Aware Diffusion Features",
+      "authors": [
+        "Chenfeng Xu",
+        "Huan Ling",
+        "Sanja Fidler",
+        "Or Litany"
+      ],
+      "abstract": "We present 3DiffTection, a state-of-the-art method for 3D object detection\nfrom single images, leveraging features from a 3D-aware diffusion model.\nAnnotating large-scale image data for 3D detection is resource-intensive and\ntime-consuming. Recently, pretrained large image diffusion models have become\nprominent as effective feature extractors for 2D perception tasks. However,\nthese features are initially trained on paired text and image data, which are\nnot optimized for 3D tasks, and often exhibit a domain gap when applied to the\ntarget data. Our approach bridges these gaps through two specialized tuning\nstrategies: geometric and semantic. For geometric tuning, we fine-tune a\ndiffusion model to perform novel view synthesis conditioned on a single image,\nby introducing a novel epipolar warp operator. This task meets two essential\ncriteria: the necessity for 3D awareness and reliance solely on posed image\ndata, which are readily available (e.g., from videos) and does not require\nmanual annotation. For semantic refinement, we further train the model on\ntarget data with detection supervision. Both tuning phases employ ControlNet to\npreserve the integrity of the original feature capabilities. In the final step,\nwe harness these enhanced capabilities to conduct a test-time prediction\nensemble across multiple virtual viewpoints. Through our methodology, we obtain\n3D-aware features that are tailored for 3D detection and excel in identifying\ncross-view point correspondences. Consequently, our model emerges as a powerful\n3D detector, substantially surpassing previous benchmarks, e.g., Cube-RCNN, a\nprecedent in single-view 3D detection by 9.43\\% in AP3D on the\nOmni3D-ARkitscene dataset. Furthermore, 3DiffTection showcases robust data\nefficiency and generalization to cross-domain data.",
+      "published_at": "2023-11-07",
+      "submitted_at": "2023-11-09",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.04391",
+      "arxiv_url": "https://arxiv.org/abs/2311.04391"
+    },
+    {
+      "arxiv_id": "2311.04901",
+      "title": "GENOME: GenerativE Neuro-symbOlic visual reasoning by growing and\n  reusing ModulEs",
+      "authors": [
+        "Zhenfang Chen",
+        "Rui Sun",
+        "Wenjun Liu",
+        "Yining Hong",
+        "Chuang Gan"
+      ],
+      "abstract": "Recent works have shown that Large Language Models (LLMs) could empower\ntraditional neuro-symbolic models via programming capabilities to translate\nlanguage into module descriptions, thus achieving strong visual reasoning\nresults while maintaining the model's transparency and efficiency. However,\nthese models usually exhaustively generate the entire code snippet given each\nnew instance of a task, which is extremely ineffective. We propose generative\nneuro-symbolic visual reasoning by growing and reusing modules. Specifically,\nour model consists of three unique stages, module initialization, module\ngeneration, and module execution. First, given a vision-language task, we adopt\nLLMs to examine whether we could reuse and grow over established modules to\nhandle this new task. If not, we initialize a new module needed by the task and\nspecify the inputs and outputs of this new module. After that, the new module\nis created by querying LLMs to generate corresponding code snippets that match\nthe requirements. In order to get a better sense of the new module's ability,\nwe treat few-shot training examples as test cases to see if our new module\ncould pass these cases. If yes, the new module is added to the module library\nfor future reuse. Finally, we evaluate the performance of our model on the\ntesting set by executing the parsed programs with the newly made visual modules\nto get the results. We find the proposed model possesses several advantages.\nFirst, it performs competitively on standard tasks like visual question\nanswering and referring expression comprehension; Second, the modules learned\nfrom one task can be seamlessly transferred to new tasks; Last but not least,\nit is able to adapt to new visual reasoning tasks by observing a few training\nexamples and reusing modules.",
+      "published_at": "2023-11-08",
+      "submitted_at": "2023-11-09",
+      "submitted_by": "AK",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/umass-foundation-model/genome",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2311.04901",
+      "arxiv_url": "https://arxiv.org/abs/2311.04901"
+    }
+  ]
+}

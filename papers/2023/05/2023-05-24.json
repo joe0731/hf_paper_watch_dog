@@ -1,0 +1,51 @@
+{
+  "date": "2023-05-24",
+  "total": 2,
+  "source": "https://huggingface.co/papers/date/2023-05-24",
+  "papers": [
+    {
+      "arxiv_id": "2305.13840",
+      "title": "Control-A-Video: Controllable Text-to-Video Generation with Diffusion\n  Models",
+      "authors": [
+        "Weifeng Chen",
+        "Jie Wu",
+        "Pan Xie",
+        "Hefeng Wu",
+        "Jiashi Li",
+        "Xin Xia",
+        "Xuefeng Xiao",
+        "Liang Lin"
+      ],
+      "abstract": "This paper presents a controllable text-to-video (T2V) diffusion model, named\nVideo-ControlNet, that generates videos conditioned on a sequence of control\nsignals, such as edge or depth maps. Video-ControlNet is built on a pre-trained\nconditional text-to-image (T2I) diffusion model by incorporating a\nspatial-temporal self-attention mechanism and trainable temporal layers for\nefficient cross-frame modeling. A first-frame conditioning strategy is proposed\nto facilitate the model to generate videos transferred from the image domain as\nwell as arbitrary-length videos in an auto-regressive manner. Moreover,\nVideo-ControlNet employs a novel residual-based noise initialization strategy\nto introduce motion prior from an input video, producing more coherent videos.\nWith the proposed architecture and strategies, Video-ControlNet can achieve\nresource-efficient convergence and generate superior quality and consistent\nvideos with fine-grained control. Extensive experiments demonstrate its success\nin various video generative tasks such as video editing and video style\ntransfer, outperforming previous methods in terms of consistency and quality.\nProject Page: https://controlavideo.github.io/",
+      "published_at": "2023-05-23",
+      "submitted_at": "2023-05-24",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/weifeng-chen/control-a-video",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.13840",
+      "arxiv_url": "https://arxiv.org/abs/2305.13840"
+    },
+    {
+      "arxiv_id": "2305.13579",
+      "title": "Enhancing Detail Preservation for Customized Text-to-Image Generation: A\n  Regularization-Free Approach",
+      "authors": [
+        "Yufan Zhou",
+        "Ruiyi Zhang",
+        "Tong Sun",
+        "Jinhui Xu"
+      ],
+      "abstract": "Recent text-to-image generation models have demonstrated impressive\ncapability of generating text-aligned images with high fidelity. However,\ngenerating images of novel concept provided by the user input image is still a\nchallenging task. To address this problem, researchers have been exploring\nvarious methods for customizing pre-trained text-to-image generation models.\nCurrently, most existing methods for customizing pre-trained text-to-image\ngeneration models involve the use of regularization techniques to prevent\nover-fitting. While regularization will ease the challenge of customization and\nleads to successful content creation with respect to text guidance, it may\nrestrict the model capability, resulting in the loss of detailed information\nand inferior performance. In this work, we propose a novel framework for\ncustomized text-to-image generation without the use of regularization.\nSpecifically, our proposed framework consists of an encoder network and a novel\nsampling method which can tackle the over-fitting problem without the use of\nregularization. With the proposed framework, we are able to customize a\nlarge-scale text-to-image generation model within half a minute on single GPU,\nwith only one image provided by the user. We demonstrate in experiments that\nour proposed framework outperforms existing methods, and preserves more\nfine-grained details.",
+      "published_at": "2023-05-23",
+      "submitted_at": "2023-05-24",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "https://github.com/drboog/profusion",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.13579",
+      "arxiv_url": "https://arxiv.org/abs/2305.13579"
+    }
+  ]
+}

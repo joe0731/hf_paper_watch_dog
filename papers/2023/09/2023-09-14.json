@@ -1,0 +1,162 @@
+{
+  "date": "2023-09-14",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2023-09-14",
+  "papers": [
+    {
+      "arxiv_id": "2309.06895",
+      "title": "MagiCapture: High-Resolution Multi-Concept Portrait Customization",
+      "authors": [
+        "Junha Hyung",
+        "Jaeyo Shin",
+        "Jaegul Choo"
+      ],
+      "abstract": "Large-scale text-to-image models including Stable Diffusion are capable of\ngenerating high-fidelity photorealistic portrait images. There is an active\nresearch area dedicated to personalizing these models, aiming to synthesize\nspecific subjects or styles using provided sets of reference images. However,\ndespite the plausible results from these personalization methods, they tend to\nproduce images that often fall short of realism and are not yet on a\ncommercially viable level. This is particularly noticeable in portrait image\ngeneration, where any unnatural artifact in human faces is easily discernible\ndue to our inherent human bias. To address this, we introduce MagiCapture, a\npersonalization method for integrating subject and style concepts to generate\nhigh-resolution portrait images using just a few subject and style references.\nFor instance, given a handful of random selfies, our fine-tuned model can\ngenerate high-quality portrait images in specific styles, such as passport or\nprofile photos. The main challenge with this task is the absence of ground\ntruth for the composed concepts, leading to a reduction in the quality of the\nfinal output and an identity shift of the source subject. To address these\nissues, we present a novel Attention Refocusing loss coupled with auxiliary\npriors, both of which facilitate robust learning within this weakly supervised\nlearning setting. Our pipeline also includes additional post-processing steps\nto ensure the creation of highly realistic outputs. MagiCapture outperforms\nother baselines in both quantitative and qualitative evaluations and can also\nbe generalized to other non-human objects.",
+      "published_at": "2023-09-13",
+      "submitted_at": "2023-09-14",
+      "submitted_by": "AK",
+      "upvotes": 28,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.06895",
+      "arxiv_url": "https://arxiv.org/abs/2309.06895"
+    },
+    {
+      "arxiv_id": "2309.07062",
+      "title": "Large Language Models for Compiler Optimization",
+      "authors": [
+        "Chris Cummins",
+        "Volker Seeker",
+        "Dejan Grubisic",
+        "Mostafa Elhoushi",
+        "Youwei Liang",
+        "Baptiste Roziere",
+        "Jonas Gehring",
+        "Fabian Gloeckle",
+        "Kim Hazelwood",
+        "Gabriel Synnaeve",
+        "Hugh Leather"
+      ],
+      "abstract": "We explore the novel application of Large Language Models to code\noptimization. We present a 7B-parameter transformer model trained from scratch\nto optimize LLVM assembly for code size. The model takes as input unoptimized\nassembly and outputs a list of compiler options to best optimize the program.\nCrucially, during training, we ask the model to predict the instruction counts\nbefore and after optimization, and the optimized code itself. These auxiliary\nlearning tasks significantly improve the optimization performance of the model\nand improve the model's depth of understanding.\n  We evaluate on a large suite of test programs. Our approach achieves a 3.0%\nimprovement in reducing instruction counts over the compiler, outperforming two\nstate-of-the-art baselines that require thousands of compilations. Furthermore,\nthe model shows surprisingly strong code reasoning abilities, generating\ncompilable code 91% of the time and perfectly emulating the output of the\ncompiler 70% of the time.",
+      "published_at": "2023-09-11",
+      "submitted_at": "2023-09-14",
+      "submitted_by": "AK",
+      "upvotes": 25,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.07062",
+      "arxiv_url": "https://arxiv.org/abs/2309.07062"
+    },
+    {
+      "arxiv_id": "2309.06802",
+      "title": "Dynamic NeRFs for Soccer Scenes",
+      "authors": [
+        "Sacha Lewin",
+        "Maxime Vandegar",
+        "Thomas Hoyoux",
+        "Olivier Barnich",
+        "Gilles Louppe"
+      ],
+      "abstract": "The long-standing problem of novel view synthesis has many applications,\nnotably in sports broadcasting. Photorealistic novel view synthesis of soccer\nactions, in particular, is of enormous interest to the broadcast industry. Yet\nonly a few industrial solutions have been proposed, and even fewer that achieve\nnear-broadcast quality of the synthetic replays. Except for their setup of\nmultiple static cameras around the playfield, the best proprietary systems\ndisclose close to no information about their inner workings. Leveraging\nmultiple static cameras for such a task indeed presents a challenge rarely\ntackled in the literature, for a lack of public datasets: the reconstruction of\na large-scale, mostly static environment, with small, fast-moving elements.\nRecently, the emergence of neural radiance fields has induced stunning progress\nin many novel view synthesis applications, leveraging deep learning principles\nto produce photorealistic results in the most challenging settings. In this\nwork, we investigate the feasibility of basing a solution to the task on\ndynamic NeRFs, i.e., neural models purposed to reconstruct general dynamic\ncontent. We compose synthetic soccer environments and conduct multiple\nexperiments using them, identifying key components that help reconstruct soccer\nscenes with dynamic NeRFs. We show that, although this approach cannot fully\nmeet the quality requirements for the target application, it suggests promising\navenues toward a cost-efficient, automatic solution. We also make our work\ndataset and code publicly available, with the goal to encourage further efforts\nfrom the research community on the task of novel view synthesis for dynamic\nsoccer scenes. For code, data, and video results, please see\nhttps://soccernerfs.isach.be.",
+      "published_at": "2023-09-13",
+      "submitted_at": "2023-09-14",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/iSach/SoccerNeRFs",
+      "project_page": "https://soccernerfs.isach.be",
+      "hf_url": "https://huggingface.co/papers/2309.06802",
+      "arxiv_url": "https://arxiv.org/abs/2309.06802"
+    },
+    {
+      "arxiv_id": "2309.06657",
+      "title": "Statistical Rejection Sampling Improves Preference Optimization",
+      "authors": [
+        "Tianqi Liu",
+        "Yao Zhao",
+        "Rishabh Joshi",
+        "Misha Khalman",
+        "Mohammad Saleh",
+        "Peter J. Liu",
+        "Jialu Liu"
+      ],
+      "abstract": "Improving the alignment of language models with human preferences remains an\nactive research challenge. Previous approaches have primarily utilized\nReinforcement Learning from Human Feedback (RLHF) via online RL methods such as\nProximal Policy Optimization (PPO). Recently, offline methods such as Sequence\nLikelihood Calibration (SLiC) and Direct Preference Optimization (DPO) have\nemerged as attractive alternatives, offering improvements in stability and\nscalability while maintaining competitive performance. SLiC refines its loss\nfunction using sequence pairs sampled from a supervised fine-tuned (SFT)\npolicy, while DPO directly optimizes language models based on preference data,\nforegoing the need for a separate reward model. However, the maximum likelihood\nestimator (MLE) of the target optimal policy requires labeled preference pairs\nsampled from that policy. DPO's lack of a reward model constrains its ability\nto sample preference pairs from the optimal policy, and SLiC is restricted to\nsampling preference pairs only from the SFT policy. To address these\nlimitations, we introduce a novel approach called Statistical Rejection\nSampling Optimization (RSO) that aims to source preference data from the target\noptimal policy using rejection sampling, enabling a more accurate estimation of\nthe optimal policy. We also propose a unified framework that enhances the loss\nfunctions used in both SLiC and DPO from a preference modeling standpoint.\nThrough extensive experiments across three diverse tasks, we demonstrate that\nRSO consistently outperforms both SLiC and DPO on evaluations from both Large\nLanguage Model (LLM) and human raters.",
+      "published_at": "2023-09-13",
+      "submitted_at": "2023-09-14",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.06657",
+      "arxiv_url": "https://arxiv.org/abs/2309.06657"
+    },
+    {
+      "arxiv_id": "2309.06933",
+      "title": "DreamStyler: Paint by Style Inversion with Text-to-Image Diffusion\n  Models",
+      "authors": [
+        "Namhyuk Ahn",
+        "Junsoo Lee",
+        "Chunggi Lee",
+        "Daesik Kim",
+        "Seung-Hun Nam",
+        "Kibeom Hong"
+      ],
+      "abstract": "Recent progresses in large-scale text-to-image models have yielded remarkable\naccomplishments, finding various applications in art domain. However,\nexpressing unique characteristics of an artwork (e.g. brushwork, colortone, or\ncomposition) with text prompts alone may encounter limitations due to the\ninherent constraints of verbal description. To this end, we introduce\nDreamStyler, a novel framework designed for artistic image synthesis,\nproficient in both text-to-image synthesis and style transfer. DreamStyler\noptimizes a multi-stage textual embedding with a context-aware text prompt,\nresulting in prominent image quality. In addition, with content and style\nguidance, DreamStyler exhibits flexibility to accommodate a range of style\nreferences. Experimental results demonstrate its superior performance across\nmultiple scenarios, suggesting its promising potential in artistic product\ncreation.",
+      "published_at": "2023-09-13",
+      "submitted_at": "2023-09-14",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.06933",
+      "arxiv_url": "https://arxiv.org/abs/2309.06933"
+    },
+    {
+      "arxiv_id": "2309.07122",
+      "title": "Tree-Structured Shading Decomposition",
+      "authors": [
+        "Chen Geng",
+        "Hong-Xing Yu",
+        "Sharon Zhang",
+        "Maneesh Agrawala",
+        "Jiajun Wu"
+      ],
+      "abstract": "We study inferring a tree-structured representation from a single image for\nobject shading. Prior work typically uses the parametric or measured\nrepresentation to model shading, which is neither interpretable nor easily\neditable. We propose using the shade tree representation, which combines basic\nshading nodes and compositing methods to factorize object surface shading. The\nshade tree representation enables novice users who are unfamiliar with the\nphysical shading process to edit object shading in an efficient and intuitive\nmanner. A main challenge in inferring the shade tree is that the inference\nproblem involves both the discrete tree structure and the continuous parameters\nof the tree nodes. We propose a hybrid approach to address this issue. We\nintroduce an auto-regressive inference model to generate a rough estimation of\nthe tree structure and node parameters, and then we fine-tune the inferred\nshade tree through an optimization algorithm. We show experiments on synthetic\nimages, captured reflectance, real images, and non-realistic vector drawings,\nallowing downstream applications such as material editing, vectorized shading,\nand relighting. Project website: https://chen-geng.com/inv-shade-trees",
+      "published_at": "2023-09-13",
+      "submitted_at": "2023-09-14",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.07122",
+      "arxiv_url": "https://arxiv.org/abs/2309.07122"
+    },
+    {
+      "arxiv_id": "2309.07125",
+      "title": "Text-Guided Generation and Editing of Compositional 3D Avatars",
+      "authors": [
+        "Hao Zhang",
+        "Yao Feng",
+        "Peter Kulits",
+        "Yandong Wen",
+        "Justus Thies",
+        "Michael J. Black"
+      ],
+      "abstract": "Our goal is to create a realistic 3D facial avatar with hair and accessories\nusing only a text description. While this challenge has attracted significant\nrecent interest, existing methods either lack realism, produce unrealistic\nshapes, or do not support editing, such as modifications to the hairstyle. We\nargue that existing methods are limited because they employ a monolithic\nmodeling approach, using a single representation for the head, face, hair, and\naccessories. Our observation is that the hair and face, for example, have very\ndifferent structural qualities that benefit from different representations.\nBuilding on this insight, we generate avatars with a compositional model, in\nwhich the head, face, and upper body are represented with traditional 3D\nmeshes, and the hair, clothing, and accessories with neural radiance fields\n(NeRF). The model-based mesh representation provides a strong geometric prior\nfor the face region, improving realism while enabling editing of the person's\nappearance. By using NeRFs to represent the remaining components, our method is\nable to model and synthesize parts with complex geometry and appearance, such\nas curly hair and fluffy scarves. Our novel system synthesizes these\nhigh-quality compositional avatars from text descriptions. The experimental\nresults demonstrate that our method, Text-guided generation and Editing of\nCompositional Avatars (TECA), produces avatars that are more realistic than\nthose of recent methods while being editable because of their compositional\nnature. For example, our TECA enables the seamless transfer of compositional\nfeatures like hairstyles, scarves, and other accessories between avatars. This\ncapability supports applications such as virtual try-on.",
+      "published_at": "2023-09-13",
+      "submitted_at": "2023-09-14",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.07125",
+      "arxiv_url": "https://arxiv.org/abs/2309.07125"
+    }
+  ]
+}

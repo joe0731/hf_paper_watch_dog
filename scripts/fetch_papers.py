@@ -6,6 +6,7 @@ usage:
     python fetch_papers.py                    # fetch today's papers
     python fetch_papers.py 2026-03-17         # fetch papers for a specific date
     python fetch_papers.py --backfill 7       # backfill last 7 days
+    python fetch_papers.py --from-date 2023-05-04 --to-date 2024-12-31  # fetch date range
 """
 
 import argparse
@@ -211,6 +212,28 @@ def fetch_and_save(date_str: str, base_dir: Path) -> bool:
     return True
 
 
+def parse_date(date_str: str) -> datetime:
+    """parse a YYYY-MM-DD string into a datetime object."""
+    try:
+        return datetime.strptime(date_str, "%Y-%m-%d")
+    except ValueError:
+        raise argparse.ArgumentTypeError(
+            f"invalid date format: {date_str} (expected YYYY-MM-DD)"
+        )
+
+
+def generate_date_range(from_date: datetime, to_date: datetime) -> list[str]:
+    """generate a list of YYYY-MM-DD strings from from_date to to_date inclusive."""
+    if from_date > to_date:
+        raise ValueError(f"from-date {from_date} is after to-date {to_date}")
+    dates = []
+    current = from_date
+    while current <= to_date:
+        dates.append(current.strftime("%Y-%m-%d"))
+        current += timedelta(days=1)
+    return dates
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="fetch hf daily papers")
     parser.add_argument(
@@ -226,12 +249,37 @@ def parse_args() -> argparse.Namespace:
         help="backfill N days starting from today (or from the given date)",
     )
     parser.add_argument(
+        "--from-date",
+        type=str,
+        default=None,
+        help="start date for range mode (YYYY-MM-DD)",
+    )
+    parser.add_argument(
+        "--to-date",
+        type=str,
+        default=None,
+        help="end date for range mode (YYYY-MM-DD)",
+    )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        default=False,
+        help="skip dates that already have saved files",
+    )
+    parser.add_argument(
         "--output-dir",
         type=str,
         default=None,
         help="base output directory (default: papers/ in repo root)",
     )
     return parser.parse_args()
+
+
+def has_existing_data(date_str: str, base_dir: Path) -> bool:
+    """check if data files already exist for a given date."""
+    out_dir = get_output_dir(base_dir, date_str)
+    md_path = out_dir / f"{date_str}.md"
+    return md_path.exists()
 
 
 def main():
@@ -243,33 +291,49 @@ def main():
         repo_root = Path(__file__).resolve().parent.parent
         base_dir = repo_root / "papers"
 
-    if args.date:
-        try:
-            start_date = datetime.strptime(args.date, "%Y-%m-%d")
-        except ValueError:
-            logger.error("invalid date format: %s (expected YYYY-MM-DD)", args.date)
+    # date range mode: --from-date / --to-date
+    if args.from_date or args.to_date:
+        if not args.from_date or not args.to_date:
+            logger.error("both --from-date and --to-date are required for range mode")
             sys.exit(1)
+        from_dt = parse_date(args.from_date)
+        to_dt = parse_date(args.to_date)
+        dates = generate_date_range(from_dt, to_dt)
+        logger.info("range mode: %s to %s (%d days)", args.from_date, args.to_date, len(dates))
     else:
-        start_date = datetime.now(timezone.utc)
+        # single date or backfill mode
+        if args.date:
+            try:
+                start_date = datetime.strptime(args.date, "%Y-%m-%d")
+            except ValueError:
+                logger.error("invalid date format: %s (expected YYYY-MM-DD)", args.date)
+                sys.exit(1)
+        else:
+            start_date = datetime.now(timezone.utc)
 
-    dates = []
-    if args.backfill > 0:
-        if args.backfill > MAX_BACKFILL_DAYS:
-            logger.error(
-                "backfill %d exceeds maximum of %d days",
-                args.backfill,
-                MAX_BACKFILL_DAYS,
-            )
-            sys.exit(1)
-        for i in range(args.backfill):
-            d = start_date - timedelta(days=i)
-            dates.append(d.strftime("%Y-%m-%d"))
-    else:
-        dates.append(start_date.strftime("%Y-%m-%d"))
+        dates = []
+        if args.backfill > 0:
+            if args.backfill > MAX_BACKFILL_DAYS:
+                logger.error(
+                    "backfill %d exceeds maximum of %d days",
+                    args.backfill,
+                    MAX_BACKFILL_DAYS,
+                )
+                sys.exit(1)
+            for i in range(args.backfill):
+                d = start_date - timedelta(days=i)
+                dates.append(d.strftime("%Y-%m-%d"))
+        else:
+            dates.append(start_date.strftime("%Y-%m-%d"))
 
     success_count = 0
+    skip_count = 0
     fail_count = 0
     for date_str in dates:
+        if args.skip_existing and has_existing_data(date_str, base_dir):
+            skip_count += 1
+            continue
+
         ok = fetch_and_save(date_str, base_dir)
         if ok:
             success_count += 1
@@ -278,7 +342,10 @@ def main():
         if len(dates) > 1:
             time.sleep(1)
 
-    logger.info("done: %d succeeded, %d failed", success_count, fail_count)
+    logger.info(
+        "done: %d succeeded, %d skipped, %d failed",
+        success_count, skip_count, fail_count,
+    )
     if fail_count > 0:
         sys.exit(1)
 

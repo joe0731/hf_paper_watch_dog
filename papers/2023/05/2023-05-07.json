@@ -1,0 +1,171 @@
+{
+  "date": "2023-05-07",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2023-05-07",
+  "papers": [
+    {
+      "arxiv_id": "2305.03111",
+      "title": "Can LLM Already Serve as A Database Interface? A BIg Bench for\n  Large-Scale Database Grounded Text-to-SQLs",
+      "authors": [
+        "Jinyang Li",
+        "Binyuan Hui",
+        "Ge Qu",
+        "Binhua Li",
+        "Jiaxi Yang",
+        "Bowen Li",
+        "Bailin Wang",
+        "Bowen Qin",
+        "Rongyu Cao",
+        "Ruiying Geng",
+        "Nan Huo",
+        "Chenhao Ma",
+        "Kevin C. C. Chang",
+        "Fei Huang",
+        "Reynold Cheng",
+        "Yongbin Li"
+      ],
+      "abstract": "Text-to-SQL parsing, which aims at converting natural language instructions\ninto executable SQLs, has gained increasing attention in recent years. In\nparticular, Codex and ChatGPT have shown impressive results in this task.\nHowever, most of the prevalent benchmarks, i.e., Spider, and WikiSQL, focus on\ndatabase schema with few rows of database contents leaving the gap between\nacademic study and real-world applications. To mitigate this gap, we present\nBird, a big benchmark for large-scale database grounded in text-to-SQL tasks,\ncontaining 12,751 pairs of text-to-SQL data and 95 databases with a total size\nof 33.4 GB, spanning 37 professional domains. Our emphasis on database values\nhighlights the new challenges of dirty database contents, external knowledge\nbetween NL questions and database contents, and SQL efficiency, particularly in\nthe context of massive databases. To solve these problems, text-to-SQL models\nmust feature database value comprehension in addition to semantic parsing. The\nexperimental results demonstrate the significance of database values in\ngenerating accurate text-to-SQLs for big databases. Furthermore, even the most\neffective text-to-SQL models, i.e. ChatGPT, only achieves 40.08% in execution\naccuracy, which is still far from the human result of 92.96%, proving that\nchallenges still stand. Besides, we also provide an efficiency analysis to\noffer insights into generating text-to-efficient-SQLs that are beneficial to\nindustries. We believe that BIRD will contribute to advancing real-world\napplications of text-to-SQL research. The leaderboard and source code are\navailable: https://bird-bench.github.io/.",
+      "published_at": "2023-05-04",
+      "submitted_at": "2023-05-07",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/bird-bench/mini_dev",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03111",
+      "arxiv_url": "https://arxiv.org/abs/2305.03111"
+    },
+    {
+      "arxiv_id": "2305.03726",
+      "title": "Otter: A Multi-Modal Model with In-Context Instruction Tuning",
+      "authors": [
+        "Bo Li",
+        "Yuanhan Zhang",
+        "Liangyu Chen",
+        "Jinghao Wang",
+        "Jingkang Yang",
+        "Ziwei Liu"
+      ],
+      "abstract": "Large language models (LLMs) have demonstrated significant universal\ncapabilities as few/zero-shot learners in various tasks due to their\npre-training on vast amounts of text data, as exemplified by GPT-3, which\nboosted to InstrctGPT and ChatGPT, effectively following natural language\ninstructions to accomplish real-world tasks. In this paper, we propose to\nintroduce instruction tuning into multi-modal models, motivated by the Flamingo\nmodel's upstream interleaved format pretraining dataset. We adopt a similar\napproach to construct our MultI-Modal In-Context Instruction Tuning (MIMIC-IT)\ndataset. We then introduce Otter, a multi-modal model based on OpenFlamingo\n(open-sourced version of DeepMind's Flamingo), trained on MIMIC-IT and\nshowcasing improved instruction-following ability and in-context learning. We\nalso optimize OpenFlamingo's implementation for researchers, democratizing the\nrequired training resources from 1times A100 GPU to 4times RTX-3090 GPUs,\nand integrate both OpenFlamingo and Otter into Huggingface Transformers for\nmore researchers to incorporate the models into their customized training and\ninference pipelines.",
+      "published_at": "2023-05-05",
+      "submitted_at": "2023-05-07",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "https://github.com/luodian/otter",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03726",
+      "arxiv_url": "https://arxiv.org/abs/2305.03726"
+    },
+    {
+      "arxiv_id": "2305.03695",
+      "title": "Vera: A General-Purpose Plausibility Estimation Model for Commonsense\n  Statements",
+      "authors": [
+        "Jiacheng Liu",
+        "Wenya Wang",
+        "Dianzhuo Wang",
+        "Noah A. Smith",
+        "Yejin Choi",
+        "Hannaneh Hajishirzi"
+      ],
+      "abstract": "Despite the much discussed capabilities of today's language models, they are\nstill prone to silly and unexpected commonsense failures. We consider a\nretrospective verification approach that reflects on the correctness of LM\noutputs, and introduce Vera, a general-purpose model that estimates the\nplausibility of declarative statements based on commonsense knowledge. Trained\non ~7M commonsense statements created from 19 QA datasets and two large-scale\nknowledge bases, and with a combination of three training objectives, Vera is a\nversatile model that effectively separates correct from incorrect statements\nacross diverse commonsense domains. When applied to solving commonsense\nproblems in the verification format, Vera substantially outperforms existing\nmodels that can be repurposed for commonsense verification, and it further\nexhibits generalization capabilities to unseen tasks and provides\nwell-calibrated outputs. We find that Vera excels at filtering LM-generated\ncommonsense knowledge and is useful in detecting erroneous commonsense\nstatements generated by models like ChatGPT in real-world settings.",
+      "published_at": "2023-05-05",
+      "submitted_at": "2023-05-07",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/liujch1998/vera",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03695",
+      "arxiv_url": "https://arxiv.org/abs/2305.03695"
+    },
+    {
+      "arxiv_id": "2305.03210",
+      "title": "AttentionViz: A Global View of Transformer Attention",
+      "authors": [
+        "Catherine Yeh",
+        "Yida Chen",
+        "Aoyu Wu",
+        "Cynthia Chen",
+        "Fernanda Viégas",
+        "Martin Wattenberg"
+      ],
+      "abstract": "Transformer models are revolutionizing machine learning, but their inner\nworkings remain mysterious. In this work, we present a new visualization\ntechnique designed to help researchers understand the self-attention mechanism\nin transformers that allows these models to learn rich, contextual\nrelationships between elements of a sequence. The main idea behind our method\nis to visualize a joint embedding of the query and key vectors used by\ntransformer models to compute attention. Unlike previous attention\nvisualization techniques, our approach enables the analysis of global patterns\nacross multiple input sequences. We create an interactive visualization tool,\nAttentionViz, based on these joint query-key embeddings, and use it to study\nattention mechanisms in both language and vision transformers. We demonstrate\nthe utility of our approach in improving model understanding and offering new\ninsights about query-key interactions through several application scenarios and\nexpert feedback.",
+      "published_at": "2023-05-04",
+      "submitted_at": "2023-05-07",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03210",
+      "arxiv_url": "https://arxiv.org/abs/2305.03210"
+    },
+    {
+      "arxiv_id": "2305.03509",
+      "title": "Diffusion Explainer: Visual Explanation for Text-to-image Stable\n  Diffusion",
+      "authors": [
+        "Seongmin Lee",
+        "Benjamin Hoover",
+        "Hendrik Strobelt",
+        "Zijie J. Wang",
+        "ShengYun Peng",
+        "Austin Wright",
+        "Kevin Li",
+        "Haekyu Park",
+        "Haoyang Yang",
+        "Duen Horng Chau"
+      ],
+      "abstract": "Diffusion-based generative models' impressive ability to create convincing\nimages has captured global attention. However, their complex internal\nstructures and operations often make them difficult for non-experts to\nunderstand. We present Diffusion Explainer, the first interactive visualization\ntool that explains how Stable Diffusion transforms text prompts into images.\nDiffusion Explainer tightly integrates a visual overview of Stable Diffusion's\ncomplex components with detailed explanations of their underlying operations,\nenabling users to fluidly transition between multiple levels of abstraction\nthrough animations and interactive elements. By comparing the evolutions of\nimage representations guided by two related text prompts over refinement\ntimesteps, users can discover the impact of prompts on image generation.\nDiffusion Explainer runs locally in users' web browsers without the need for\ninstallation or specialized hardware, broadening the public's education access\nto modern AI techniques. Our open-sourced tool is available at:\nhttps://poloclub.github.io/diffusion-explainer/.",
+      "published_at": "2023-05-04",
+      "submitted_at": "2023-05-07",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "https://github.com/poloclub/diffusion-explainer",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03509",
+      "arxiv_url": "https://arxiv.org/abs/2305.03509"
+    },
+    {
+      "arxiv_id": "2305.03514",
+      "title": "Can Large Language Models Transform Computational Social Science?",
+      "authors": [
+        "Caleb Ziems",
+        "William Held",
+        "Omar Shaikh",
+        "Jiaao Chen",
+        "Zhehao Zhang",
+        "Diyi Yang"
+      ],
+      "abstract": "Large Language Models (LLMs) like ChatGPT are capable of successfully\nperforming many language processing tasks zero-shot (without the need for\ntraining data). If this capacity also applies to the coding of social phenomena\nlike persuasiveness and political ideology, then LLMs could effectively\ntransform Computational Social Science (CSS). This work provides a road map for\nusing LLMs as CSS tools. Towards this end, we contribute a set of prompting\nbest practices and an extensive evaluation pipeline to measure the zero-shot\nperformance of 13 language models on 24 representative CSS benchmarks. On\ntaxonomic labeling tasks (classification), LLMs fail to outperform the best\nfine-tuned models but still achieve fair levels of agreement with humans. On\nfree-form coding tasks (generation), LLMs produce explanations that often\nexceed the quality of crowdworkers' gold references. We conclude that today's\nLLMs can radically augment the CSS research pipeline in two ways: (1) serving\nas zero-shot data annotators on human annotation teams, and (2) bootstrapping\nchallenging creative generation tasks (e.g., explaining the hidden meaning\nbehind text). In summary, LLMs can significantly reduce costs and increase\nefficiency of social science analysis in partnership with humans.",
+      "published_at": "2023-04-12",
+      "submitted_at": "2023-05-07",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "https://github.com/salt-nlp/llms_for_css",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03514",
+      "arxiv_url": "https://arxiv.org/abs/2305.03514"
+    },
+    {
+      "arxiv_id": "2305.03719",
+      "title": "Governance of the AI, by the AI, and for the AI",
+      "authors": [
+        "Andrew W. Torrance",
+        "Bill Tomlinson"
+      ],
+      "abstract": "Over the past half century, there have been several false dawns during which\nthe \"arrival\" of world-changing artificial intelligence (AI) has been heralded.\nTempting fate, the authors believe the age of AI has, indeed, finally arrived.\nPowerful image generators, such as DALL-E2 and Midjourney have suddenly allowed\nanyone with access the ability easily to create rich and complex art. In a\nsimilar vein, text generators, such as GPT3.5 (including ChatGPT) and BLOOM,\nallow users to compose detailed written descriptions of many topics of\ninterest. And, it is even possible now for a person without extensive expertise\nin writing software to use AI to generate code capable of myriad applications.\nWhile AI will continue to evolve and improve, probably at a rapid rate, the\ncurrent state of AI is already ushering in profound changes to many different\nsectors of society. Every new technology challenges the ability of humanity to\ngovern it wisely. However, governance is usually viewed as both possible and\nnecessary due to the disruption new technology often poses to social\nstructures, industries, the environment, and other important human concerns. In\nthis article, we offer an analysis of a range of interactions between AI and\ngovernance, with the hope that wise decisions may be made that maximize\nbenefits and minimize costs. The article addresses two main aspects of this\nrelationship: the governance of AI by humanity, and the governance of humanity\nby AI. The approach we have taken is itself informed by AI, as this article was\nwritten collaboratively by the authors and ChatGPT.",
+      "published_at": "2023-05-04",
+      "submitted_at": "2023-05-07",
+      "submitted_by": "AK",
+      "upvotes": 0,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03719",
+      "arxiv_url": "https://arxiv.org/abs/2305.03719"
+    }
+  ]
+}

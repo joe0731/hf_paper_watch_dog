@@ -1,0 +1,99 @@
+{
+  "date": "2023-07-17",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-07-17",
+  "papers": [
+    {
+      "arxiv_id": "2307.07218",
+      "title": "Mega-TTS 2: Zero-Shot Text-to-Speech with Arbitrary Length Speech\n  Prompts",
+      "authors": [
+        "Ziyue Jiang",
+        "Jinglin Liu",
+        "Yi Ren",
+        "Jinzheng He",
+        "Chen Zhang",
+        "Zhenhui Ye",
+        "Pengfei Wei",
+        "Chunfeng Wang",
+        "Xiang Yin",
+        "Zejun Ma",
+        "Zhou Zhao"
+      ],
+      "abstract": "Zero-shot text-to-speech aims at synthesizing voices with unseen speech\nprompts. Previous large-scale multispeaker TTS models have successfully\nachieved this goal with an enrolled recording within 10 seconds. However, most\nof them are designed to utilize only short speech prompts. The limited\ninformation in short speech prompts significantly hinders the performance of\nfine-grained identity imitation. In this paper, we introduce Mega-TTS 2, a\ngeneric zero-shot multispeaker TTS model that is capable of synthesizing speech\nfor unseen speakers with arbitrary-length prompts. Specifically, we 1) design a\nmulti-reference timbre encoder to extract timbre information from multiple\nreference speeches; 2) and train a prosody language model with arbitrary-length\nspeech prompts; With these designs, our model is suitable for prompts of\ndifferent lengths, which extends the upper bound of speech quality for\nzero-shot text-to-speech. Besides arbitrary-length prompts, we introduce\narbitrary-source prompts, which leverages the probabilities derived from\nmultiple P-LLM outputs to produce expressive and controlled prosody.\nFurthermore, we propose a phoneme-level auto-regressive duration model to\nintroduce in-context learning capabilities to duration modeling. Experiments\ndemonstrate that our method could not only synthesize identity-preserving\nspeech with a short prompt of an unseen speaker but also achieve improved\nperformance with longer speech prompts. Audio samples can be found in\nhttps://mega-tts.github.io/mega2_demo/.",
+      "published_at": "2023-07-14",
+      "submitted_at": "2023-07-17",
+      "submitted_by": "AK",
+      "upvotes": 28,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.07218",
+      "arxiv_url": "https://arxiv.org/abs/2307.07218"
+    },
+    {
+      "arxiv_id": "2307.07164",
+      "title": "Learning to Retrieve In-Context Examples for Large Language Models",
+      "authors": [
+        "Nan Yang",
+        "Furu Wei"
+      ],
+      "abstract": "Large language models (LLMs) have demonstrated their ability to learn\nin-context, allowing them to perform various tasks based on a few input-output\nexamples. However, the effectiveness of in-context learning is heavily reliant\non the quality of the selected examples. In this paper, we propose a novel\nframework to iteratively train dense retrievers that can identify high-quality\nin-context examples for LLMs. Our framework initially trains a reward model\nbased on LLM feedback to evaluate the quality of candidate examples, followed\nby knowledge distillation to train a bi-encoder based dense retriever. Our\nexperiments on a suite of 30 tasks demonstrate that our framework significantly\nenhances in-context learning performance. Furthermore, we show the\ngeneralization ability of our framework to unseen tasks during training. An\nin-depth analysis reveals that our model improves performance by retrieving\nexamples with similar patterns, and the gains are consistent across LLMs of\nvarying sizes.",
+      "published_at": "2023-07-14",
+      "submitted_at": "2023-07-17",
+      "submitted_by": "AK",
+      "upvotes": 23,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.07164",
+      "arxiv_url": "https://arxiv.org/abs/2307.07164"
+    },
+    {
+      "arxiv_id": "2307.07487",
+      "title": "DreamTeacher: Pretraining Image Backbones with Deep Generative Models",
+      "authors": [
+        "Daiqing Li",
+        "Huan Ling",
+        "Amlan Kar",
+        "David Acuna",
+        "Seung Wook Kim",
+        "Karsten Kreis",
+        "Antonio Torralba",
+        "Sanja Fidler"
+      ],
+      "abstract": "In this work, we introduce a self-supervised feature representation learning\nframework DreamTeacher that utilizes generative networks for pre-training\ndownstream image backbones. We propose to distill knowledge from a trained\ngenerative model into standard image backbones that have been well engineered\nfor specific perception tasks. We investigate two types of knowledge\ndistillation: 1) distilling learned generative features onto target image\nbackbones as an alternative to pretraining these backbones on large labeled\ndatasets such as ImageNet, and 2) distilling labels obtained from generative\nnetworks with task heads onto logits of target backbones. We perform extensive\nanalyses on multiple generative models, dense prediction benchmarks, and\nseveral pre-training regimes. We empirically find that our DreamTeacher\nsignificantly outperforms existing self-supervised representation learning\napproaches across the board. Unsupervised ImageNet pre-training with\nDreamTeacher leads to significant improvements over ImageNet classification\npre-training on downstream datasets, showcasing generative models, and\ndiffusion generative models specifically, as a promising approach to\nrepresentation learning on large, diverse datasets without requiring manual\nannotation.",
+      "published_at": "2023-07-14",
+      "submitted_at": "2023-07-17",
+      "submitted_by": "AK",
+      "upvotes": 21,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.07487",
+      "arxiv_url": "https://arxiv.org/abs/2307.07487"
+    },
+    {
+      "arxiv_id": "2307.07511",
+      "title": "NIFTY: Neural Object Interaction Fields for Guided Human Motion\n  Synthesis",
+      "authors": [
+        "Nilesh Kulkarni",
+        "Davis Rempe",
+        "Kyle Genova",
+        "Abhijit Kundu",
+        "Justin Johnson",
+        "David Fouhey",
+        "Leonidas Guibas"
+      ],
+      "abstract": "We address the problem of generating realistic 3D motions of humans\ninteracting with objects in a scene. Our key idea is to create a neural\ninteraction field attached to a specific object, which outputs the distance to\nthe valid interaction manifold given a human pose as input. This interaction\nfield guides the sampling of an object-conditioned human motion diffusion\nmodel, so as to encourage plausible contacts and affordance semantics. To\nsupport interactions with scarcely available data, we propose an automated\nsynthetic data pipeline. For this, we seed a pre-trained motion model, which\nhas priors for the basics of human movement, with interaction-specific anchor\nposes extracted from limited motion capture data. Using our guided diffusion\nmodel trained on generated synthetic data, we synthesize realistic motions for\nsitting and lifting with several objects, outperforming alternative approaches\nin terms of motion quality and successful action completion. We call our\nframework NIFTY: Neural Interaction Fields for Trajectory sYnthesis.",
+      "published_at": "2023-07-14",
+      "submitted_at": "2023-07-17",
+      "submitted_by": "AK",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.07511",
+      "arxiv_url": "https://arxiv.org/abs/2307.07511"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "date": "2023-12-22",
+  "total": 10,
+  "source": "https://huggingface.co/papers/date/2023-12-22",
+  "papers": [
+    {
+      "arxiv_id": "2312.13771",
+      "title": "AppAgent: Multimodal Agents as Smartphone Users",
+      "authors": [
+        "Chi Zhang",
+        "Zhao Yang",
+        "Jiaxuan Liu",
+        "Yucheng Han",
+        "Xin Chen",
+        "Zebiao Huang",
+        "Bin Fu",
+        "Gang Yu"
+      ],
+      "abstract": "Recent advancements in large language models (LLMs) have led to the creation\nof intelligent agents capable of performing complex tasks. This paper\nintroduces a novel LLM-based multimodal agent framework designed to operate\nsmartphone applications. Our framework enables the agent to operate smartphone\napplications through a simplified action space, mimicking human-like\ninteractions such as tapping and swiping. This novel approach bypasses the need\nfor system back-end access, thereby broadening its applicability across diverse\napps. Central to our agent's functionality is its innovative learning method.\nThe agent learns to navigate and use new apps either through autonomous\nexploration or by observing human demonstrations. This process generates a\nknowledge base that the agent refers to for executing complex tasks across\ndifferent applications. To demonstrate the practicality of our agent, we\nconducted extensive testing over 50 tasks in 10 different applications,\nincluding social media, email, maps, shopping, and sophisticated image editing\ntools. The results affirm our agent's proficiency in handling a diverse array\nof high-level tasks.",
+      "published_at": "2023-12-21",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 54,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.13771",
+      "arxiv_url": "https://arxiv.org/abs/2312.13771"
+    },
+    {
+      "arxiv_id": "2312.13913",
+      "title": "Paint3D: Paint Anything 3D with Lighting-Less Texture Diffusion Models",
+      "authors": [
+        "Xianfang Zeng",
+        "Xin Chen",
+        "Zhongqi Qi",
+        "Wen Liu",
+        "Zibo Zhao",
+        "Zhibin Wang",
+        "BIN FU",
+        "Yong Liu",
+        "Gang Yu"
+      ],
+      "abstract": "This paper presents Paint3D, a novel coarse-to-fine generative framework that\nis capable of producing high-resolution, lighting-less, and diverse 2K UV\ntexture maps for untextured 3D meshes conditioned on text or image inputs. The\nkey challenge addressed is generating high-quality textures without embedded\nillumination information, which allows the textures to be re-lighted or\nre-edited within modern graphics pipelines. To achieve this, our method first\nleverages a pre-trained depth-aware 2D diffusion model to generate\nview-conditional images and perform multi-view texture fusion, producing an\ninitial coarse texture map. However, as 2D models cannot fully represent 3D\nshapes and disable lighting effects, the coarse texture map exhibits incomplete\nareas and illumination artifacts. To resolve this, we train separate UV\nInpainting and UVHD diffusion models specialized for the shape-aware refinement\nof incomplete areas and the removal of illumination artifacts. Through this\ncoarse-to-fine process, Paint3D can produce high-quality 2K UV textures that\nmaintain semantic consistency while being lighting-less, significantly\nadvancing the state-of-the-art in texturing 3D objects.",
+      "published_at": "2023-12-21",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 24,
+      "organization": "",
+      "github_repo": "https://github.com/opentexture/paint3d",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.13913",
+      "arxiv_url": "https://arxiv.org/abs/2312.13913"
+    },
+    {
+      "arxiv_id": "2312.13401",
+      "title": "Time is Encoded in the Weights of Finetuned Language Models",
+      "authors": [
+        "Kai Nylund",
+        "Suchin Gururangan",
+        "Noah A. Smith"
+      ],
+      "abstract": "We present time vectors, a simple tool to customize language models to new\ntime periods. Time vectors are created by finetuning a language model on data\nfrom a single time (e.g., a year or month), and then subtracting the weights of\nthe original pretrained model. This vector specifies a direction in weight\nspace that, as our experiments show, improves performance on text from that\ntime period. Time vectors specialized to adjacent time periods appear to be\npositioned closer together in a manifold. Using this structure, we interpolate\nbetween time vectors to induce new models that perform better on intervening\nand future time periods, without any additional training. We demonstrate the\nconsistency of our findings across different tasks, domains, model sizes, and\ntime scales. Our results suggest that time is encoded in the weight space of\nfinetuned models.",
+      "published_at": "2023-12-20",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 20,
+      "organization": "",
+      "github_repo": "https://github.com/KaiNylund/lm-weights-encode-time",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.13401",
+      "arxiv_url": "https://arxiv.org/abs/2312.13401"
+    },
+    {
+      "arxiv_id": "2312.13964",
+      "title": "PIA: Your Personalized Image Animator via Plug-and-Play Modules in\n  Text-to-Image Models",
+      "authors": [
+        "Yiming Zhang",
+        "Zhening Xing",
+        "Yanhong Zeng",
+        "Youqing Fang",
+        "Kai Chen"
+      ],
+      "abstract": "Recent advancements in personalized text-to-image (T2I) models have\nrevolutionized content creation, empowering non-experts to generate stunning\nimages with unique styles. While promising, adding realistic motions into these\npersonalized images by text poses significant challenges in preserving distinct\nstyles, high-fidelity details, and achieving motion controllability by text. In\nthis paper, we present PIA, a Personalized Image Animator that excels in\naligning with condition images, achieving motion controllability by text, and\nthe compatibility with various personalized T2I models without specific tuning.\nTo achieve these goals, PIA builds upon a base T2I model with well-trained\ntemporal alignment layers, allowing for the seamless transformation of any\npersonalized T2I model into an image animation model. A key component of PIA is\nthe introduction of the condition module, which utilizes the condition frame\nand inter-frame affinity as input to transfer appearance information guided by\nthe affinity hint for individual frame synthesis in the latent space. This\ndesign mitigates the challenges of appearance-related image alignment within\nand allows for a stronger focus on aligning with motion-related guidance.",
+      "published_at": "2023-12-21",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "https://github.com/open-mmlab/PIA",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.13964",
+      "arxiv_url": "https://arxiv.org/abs/2312.13964"
+    },
+    {
+      "arxiv_id": "2312.14091",
+      "title": "HD-Painter: High-Resolution and Prompt-Faithful Text-Guided Image\n  Inpainting with Diffusion Models",
+      "authors": [
+        "Hayk Manukyan",
+        "Andranik Sargsyan",
+        "Barsegh Atanyan",
+        "Zhangyang Wang",
+        "Shant Navasardyan",
+        "Humphrey Shi"
+      ],
+      "abstract": "Recent progress in text-guided image inpainting, based on the unprecedented\nsuccess of text-to-image diffusion models, has led to exceptionally realistic\nand visually plausible results. However, there is still significant potential\nfor improvement in current text-to-image inpainting models, particularly in\nbetter aligning the inpainted area with user prompts and performing\nhigh-resolution inpainting. Therefore, in this paper we introduce HD-Painter, a\ncompletely training-free approach that accurately follows to prompts and\ncoherently scales to high-resolution image inpainting. To this end, we design\nthe Prompt-Aware Introverted Attention (PAIntA) layer enhancing self-attention\nscores by prompt information and resulting in better text alignment\ngenerations. To further improve the prompt coherence we introduce the\nReweighting Attention Score Guidance (RASG) mechanism seamlessly integrating a\npost-hoc sampling strategy into general form of DDIM to prevent\nout-of-distribution latent shifts. Moreover, HD-Painter allows extension to\nlarger scales by introducing a specialized super-resolution technique\ncustomized for inpainting, enabling the completion of missing regions in images\nof up to 2K resolution. Our experiments demonstrate that HD-Painter surpasses\nexisting state-of-the-art approaches qualitatively and quantitatively,\nachieving an impressive generation accuracy improvement of 61.4% vs 51.9%. We\nwill make the codes publicly available at:\nhttps://github.com/Picsart-AI-Research/HD-Painter",
+      "published_at": "2023-12-21",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/picsart-ai-research/hd-painter",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.14091",
+      "arxiv_url": "https://arxiv.org/abs/2312.14091"
+    },
+    {
+      "arxiv_id": "2312.13980",
+      "title": "Carve3D: Improving Multi-view Reconstruction Consistency for Diffusion\n  Models with RL Finetuning",
+      "authors": [
+        "Desai Xie",
+        "Jiahao Li",
+        "Hao Tan",
+        "Xin Sun",
+        "Zhixin Shu",
+        "Yi Zhou",
+        "Sai Bi",
+        "Sören Pirk",
+        "Arie E. Kaufman"
+      ],
+      "abstract": "Recent advancements in the text-to-3D task leverage finetuned text-to-image\ndiffusion models to generate multi-view images, followed by NeRF\nreconstruction. Yet, existing supervised finetuned (SFT) diffusion models still\nsuffer from multi-view inconsistency and the resulting NeRF artifacts. Although\ntraining longer with SFT improves consistency, it also causes distribution\nshift, which reduces diversity and realistic details. We argue that the SFT of\nmulti-view diffusion models resembles the instruction finetuning stage of the\nLLM alignment pipeline and can benefit from RL finetuning (RLFT) methods.\nEssentially, RLFT methods optimize models beyond their SFT data distribution by\nusing their own outputs, effectively mitigating distribution shift. To this\nend, we introduce Carve3D, a RLFT method coupled with the Multi-view\nReconstruction Consistency (MRC) metric, to improve the consistency of\nmulti-view diffusion models. To compute MRC on a set of multi-view images, we\ncompare them with their corresponding renderings of the reconstructed NeRF at\nthe same viewpoints. We validate the robustness of MRC with extensive\nexperiments conducted under controlled inconsistency levels. We enhance the\nbase RLFT algorithm to stabilize the training process, reduce distribution\nshift, and identify scaling laws. Through qualitative and quantitative\nexperiments, along with a user study, we demonstrate Carve3D's improved\nmulti-view consistency, the resulting superior NeRF reconstruction quality, and\nminimal distribution shift compared to longer SFT. Project webpage:\nhttps://desaixie.github.io/carve-3d.",
+      "published_at": "2023-12-21",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.13980",
+      "arxiv_url": "https://arxiv.org/abs/2312.13980"
+    },
+    {
+      "arxiv_id": "2312.13324",
+      "title": "ShowRoom3D: Text to High-Quality 3D Room Generation Using 3D Priors",
+      "authors": [
+        "Weijia Mao",
+        "Yan-Pei Cao",
+        "Jia-Wei Liu",
+        "Zhongcong Xu",
+        "Mike Zheng Shou"
+      ],
+      "abstract": "We introduce ShowRoom3D, a three-stage approach for generating high-quality\n3D room-scale scenes from texts. Previous methods using 2D diffusion priors to\noptimize neural radiance fields for generating room-scale scenes have shown\nunsatisfactory quality. This is primarily attributed to the limitations of 2D\npriors lacking 3D awareness and constraints in the training methodology. In\nthis paper, we utilize a 3D diffusion prior, MVDiffusion, to optimize the 3D\nroom-scale scene. Our contributions are in two aspects. Firstly, we propose a\nprogressive view selection process to optimize NeRF. This involves dividing the\ntraining process into three stages, gradually expanding the camera sampling\nscope. Secondly, we propose the pose transformation method in the second stage.\nIt will ensure MVDiffusion provide the accurate view guidance. As a result,\nShowRoom3D enables the generation of rooms with improved structural integrity,\nenhanced clarity from any view, reduced content repetition, and higher\nconsistency across different perspectives. Extensive experiments demonstrate\nthat our method, significantly outperforms state-of-the-art approaches by a\nlarge margin in terms of user study.",
+      "published_at": "2023-12-20",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.13324",
+      "arxiv_url": "https://arxiv.org/abs/2312.13324"
+    },
+    {
+      "arxiv_id": "2312.13314",
+      "title": "Unlocking Pre-trained Image Backbones for Semantic Image Synthesis",
+      "authors": [
+        "Tariq Berrada",
+        "Jakob Verbeek",
+        "Camille Couprie",
+        "Karteek Alahari"
+      ],
+      "abstract": "Semantic image synthesis, i.e., generating images from user-provided semantic\nlabel maps, is an important conditional image generation task as it allows to\ncontrol both the content as well as the spatial layout of generated images.\nAlthough diffusion models have pushed the state of the art in generative image\nmodeling, the iterative nature of their inference process makes them\ncomputationally demanding. Other approaches such as GANs are more efficient as\nthey only need a single feed-forward pass for generation, but the image quality\ntends to suffer on large and diverse datasets. In this work, we propose a new\nclass of GAN discriminators for semantic image synthesis that generates highly\nrealistic images by exploiting feature backbone networks pre-trained for tasks\nsuch as image classification. We also introduce a new generator architecture\nwith better context modeling and using cross-attention to inject noise into\nlatent variables, leading to more diverse generated images. Our model, which we\ndub DP-SIMS, achieves state-of-the-art results in terms of image quality and\nconsistency with the input label maps on ADE-20K, COCO-Stuff, and Cityscapes,\nsurpassing recent diffusion models while requiring two orders of magnitude less\ncompute for inference.",
+      "published_at": "2023-12-20",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.13314",
+      "arxiv_url": "https://arxiv.org/abs/2312.13314"
+    },
+    {
+      "arxiv_id": "2312.14140",
+      "title": "HeadCraft: Modeling High-Detail Shape Variations for Animated 3DMMs",
+      "authors": [
+        "Artem Sevastopolsky",
+        "Philip-William Grassal",
+        "Simon Giebenhain",
+        "ShahRukh Athar",
+        "Luisa Verdoliva",
+        "Matthias Niessner"
+      ],
+      "abstract": "Current advances in human head modeling allow to generate plausible-looking\n3D head models via neural representations. Nevertheless, constructing complete\nhigh-fidelity head models with explicitly controlled animation remains an\nissue. Furthermore, completing the head geometry based on a partial\nobservation, e.g. coming from a depth sensor, while preserving details is often\nproblematic for the existing methods. We introduce a generative model for\ndetailed 3D head meshes on top of an articulated 3DMM which allows explicit\nanimation and high-detail preservation at the same time. Our method is trained\nin two stages. First, we register a parametric head model with vertex\ndisplacements to each mesh of the recently introduced NPHM dataset of accurate\n3D head scans. The estimated displacements are baked into a hand-crafted UV\nlayout. Second, we train a StyleGAN model in order to generalize over the UV\nmaps of displacements. The decomposition of the parametric model and\nhigh-quality vertex displacements allows us to animate the model and modify it\nsemantically. We demonstrate the results of unconditional generation and\nfitting to the full or partial observation. The project page is available at\nhttps://seva100.github.io/headcraft.",
+      "published_at": "2023-12-21",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.14140",
+      "arxiv_url": "https://arxiv.org/abs/2312.14140"
+    },
+    {
+      "arxiv_id": "2312.13528",
+      "title": "DyBluRF: Dynamic Deblurring Neural Radiance Fields for Blurry Monocular\n  Video",
+      "authors": [
+        "Minh-Quan Viet Bui",
+        "Jongmin Park",
+        "Jihyong Oh",
+        "Munchurl Kim"
+      ],
+      "abstract": "Video view synthesis, allowing for the creation of visually appealing frames\nfrom arbitrary viewpoints and times, offers immersive viewing experiences.\nNeural radiance fields, particularly NeRF, initially developed for static\nscenes, have spurred the creation of various methods for video view synthesis.\nHowever, the challenge for video view synthesis arises from motion blur, a\nconsequence of object or camera movement during exposure, which hinders the\nprecise synthesis of sharp spatio-temporal views. In response, we propose a\nnovel dynamic deblurring NeRF framework for blurry monocular video, called\nDyBluRF, consisting of an Interleave Ray Refinement (IRR) stage and a Motion\nDecomposition-based Deblurring (MDD) stage. Our DyBluRF is the first that\naddresses and handles the novel view synthesis for blurry monocular video. The\nIRR stage jointly reconstructs dynamic 3D scenes and refines the inaccurate\ncamera pose information to combat imprecise pose information extracted from the\ngiven blurry frames. The MDD stage is a novel incremental latent sharp-rays\nprediction (ILSP) approach for the blurry monocular video frames by decomposing\nthe latent sharp rays into global camera motion and local object motion\ncomponents. Extensive experimental results demonstrate that our DyBluRF\noutperforms qualitatively and quantitatively the very recent state-of-the-art\nmethods. Our project page including source codes and pretrained model are\npublicly available at https://kaist-viclab.github.io/dyblurf-site/.",
+      "published_at": "2023-12-21",
+      "submitted_at": "2023-12-22",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2312.13528",
+      "arxiv_url": "https://arxiv.org/abs/2312.13528"
+    }
+  ]
+}

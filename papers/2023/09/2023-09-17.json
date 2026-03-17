@@ -1,0 +1,118 @@
+{
+  "date": "2023-09-17",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2023-09-17",
+  "papers": [
+    {
+      "arxiv_id": "2309.08210",
+      "title": "Investigating Answerability of LLMs for Long-Form Question Answering",
+      "authors": [
+        "Meghana Moorthy Bhat",
+        "Rui Meng",
+        "Ye Liu",
+        "Yingbo Zhou",
+        "Semih Yavuz"
+      ],
+      "abstract": "As we embark on a new era of LLMs, it becomes increasingly crucial to\nunderstand their capabilities, limitations, and differences. Toward making\nfurther progress in this direction, we strive to build a deeper understanding\nof the gaps between massive LLMs (e.g., ChatGPT) and smaller yet effective\nopen-source LLMs and their distilled counterparts. To this end, we specifically\nfocus on long-form question answering (LFQA) because it has several practical\nand impactful applications (e.g., troubleshooting, customer service, etc.) yet\nis still understudied and challenging for LLMs. We propose a\nquestion-generation method from abstractive summaries and show that generating\nfollow-up questions from summaries of long documents can create a challenging\nsetting for LLMs to reason and infer from long contexts. Our experimental\nresults confirm that: (1) our proposed method of generating questions from\nabstractive summaries pose a challenging setup for LLMs and shows performance\ngaps between LLMs like ChatGPT and open-source LLMs (Alpaca, Llama) (2)\nopen-source LLMs exhibit decreased reliance on context for generated questions\nfrom the original document, but their generation capabilities drop\nsignificantly on generated questions from summaries -- especially for longer\ncontexts (>1024 tokens)",
+      "published_at": "2023-09-15",
+      "submitted_at": "2023-09-17",
+      "submitted_by": "AK",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.08210",
+      "arxiv_url": "https://arxiv.org/abs/2309.08210"
+    },
+    {
+      "arxiv_id": "2309.08172",
+      "title": "LASER: LLM Agent with State-Space Exploration for Web Navigation",
+      "authors": [
+        "Kaixin Ma",
+        "Hongming Zhang",
+        "Hongwei Wang",
+        "Xiaoman Pan",
+        "Dong Yu"
+      ],
+      "abstract": "Large language models (LLMs) have been successfully adapted for interactive\ndecision-making tasks like web navigation. While achieving decent performance,\nprevious methods implicitly assume a forward-only execution mode for the model,\nwhere they only provide oracle trajectories as in-context examples to teach the\nmodel how to reason in the interactive environment. Consequently, the model\ncould not handle more challenging scenarios not covered in the in-context\nexamples, e.g., mistakes, leading to sub-optimal performance. To address this\nissue, we propose to model the interactive task as state space exploration,\nwhere the LLM agent transitions among a pre-defined set of states by performing\nactions to complete the task. This formulation enables flexible back-tracking,\nallowing the model to easily recover from errors. We evaluate our proposed LLM\nAgent with State-Space ExploRation (LASER) on the WebShop task. Experimental\nresults show that our LASER agent significantly outperforms previous methods\nand closes the gap with human performance on the web navigation task.",
+      "published_at": "2023-09-15",
+      "submitted_at": "2023-09-17",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/mayer123/laser",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.08172",
+      "arxiv_url": "https://arxiv.org/abs/2309.08172"
+    },
+    {
+      "arxiv_id": "2309.07990",
+      "title": "Leveraging Contextual Information for Effective Entity Salience\n  Detection",
+      "authors": [
+        "Rajarshi Bhowmik",
+        "Marco Ponza",
+        "Atharva Tendle",
+        "Anant Gupta",
+        "Rebecca Jiang",
+        "Xingyu Lu",
+        "Qian Zhao",
+        "Daniel Preotiuc-Pietro"
+      ],
+      "abstract": "In text documents such as news articles, the content and key events usually\nrevolve around a subset of all the entities mentioned in a document. These\nentities, often deemed as salient entities, provide useful cues of the\naboutness of a document to a reader. Identifying the salience of entities was\nfound helpful in several downstream applications such as search, ranking, and\nentity-centric summarization, among others. Prior work on salient entity\ndetection mainly focused on machine learning models that require heavy feature\nengineering. We show that fine-tuning medium-sized language models with a\ncross-encoder style architecture yields substantial performance gains over\nfeature engineering approaches. To this end, we conduct a comprehensive\nbenchmarking of four publicly available datasets using models representative of\nthe medium-sized pre-trained language model family. Additionally, we show that\nzero-shot prompting of instruction-tuned language models yields inferior\nresults, indicating the task's uniqueness and complexity.",
+      "published_at": "2023-09-14",
+      "submitted_at": "2023-09-17",
+      "submitted_by": "AK",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.07990",
+      "arxiv_url": "https://arxiv.org/abs/2309.07990"
+    },
+    {
+      "arxiv_id": "2309.07970",
+      "title": "Language Embedded Radiance Fields for Zero-Shot Task-Oriented Grasping",
+      "authors": [
+        "Adam Rashid",
+        "Satvik Sharma",
+        "Chung Min Kim",
+        "Justin Kerr",
+        "Lawrence Chen",
+        "Angjoo Kanazawa",
+        "Ken Goldberg"
+      ],
+      "abstract": "Grasping objects by a specific part is often crucial for safety and for\nexecuting downstream tasks. Yet, learning-based grasp planners lack this\nbehavior unless they are trained on specific object part data, making it a\nsignificant challenge to scale object diversity. Instead, we propose LERF-TOGO,\nLanguage Embedded Radiance Fields for Task-Oriented Grasping of Objects, which\nuses vision-language models zero-shot to output a grasp distribution over an\nobject given a natural language query. To accomplish this, we first reconstruct\na LERF of the scene, which distills CLIP embeddings into a multi-scale 3D\nlanguage field queryable with text. However, LERF has no sense of objectness,\nmeaning its relevancy outputs often return incomplete activations over an\nobject which are insufficient for subsequent part queries. LERF-TOGO mitigates\nthis lack of spatial grouping by extracting a 3D object mask via DINO features\nand then conditionally querying LERF on this mask to obtain a semantic\ndistribution over the object with which to rank grasps from an off-the-shelf\ngrasp planner. We evaluate LERF-TOGO's ability to grasp task-oriented object\nparts on 31 different physical objects, and find it selects grasps on the\ncorrect part in 81% of all trials and grasps successfully in 69%. See the\nproject website at: lerftogo.github.io",
+      "published_at": "2023-09-14",
+      "submitted_at": "2023-09-17",
+      "submitted_by": "AK",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.07970",
+      "arxiv_url": "https://arxiv.org/abs/2309.07970"
+    },
+    {
+      "arxiv_id": "2309.07974",
+      "title": "A Data Source for Reasoning Embodied Agents",
+      "authors": [
+        "Jack Lanchantin",
+        "Sainbayar Sukhbaatar",
+        "Gabriel Synnaeve",
+        "Yuxuan Sun",
+        "Kavya Srinet",
+        "Arthur Szlam"
+      ],
+      "abstract": "Recent progress in using machine learning models for reasoning tasks has been\ndriven by novel model architectures, large-scale pre-training protocols, and\ndedicated reasoning datasets for fine-tuning. In this work, to further pursue\nthese advances, we introduce a new data generator for machine reasoning that\nintegrates with an embodied agent. The generated data consists of templated\ntext queries and answers, matched with world-states encoded into a database.\nThe world-states are a result of both world dynamics and the actions of the\nagent. We show the results of several baseline models on instantiations of\ntrain sets. These include pre-trained language models fine-tuned on a\ntext-formatted representation of the database, and graph-structured\nTransformers operating on a knowledge-graph representation of the database. We\nfind that these models can answer some questions about the world-state, but\nstruggle with others. These results hint at new research directions in\ndesigning neural reasoning models and database representations. Code to\ngenerate the data will be released at github.com/facebookresearch/neuralmemory",
+      "published_at": "2023-09-14",
+      "submitted_at": "2023-09-17",
+      "submitted_by": "AK",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "https://github.com/facebookresearch/neuralmemory",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2309.07974",
+      "arxiv_url": "https://arxiv.org/abs/2309.07974"
+    }
+  ]
+}

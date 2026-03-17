@@ -1,0 +1,253 @@
+{
+  "date": "2024-01-25",
+  "total": 11,
+  "source": "https://huggingface.co/papers/date/2024-01-25",
+  "papers": [
+    {
+      "arxiv_id": "2401.13627",
+      "title": "Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic\n  Image Restoration In the Wild",
+      "authors": [
+        "Fanghua Yu",
+        "Jinjin Gu",
+        "Zheyuan Li",
+        "Jinfan Hu",
+        "Xiangtao Kong",
+        "Xintao Wang",
+        "Jingwen He",
+        "Yu Qiao",
+        "Chao Dong"
+      ],
+      "abstract": "We introduce SUPIR (Scaling-UP Image Restoration), a groundbreaking image\nrestoration method that harnesses generative prior and the power of model\nscaling up. Leveraging multi-modal techniques and advanced generative prior,\nSUPIR marks a significant advance in intelligent and realistic image\nrestoration. As a pivotal catalyst within SUPIR, model scaling dramatically\nenhances its capabilities and demonstrates new potential for image restoration.\nWe collect a dataset comprising 20 million high-resolution, high-quality images\nfor model training, each enriched with descriptive text annotations. SUPIR\nprovides the capability to restore images guided by textual prompts, broadening\nits application scope and potential. Moreover, we introduce negative-quality\nprompts to further improve perceptual quality. We also develop a\nrestoration-guided sampling method to suppress the fidelity issue encountered\nin generative-based restoration. Experiments demonstrate SUPIR's exceptional\nrestoration effects and its novel capacity to manipulate restoration through\ntextual prompts.",
+      "published_at": "2024-01-24",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 78,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13627",
+      "arxiv_url": "https://arxiv.org/abs/2401.13627"
+    },
+    {
+      "arxiv_id": "2401.13660",
+      "title": "MambaByte: Token-free Selective State Space Model",
+      "authors": [
+        "Junxiong Wang",
+        "Tushaar Gangavarapu",
+        "Jing Nathan Yan",
+        "Alexander M Rush"
+      ],
+      "abstract": "Token-free language models learn directly from raw bytes and remove the bias\nof subword tokenization. Operating on bytes, however, results in significantly\nlonger sequences, and standard autoregressive Transformers scale poorly in such\nsettings. We experiment with MambaByte, a token-free adaptation of the Mamba\nstate space model, trained autoregressively on byte sequences. Our experiments\nindicate the computational efficiency of MambaByte compared to other byte-level\nmodels. We also find MambaByte to be competitive with and even outperform\nstate-of-the-art subword Transformers. Furthermore, owing to linear scaling in\nlength, MambaByte benefits from fast inference compared to Transformers. Our\nfindings establish the viability of MambaByte in enabling token-free language\nmodeling.",
+      "published_at": "2024-01-24",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 60,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13660",
+      "arxiv_url": "https://arxiv.org/abs/2401.13660"
+    },
+    {
+      "arxiv_id": "2401.13601",
+      "title": "MM-LLMs: Recent Advances in MultiModal Large Language Models",
+      "authors": [
+        "Duzhen Zhang",
+        "Yahan Yu",
+        "Chenxing Li",
+        "Jiahua Dong",
+        "Dan Su",
+        "Chenhui Chu",
+        "Dong Yu"
+      ],
+      "abstract": "In the past year, MultiModal Large Language Models (MM-LLMs) have undergone\nsubstantial advancements, augmenting off-the-shelf LLMs to support MM inputs or\noutputs via cost-effective training strategies. The resulting models not only\npreserve the inherent reasoning and decision-making capabilities of LLMs but\nalso empower a diverse range of MM tasks. In this paper, we provide a\ncomprehensive survey aimed at facilitating further research of MM-LLMs.\nSpecifically, we first outline general design formulations for model\narchitecture and training pipeline. Subsequently, we provide brief\nintroductions of 26 existing MM-LLMs, each characterized by its specific\nformulations. Additionally, we review the performance of MM-LLMs on mainstream\nbenchmarks and summarize key training recipes to enhance the potency of\nMM-LLMs. Lastly, we explore promising directions for MM-LLMs while concurrently\nmaintaining a real-time tracking website for the latest developments in the\nfield. We hope that this survey contributes to the ongoing advancement of the\nMM-LLMs domain.",
+      "published_at": "2024-01-24",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 48,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13601",
+      "arxiv_url": "https://arxiv.org/abs/2401.13601"
+    },
+    {
+      "arxiv_id": "2401.13919",
+      "title": "WebVoyager: Building an End-to-End Web Agent with Large Multimodal\n  Models",
+      "authors": [
+        "Hongliang He",
+        "Wenlin Yao",
+        "Kaixin Ma",
+        "Wenhao Yu",
+        "Yong Dai",
+        "Hongming Zhang",
+        "Zhenzhong Lan",
+        "Dong Yu"
+      ],
+      "abstract": "The advancement of large language models (LLMs) leads to a new era marked by\nthe development of autonomous applications in the real world, which drives\ninnovation in the creation of advanced web-based agents. Existing web agents\ntypically only handle one input modality and are evaluated only in simplified\nweb simulators or static web snapshots, greatly limiting their applicability in\nreal-world scenarios. To bridge this gap, we introduce WebVoyager, an\ninnovative Large Multimodal Model (LMM) powered web agent that can complete\nuser instructions end-to-end by interacting with real-world websites. Moreover,\nwe propose a new evaluation protocol for web agents to address the challenges\nof automatic evaluation of open-ended web agent tasks, leveraging the robust\nmultimodal comprehension capabilities of GPT-4V. We create a new benchmark by\ngathering real-world tasks from 15 widely used websites to evaluate our agents.\nWe show that WebVoyager achieves a 55.7% task success rate, significantly\nsurpassing the performance of both GPT-4 (All Tools) and the WebVoyager\n(text-only) setups, underscoring the exceptional capability of WebVoyager in\npractical applications. We found that our proposed automatic evaluation\nachieves 85.3% agreement with human judgment, paving the way for further\ndevelopment of web agents in a real-world setting.",
+      "published_at": "2024-01-25",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 32,
+      "organization": "",
+      "github_repo": "https://github.com/minorjerry/webvoyager",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13919",
+      "arxiv_url": "https://arxiv.org/abs/2401.13919"
+    },
+    {
+      "arxiv_id": "2401.13974",
+      "title": "BootPIG: Bootstrapping Zero-shot Personalized Image Generation\n  Capabilities in Pretrained Diffusion Models",
+      "authors": [
+        "Senthil Purushwalkam",
+        "Akash Gokul",
+        "Shafiq Joty",
+        "Nikhil Naik"
+      ],
+      "abstract": "Recent text-to-image generation models have demonstrated incredible success\nin generating images that faithfully follow input prompts. However, the\nrequirement of using words to describe a desired concept provides limited\ncontrol over the appearance of the generated concepts. In this work, we address\nthis shortcoming by proposing an approach to enable personalization\ncapabilities in existing text-to-image diffusion models. We propose a novel\narchitecture (BootPIG) that allows a user to provide reference images of an\nobject in order to guide the appearance of a concept in the generated images.\n  The proposed BootPIG architecture makes minimal modifications to a pretrained\ntext-to-image diffusion model and utilizes a separate UNet model to steer the\ngenerations toward the desired appearance. We introduce a training procedure\nthat allows us to bootstrap personalization capabilities in the BootPIG\narchitecture using data generated from pretrained text-to-image models, LLM\nchat agents, and image segmentation models. In contrast to existing methods\nthat require several days of pretraining, the BootPIG architecture can be\ntrained in approximately 1 hour. Experiments on the DreamBooth dataset\ndemonstrate that BootPIG outperforms existing zero-shot methods while being\ncomparable with test-time finetuning approaches. Through a user study, we\nvalidate the preference for BootPIG generations over existing methods both in\nmaintaining fidelity to the reference object's appearance and aligning with\ntextual prompts.",
+      "published_at": "2024-01-25",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/SalesforceAIResearch/bootpig",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13974",
+      "arxiv_url": "https://arxiv.org/abs/2401.13974"
+    },
+    {
+      "arxiv_id": "2401.13388",
+      "title": "UNIMO-G: Unified Image Generation through Multimodal Conditional\n  Diffusion",
+      "authors": [
+        "Wei Li",
+        "Xue Xu",
+        "Jiachen Liu",
+        "Xinyan Xiao"
+      ],
+      "abstract": "Existing text-to-image diffusion models primarily generate images from text\nprompts. However, the inherent conciseness of textual descriptions poses\nchallenges in faithfully synthesizing images with intricate details, such as\nspecific entities or scenes. This paper presents UNIMO-G, a simple\nmultimodal conditional diffusion framework that operates on multimodal prompts\nwith interleaved textual and visual inputs, which demonstrates a unified\nability for both text-driven and subject-driven image generation. UNIMO-G\ncomprises two core components: a Multimodal Large Language Model (MLLM) for\nencoding multimodal prompts, and a conditional denoising diffusion network for\ngenerating images based on the encoded multimodal input. We leverage a\ntwo-stage training strategy to effectively train the framework: firstly\npre-training on large-scale text-image pairs to develop conditional image\ngeneration capabilities, and then instruction tuning with multimodal prompts to\nachieve unified image generation proficiency. A well-designed data processing\npipeline involving language grounding and image segmentation is employed to\nconstruct multi-modal prompts. UNIMO-G excels in both text-to-image generation\nand zero-shot subject-driven synthesis, and is notably effective in generating\nhigh-fidelity images from complex multimodal prompts involving multiple image\nentities.",
+      "published_at": "2024-01-24",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13388",
+      "arxiv_url": "https://arxiv.org/abs/2401.13388"
+    },
+    {
+      "arxiv_id": "2401.13160",
+      "title": "SpacTor-T5: Pre-training T5 Models with Span Corruption and Replaced\n  Token Detection",
+      "authors": [
+        "Ke Ye",
+        "Heinrich Jiang",
+        "Afshin Rostamizadeh",
+        "Ayan Chakrabarti",
+        "Giulia DeSalvo",
+        "Jean-François Kagy",
+        "Lazaros Karydas",
+        "Gui Citovsky",
+        "Sanjiv Kumar"
+      ],
+      "abstract": "Pre-training large language models is known to be extremely resource\nintensive and often times inefficient, under-utilizing the information\nencapsulated in the training text sequences. In this paper, we present SpacTor,\na new training procedure consisting of (1) a hybrid objective combining span\ncorruption (SC) and token replacement detection (RTD), and (2) a two-stage\ncurriculum that optimizes the hybrid objective over the initial tau\niterations, then transitions to standard SC loss. We show empirically that the\neffectiveness of the hybrid objective is tied to the two-stage pre-training\nschedule, and provide extensive analysis on why this is the case. In our\nexperiments with encoder-decoder architectures (T5) on a variety of NLP tasks,\nSpacTor-T5 yields the same downstream performance as standard SC pre-training,\nwhile enabling a 50% reduction in pre-training iterations and 40% reduction in\ntotal FLOPs. Alternatively, given the same amount of computing budget, we find\nthat SpacTor results in significantly improved downstream benchmark\nperformance.",
+      "published_at": "2024-01-24",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 13,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13160",
+      "arxiv_url": "https://arxiv.org/abs/2401.13160"
+    },
+    {
+      "arxiv_id": "2401.14257",
+      "title": "Sketch2NeRF: Multi-view Sketch-guided Text-to-3D Generation",
+      "authors": [
+        "Minglin Chen",
+        "Longguang Wang",
+        "Weihao Yuan",
+        "Yukun Wang",
+        "Zhe Sheng",
+        "Yisheng He",
+        "Zilong Dong",
+        "Liefeng Bo",
+        "Yulan Guo"
+      ],
+      "abstract": "Recently, text-to-3D approaches have achieved high-fidelity 3D content\ngeneration using text description. However, the generated objects are\nstochastic and lack fine-grained control. Sketches provide a cheap approach to\nintroduce such fine-grained control. Nevertheless, it is challenging to achieve\nflexible control from these sketches due to their abstraction and ambiguity. In\nthis paper, we present a multi-view sketch-guided text-to-3D generation\nframework (namely, Sketch2NeRF) to add sketch control to 3D generation.\nSpecifically, our method leverages pretrained 2D diffusion models (e.g., Stable\nDiffusion and ControlNet) to supervise the optimization of a 3D scene\nrepresented by a neural radiance field (NeRF). We propose a novel synchronized\ngeneration and reconstruction method to effectively optimize the NeRF. In the\nexperiments, we collected two kinds of multi-view sketch datasets to evaluate\nthe proposed method. We demonstrate that our method can synthesize 3D\nconsistent contents with fine-grained sketch control while being high-fidelity\nto text prompts. Extensive results show that our method achieves\nstate-of-the-art performance in terms of sketch similarity and text alignment.",
+      "published_at": "2024-01-25",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.14257",
+      "arxiv_url": "https://arxiv.org/abs/2401.14257"
+    },
+    {
+      "arxiv_id": "2401.13311",
+      "title": "ConTextual: Evaluating Context-Sensitive Text-Rich Visual Reasoning in\n  Large Multimodal Models",
+      "authors": [
+        "Rohan Wadhawan",
+        "Hritik Bansal",
+        "Kai-Wei Chang",
+        "Nanyun Peng"
+      ],
+      "abstract": "Recent advancements in AI have led to the development of large multimodal\nmodels (LMMs) capable of processing complex tasks involving joint reasoning\nover text and visual content in the image (e.g., navigating maps in public\nplaces). This paper introduces ConTextual, a novel benchmark comprising\ninstructions designed explicitly to evaluate LMMs' ability to perform\ncontext-sensitive text-rich visual reasoning. ConTextual emphasizes diverse\nreal-world scenarios (e.g., time-reading, navigation, shopping and more)\ndemanding a deeper understanding of the interactions between textual and visual\nelements. Our findings reveal a significant performance gap of 30.8% between\nthe best-performing LMM, GPT-4V(ision), and human capabilities using human\nevaluation indicating substantial room for improvement in context-sensitive\ntext-rich visual reasoning. Notably, while GPT-4V excelled in abstract\ncategories like meme and quote interpretation, its overall performance still\nlagged behind humans. In addition to human evaluations, we also employed\nautomatic evaluation metrics using GPT-4, uncovering similar trends in\nperformance disparities. We also perform a fine-grained evaluation across\ndiverse visual contexts and provide qualitative analysis which provides a\nrobust framework for future advancements in the LMM design.\nhttps://con-textual.github.io/",
+      "published_at": "2024-01-24",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/rohan598/contextual",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13311",
+      "arxiv_url": "https://arxiv.org/abs/2401.13311"
+    },
+    {
+      "arxiv_id": "2401.13303",
+      "title": "MaLA-500: Massive Language Adaptation of Large Language Models",
+      "authors": [
+        "Peiqin Lin",
+        "Jörg Tiedemann",
+        "André F. T. Martins",
+        "Hinrich Schütze"
+      ],
+      "abstract": "Large language models have advanced the state of the art in natural language\nprocessing. However, their predominant design for English or a limited set of\nlanguages creates a substantial gap in their effectiveness for low-resource\nlanguages. To bridge this gap, we introduce MaLA-500, a novel large language\nmodel designed to cover an extensive range of 534 languages. To train MaLA-500,\nwe employ vocabulary extension and continued pretraining on LLaMA 2 with\nGlot500-c. Our experiments on SIB-200 show that MaLA-500 achieves\nstate-of-the-art in-context learning results. We release MaLA-500 at\nhttps://huggingface.co/MaLA-LM",
+      "published_at": "2024-01-24",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.13303",
+      "arxiv_url": "https://arxiv.org/abs/2401.13303"
+    },
+    {
+      "arxiv_id": "2401.14066",
+      "title": "CreativeSynth: Creative Blending and Synthesis of Visual Arts based on\n  Multimodal Diffusion",
+      "authors": [
+        "Nisha Huang",
+        "Weiming Dong",
+        "Yuxin Zhang",
+        "Fan Tang",
+        "Ronghui Li",
+        "Chongyang Ma",
+        "Xiu Li",
+        "Changsheng Xu"
+      ],
+      "abstract": "Large-scale text-to-image generative models have made impressive strides,\nshowcasing their ability to synthesize a vast array of high-quality images.\nHowever, adapting these models for artistic image editing presents two\nsignificant challenges. Firstly, users struggle to craft textual prompts that\nmeticulously detail visual elements of the input image. Secondly, prevalent\nmodels, when effecting modifications in specific zones, frequently disrupt the\noverall artistic style, complicating the attainment of cohesive and\naesthetically unified artworks. To surmount these obstacles, we build the\ninnovative unified framework CreativeSynth, which is based on a diffusion model\nwith the ability to coordinate multimodal inputs and multitask in the field of\nartistic image generation. By integrating multimodal features with customized\nattention mechanisms, CreativeSynth facilitates the importation of real-world\nsemantic content into the domain of art through inversion and real-time style\ntransfer. This allows for the precise manipulation of image style and content\nwhile maintaining the integrity of the original model parameters. Rigorous\nqualitative and quantitative evaluations underscore that CreativeSynth excels\nin enhancing artistic images' fidelity and preserves their innate aesthetic\nessence. By bridging the gap between generative models and artistic finesse,\nCreativeSynth becomes a custom digital palette.",
+      "published_at": "2024-01-25",
+      "submitted_at": "2024-01-25",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/haha-lisa/CreativeSynth",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2401.14066",
+      "arxiv_url": "https://arxiv.org/abs/2401.14066"
+    }
+  ]
+}

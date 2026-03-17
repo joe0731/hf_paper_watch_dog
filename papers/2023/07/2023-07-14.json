@@ -1,0 +1,102 @@
+{
+  "date": "2023-07-14",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-07-14",
+  "papers": [
+    {
+      "arxiv_id": "2307.06949",
+      "title": "HyperDreamBooth: HyperNetworks for Fast Personalization of Text-to-Image\n  Models",
+      "authors": [
+        "Nataniel Ruiz",
+        "Yuanzhen Li",
+        "Varun Jampani",
+        "Wei Wei",
+        "Tingbo Hou",
+        "Yael Pritch",
+        "Neal Wadhwa",
+        "Michael Rubinstein",
+        "Kfir Aberman"
+      ],
+      "abstract": "Personalization has emerged as a prominent aspect within the field of\ngenerative AI, enabling the synthesis of individuals in diverse contexts and\nstyles, while retaining high-fidelity to their identities. However, the process\nof personalization presents inherent challenges in terms of time and memory\nrequirements. Fine-tuning each personalized model needs considerable GPU time\ninvestment, and storing a personalized model per subject can be demanding in\nterms of storage capacity. To overcome these challenges, we propose\nHyperDreamBooth-a hypernetwork capable of efficiently generating a small set of\npersonalized weights from a single image of a person. By composing these\nweights into the diffusion model, coupled with fast finetuning, HyperDreamBooth\ncan generate a person's face in various contexts and styles, with high subject\ndetails while also preserving the model's crucial knowledge of diverse styles\nand semantic modifications. Our method achieves personalization on faces in\nroughly 20 seconds, 25x faster than DreamBooth and 125x faster than Textual\nInversion, using as few as one reference image, with the same quality and style\ndiversity as DreamBooth. Also our method yields a model that is 10000x smaller\nthan a normal DreamBooth model. Project page: https://hyperdreambooth.github.io",
+      "published_at": "2023-07-13",
+      "submitted_at": "2023-07-14",
+      "submitted_by": "AK",
+      "upvotes": 52,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.06949",
+      "arxiv_url": "https://arxiv.org/abs/2307.06949"
+    },
+    {
+      "arxiv_id": "2307.06925",
+      "title": "Domain-Agnostic Tuning-Encoder for Fast Personalization of Text-To-Image\n  Models",
+      "authors": [
+        "Moab Arar",
+        "Rinon Gal",
+        "Yuval Atzmon",
+        "Gal Chechik",
+        "Daniel Cohen-Or",
+        "Ariel Shamir",
+        "Amit H. Bermano"
+      ],
+      "abstract": "Text-to-image (T2I) personalization allows users to guide the creative image\ngeneration process by combining their own visual concepts in natural language\nprompts. Recently, encoder-based techniques have emerged as a new effective\napproach for T2I personalization, reducing the need for multiple images and\nlong training times. However, most existing encoders are limited to a\nsingle-class domain, which hinders their ability to handle diverse concepts. In\nthis work, we propose a domain-agnostic method that does not require any\nspecialized dataset or prior information about the personalized concepts. We\nintroduce a novel contrastive-based regularization technique to maintain high\nfidelity to the target concept characteristics while keeping the predicted\nembeddings close to editable regions of the latent space, by pushing the\npredicted tokens toward their nearest existing CLIP tokens. Our experimental\nresults demonstrate the effectiveness of our approach and show how the learned\ntokens are more semantic than tokens predicted by unregularized models. This\nleads to a better representation that achieves state-of-the-art performance\nwhile being more flexible than previous methods.",
+      "published_at": "2023-07-13",
+      "submitted_at": "2023-07-14",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.06925",
+      "arxiv_url": "https://arxiv.org/abs/2307.06925"
+    },
+    {
+      "arxiv_id": "2307.06940",
+      "title": "Animate-A-Story: Storytelling with Retrieval-Augmented Video Generation",
+      "authors": [
+        "Yingqing He",
+        "Menghan Xia",
+        "Haoxin Chen",
+        "Xiaodong Cun",
+        "Yuan Gong",
+        "Jinbo Xing",
+        "Yong Zhang",
+        "Xintao Wang",
+        "Chao Weng",
+        "Ying Shan",
+        "Qifeng Chen"
+      ],
+      "abstract": "Generating videos for visual storytelling can be a tedious and complex\nprocess that typically requires either live-action filming or graphics\nanimation rendering. To bypass these challenges, our key idea is to utilize the\nabundance of existing video clips and synthesize a coherent storytelling video\nby customizing their appearances. We achieve this by developing a framework\ncomprised of two functional modules: (i) Motion Structure Retrieval, which\nprovides video candidates with desired scene or motion context described by\nquery texts, and (ii) Structure-Guided Text-to-Video Synthesis, which generates\nplot-aligned videos under the guidance of motion structure and text prompts.\nFor the first module, we leverage an off-the-shelf video retrieval system and\nextract video depths as motion structure. For the second module, we propose a\ncontrollable video generation model that offers flexible controls over\nstructure and characters. The videos are synthesized by following the\nstructural guidance and appearance instruction. To ensure visual consistency\nacross clips, we propose an effective concept personalization approach, which\nallows the specification of the desired character identities through text\nprompts. Extensive experiments demonstrate that our approach exhibits\nsignificant advantages over various existing baselines.",
+      "published_at": "2023-07-13",
+      "submitted_at": "2023-07-14",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/videocrafter/animate-a-story",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.06940",
+      "arxiv_url": "https://arxiv.org/abs/2307.06940"
+    },
+    {
+      "arxiv_id": "2307.06857",
+      "title": "Self-consistency for open-ended generations",
+      "authors": [
+        "Siddhartha Jain",
+        "Xiaofei Ma",
+        "Anoop Deoras",
+        "Bing Xiang"
+      ],
+      "abstract": "In this paper, we present a novel approach for improving the quality and\nconsistency of generated outputs from large-scale pre-trained language models\n(LLMs). Self-consistency has emerged as an effective approach for prompts with\nfixed answers, selecting the answer with the highest number of votes. In this\npaper, we introduce a generalized framework for self-consistency that extends\nits applicability beyond problems that have fixed-answer answers. Through\nextensive simulations, we demonstrate that our approach consistently recovers\nthe optimal or near-optimal generation from a set of candidates. We also\npropose lightweight parameter-free similarity functions that show significant\nand consistent improvements across code generation, autoformalization, and\nsummarization tasks, even without access to token log probabilities. Our method\nincurs minimal computational overhead, requiring no auxiliary reranker models\nor modifications to the existing model.",
+      "published_at": "2023-07-11",
+      "submitted_at": "2023-07-14",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2307.06857",
+      "arxiv_url": "https://arxiv.org/abs/2307.06857"
+    }
+  ]
+}

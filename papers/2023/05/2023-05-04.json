@@ -1,0 +1,92 @@
+{
+  "date": "2023-05-04",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2023-05-04",
+  "papers": [
+    {
+      "arxiv_id": "2305.03048",
+      "title": "Personalize Segment Anything Model with One Shot",
+      "authors": [
+        "Renrui Zhang",
+        "Ziyu Guo",
+        "Shilin Yan",
+        "Junting Pan",
+        "Hao Dong",
+        "Peng Gao",
+        "Hongsheng Li"
+      ],
+      "abstract": "Driven by large-data pre-training, Segment Anything Model (SAM) has been\ndemonstrated as a powerful and promptable framework, revolutionizing the\nsegmentation models. Despite the generality, customizing SAM for specific\nvisual concepts without man-powered prompting is under explored, e.g.,\nautomatically segmenting your pet dog in different images. In this paper, we\npropose a training-free Personalization approach for SAM, termed as PerSAM.\nGiven only a single image with a reference mask, PerSAM first localizes the\ntarget concept by a location prior, and segments it within other images or\nvideos via three techniques: target-guided attention, target-semantic\nprompting, and cascaded post-refinement. In this way, we effectively adapt SAM\nfor private use without any training. To further alleviate the mask ambiguity,\nwe present an efficient one-shot fine-tuning variant, PerSAM-F. Freezing the\nentire SAM, we introduce two learnable weights for multi-scale masks, only\ntraining 2 parameters within 10 seconds for improved performance. To\ndemonstrate our efficacy, we construct a new segmentation dataset, PerSeg, for\npersonalized evaluation, and test our methods on video object segmentation with\ncompetitive performance. Besides, our approach can also enhance DreamBooth to\npersonalize Stable Diffusion for text-to-image generation, which discards the\nbackground disturbance for better target appearance learning. Code is released\nat https://github.com/ZrrSkywalker/Personalize-SAM",
+      "published_at": "2023-05-04",
+      "submitted_at": "2023-05-04",
+      "submitted_by": "AK",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/zrrskywalker/personalize-sam",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03048",
+      "arxiv_url": "https://arxiv.org/abs/2305.03048"
+    },
+    {
+      "arxiv_id": "2305.02483",
+      "title": "ChatGPT-steered Editing Instructor for Customization of Abstractive\n  Summarization",
+      "authors": [
+        "Wen Xiao",
+        "Yujia Xie",
+        "Giuseppe Carenini",
+        "Pengcheng He"
+      ],
+      "abstract": "Tailoring outputs of large language models, such as ChatGPT, to specific user\nneeds remains a challenge despite their impressive generation quality. In this\npaper, we propose a tri-agent generation pipeline consisting of a generator, an\ninstructor, and an editor to enhance the customization of generated outputs.\nThe generator produces an initial output, the user-specific instructor\ngenerates editing instructions, and the editor generates a revised output\naligned with user preferences. The inference-only large language model\n(ChatGPT) serves as both the generator and the editor, while a smaller model\nacts as the user-specific instructor to guide the generation process toward\nuser needs. The instructor is trained using editor-steered reinforcement\nlearning, leveraging feedback from the large-scale editor model to optimize\ninstruction generation. Experimental results on two abstractive summarization\ndatasets demonstrate the effectiveness of our approach in generating outputs\nthat better fulfill user expectations.",
+      "published_at": "2023-05-04",
+      "submitted_at": "2023-05-04",
+      "submitted_by": "AK",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "https://github.com/wendy-xiao/chatgpt_editing_summ",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.02483",
+      "arxiv_url": "https://arxiv.org/abs/2305.02483"
+    },
+    {
+      "arxiv_id": "2305.02463",
+      "title": "Shap-E: Generating Conditional 3D Implicit Functions",
+      "authors": [
+        "Heewoo Jun",
+        "Alex Nichol"
+      ],
+      "abstract": "We present Shap-E, a conditional generative model for 3D assets. Unlike\nrecent work on 3D generative models which produce a single output\nrepresentation, Shap-E directly generates the parameters of implicit functions\nthat can be rendered as both textured meshes and neural radiance fields. We\ntrain Shap-E in two stages: first, we train an encoder that deterministically\nmaps 3D assets into the parameters of an implicit function; second, we train a\nconditional diffusion model on outputs of the encoder. When trained on a large\ndataset of paired 3D and text data, our resulting models are capable of\ngenerating complex and diverse 3D assets in a matter of seconds. When compared\nto Point-E, an explicit generative model over point clouds, Shap-E converges\nfaster and reaches comparable or better sample quality despite modeling a\nhigher-dimensional, multi-representation output space. We release model\nweights, inference code, and samples at https://github.com/openai/shap-e.",
+      "published_at": "2023-05-03",
+      "submitted_at": "2023-05-04",
+      "submitted_by": "AK",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "https://github.com/openai/shap-e",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.02463",
+      "arxiv_url": "https://arxiv.org/abs/2305.02463"
+    },
+    {
+      "arxiv_id": "2305.03047",
+      "title": "Principle-Driven Self-Alignment of Language Models from Scratch with\n  Minimal Human Supervision",
+      "authors": [
+        "Zhiqing Sun",
+        "Yikang Shen",
+        "Qinhong Zhou",
+        "Hongxin Zhang",
+        "Zhenfang Chen",
+        "David Cox",
+        "Yiming Yang",
+        "Chuang Gan"
+      ],
+      "abstract": "Recent AI-assistant agents, such as ChatGPT, predominantly rely on supervised\nfine-tuning (SFT) with human annotations and reinforcement learning from human\nfeedback (RLHF) to align the output of large language models (LLMs) with human\nintentions, ensuring they are helpful, ethical, and reliable. However, this\ndependence can significantly constrain the true potential of AI-assistant\nagents due to the high cost of obtaining human supervision and the related\nissues on quality, reliability, diversity, self-consistency, and undesirable\nbiases. To address these challenges, we propose a novel approach called\nSELF-ALIGN, which combines principle-driven reasoning and the generative power\nof LLMs for the self-alignment of AI agents with minimal human supervision. Our\napproach encompasses four stages: first, we use an LLM to generate synthetic\nprompts, and a topic-guided method to augment the prompt diversity; second, we\nuse a small set of human-written principles for AI models to follow, and guide\nthe LLM through in-context learning from demonstrations (of principles\napplication) to produce helpful, ethical, and reliable responses to user's\nqueries; third, we fine-tune the original LLM with the high-quality\nself-aligned responses so that the resulting model can generate desirable\nresponses for each query directly without the principle set and the\ndemonstrations anymore; and finally, we offer a refinement step to address the\nissues of overly-brief or indirect responses. Applying SELF-ALIGN to the\nLLaMA-65b base language model, we develop an AI assistant named Dromedary. With\nfewer than 300 lines of human annotations (including < 200 seed prompts, 16\ngeneric principles, and 5 exemplars for in-context learning). Dromedary\nsignificantly surpasses the performance of several state-of-the-art AI systems,\nincluding Text-Davinci-003 and Alpaca, on benchmark datasets with various\nsettings.",
+      "published_at": "2023-05-04",
+      "submitted_at": "2023-05-04",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "https://github.com/IBM/Dromedary",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.03047",
+      "arxiv_url": "https://arxiv.org/abs/2305.03047"
+    }
+  ]
+}

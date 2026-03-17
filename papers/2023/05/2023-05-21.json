@@ -1,0 +1,145 @@
+{
+  "date": "2023-05-21",
+  "total": 6,
+  "source": "https://huggingface.co/papers/date/2023-05-21",
+  "papers": [
+    {
+      "arxiv_id": "2305.11206",
+      "title": "LIMA: Less Is More for Alignment",
+      "authors": [
+        "Chunting Zhou",
+        "Pengfei Liu",
+        "Puxin Xu",
+        "Srini Iyer",
+        "Jiao Sun",
+        "Yuning Mao",
+        "Xuezhe Ma",
+        "Avia Efrat",
+        "Ping Yu",
+        "Lili Yu",
+        "Susan Zhang",
+        "Gargi Ghosh",
+        "Mike Lewis",
+        "Luke Zettlemoyer",
+        "Omer Levy"
+      ],
+      "abstract": "Large language models are trained in two stages: (1) unsupervised pretraining\nfrom raw text, to learn general-purpose representations, and (2) large scale\ninstruction tuning and reinforcement learning, to better align to end tasks and\nuser preferences. We measure the relative importance of these two stages by\ntraining LIMA, a 65B parameter LLaMa language model fine-tuned with the\nstandard supervised loss on only 1,000 carefully curated prompts and responses,\nwithout any reinforcement learning or human preference modeling. LIMA\ndemonstrates remarkably strong performance, learning to follow specific\nresponse formats from only a handful of examples in the training data,\nincluding complex queries that range from planning trip itineraries to\nspeculating about alternate history. Moreover, the model tends to generalize\nwell to unseen tasks that did not appear in the training data. In a controlled\nhuman study, responses from LIMA are either equivalent or strictly preferred to\nGPT-4 in 43% of cases; this statistic is as high as 58% when compared to Bard\nand 65% versus DaVinci003, which was trained with human feedback. Taken\ntogether, these results strongly suggest that almost all knowledge in large\nlanguage models is learned during pretraining, and only limited instruction\ntuning data is necessary to teach models to produce high quality output.",
+      "published_at": "2023-05-18",
+      "submitted_at": "2023-05-21",
+      "submitted_by": "AK",
+      "upvotes": 27,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.11206",
+      "arxiv_url": "https://arxiv.org/abs/2305.11206"
+    },
+    {
+      "arxiv_id": "2305.11846",
+      "title": "Any-to-Any Generation via Composable Diffusion",
+      "authors": [
+        "Zineng Tang",
+        "Ziyi Yang",
+        "Chenguang Zhu",
+        "Michael Zeng",
+        "Mohit Bansal"
+      ],
+      "abstract": "We present Composable Diffusion (CoDi), a novel generative model capable of\ngenerating any combination of output modalities, such as language, image,\nvideo, or audio, from any combination of input modalities. Unlike existing\ngenerative AI systems, CoDi can generate multiple modalities in parallel and\nits input is not limited to a subset of modalities like text or image. Despite\nthe absence of training datasets for many combinations of modalities, we\npropose to align modalities in both the input and output space. This allows\nCoDi to freely condition on any input combination and generate any group of\nmodalities, even if they are not present in the training data. CoDi employs a\nnovel composable generation strategy which involves building a shared\nmultimodal space by bridging alignment in the diffusion process, enabling the\nsynchronized generation of intertwined modalities, such as temporally aligned\nvideo and audio. Highly customizable and flexible, CoDi achieves strong\njoint-modality generation quality, and outperforms or is on par with the\nunimodal state-of-the-art for single-modality synthesis. The project page with\ndemonstrations and code is at https://codi-gen.github.io",
+      "published_at": "2023-05-19",
+      "submitted_at": "2023-05-21",
+      "submitted_by": "AK",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/microsoft/i-Code",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.11846",
+      "arxiv_url": "https://arxiv.org/abs/2305.11846"
+    },
+    {
+      "arxiv_id": "2305.11870",
+      "title": "Chupa: Carving 3D Clothed Humans from Skinned Shape Priors using 2D\n  Diffusion Probabilistic Models",
+      "authors": [
+        "Byungjun Kim",
+        "Patrick Kwon",
+        "Kwangho Lee",
+        "Myunggi Lee",
+        "Sookwan Han",
+        "Daesik Kim",
+        "Hanbyul Joo"
+      ],
+      "abstract": "We propose a 3D generation pipeline that uses diffusion models to generate\nrealistic human digital avatars. Due to the wide variety of human identities,\nposes, and stochastic details, the generation of 3D human meshes has been a\nchallenging problem. To address this, we decompose the problem into 2D normal\nmap generation and normal map-based 3D reconstruction. Specifically, we first\nsimultaneously generate realistic normal maps for the front and backside of a\nclothed human, dubbed dual normal maps, using a pose-conditional diffusion\nmodel. For 3D reconstruction, we ``carve'' the prior SMPL-X mesh to a detailed\n3D mesh according to the normal maps through mesh optimization. To further\nenhance the high-frequency details, we present a diffusion resampling scheme on\nboth body and facial regions, thus encouraging the generation of realistic\ndigital avatars. We also seamlessly incorporate a recent text-to-image\ndiffusion model to support text-based human identity control. Our method,\nnamely, Chupa, is capable of generating realistic 3D clothed humans with better\nperceptual quality and identity variety.",
+      "published_at": "2023-05-19",
+      "submitted_at": "2023-05-21",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "https://github.com/snuvclab/chupa",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.11870",
+      "arxiv_url": "https://arxiv.org/abs/2305.11870"
+    },
+    {
+      "arxiv_id": "2305.11588",
+      "title": "Text2NeRF: Text-Driven 3D Scene Generation with Neural Radiance Fields",
+      "authors": [
+        "Jingbo Zhang",
+        "Xiaoyu Li",
+        "Ziyu Wan",
+        "Can Wang",
+        "Jing Liao"
+      ],
+      "abstract": "Text-driven 3D scene generation is widely applicable to video gaming, film\nindustry, and metaverse applications that have a large demand for 3D scenes.\nHowever, existing text-to-3D generation methods are limited to producing 3D\nobjects with simple geometries and dreamlike styles that lack realism. In this\nwork, we present Text2NeRF, which is able to generate a wide range of 3D scenes\nwith complicated geometric structures and high-fidelity textures purely from a\ntext prompt. To this end, we adopt NeRF as the 3D representation and leverage a\npre-trained text-to-image diffusion model to constrain the 3D reconstruction of\nthe NeRF to reflect the scene description. Specifically, we employ the\ndiffusion model to infer the text-related image as the content prior and use a\nmonocular depth estimation method to offer the geometric prior. Both content\nand geometric priors are utilized to update the NeRF model. To guarantee\ntextured and geometric consistency between different views, we introduce a\nprogressive scene inpainting and updating strategy for novel view synthesis of\nthe scene. Our method requires no additional training data but only a natural\nlanguage description of the scene as the input. Extensive experiments\ndemonstrate that our Text2NeRF outperforms existing methods in producing\nphoto-realistic, multi-view consistent, and diverse 3D scenes from a variety of\nnatural language prompts.",
+      "published_at": "2023-05-19",
+      "submitted_at": "2023-05-21",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "https://github.com/eckertzhang/text2nerf",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.11588",
+      "arxiv_url": "https://arxiv.org/abs/2305.11588"
+    },
+    {
+      "arxiv_id": "2305.11337",
+      "title": "RoomDreamer: Text-Driven 3D Indoor Scene Synthesis with Coherent\n  Geometry and Texture",
+      "authors": [
+        "Liangchen Song",
+        "Liangliang Cao",
+        "Hongyu Xu",
+        "Kai Kang",
+        "Feng Tang",
+        "Junsong Yuan",
+        "Yang Zhao"
+      ],
+      "abstract": "The techniques for 3D indoor scene capturing are widely used, but the meshes\nproduced leave much to be desired. In this paper, we propose \"RoomDreamer\",\nwhich leverages powerful natural language to synthesize a new room with a\ndifferent style. Unlike existing image synthesis methods, our work addresses\nthe challenge of synthesizing both geometry and texture aligned to the input\nscene structure and prompt simultaneously. The key insight is that a scene\nshould be treated as a whole, taking into account both scene texture and\ngeometry. The proposed framework consists of two significant components:\nGeometry Guided Diffusion and Mesh Optimization. Geometry Guided Diffusion for\n3D Scene guarantees the consistency of the scene style by applying the 2D prior\nto the entire scene simultaneously. Mesh Optimization improves the geometry and\ntexture jointly and eliminates the artifacts in the scanned scene. To validate\nthe proposed method, real indoor scenes scanned with smartphones are used for\nextensive experiments, through which the effectiveness of our method is\ndemonstrated.",
+      "published_at": "2023-05-18",
+      "submitted_at": "2023-05-21",
+      "submitted_by": "AK",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.11337",
+      "arxiv_url": "https://arxiv.org/abs/2305.11337"
+    },
+    {
+      "arxiv_id": "2305.11675",
+      "title": "Cinematic Mindscapes: High-quality Video Reconstruction from Brain\n  Activity",
+      "authors": [
+        "Zijiao Chen",
+        "Jiaxin Qing",
+        "Juan Helen Zhou"
+      ],
+      "abstract": "Reconstructing human vision from brain activities has been an appealing task\nthat helps to understand our cognitive process. Even though recent research has\nseen great success in reconstructing static images from non-invasive brain\nrecordings, work on recovering continuous visual experiences in the form of\nvideos is limited. In this work, we propose Mind-Video that learns\nspatiotemporal information from continuous fMRI data of the cerebral cortex\nprogressively through masked brain modeling, multimodal contrastive learning\nwith spatiotemporal attention, and co-training with an augmented Stable\nDiffusion model that incorporates network temporal inflation. We show that\nhigh-quality videos of arbitrary frame rates can be reconstructed with\nMind-Video using adversarial guidance. The recovered videos were evaluated with\nvarious semantic and pixel-level metrics. We achieved an average accuracy of\n85% in semantic classification tasks and 0.19 in structural similarity index\n(SSIM), outperforming the previous state-of-the-art by 45%. We also show that\nour model is biologically plausible and interpretable, reflecting established\nphysiological processes.",
+      "published_at": "2023-05-19",
+      "submitted_at": "2023-05-21",
+      "submitted_by": "AK",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2305.11675",
+      "arxiv_url": "https://arxiv.org/abs/2305.11675"
+    }
+  ]
+}

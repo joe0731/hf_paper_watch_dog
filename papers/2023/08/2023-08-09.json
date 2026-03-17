@@ -1,0 +1,123 @@
+{
+  "date": "2023-08-09",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2023-08-09",
+  "papers": [
+    {
+      "arxiv_id": "2308.04079",
+      "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+      "authors": [
+        "Bernhard Kerbl",
+        "Georgios Kopanas",
+        "Thomas Leimkühler",
+        "George Drettakis"
+      ],
+      "abstract": "Radiance Field methods have recently revolutionized novel-view synthesis of\nscenes captured with multiple photos or videos. However, achieving high visual\nquality still requires neural networks that are costly to train and render,\nwhile recent faster methods inevitably trade off speed for quality. For\nunbounded and complete scenes (rather than isolated objects) and 1080p\nresolution rendering, no current method can achieve real-time display rates. We\nintroduce three key elements that allow us to achieve state-of-the-art visual\nquality while maintaining competitive training times and importantly allow\nhigh-quality real-time (>= 30 fps) novel-view synthesis at 1080p resolution.\nFirst, starting from sparse points produced during camera calibration, we\nrepresent the scene with 3D Gaussians that preserve desirable properties of\ncontinuous volumetric radiance fields for scene optimization while avoiding\nunnecessary computation in empty space; Second, we perform interleaved\noptimization/density control of the 3D Gaussians, notably optimizing\nanisotropic covariance to achieve an accurate representation of the scene;\nThird, we develop a fast visibility-aware rendering algorithm that supports\nanisotropic splatting and both accelerates training and allows realtime\nrendering. We demonstrate state-of-the-art visual quality and real-time\nrendering on several established datasets.",
+      "published_at": "2023-08-08",
+      "submitted_at": "2023-08-09",
+      "submitted_by": "AK",
+      "upvotes": 199,
+      "organization": "",
+      "github_repo": "https://github.com/graphdeco-inria/gaussian-splatting",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.04079",
+      "arxiv_url": "https://arxiv.org/abs/2308.04079"
+    },
+    {
+      "arxiv_id": "2308.03958",
+      "title": "Simple synthetic data reduces sycophancy in large language models",
+      "authors": [
+        "Jerry Wei",
+        "Da Huang",
+        "Yifeng Lu",
+        "Denny Zhou",
+        "Quoc V. Le"
+      ],
+      "abstract": "Sycophancy is an undesirable behavior where models tailor their responses to\nfollow a human user's view even when that view is not objectively correct\n(e.g., adapting liberal views once a user reveals that they are liberal). In\nthis paper, we study the prevalence of sycophancy in language models and\npropose a simple synthetic-data intervention to reduce this behavior.\n  First, on a set of three sycophancy tasks (Perez et al., 2022) where models\nare asked for an opinion on statements with no correct answers (e.g.,\npolitics), we observe that both model scaling and instruction tuning\nsignificantly increase sycophancy for PaLM models up to 540B parameters.\nSecond, we extend sycophancy evaluations to simple addition statements that are\nobjectively incorrect, finding that despite knowing that these statements are\nwrong, language models will still agree with them if the user does as well.\n  To reduce sycophancy, we present a straightforward synthetic-data\nintervention that takes public NLP tasks and encourages models to be robust to\nuser opinions on these tasks. Adding these data in a lightweight finetuning\nstep can significantly reduce sycophantic behavior on held-out prompts. Code\nfor generating synthetic data for intervention can be found at\nhttps://github.com/google/sycophancy-intervention.",
+      "published_at": "2023-08-07",
+      "submitted_at": "2023-08-09",
+      "submitted_by": "AK",
+      "upvotes": 23,
+      "organization": "",
+      "github_repo": "https://github.com/google/sycophancy-intervention",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.03958",
+      "arxiv_url": "https://arxiv.org/abs/2308.03958"
+    },
+    {
+      "arxiv_id": "2308.04265",
+      "title": "FLIRT: Feedback Loop In-context Red Teaming",
+      "authors": [
+        "Ninareh Mehrabi",
+        "Palash Goyal",
+        "Christophe Dupuy",
+        "Qian Hu",
+        "Shalini Ghosh",
+        "Richard Zemel",
+        "Kai-Wei Chang",
+        "Aram Galstyan",
+        "Rahul Gupta"
+      ],
+      "abstract": "Warning: this paper contains content that may be inappropriate or offensive.\n  As generative models become available for public use in various applications,\ntesting and analyzing vulnerabilities of these models has become a priority.\nHere we propose an automatic red teaming framework that evaluates a given model\nand exposes its vulnerabilities against unsafe and inappropriate content\ngeneration. Our framework uses in-context learning in a feedback loop to red\nteam models and trigger them into unsafe content generation. We propose\ndifferent in-context attack strategies to automatically learn effective and\ndiverse adversarial prompts for text-to-image models. Our experiments\ndemonstrate that compared to baseline approaches, our proposed strategy is\nsignificantly more effective in exposing vulnerabilities in Stable Diffusion\n(SD) model, even when the latter is enhanced with safety features. Furthermore,\nwe demonstrate that the proposed framework is effective for red teaming\ntext-to-text models, resulting in significantly higher toxic response\ngeneration rate compared to previously reported numbers.",
+      "published_at": "2023-08-08",
+      "submitted_at": "2023-08-09",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.04265",
+      "arxiv_url": "https://arxiv.org/abs/2308.04265"
+    },
+    {
+      "arxiv_id": "2308.03793",
+      "title": "ReCLIP: Refine Contrastive Language Image Pre-Training with Source Free\n  Domain Adaptation",
+      "authors": [
+        "Hu. Xuefeng",
+        "Zhang. Ke",
+        "Xia. Lu",
+        "Chen. Albert",
+        "Luo. Jiajia",
+        "Sun. Yuyin",
+        "Wang. Ken",
+        "Qiao. Nan",
+        "Zeng. Xiao",
+        "Sun. Min",
+        "Kuo. Cheng-Hao",
+        "Nevatia. Ram"
+      ],
+      "abstract": "Large-scale Pre-Training Vision-Language Model such as CLIP has demonstrated\noutstanding performance in zero-shot classification, e.g. achieving 76.3% top-1\naccuracy on ImageNet without seeing any example, which leads to potential\nbenefits to many tasks that have no labeled data. However, while applying CLIP\nto a downstream target domain, the presence of visual and text domain gaps and\ncross-modality misalignment can greatly impact the model performance. To\naddress such challenges, we propose ReCLIP, the first source-free domain\nadaptation method for vision-language models, which does not require any source\ndata or target labeled data. ReCLIP first learns a projection space to mitigate\nthe misaligned visual-text embeddings and learns pseudo labels, and then\ndeploys cross-modality self-training with the pseudo labels, to update visual\nand text encoders, refine labels and reduce domain gaps and misalignments\niteratively. With extensive experiments, we demonstrate ReCLIP reduces the\naverage error rate of CLIP from 30.17% to 25.06% on 22 image classification\nbenchmarks.",
+      "published_at": "2023-08-04",
+      "submitted_at": "2023-08-09",
+      "submitted_by": "AK",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/michiganleon/reclip_wacv",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.03793",
+      "arxiv_url": "https://arxiv.org/abs/2308.03793"
+    },
+    {
+      "arxiv_id": "2308.04430",
+      "title": "SILO Language Models: Isolating Legal Risk In a Nonparametric Datastore",
+      "authors": [
+        "Sewon Min",
+        "Suchin Gururangan",
+        "Eric Wallace",
+        "Hannaneh Hajishirzi",
+        "Noah A. Smith",
+        "Luke Zettlemoyer"
+      ],
+      "abstract": "The legality of training language models (LMs) on copyrighted or otherwise\nrestricted data is under intense debate. However, as we show, model performance\nsignificantly degrades if trained only on low-risk text (e.g., out-of-copyright\nbooks or government documents), due to its limited size and domain coverage. We\npresent SILO, a new language model that manages this risk-performance tradeoff\nduring inference. SILO is built by (1) training a parametric LM on Open License\nCorpus (OLC), a new corpus we curate with 228B tokens of public domain and\npermissively licensed text and (2) augmenting it with a more general and easily\nmodifiable nonparametric datastore (e.g., containing copyrighted books or news)\nthat is only queried during inference. The datastore allows use of high-risk\ndata without training on it, supports sentence-level data attribution, and\nenables data producers to opt out from the model by removing content from the\nstore. These capabilities can foster compliance with data-use regulations such\nas the fair use doctrine in the United States and the GDPR in the European\nUnion. Our experiments show that the parametric LM struggles on domains not\ncovered by OLC. However, access to the datastore greatly improves out of domain\nperformance, closing 90% of the performance gap with an LM trained on the Pile,\na more diverse corpus with mostly high-risk text. We also analyze which\nnonparametric approach works best, where the remaining errors lie, and how\nperformance scales with datastore size. Our results suggest that it is possible\nto build high quality language models while mitigating their legal risk.",
+      "published_at": "2023-08-08",
+      "submitted_at": "2023-08-09",
+      "submitted_by": "AK",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/kernelmachine/silo-lm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2308.04430",
+      "arxiv_url": "https://arxiv.org/abs/2308.04430"
+    }
+  ]
+}
