@@ -54,6 +54,23 @@ python scripts/fetch_papers.py 2026-03-15 --backfill 7
 
 No external dependencies required — uses only Python standard library.
 
+## Data Source & Credit
+
+All paper metadata (titles, authors, abstracts, upvotes, etc.) is sourced from
+[Hugging Face Daily Papers](https://huggingface.co/papers), which aggregates
+submissions from the research community. The original paper content is hosted on
+[arXiv](https://arxiv.org/) and is subject to each paper's own license
+(typically CC BY or similar open-access terms).
+
+This repository is an **unofficial archive** and is not affiliated with or
+endorsed by Hugging Face or arXiv.
+
 ## License
 
-MIT
+The archiving scripts in this repository are released under the
+[MIT License](LICENSE). The archived paper metadata originates from publicly
+accessible sources (Hugging Face and arXiv) and is redistributed here for
+research and educational purposes with full attribution. All rights to the
+original paper content remain with their respective authors and publishers.
+If you are an author and wish to have your metadata removed, please
+[open an issue](https://github.com/joe0731/hf_paper_watch_dog/issues).

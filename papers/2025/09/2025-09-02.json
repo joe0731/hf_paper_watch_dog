@@ -1,0 +1,161 @@
+{
+  "date": "2025-09-02",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2025-09-02",
+  "papers": [
+    {
+      "arxiv_id": "2508.21104",
+      "title": "PVPO: Pre-Estimated Value-Based Policy Optimization for Agentic\n  Reasoning",
+      "authors": [
+        "Wenfeng Feng",
+        "Penghong Zhao",
+        "Guochao Jiang",
+        "Chuzhan Hao",
+        "Yuewei Zhang",
+        "Hao Wang"
+      ],
+      "abstract": "Critic-free reinforcement learning methods, particularly group policies, have\nattracted considerable attention for their efficiency in complex tasks.\nHowever, these methods rely heavily on multiple sampling and comparisons within\nthe policy to estimate advantage, which may cause the policy to fall into local\noptimum and increase computational cost. To address these issues, we propose\nPVPO, an efficient reinforcement learning method enhanced by an advantage\nreference anchor and data pre-sampling. Specifically, we use the reference\nmodel to rollout in advance and employ the calculated reward score as a\nreference anchor. Our approach effectively corrects the cumulative bias\nintroduced by intra-group comparisons and significantly reduces reliance on the\nnumber of rollouts during training. Meanwhile, the reference model can assess\nsample difficulty during data pre-sampling, enabling effective selection of\nhigh-gain data to improve training efficiency. Moreover, PVPO is orthogonal to\nother advanced critic-free RL algorithms, making it compatible with and\ncomplementary to these methods. Experiments conducted on nine datasets across\ntwo domains demonstrate that PVPO achieves State-Of-The-Art (SOTA) performance.\nOur approach not only demonstrates robust generalization across multiple tasks,\nbut also exhibits scalable performance across models of varying scales.",
+      "published_at": "2025-08-28",
+      "submitted_at": "2025-09-02",
+      "submitted_by": "JGC",
+      "upvotes": 37,
+      "organization": "Apsara Stack MaaS",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2508.21104",
+      "arxiv_url": "https://arxiv.org/abs/2508.21104"
+    },
+    {
+      "arxiv_id": "2508.19813",
+      "title": "T2R-bench: A Benchmark for Generating Article-Level Reports from Real\n  World Industrial Tables",
+      "authors": [
+        "Jie Zhang",
+        "Changzai Pan",
+        "Kaiwen Wei",
+        "Sishi Xiong",
+        "Yu Zhao",
+        "Xiangyu Li",
+        "Jiaxin Peng",
+        "Xiaoyan Gu",
+        "Jian Yang",
+        "Wenhan Chang",
+        "Zhenhe Wu",
+        "Jiang Zhong",
+        "Shuangyong Song",
+        "Yongxiang Li",
+        "Xuelong Li"
+      ],
+      "abstract": "Extensive research has been conducted to explore the capabilities of large\nlanguage models (LLMs) in table reasoning. However, the essential task of\ntransforming tables information into reports remains a significant challenge\nfor industrial applications. This task is plagued by two critical issues: 1)\nthe complexity and diversity of tables lead to suboptimal reasoning outcomes;\nand 2) existing table benchmarks lack the capacity to adequately assess the\npractical application of this task. To fill this gap, we propose the\ntable-to-report task and construct a bilingual benchmark named T2R-bench, where\nthe key information flow from the tables to the reports for this task. The\nbenchmark comprises 457 industrial tables, all derived from real-world\nscenarios and encompassing 19 industry domains as well as 4 types of industrial\ntables. Furthermore, we propose an evaluation criteria to fairly measure the\nquality of report generation. The experiments on 25 widely-used LLMs reveal\nthat even state-of-the-art models like Deepseek-R1 only achieves performance\nwith 62.71 overall score, indicating that LLMs still have room for improvement\non T2R-bench. Source code and data will be available after acceptance.",
+      "published_at": "2025-08-27",
+      "submitted_at": "2025-09-02",
+      "submitted_by": "Yang Jian",
+      "upvotes": 28,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2508.19813",
+      "arxiv_url": "https://arxiv.org/abs/2508.19813"
+    },
+    {
+      "arxiv_id": "2508.20931",
+      "title": "How Can Input Reformulation Improve Tool Usage Accuracy in a Complex\n  Dynamic Environment? A Study on τ-bench",
+      "authors": [
+        "Venkatesh Mishra",
+        "Amir Saeidi",
+        "Satyam Raj",
+        "Mutsumi Nakamura",
+        "Jayanth Srinivasa",
+        "Gaowen Liu",
+        "Ali Payani",
+        "Chitta Baral"
+      ],
+      "abstract": "Recent advances in reasoning and planning capabilities of large language\nmodels (LLMs) have enabled their potential as autonomous agents capable of tool\nuse in dynamic environments. However, in multi-turn conversational environments\nlike tau-bench, these agents often struggle with consistent reasoning,\nadherence to domain-specific policies, and extracting correct information over\na long horizon of tool-calls and conversation. To capture and mitigate these\nfailures, we conduct a comprehensive manual analysis of the common errors\noccurring in the conversation trajectories. We then experiment with\nreformulations of inputs to the tool-calling agent for improvement in agent\ndecision making. Finally, we propose the Input-Reformulation Multi-Agent (IRMA)\nframework, which automatically reformulates user queries augmented with\nrelevant domain rules and tool suggestions for the tool-calling agent to focus\non. The results show that IRMA significantly outperforms ReAct, Function\nCalling, and Self-Reflection by 16.1%, 12.7%, and 19.1%, respectively, in\noverall pass^5 scores. These findings highlight the superior reliability and\nconsistency of IRMA compared to other methods in dynamic environments.",
+      "published_at": "2025-08-28",
+      "submitted_at": "2025-09-02",
+      "submitted_by": "Amir",
+      "upvotes": 16,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2508.20931",
+      "arxiv_url": "https://arxiv.org/abs/2508.20931"
+    },
+    {
+      "arxiv_id": "2508.19060",
+      "title": "No Label Left Behind: A Unified Surface Defect Detection Model for all\n  Supervision Regimes",
+      "authors": [
+        "Blaž Rolih",
+        "Matic Fučka",
+        "Danijel Skočaj"
+      ],
+      "abstract": "Surface defect detection is a critical task across numerous industries, aimed\nat efficiently identifying and localising imperfections or irregularities on\nmanufactured components. While numerous methods have been proposed, many fail\nto meet industrial demands for high performance, efficiency, and adaptability.\nExisting approaches are often constrained to specific supervision scenarios and\nstruggle to adapt to the diverse data annotations encountered in real-world\nmanufacturing processes, such as unsupervised, weakly supervised, mixed\nsupervision, and fully supervised settings. To address these challenges, we\npropose SuperSimpleNet, a highly efficient and adaptable discriminative model\nbuilt on the foundation of SimpleNet. SuperSimpleNet incorporates a novel\nsynthetic anomaly generation process, an enhanced classification head, and an\nimproved learning procedure, enabling efficient training in all four\nsupervision scenarios, making it the first model capable of fully leveraging\nall available data annotations. SuperSimpleNet sets a new standard for\nperformance across all scenarios, as demonstrated by its results on four\nchallenging benchmark datasets. Beyond accuracy, it is very fast, achieving an\ninference time below 10 ms. With its ability to unify diverse supervision\nparadigms while maintaining outstanding speed and reliability, SuperSimpleNet\nrepresents a promising step forward in addressing real-world manufacturing\nchallenges and bridging the gap between academic research and industrial\napplications. Code: https://github.com/blaz-r/SuperSimpleNet",
+      "published_at": "2025-08-26",
+      "submitted_at": "2025-09-02",
+      "submitted_by": "Blaz Rolih",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "https://github.com/blaz-r/SuperSimplenet",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2508.19060",
+      "arxiv_url": "https://arxiv.org/abs/2508.19060"
+    },
+    {
+      "arxiv_id": "2508.17198",
+      "title": "From reactive to cognitive: brain-inspired spatial intelligence for\n  embodied agents",
+      "authors": [
+        "Shouwei Ruan",
+        "Liyuan Wang",
+        "Caixin Kang",
+        "Qihui Zhu",
+        "Songming Liu",
+        "Xingxing Wei",
+        "Hang Su"
+      ],
+      "abstract": "Spatial cognition enables adaptive goal-directed behavior by constructing\ninternal models of space. Robust biological systems consolidate spatial\nknowledge into three interconnected forms: landmarks for salient cues,\nroute knowledge for movement trajectories, and survey\nknowledge for map-like representations. While recent advances in multi-modal\nlarge language models (MLLMs) have enabled visual-language reasoning in\nembodied agents, these efforts lack structured spatial memory and instead\noperate reactively, limiting their generalization and adaptability in complex\nreal-world environments. Here we present Brain-inspired Spatial Cognition for\nNavigation (BSC-Nav), a unified framework for constructing and leveraging\nstructured spatial memory in embodied agents. BSC-Nav builds allocentric\ncognitive maps from egocentric trajectories and contextual cues, and\ndynamically retrieves spatial knowledge aligned with semantic goals. Integrated\nwith powerful MLLMs, BSC-Nav achieves state-of-the-art efficacy and efficiency\nacross diverse navigation tasks, demonstrates strong zero-shot generalization,\nand supports versatile embodied behaviors in the real physical world, offering\na scalable and biologically grounded path toward general-purpose spatial\nintelligence.",
+      "published_at": "2025-08-24",
+      "submitted_at": "2025-09-02",
+      "submitted_by": "RSW",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/Heathcliff-saku/BSC-Nav",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2508.17198",
+      "arxiv_url": "https://arxiv.org/abs/2508.17198"
+    },
+    {
+      "arxiv_id": "2508.17378",
+      "title": "UI-Level Evaluation of ALLaM 34B: Measuring an Arabic-Centric LLM via\n  HUMAIN Chat",
+      "authors": [
+        "Omer Nacar"
+      ],
+      "abstract": "Large language models (LLMs) trained primarily on English corpora often\nstruggle to capture the linguistic and cultural nuances of Arabic. To address\nthis gap, the Saudi Data and AI Authority (SDAIA) introduced the ALLaM family\nof Arabic-focused models. The most capable of these available to the public,\nALLaM-34B, was subsequently adopted by HUMAIN, who developed and deployed\nHUMAIN Chat, a closed conversational web service built on this model. This\npaper presents an expanded and refined UI-level evaluation of ALLaM-34B.\nUsing a prompt pack spanning modern standard Arabic, five regional dialects,\ncode-switching, factual knowledge, arithmetic and temporal reasoning, creative\ngeneration, and adversarial safety, we collected 115 outputs (23 prompts times\n5 runs) and scored each with three frontier LLM judges (GPT-5, Gemini 2.5 Pro,\nClaude Sonnet-4). We compute category-level means with 95\\% confidence\nintervals, analyze score distributions, and visualize dialect-wise metric heat\nmaps. The updated analysis reveals consistently high performance on generation\nand code-switching tasks (both averaging 4.92/5), alongside strong results in\nMSA handling (4.74/5), solid reasoning ability (4.64/5), and improved dialect\nfidelity (4.21/5). Safety-related prompts show stable, reliable performance of\n(4.54/5). Taken together, these results position ALLaM-34B as a robust and\nculturally grounded Arabic LLM, demonstrating both technical strength and\npractical readiness for real-world deployment.",
+      "published_at": "2025-08-24",
+      "submitted_at": "2025-09-02",
+      "submitted_by": "Omartificial Intelligence Space",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2508.17378",
+      "arxiv_url": "https://arxiv.org/abs/2508.17378"
+    },
+    {
+      "arxiv_id": "2508.19562",
+      "title": "Democracy-in-Silico: Institutional Design as Alignment in AI-Governed\n  Polities",
+      "authors": [
+        "Trisanth Srinivasan",
+        "Santosh Patapati"
+      ],
+      "abstract": "This paper introduces Democracy-in-Silico, an agent-based simulation where\nsocieties of advanced AI agents, imbued with complex psychological personas,\ngovern themselves under different institutional frameworks. We explore what it\nmeans to be human in an age of AI by tasking Large Language Models (LLMs) to\nembody agents with traumatic memories, hidden agendas, and psychological\ntriggers. These agents engage in deliberation, legislation, and elections under\nvarious stressors, such as budget crises and resource scarcity. We present a\nnovel metric, the Power-Preservation Index (PPI), to quantify misaligned\nbehavior where agents prioritize their own power over public welfare. Our\nfindings demonstrate that institutional design, specifically the combination of\na Constitutional AI (CAI) charter and a mediated deliberation protocol, serves\nas a potent alignment mechanism. These structures significantly reduce corrupt\npower-seeking behavior, improve policy stability, and enhance citizen welfare\ncompared to less constrained democratic models. The simulation reveals that an\ninstitutional design may offer a framework for aligning the complex, emergent\nbehaviors of future artificial agent societies, forcing us to reconsider what\nhuman rituals and responsibilities are essential in an age of shared authorship\nwith non-human entities.",
+      "published_at": "2025-08-27",
+      "submitted_at": "2025-09-02",
+      "submitted_by": "Santosh Patapati",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2508.19562",
+      "arxiv_url": "https://arxiv.org/abs/2508.19562"
+    }
+  ]
+}

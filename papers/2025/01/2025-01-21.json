@@ -1,0 +1,74 @@
+{
+  "date": "2025-01-21",
+  "total": 3,
+  "source": "https://huggingface.co/papers/date/2025-01-21",
+  "papers": [
+    {
+      "arxiv_id": "2501.08325",
+      "title": "GameFactory: Creating New Games with Generative Interactive Videos",
+      "authors": [
+        "Jiwen Yu",
+        "Yiran Qin",
+        "Xintao Wang",
+        "Pengfei Wan",
+        "Xihui Liu"
+      ],
+      "abstract": "Generative game engines have the potential to revolutionize game development\nby autonomously creating new content and reducing manual workload. However,\nexisting video-based game generation methods fail to address the critical\nchallenge of scene generalization, limiting their applicability to existing\ngames with fixed styles and scenes. In this paper, we present GameFactory, a\nframework focused on exploring scene generalization in game video generation.\nTo enable the creation of entirely new and diverse games, we leverage\npre-trained video diffusion models trained on open-domain video data. To bridge\nthe domain gap between open-domain priors and small-scale game dataset, we\npropose a multi-phase training strategy that decouples game style learning from\naction control, preserving open-domain generalization while achieving action\ncontrollability. Using Minecraft as our data source, we release GF-Minecraft, a\nhigh-quality and diversity action-annotated video dataset for research.\nFurthermore, we extend our framework to enable autoregressive\naction-controllable game video generation, allowing the production of\nunlimited-length interactive game videos. Experimental results demonstrate that\nGameFactory effectively generates open-domain, diverse, and action-controllable\ngame videos, representing a significant step forward in AI-driven game\ngeneration. Our dataset and project page are publicly available at\nhttps://vvictoryuki.github.io/gamefactory/.",
+      "published_at": "2025-01-14",
+      "submitted_at": "2025-01-21",
+      "submitted_by": "Jiwen Yu",
+      "upvotes": 67,
+      "organization": "",
+      "github_repo": "https://github.com/KwaiVGI/GameFactory",
+      "project_page": "https://yujiwen.github.io/gamefactory/",
+      "hf_url": "https://huggingface.co/papers/2501.08325",
+      "arxiv_url": "https://arxiv.org/abs/2501.08325"
+    },
+    {
+      "arxiv_id": "2501.09781",
+      "title": "VideoWorld: Exploring Knowledge Learning from Unlabeled Videos",
+      "authors": [
+        "Zhongwei Ren",
+        "Yunchao Wei",
+        "Xun Guo",
+        "Yao Zhao",
+        "Bingyi Kang",
+        "Jiashi Feng",
+        "Xiaojie Jin"
+      ],
+      "abstract": "This work explores whether a deep generative model can learn complex\nknowledge solely from visual input, in contrast to the prevalent focus on\ntext-based models like large language models (LLMs). We develop VideoWorld, an\nauto-regressive video generation model trained on unlabeled video data, and\ntest its knowledge acquisition abilities in video-based Go and robotic control\ntasks. Our experiments reveal two key findings: (1) video-only training\nprovides sufficient information for learning knowledge, including rules,\nreasoning and planning capabilities, and (2) the representation of visual\nchange is crucial for knowledge acquisition. To improve both the efficiency and\nefficacy of this process, we introduce the Latent Dynamics Model (LDM) as a key\ncomponent of VideoWorld. Remarkably, VideoWorld reaches a 5-dan professional\nlevel in the Video-GoBench with just a 300-million-parameter model, without\nrelying on search algorithms or reward mechanisms typical in reinforcement\nlearning. In robotic tasks, VideoWorld effectively learns diverse control\noperations and generalizes across environments, approaching the performance of\noracle models in CALVIN and RLBench. This study opens new avenues for knowledge\nacquisition from visual data, with all code, data, and models open-sourced for\nfurther research.",
+      "published_at": "2025-01-16",
+      "submitted_at": "2025-01-21",
+      "submitted_by": "rzw",
+      "upvotes": 27,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "https://VideoWorld.github.io/",
+      "hf_url": "https://huggingface.co/papers/2501.09781",
+      "arxiv_url": "https://arxiv.org/abs/2501.09781"
+    },
+    {
+      "arxiv_id": "2501.09284",
+      "title": "SEAL: Entangled White-box Watermarks on Low-Rank Adaptation",
+      "authors": [
+        "Giyeong Oh",
+        "Saejin Kim",
+        "Woohyun Cho",
+        "Sangkyu Lee",
+        "Jiwan Chung",
+        "Dokyung Song",
+        "Youngjae Yu"
+      ],
+      "abstract": "Recently, LoRA and its variants have become the de facto strategy for\ntraining and sharing task-specific versions of large pretrained models, thanks\nto their efficiency and simplicity. However, the issue of copyright protection\nfor LoRA weights, especially through watermark-based techniques, remains\nunderexplored. To address this gap, we propose SEAL (SEcure wAtermarking on\nLoRA weights), the universal whitebox watermarking for LoRA. SEAL embeds a\nsecret, non-trainable matrix between trainable LoRA weights, serving as a\npassport to claim ownership. SEAL then entangles the passport with the LoRA\nweights through training, without extra loss for entanglement, and distributes\nthe finetuned weights after hiding the passport. When applying SEAL, we\nobserved no performance degradation across commonsense reasoning,\ntextual/visual instruction tuning, and text-to-image synthesis tasks. We\ndemonstrate that SEAL is robust against a variety of known attacks: removal,\nobfuscation, and ambiguity attacks.",
+      "published_at": "2025-01-16",
+      "submitted_at": "2025-01-21",
+      "submitted_by": "Giyeong Oh",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.09284",
+      "arxiv_url": "https://arxiv.org/abs/2501.09284"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "date": "2025-07-07",
+  "total": 4,
+  "source": "https://huggingface.co/papers/date/2025-07-07",
+  "papers": [
+    {
+      "arxiv_id": "2507.01955",
+      "title": "How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation\n  Models on Standard Computer Vision Tasks",
+      "authors": [
+        "Rahul Ramachandran",
+        "Ali Garjani",
+        "Roman Bachmann",
+        "Andrei Atanov",
+        "Oğuzhan Fatih Kar",
+        "Amir Zamir"
+      ],
+      "abstract": "Multimodal foundation models, such as GPT-4o, have recently made remarkable\nprogress, but it is not clear where exactly these models stand in terms of\nunderstanding vision. In this paper, we benchmark the performance of popular\nmultimodal foundation models (GPT-4o, o4-mini, Gemini 1.5 Pro and Gemini 2.0\nFlash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2) on standard computer vision\ntasks (semantic segmentation, object detection, image classification, depth and\nsurface normal prediction) using established datasets (e.g., COCO, ImageNet and\nits variants, etc).\n  The main challenges to performing this are: 1) most models are trained to\noutput text and cannot natively express versatile domains, such as segments or\n3D geometry, and 2) many leading models are proprietary and accessible only at\nan API level, i.e., there is no weight access to adapt them. We address these\nchallenges by translating standard vision tasks into equivalent text-promptable\nand API-compatible tasks via prompt chaining to create a standardized\nbenchmarking framework.\n  We observe that 1) the models are not close to the state-of-the-art\nspecialist models at any task. However, 2) they are respectable generalists;\nthis is remarkable as they are presumably trained on primarily image-text-based\ntasks. 3) They perform semantic tasks notably better than geometric ones. 4)\nWhile the prompt-chaining techniques affect performance, better models exhibit\nless sensitivity to prompt variations. 5) GPT-4o performs the best among\nnon-reasoning models, securing the top position in 4 out of 6 tasks, 6)\nreasoning models, e.g. o3, show improvements in geometric tasks, and 7) a\npreliminary analysis of models with native image generation, like the latest\nGPT-4o, shows they exhibit quirks like hallucinations and spatial\nmisalignments.",
+      "published_at": "2025-07-02",
+      "submitted_at": "2025-07-07",
+      "submitted_by": "Niels Rogge",
+      "upvotes": 36,
+      "organization": "",
+      "github_repo": "https://github.com/EPFL-VILAB/fm-vision-evals",
+      "project_page": "https://fm-vision-evals.epfl.ch/",
+      "hf_url": "https://huggingface.co/papers/2507.01955",
+      "arxiv_url": "https://arxiv.org/abs/2507.01955"
+    },
+    {
+      "arxiv_id": "2507.02608",
+      "title": "Lost in Latent Space: An Empirical Study of Latent Diffusion Models for\n  Physics Emulation",
+      "authors": [
+        "François Rozet",
+        "Ruben Ohana",
+        "Michael McCabe",
+        "Gilles Louppe",
+        "François Lanusse",
+        "Shirley Ho"
+      ],
+      "abstract": "The steep computational cost of diffusion models at inference hinders their\nuse as fast physics emulators. In the context of image and video generation,\nthis computational drawback has been addressed by generating in the latent\nspace of an autoencoder instead of the pixel space. In this work, we\ninvestigate whether a similar strategy can be effectively applied to the\nemulation of dynamical systems and at what cost. We find that the accuracy of\nlatent-space emulation is surprisingly robust to a wide range of compression\nrates (up to 1000x). We also show that diffusion-based emulators are\nconsistently more accurate than non-generative counterparts and compensate for\nuncertainty in their predictions with greater diversity. Finally, we cover\npractical design choices, spanning from architectures to optimizers, that we\nfound critical to train latent-space emulators.",
+      "published_at": "2025-07-03",
+      "submitted_at": "2025-07-07",
+      "submitted_by": "AK",
+      "upvotes": 22,
+      "organization": "",
+      "github_repo": "https://github.com/PolymathicAI/lola",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2507.02608",
+      "arxiv_url": "https://arxiv.org/abs/2507.02608"
+    },
+    {
+      "arxiv_id": "2507.01853",
+      "title": "Eka-Eval : A Comprehensive Evaluation Framework for Large Language\n  Models in Indian Languages",
+      "authors": [
+        "Samridhi Raj Sinha",
+        "Rajvee Sheth",
+        "Abhishek Upperwal",
+        "Mayank Singh"
+      ],
+      "abstract": "The rapid advancement of Large Language Models (LLMs) has intensified the\nneed for evaluation frameworks that go beyond English centric benchmarks and\naddress the requirements of linguistically diverse regions such as India. We\npresent EKA-EVAL, a unified and production-ready evaluation framework that\nintegrates over 35 benchmarks, including 10 Indic-specific datasets, spanning\ncategories like reasoning, mathematics, tool use, long-context understanding,\nand reading comprehension. Compared to existing Indian language evaluation\ntools, EKA-EVAL offers broader benchmark coverage, with built-in support for\ndistributed inference, quantization, and multi-GPU usage. Our systematic\ncomparison positions EKA-EVAL as the first end-to-end, extensible evaluation\nsuite tailored for both global and Indic LLMs, significantly lowering the\nbarrier to multilingual benchmarking. The framework is open-source and publicly\navailable at https://github.com/lingo-iitgn/ eka-eval and a part of ongoing EKA\ninitiative (https://eka.soket.ai), which aims to scale up to over 100\nbenchmarks and establish a robust, multilingual evaluation ecosystem for LLMs.",
+      "published_at": "2025-07-02",
+      "submitted_at": "2025-07-07",
+      "submitted_by": "Rajvee Sheth",
+      "upvotes": 14,
+      "organization": "Lingo Research Group",
+      "github_repo": "https://github.com/lingo-iitgn/eka-eval",
+      "project_page": "https://eka.soket.ai",
+      "hf_url": "https://huggingface.co/papers/2507.01853",
+      "arxiv_url": "https://arxiv.org/abs/2507.01853"
+    },
+    {
+      "arxiv_id": "2507.00769",
+      "title": "LitBench: A Benchmark and Dataset for Reliable Evaluation of Creative\n  Writing",
+      "authors": [
+        "Daniel Fein",
+        "Sebastian Russo",
+        "Violet Xiang",
+        "Kabir Jolly",
+        "Rafael Rafailov",
+        "Nick Haber"
+      ],
+      "abstract": "Evaluating creative writing generated by large language models (LLMs) remains\nchallenging because open-ended narratives lack ground truths. Without\nperformant automated evaluation methods, off-the-shelf (OTS) language models\nare employed as zero-shot judges, yet their reliability is unclear in this\ncontext. In pursuit of robust evaluation for creative writing, we introduce\nLitBench, the first standardized benchmark and paired dataset for creative\nwriting verification, comprising a held-out test set of 2,480 debiased,\nhuman-labeled story comparisons drawn from Reddit and a 43,827-pair training\ncorpus of human preference labels. Using LitBench, we (i) benchmark zero-shot\nLLM judges, (ii) train Bradley Terry and generative reward models, and (iii)\nconduct an online human study to validate reward model rankings on newly\nLLM-generated stories. Our benchmark identifies Claude-3.7-Sonnet as the\nstrongest off-the-shelf judge, reaching 73% agreement with human preferences;\namong trained reward models, Bradley-Terry and Generative reward models both\nattain an accuracy of 78%, outperforming all off-the-shelf judges. An online\nhuman study further confirms that our trained reward models consistently align\nwith human preferences in novel LLM-generated stories. We release LitBench and\nreward models at\nhttps://huggingface.co/collections/SAA-Lab/litbench-68267b5da3aafe58f9e43461,\nproviding a vetted resource for reliable, automated evaluation and optimization\nof creative writing systems.",
+      "published_at": "2025-07-01",
+      "submitted_at": "2025-07-07",
+      "submitted_by": "Violet Xiang",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "https://huggingface.co/collections/SAA-Lab/litbench-68267b5da3aafe58f9e43461",
+      "hf_url": "https://huggingface.co/papers/2507.00769",
+      "arxiv_url": "https://arxiv.org/abs/2507.00769"
+    }
+  ]
+}

@@ -33,14 +33,27 @@ jobs:
           python-version: '3.11'
 
       - name: Fetch papers
+        env:
+          INPUT_DATE: ${{ github.event.inputs.date }}
+          INPUT_BACKFILL: ${{ github.event.inputs.backfill }}
         run: |
           DATE_ARG=""
           BACKFILL_ARG=""
-          if [ -n "${{ github.event.inputs.date }}" ]; then
-            DATE_ARG="${{ github.event.inputs.date }}"
+          if [ -n "$INPUT_DATE" ]; then
+            if echo "$INPUT_DATE" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+              DATE_ARG="$INPUT_DATE"
+            else
+              echo "ERROR: invalid date format '$INPUT_DATE', expected YYYY-MM-DD"
+              exit 1
+            fi
           fi
-          if [ -n "${{ github.event.inputs.backfill }}" ] && [ "${{ github.event.inputs.backfill }}" != "0" ]; then
-            BACKFILL_ARG="--backfill ${{ github.event.inputs.backfill }}"
+          if [ -n "$INPUT_BACKFILL" ] && [ "$INPUT_BACKFILL" != "0" ]; then
+            if echo "$INPUT_BACKFILL" | grep -qE '^[0-9]+$'; then
+              BACKFILL_ARG="--backfill $INPUT_BACKFILL"
+            else
+              echo "ERROR: invalid backfill value '$INPUT_BACKFILL', expected integer"
+              exit 1
+            fi
           fi
           python scripts/fetch_papers.py $DATE_ARG $BACKFILL_ARG
 

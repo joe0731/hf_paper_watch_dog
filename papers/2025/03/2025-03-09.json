@@ -1,0 +1,67 @@
+{
+  "date": "2025-03-09",
+  "total": 3,
+  "source": "https://huggingface.co/papers/date/2025-03-09",
+  "papers": [
+    {
+      "arxiv_id": "2503.05236",
+      "title": "Unified Reward Model for Multimodal Understanding and Generation",
+      "authors": [
+        "Yibin Wang",
+        "Yuhang Zang",
+        "Hao Li",
+        "Cheng Jin",
+        "Jiaqi Wang"
+      ],
+      "abstract": "Recent advances in human preference alignment have significantly enhanced\nmultimodal generation and understanding. A key approach is training reward\nmodels to guide preference optimization. However, existing models are often\ntask-specific, limiting their adaptability across diverse visual applications.\nWe also argue that jointly learning to assess multiple tasks may foster a\nsynergistic effect, where improved image understanding enhances image\ngeneration assessment, and refined image evaluation benefits video assessment\nthrough better frame analysis. To this end, this paper proposes UnifiedReward,\nthe first unified reward model for multimodal understanding and generation\nassessment, enabling both pairwise ranking and pointwise scoring, which can be\nemployed for vision model preference alignment. Specifically, (1) we first\ndevelop UnifiedReward on our constructed large-scale human preference dataset,\nincluding both image and video generation/understanding tasks. (2) Then, it is\nutilized to automatically construct high-quality preference pair data based on\nthe vision models, fine-gradually filtering their outputs through pair ranking\nand point sifting. (3) Finally, these data are used for their preference\nalignment through Direct Preference Optimization (DPO). Experimental results\ndemonstrate that joint learning to assess diverse visual tasks can lead to\nsubstantial mutual benefits and we apply our pipeline to both image and video\nunderstanding/generation tasks, significantly improving the performance in each\ndomain.",
+      "published_at": "2025-03-07",
+      "submitted_at": "2025-03-10",
+      "submitted_by": "SII-Yibin Wang",
+      "upvotes": 124,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "https://codegoat24.github.io/UnifiedReward/",
+      "hf_url": "https://huggingface.co/papers/2503.05236",
+      "arxiv_url": "https://arxiv.org/abs/2503.05236"
+    },
+    {
+      "arxiv_id": "2503.05179",
+      "title": "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive\n  Cognitive-Inspired Sketching",
+      "authors": [
+        "Simon A. Aytes",
+        "Jinheon Baek",
+        "Sung Ju Hwang"
+      ],
+      "abstract": "Recent advances in large language models have demonstrated remarkable\nreasoning capabilities through Chain of Thought (CoT) prompting, but often at\nthe cost of excessive verbosity in their intermediate outputs, which increases\ncomputational overhead. We introduce Sketch-of-Thought (SoT), a novel prompting\nframework that combines cognitive-inspired reasoning paradigms with linguistic\nconstraints to minimize token usage while preserving reasoning accuracy. SoT is\ndesigned as a flexible framework that can incorporate any custom reasoning\nparadigms based on cognitive science, and we instantiate it with three such\nparadigms - Conceptual Chaining, Chunked Symbolism, and Expert Lexicons - each\ntailored to different reasoning tasks and selected dynamically via a\nlightweight routing model. Through comprehensive evaluation across 15 reasoning\ndatasets with multiple languages and multimodal scenarios, we demonstrate that\nSoT achieves token reductions of 76% with negligible accuracy impact. In\ncertain domains like mathematical and multi-hop reasoning, it even improves\naccuracy while using significantly fewer tokens. Our code is publicly\navailable: https://www.github.com/SimonAytes/SoT.",
+      "published_at": "2025-03-07",
+      "submitted_at": "2025-03-10",
+      "submitted_by": "Jinheon Baek",
+      "upvotes": 46,
+      "organization": "",
+      "github_repo": "https://github.com/SimonAytes/SoT",
+      "project_page": "https://huggingface.co/saytes/SoT_DistilBERT",
+      "hf_url": "https://huggingface.co/papers/2503.05179",
+      "arxiv_url": "https://arxiv.org/abs/2503.05179"
+    },
+    {
+      "arxiv_id": "2503.02130",
+      "title": "Forgetting Transformer: Softmax Attention with a Forget Gate",
+      "authors": [
+        "Zhixuan Lin",
+        "Evgenii Nikishin",
+        "Xu Owen He",
+        "Aaron Courville"
+      ],
+      "abstract": "An essential component of modern recurrent sequence models is the forget\ngate. While Transformers do not have an explicit recurrent form, we show that a\nforget gate can be naturally incorporated into Transformers by down-weighting\nthe unnormalized attention scores in a data-dependent way. We name this\nattention mechanism the Forgetting Attention and the resulting model the\nForgetting Transformer (FoX). We show that FoX outperforms the Transformer on\nlong-context language modeling, length extrapolation, and short-context\ndownstream tasks, while performing on par with the Transformer on long-context\ndownstream tasks. Moreover, it is compatible with the FlashAttention algorithm\nand does not require any positional embeddings. Several analyses, including the\nneedle-in-the-haystack test, show that FoX also retains the Transformer's\nsuperior long-context capabilities over recurrent sequence models such as\nMamba-2, HGRN2, and DeltaNet. We also introduce a \"Pro\" block design that\nincorporates some common architectural components in recurrent sequence models\nand find it significantly improves the performance of both FoX and the\nTransformer. Our code is available at\nhttps://github.com/zhixuan-lin/forgetting-transformer.",
+      "published_at": "2025-03-03",
+      "submitted_at": "2025-03-10",
+      "submitted_by": "Zhixuan Lin",
+      "upvotes": 32,
+      "organization": "",
+      "github_repo": "https://github.com/zhixuan-lin/forgetting-transformer",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.02130",
+      "arxiv_url": "https://arxiv.org/abs/2503.02130"
+    }
+  ]
+}

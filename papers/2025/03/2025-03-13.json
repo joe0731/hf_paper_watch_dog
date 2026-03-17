@@ -1,0 +1,469 @@
+{
+  "date": "2025-03-13",
+  "total": 22,
+  "source": "https://huggingface.co/papers/date/2025-03-13",
+  "papers": [
+    {
+      "arxiv_id": "2503.09573",
+      "title": "Block Diffusion: Interpolating Between Autoregressive and Diffusion\n  Language Models",
+      "authors": [
+        "Marianne Arriola",
+        "Aaron Gokaslan",
+        "Justin T Chiu",
+        "Zhihan Yang",
+        "Zhixuan Qi",
+        "Jiaqi Han",
+        "Subham Sekhar Sahoo",
+        "Volodymyr Kuleshov"
+      ],
+      "abstract": "Diffusion language models offer unique benefits over autoregressive models\ndue to their potential for parallelized generation and controllability, yet\nthey lag in likelihood modeling and are limited to fixed-length generation. In\nthis work, we introduce a class of block diffusion language models that\ninterpolate between discrete denoising diffusion and autoregressive models.\nBlock diffusion overcomes key limitations of both approaches by supporting\nflexible-length generation and improving inference efficiency with KV caching\nand parallel token sampling. We propose a recipe for building effective block\ndiffusion models that includes an efficient training algorithm, estimators of\ngradient variance, and data-driven noise schedules to minimize the variance.\nBlock diffusion sets a new state-of-the-art performance among diffusion models\non language modeling benchmarks and enables generation of arbitrary-length\nsequences. We provide the code, along with the model weights and blog post on\nthe project page: https://m-arriola.com/bd3lms/",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "AK",
+      "upvotes": 76,
+      "organization": "",
+      "github_repo": "https://github.com/kuleshov-group/bd3lms",
+      "project_page": "https://m-arriola.com/bd3lms/",
+      "hf_url": "https://huggingface.co/papers/2503.09573",
+      "arxiv_url": "https://arxiv.org/abs/2503.09573"
+    },
+    {
+      "arxiv_id": "2503.09566",
+      "title": "TPDiff: Temporal Pyramid Video Diffusion Model",
+      "authors": [
+        "Lingmin Ran",
+        "Mike Zheng Shou"
+      ],
+      "abstract": "The development of video diffusion models unveils a significant challenge:\nthe substantial computational demands. To mitigate this challenge, we note that\nthe reverse process of diffusion exhibits an inherent entropy-reducing nature.\nGiven the inter-frame redundancy in video modality, maintaining full frame\nrates in high-entropy stages is unnecessary. Based on this insight, we propose\nTPDiff, a unified framework to enhance training and inference efficiency. By\ndividing diffusion into several stages, our framework progressively increases\nframe rate along the diffusion process with only the last stage operating on\nfull frame rate, thereby optimizing computational efficiency. To train the\nmulti-stage diffusion model, we introduce a dedicated training framework:\nstage-wise diffusion. By solving the partitioned probability flow ordinary\ndifferential equations (ODE) of diffusion under aligned data and noise, our\ntraining strategy is applicable to various diffusion forms and further enhances\ntraining efficiency. Comprehensive experimental evaluations validate the\ngenerality of our method, demonstrating 50% reduction in training cost and 1.5x\nimprovement in inference efficiency.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Andy",
+      "upvotes": 45,
+      "organization": "",
+      "github_repo": "https://github.com/showlab/TPDiff",
+      "project_page": "https://showlab.github.io/TPDiff/",
+      "hf_url": "https://huggingface.co/papers/2503.09566",
+      "arxiv_url": "https://arxiv.org/abs/2503.09566"
+    },
+    {
+      "arxiv_id": "2503.09516",
+      "title": "Search-R1: Training LLMs to Reason and Leverage Search Engines with\n  Reinforcement Learning",
+      "authors": [
+        "Bowen Jin",
+        "Hansi Zeng",
+        "Zhenrui Yue",
+        "Dong Wang",
+        "Hamed Zamani",
+        "Jiawei Han"
+      ],
+      "abstract": "Efficiently acquiring external knowledge and up-to-date information is\nessential for effective reasoning and text generation in large language models\n(LLMs). Retrieval augmentation and tool-use training approaches where a search\nengine is treated as a tool lack complex multi-turn retrieval flexibility or\nrequire large-scale supervised data. Prompting advanced LLMs with reasoning\ncapabilities during inference to use search engines is not optimal, since the\nLLM does not learn how to optimally interact with the search engine. This paper\nintroduces Search-R1, an extension of the DeepSeek-R1 model where the LLM\nlearns -- solely through reinforcement learning (RL) -- to autonomously\ngenerate (multiple) search queries during step-by-step reasoning with real-time\nretrieval. Search-R1 optimizes LLM rollouts with multi-turn search\ninteractions, leveraging retrieved token masking for stable RL training and a\nsimple outcome-based reward function. Experiments on seven question-answering\ndatasets show that Search-R1 improves performance by 26% (Qwen2.5-7B), 21%\n(Qwen2.5-3B), and 10% (LLaMA3.2-3B) over SOTA baselines. This paper further\nprovides empirical insights into RL optimization methods, LLM choices, and\nresponse length dynamics in retrieval-augmented reasoning. The code and model\ncheckpoints are available at https://github.com/PeterGriffinJin/Search-R1.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Niels Rogge",
+      "upvotes": 38,
+      "organization": "",
+      "github_repo": "https://github.com/PeterGriffinJin/Search-R1",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.09516",
+      "arxiv_url": "https://arxiv.org/abs/2503.09516"
+    },
+    {
+      "arxiv_id": "2503.06955",
+      "title": "Motion Anything: Any to Motion Generation",
+      "authors": [
+        "Zeyu Zhang",
+        "Yiran Wang",
+        "Wei Mao",
+        "Danning Li",
+        "Rui Zhao",
+        "Biao Wu",
+        "Zirui Song",
+        "Bohan Zhuang",
+        "Ian Reid"
+      ],
+      "abstract": "Conditional motion generation has been extensively studied in computer\nvision, yet two critical challenges remain. First, while masked autoregressive\nmethods have recently outperformed diffusion-based approaches, existing masking\nmodels lack a mechanism to prioritize dynamic frames and body parts based on\ngiven conditions. Second, existing methods for different conditioning\nmodalities often fail to integrate multiple modalities effectively, limiting\ncontrol and coherence in generated motion. To address these challenges, we\npropose Motion Anything, a multimodal motion generation framework that\nintroduces an Attention-based Mask Modeling approach, enabling fine-grained\nspatial and temporal control over key frames and actions. Our model adaptively\nencodes multimodal conditions, including text and music, improving\ncontrollability. Additionally, we introduce Text-Music-Dance (TMD), a new\nmotion dataset consisting of 2,153 pairs of text, music, and dance, making it\ntwice the size of AIST++, thereby filling a critical gap in the community.\nExtensive experiments demonstrate that Motion Anything surpasses\nstate-of-the-art methods across multiple benchmarks, achieving a 15%\nimprovement in FID on HumanML3D and showing consistent performance gains on\nAIST++ and TMD. See our project website\nhttps://steve-zeyu-zhang.github.io/MotionAnything",
+      "published_at": "2025-03-10",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Zeyu Zhang",
+      "upvotes": 35,
+      "organization": "",
+      "github_repo": "https://github.com/steve-zeyu-zhang/MotionAnything",
+      "project_page": "https://steve-zeyu-zhang.github.io/MotionAnything",
+      "hf_url": "https://huggingface.co/papers/2503.06955",
+      "arxiv_url": "https://arxiv.org/abs/2503.06955"
+    },
+    {
+      "arxiv_id": "2503.09151",
+      "title": "Reangle-A-Video: 4D Video Generation as Video-to-Video Translation",
+      "authors": [
+        "Hyeonho Jeong",
+        "Suhyeon Lee",
+        "Jong Chul Ye"
+      ],
+      "abstract": "We introduce Reangle-A-Video, a unified framework for generating synchronized\nmulti-view videos from a single input video. Unlike mainstream approaches that\ntrain multi-view video diffusion models on large-scale 4D datasets, our method\nreframes the multi-view video generation task as video-to-videos translation,\nleveraging publicly available image and video diffusion priors. In essence,\nReangle-A-Video operates in two stages. (1) Multi-View Motion Learning: An\nimage-to-video diffusion transformer is synchronously fine-tuned in a\nself-supervised manner to distill view-invariant motion from a set of warped\nvideos. (2) Multi-View Consistent Image-to-Images Translation: The first frame\nof the input video is warped and inpainted into various camera perspectives\nunder an inference-time cross-view consistency guidance using DUSt3R,\ngenerating multi-view consistent starting images. Extensive experiments on\nstatic view transport and dynamic camera control show that Reangle-A-Video\nsurpasses existing methods, establishing a new solution for multi-view video\ngeneration. We will publicly release our code and data. Project page:\nhttps://hyeonho99.github.io/reangle-a-video/",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Hyeonho Jeong",
+      "upvotes": 32,
+      "organization": "",
+      "github_repo": "https://github.com/HyeonHo99/Reangle-Video",
+      "project_page": "https://hyeonho99.github.io/reangle-a-video/",
+      "hf_url": "https://huggingface.co/papers/2503.09151",
+      "arxiv_url": "https://arxiv.org/abs/2503.09151"
+    },
+    {
+      "arxiv_id": "2503.08525",
+      "title": "GTR: Guided Thought Reinforcement Prevents Thought Collapse in RL-based\n  VLM Agent Training",
+      "authors": [
+        "Tong Wei",
+        "Yijun Yang",
+        "Junliang Xing",
+        "Yuanchun Shi",
+        "Zongqing Lu",
+        "Deheng Ye"
+      ],
+      "abstract": "Reinforcement learning with verifiable outcome rewards (RLVR) has effectively\nscaled up chain-of-thought (CoT) reasoning in large language models (LLMs).\nYet, its efficacy in training vision-language model (VLM) agents for\ngoal-directed action reasoning in visual environments is less established. This\nwork investigates this problem through extensive experiments on complex card\ngames, such as 24 points, and embodied tasks from ALFWorld. We find that when\nrewards are based solely on action outcomes, RL fails to incentivize CoT\nreasoning in VLMs, instead leading to a phenomenon we termed thought collapse,\ncharacterized by a rapid loss of diversity in the agent's thoughts,\nstate-irrelevant and incomplete reasoning, and subsequent invalid actions,\nresulting in negative rewards. To counteract thought collapse, we highlight the\nnecessity of process guidance and propose an automated corrector that evaluates\nand refines the agent's reasoning at each RL step. This simple and scalable GTR\n(Guided Thought Reinforcement) framework trains reasoning and action\nsimultaneously without the need for dense, per-step human labeling. Our\nexperiments demonstrate that GTR significantly enhances the performance and\ngeneralization of the LLaVA-7b model across various visual environments,\nachieving 3-5 times higher task success rates compared to SoTA models with\nnotably smaller model sizes.",
+      "published_at": "2025-03-11",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Steven",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.08525",
+      "arxiv_url": "https://arxiv.org/abs/2503.08525"
+    },
+    {
+      "arxiv_id": "2503.04388",
+      "title": "More Documents, Same Length: Isolating the Challenge of Multiple\n  Documents in RAG",
+      "authors": [
+        "Shahar Levy",
+        "Nir Mazor",
+        "Lihi Shalmon",
+        "Michael Hassid",
+        "Gabriel Stanovsky"
+      ],
+      "abstract": "Retrieval-augmented generation (RAG) provides LLMs with relevant documents.\nAlthough previous studies noted that retrieving many documents can degrade\nperformance, they did not isolate how the quantity of documents affects\nperformance while controlling for context length. We evaluate various language\nmodels on custom datasets derived from a multi-hop QA task. We keep the context\nlength and position of relevant information constant while varying the number\nof documents, and find that increasing the document count in RAG settings poses\nsignificant challenges for LLMs. Additionally, our results indicate that\nprocessing multiple documents is a separate challenge from handling long\ncontexts. We also make the datasets and code available:\nhttps://github.com/shaharl6000/MoreDocsSameLen .",
+      "published_at": "2025-03-06",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Lihi Shalmon",
+      "upvotes": 17,
+      "organization": "",
+      "github_repo": "https://github.com/shaharl6000/MoreDocsSameLen",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.04388",
+      "arxiv_url": "https://arxiv.org/abs/2503.04388"
+    },
+    {
+      "arxiv_id": "2503.09601",
+      "title": "RewardSDS: Aligning Score Distillation via Reward-Weighted Sampling",
+      "authors": [
+        "Itay Chachy",
+        "Guy Yariv",
+        "Sagie Benaim"
+      ],
+      "abstract": "Score Distillation Sampling (SDS) has emerged as an effective technique for\nleveraging 2D diffusion priors for tasks such as text-to-3D generation. While\npowerful, SDS struggles with achieving fine-grained alignment to user intent.\nTo overcome this, we introduce RewardSDS, a novel approach that weights noise\nsamples based on alignment scores from a reward model, producing a weighted SDS\nloss. This loss prioritizes gradients from noise samples that yield aligned\nhigh-reward output. Our approach is broadly applicable and can extend SDS-based\nmethods. In particular, we demonstrate its applicability to Variational Score\nDistillation (VSD) by introducing RewardVSD. We evaluate RewardSDS and\nRewardVSD on text-to-image, 2D editing, and text-to-3D generation tasks,\nshowing significant improvements over SDS and VSD on a diverse set of metrics\nmeasuring generation quality and alignment to desired reward models, enabling\nstate-of-the-art performance. Project page is available at https://itaychachy.\ngithub.io/reward-sds/.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Guy Yariv",
+      "upvotes": 16,
+      "organization": "",
+      "github_repo": "https://github.com/itaychachy/RewardSDS",
+      "project_page": "https://itaychachy.github.io/reward-sds/",
+      "hf_url": "https://huggingface.co/papers/2503.09601",
+      "arxiv_url": "https://arxiv.org/abs/2503.09601"
+    },
+    {
+      "arxiv_id": "2503.08681",
+      "title": "Self-Taught Self-Correction for Small Language Models",
+      "authors": [
+        "Viktor Moskvoretskii",
+        "Chris Biemann",
+        "Irina Nikishina"
+      ],
+      "abstract": "Although large language models (LLMs) have achieved remarkable performance\nacross various tasks, they remain prone to errors. A key challenge is enabling\nthem to self-correct. While prior research has relied on external tools or\nlarge proprietary models, this work explores self-correction in small language\nmodels (SLMs) through iterative fine-tuning using solely self-generated data.\nWe introduce the Self-Taught Self-Correction (STaSC) algorithm, which\nincorporates multiple algorithmic design choices. Experimental results on a\nquestion-answering task demonstrate that STaSC effectively learns\nself-correction, leading to significant performance improvements. Our analysis\nfurther provides insights into the mechanisms of self-correction and the impact\nof different design choices on learning dynamics and overall performance. To\nsupport future research, we release our user-friendly codebase and lightweight\nmodels.",
+      "published_at": "2025-03-11",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Viktor Moskvoretskii",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/VityaVitalich/STASC",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.08681",
+      "arxiv_url": "https://arxiv.org/abs/2503.08681"
+    },
+    {
+      "arxiv_id": "2503.06573",
+      "title": "WildIFEval: Instruction Following in the Wild",
+      "authors": [
+        "Gili Lior",
+        "Asaf Yehudai",
+        "Ariel Gera",
+        "Liat Ein-Dor"
+      ],
+      "abstract": "Recent LLMs have shown remarkable success in following user instructions, yet\nhandling instructions with multiple constraints remains a significant\nchallenge. In this work, we introduce WildIFEval - a large-scale dataset of 12K\nreal user instructions with diverse, multi-constraint conditions. Unlike prior\ndatasets, our collection spans a broad lexical and topical spectrum of\nconstraints, in natural user prompts. We categorize these constraints into\neight high-level classes to capture their distribution and dynamics in\nreal-world scenarios. Leveraging WildIFEval, we conduct extensive experiments\nto benchmark the instruction-following capabilities of leading LLMs. Our\nfindings reveal that all evaluated models experience performance degradation\nwith an increasing number of constraints. Thus, we show that all models have a\nlarge room for improvement on such tasks. Moreover, we observe that the\nspecific type of constraint plays a critical role in model performance. We\nrelease our dataset to promote further research on instruction-following under\ncomplex, realistic conditions.",
+      "published_at": "2025-03-09",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Asaf Yehudai",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/gililior/wild-if-eval-code",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.06573",
+      "arxiv_url": "https://arxiv.org/abs/2503.06573"
+    },
+    {
+      "arxiv_id": "2503.05397",
+      "title": "Multi Agent based Medical Assistant for Edge Devices",
+      "authors": [
+        "Sakharam Gawade",
+        "Shivam Akhouri",
+        "Chinmay Kulkarni",
+        "Jagdish Samant",
+        "Pragya Sahu",
+        "Aastik",
+        "Jai Pahal",
+        "Saswat Meher"
+      ],
+      "abstract": "Large Action Models (LAMs) have revolutionized intelligent automation, but\ntheir application in healthcare faces challenges due to privacy concerns,\nlatency, and dependency on internet access. This report introduces an ondevice,\nmulti-agent healthcare assistant that overcomes these limitations. The system\nutilizes smaller, task-specific agents to optimize resources, ensure\nscalability and high performance. Our proposed system acts as a one-stop\nsolution for health care needs with features like appointment booking, health\nmonitoring, medication reminders, and daily health reporting. Powered by the\nQwen Code Instruct 2.5 7B model, the Planner and Caller Agents achieve an\naverage RougeL score of 85.5 for planning and 96.5 for calling for our tasks\nwhile being lightweight for on-device deployment. This innovative approach\ncombines the benefits of ondevice systems with multi-agent architectures,\npaving the way for user-centric healthcare solutions.",
+      "published_at": "2025-03-07",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Sakharam Gawade",
+      "upvotes": 9,
+      "organization": "",
+      "github_repo": "https://github.com/sakharamg/Multi-Agent-Health-Assistant",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.05397",
+      "arxiv_url": "https://arxiv.org/abs/2503.05397"
+    },
+    {
+      "arxiv_id": "2503.09402",
+      "title": "VLog: Video-Language Models by Generative Retrieval of Narration\n  Vocabulary",
+      "authors": [
+        "Kevin Qinghong Lin",
+        "Mike Zheng Shou"
+      ],
+      "abstract": "Human daily activities can be concisely narrated as sequences of routine\nevents (e.g., turning off an alarm) in video streams, forming an event\nvocabulary. Motivated by this, we introduce VLog, a novel video understanding\nframework that define video narrations as vocabulary, going beyond the typical\nsubword vocabularies in existing generative video-language models. Built on the\nlightweight language model GPT-2, VLog feature three key innovations: (i) A\ngenerative retrieval model, marrying language model's complex reasoning\ncapabilities with contrastive retrieval's efficient similarity search. (ii) A\nhierarchical vocabulary derived from large-scale video narrations using our\nnarration pair encoding algorithm, enabling efficient indexing of specific\nevents (e.g., cutting a tomato) by identifying broader scenarios (e.g.,\nkitchen) with expressive postfixes (e.g., by the left hand). (iii) A vocabulary\nupdate strategy leveraging generative models to extend the vocabulary for novel\nevents encountered during inference. To validate our approach, we introduce\nVidCap-Eval, a development set requiring concise narrations with reasoning\nrelationships (e.g., before and after). Experiments on EgoSchema, COIN, and\nHiREST further demonstrate the effectiveness of VLog, highlighting its ability\nto generate concise, contextually accurate, and efficient narrations, offering\na novel perspective on video understanding. Codes are released at\nhttps://github.com/showlab/VLog.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Qinghong (Kevin) Lin",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "https://github.com/showlab/VLog",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.09402",
+      "arxiv_url": "https://arxiv.org/abs/2503.09402"
+    },
+    {
+      "arxiv_id": "2503.07103",
+      "title": "Quantizing Large Language Models for Code Generation: A Differentiated\n  Replication",
+      "authors": [
+        "Alessandro Giagnorio",
+        "Antonio Mastropaolo",
+        "Saima Afrin",
+        "Massimiliano Di Penta",
+        "Gabriele Bavota"
+      ],
+      "abstract": "Large Language Models (LLMs) have shown an impressive capability in code\ngeneration and, specifically, to automatically implement requirements described\nin natural language. The LLM effectiveness generally increases with its size:\nThe higher the number of LLM's trainable parameters the better its ability to\nimplement code. However, when it comes to deploying LLM-based code generators,\nlarger LLMs pose significant challenges related to their memory (and,\nconsequently, carbon) footprint. A previous work by Wei et al. proposed to\nleverage quantization techniques to reduce the memory footprint of LLM-based\ncode generators without substantially degrading their effectiveness. In short,\nthey studied LLMs featuring up to 16B parameters, quantizing their precision\nfrom floating point 32 bits down to int 8 bits and showing their limited impact\non code generation performance. Given the fast pace at which LLM capabilities\nand quantization techniques are evolving, in this work we present a\ndifferentiated replication of the work by Wei et al. in which we consider (i)\non the one side, more recent and larger code-related LLMs, of up to 34B\nparameters; (ii) the latest advancements in model quantization techniques,\nwhich allow pushing the compression to the extreme quantization level of 2 bits\nper model parameter and; (iii) different types of calibration datasets to guide\nthe quantization process, including code-specific ones. Our empirical\nevaluation reveals that the new frontier for LLM quantization is 4-bit\nprecision, resulting in an average memory footprint reduction of 70% compared\nto the original model without observing any significant decrease in\nperformance. Additionally, when the quantization becomes even more extreme (3\nand 2 bits), a code-specific calibration dataset helps to limit the loss of\nperformance.",
+      "published_at": "2025-03-10",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Alessandro",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.07103",
+      "arxiv_url": "https://arxiv.org/abs/2503.07103"
+    },
+    {
+      "arxiv_id": "2503.05333",
+      "title": "PhysicsGen: Can Generative Models Learn from Images to Predict Complex\n  Physical Relations?",
+      "authors": [
+        "Martin Spitznagel",
+        "Jan Vaillant",
+        "Janis Keuper"
+      ],
+      "abstract": "The image-to-image translation abilities of generative learning models have\nrecently made significant progress in the estimation of complex (steered)\nmappings between image distributions. While appearance based tasks like image\nin-painting or style transfer have been studied at length, we propose to\ninvestigate the potential of generative models in the context of physical\nsimulations. Providing a dataset of 300k image-pairs and baseline evaluations\nfor three different physical simulation tasks, we propose a benchmark to\ninvestigate the following research questions: i) are generative models able to\nlearn complex physical relations from input-output image pairs? ii) what\nspeedups can be achieved by replacing differential equation based simulations?\nWhile baseline evaluations of different current models show the potential for\nhigh speedups (ii), these results also show strong limitations toward the\nphysical correctness (i). This underlines the need for new methods to enforce\nphysical correctness. Data, baseline models and evaluation code\nhttp://www.physics-gen.org.",
+      "published_at": "2025-03-07",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Martin Spitznagel",
+      "upvotes": 8,
+      "organization": "",
+      "github_repo": "https://github.com/physicsgen/physicsgen",
+      "project_page": "https://www.physics-gen.org/",
+      "hf_url": "https://huggingface.co/papers/2503.05333",
+      "arxiv_url": "https://arxiv.org/abs/2503.05333"
+    },
+    {
+      "arxiv_id": "2503.07588",
+      "title": "When Large Vision-Language Model Meets Large Remote Sensing Imagery:\n  Coarse-to-Fine Text-Guided Token Pruning",
+      "authors": [
+        "Junwei Luo",
+        "Yingying Zhang",
+        "Xue Yang",
+        "Kang Wu",
+        "Qi Zhu",
+        "Lei Liang",
+        "Jingdong Chen",
+        "Yansheng Li"
+      ],
+      "abstract": "Efficient vision-language understanding of large Remote Sensing Images (RSIs)\nis meaningful but challenging. Current Large Vision-Language Models (LVLMs)\ntypically employ limited pre-defined grids to process images, leading to\ninformation loss when handling gigapixel RSIs. Conversely, using unlimited\ngrids significantly increases computational costs. To preserve image details\nwhile reducing computational complexity, we propose a text-guided token pruning\nmethod with Dynamic Image Pyramid (DIP) integration. Our method introduces: (i)\na Region Focus Module (RFM) that leverages text-aware region localization\ncapability to identify critical vision tokens, and (ii) a coarse-to-fine image\ntile selection and vision token pruning strategy based on DIP, which is guided\nby RFM outputs and avoids directly processing the entire large imagery.\nAdditionally, existing benchmarks for evaluating LVLMs' perception ability on\nlarge RSI suffer from limited question diversity and constrained image sizes.\nWe construct a new benchmark named LRS-VQA, which contains 7,333 QA pairs\nacross 8 categories, with image length up to 27,328 pixels. Our method\noutperforms existing high-resolution strategies on four datasets using the same\ndata. Moreover, compared to existing token reduction methods, our approach\ndemonstrates higher efficiency under high-resolution settings. Dataset and code\nare in https://github.com/VisionXLab/LRS-VQA.",
+      "published_at": "2025-03-10",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Junwei Luo",
+      "upvotes": 7,
+      "organization": "",
+      "github_repo": "https://github.com/VisionXLab/LRS-VQA",
+      "project_page": "https://github.com/VisionXLab/LRS-VQA",
+      "hf_url": "https://huggingface.co/papers/2503.07588",
+      "arxiv_url": "https://arxiv.org/abs/2503.07588"
+    },
+    {
+      "arxiv_id": "2503.09427",
+      "title": "Multimodal Language Modeling for High-Accuracy Single Cell\n  Transcriptomics Analysis and Generation",
+      "authors": [
+        "Yaorui Shi",
+        "Jiaqi Yang",
+        "Sihang Li",
+        "Junfeng Fang",
+        "Xiang Wang",
+        "Zhiyuan Liu",
+        "Yang Zhang"
+      ],
+      "abstract": "Pre-trained language models (PLMs) have revolutionized scientific research,\nyet their application to single-cell analysis remains limited. Text PLMs cannot\nprocess single-cell RNA sequencing data, while cell PLMs lack the ability to\nhandle free text, restricting their use in multimodal tasks. Existing efforts\nto bridge these modalities often suffer from information loss or inadequate\nsingle-modal pre-training, leading to suboptimal performances. To address these\nchallenges, we propose Single-Cell MultiModal Generative Pre-trained\nTransformer (scMMGPT), a unified PLM for joint cell and text modeling. scMMGPT\neffectively integrates the state-of-the-art cell and text PLMs, facilitating\ncross-modal knowledge sharing for improved performance. To bridge the text-cell\nmodality gap, scMMGPT leverages dedicated cross-modal projectors, and undergoes\nextensive pre-training on 27 million cells -- the largest dataset for\nmultimodal cell-text PLMs to date. This large-scale pre-training enables\nscMMGPT to excel in joint cell-text tasks, achieving an 84\\% relative\nimprovement of textual discrepancy for cell description generation, 20.5\\%\nhigher accuracy for cell type annotation, and 4\\% improvement in k-NN\naccuracy for text-conditioned pseudo-cell generation, outperforming baselines.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Yaorui SHI",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/syr-cn/scmmgpt",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.09427",
+      "arxiv_url": "https://arxiv.org/abs/2503.09427"
+    },
+    {
+      "arxiv_id": "2503.09419",
+      "title": "Alias-Free Latent Diffusion Models:Improving Fractional Shift\n  Equivariance of Diffusion Latent Space",
+      "authors": [
+        "Yifan Zhou",
+        "Zeqi Xiao",
+        "Shuai Yang",
+        "Xingang Pan"
+      ],
+      "abstract": "Latent Diffusion Models (LDMs) are known to have an unstable generation\nprocess, where even small perturbations or shifts in the input noise can lead\nto significantly different outputs. This hinders their applicability in\napplications requiring consistent results. In this work, we redesign LDMs to\nenhance consistency by making them shift-equivariant. While introducing\nanti-aliasing operations can partially improve shift-equivariance, significant\naliasing and inconsistency persist due to the unique challenges in LDMs,\nincluding 1) aliasing amplification during VAE training and multiple U-Net\ninferences, and 2) self-attention modules that inherently lack\nshift-equivariance. To address these issues, we redesign the attention modules\nto be shift-equivariant and propose an equivariance loss that effectively\nsuppresses the frequency bandwidth of the features in the continuous domain.\nThe resulting alias-free LDM (AF-LDM) achieves strong shift-equivariance and is\nalso robust to irregular warping. Extensive experiments demonstrate that AF-LDM\nproduces significantly more consistent results than vanilla LDM across various\napplications, including video editing and image-to-image translation. Code is\navailable at: https://github.com/SingleZombie/AFLDM",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Yifan Zhou",
+      "upvotes": 6,
+      "organization": "",
+      "github_repo": "https://github.com/SingleZombie/AFLDM",
+      "project_page": "https://zhouyifan.net/AF-LDM-Page/",
+      "hf_url": "https://huggingface.co/papers/2503.09419",
+      "arxiv_url": "https://arxiv.org/abs/2503.09419"
+    },
+    {
+      "arxiv_id": "2503.09579",
+      "title": "Cost-Optimal Grouped-Query Attention for Long-Context LLMs",
+      "authors": [
+        "Yingfa Chen",
+        "Yutong Wu",
+        "Xu Han",
+        "Zhiyuan Liu",
+        "Maosong Sun"
+      ],
+      "abstract": "Building effective and efficient Transformer-based large language models\n(LLMs) has recently become a research focus, requiring maximizing model\nlanguage capabilities and minimizing training and deployment costs. Existing\nefforts have primarily described complex relationships among model performance,\nparameter size, and data size, as well as searched for the optimal compute\nallocation to train LLMs. However, they overlook the impacts of context length\nand attention head configuration (the number of query and key-value heads in\ngrouped-query attention) on training and inference. In this paper, we\nsystematically compare models with different parameter sizes, context lengths,\nand attention head configurations in terms of model performance, computational\ncost, and memory cost. Then, we extend the existing scaling methods, which are\nbased solely on parameter size and training compute, to guide the construction\nof cost-optimal LLMs during both training and inference. Our quantitative\nscaling studies show that, when processing sufficiently long sequences, a\nlarger model with fewer attention heads can achieve a lower loss while\nincurring lower computational and memory costs. Our findings provide valuable\ninsights for developing practical LLMs, especially in long-context processing\nscenarios. We will publicly release our code and data.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Yingfa Chen",
+      "upvotes": 5,
+      "organization": "",
+      "github_repo": "https://github.com/thunlp/cost-optimal-gqa",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.09579",
+      "arxiv_url": "https://arxiv.org/abs/2503.09579"
+    },
+    {
+      "arxiv_id": "2503.09600",
+      "title": "MoC: Mixtures of Text Chunking Learners for Retrieval-Augmented\n  Generation System",
+      "authors": [
+        "Jihao Zhao",
+        "Zhiyuan Ji",
+        "Zhaoxin Fan",
+        "Hanyu Wang",
+        "Simin Niu",
+        "Bo Tang",
+        "Feiyu Xiong",
+        "Zhiyu Li"
+      ],
+      "abstract": "Retrieval-Augmented Generation (RAG), while serving as a viable complement to\nlarge language models (LLMs), often overlooks the crucial aspect of text\nchunking within its pipeline. This paper initially introduces a dual-metric\nevaluation method, comprising Boundary Clarity and Chunk Stickiness, to enable\nthe direct quantification of chunking quality. Leveraging this assessment\nmethod, we highlight the inherent limitations of traditional and semantic\nchunking in handling complex contextual nuances, thereby substantiating the\nnecessity of integrating LLMs into chunking process. To address the inherent\ntrade-off between computational efficiency and chunking precision in LLM-based\napproaches, we devise the granularity-aware Mixture-of-Chunkers (MoC)\nframework, which consists of a three-stage processing mechanism. Notably, our\nobjective is to guide the chunker towards generating a structured list of\nchunking regular expressions, which are subsequently employed to extract chunks\nfrom the original text. Extensive experiments demonstrate that both our\nproposed metrics and the MoC framework effectively settle challenges of the\nchunking task, revealing the chunking kernel while enhancing the performance of\nthe RAG system.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Jihao Zhao",
+      "upvotes": 4,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.09600",
+      "arxiv_url": "https://arxiv.org/abs/2503.09600"
+    },
+    {
+      "arxiv_id": "2503.09590",
+      "title": "BIMBA: Selective-Scan Compression for Long-Range Video Question\n  Answering",
+      "authors": [
+        "Md Mohaiminul Islam",
+        "Tushar Nagarajan",
+        "Huiyu Wang",
+        "Gedas Bertasius",
+        "Lorenzo Torresani"
+      ],
+      "abstract": "Video Question Answering (VQA) in long videos poses the key challenge of\nextracting relevant information and modeling long-range dependencies from many\nredundant frames. The self-attention mechanism provides a general solution for\nsequence modeling, but it has a prohibitive cost when applied to a massive\nnumber of spatiotemporal tokens in long videos. Most prior methods rely on\ncompression strategies to lower the computational cost, such as reducing the\ninput length via sparse frame sampling or compressing the output sequence\npassed to the large language model (LLM) via space-time pooling. However, these\nnaive approaches over-represent redundant information and often miss salient\nevents or fast-occurring space-time patterns. In this work, we introduce BIMBA,\nan efficient state-space model to handle long-form videos. Our model leverages\nthe selective scan algorithm to learn to effectively select critical\ninformation from high-dimensional video and transform it into a reduced token\nsequence for efficient LLM processing. Extensive experiments demonstrate that\nBIMBA achieves state-of-the-art accuracy on multiple long-form VQA benchmarks,\nincluding PerceptionTest, NExT-QA, EgoSchema, VNBench, LongVideoBench, and\nVideo-MME. Code, and models are publicly available at\nhttps://sites.google.com/view/bimba-mllm.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Gedas Bertasius",
+      "upvotes": 3,
+      "organization": "",
+      "github_repo": "https://github.com/md-mohaiminul/BIMBA",
+      "project_page": "https://sites.google.com/view/bimba-mllm",
+      "hf_url": "https://huggingface.co/papers/2503.09590",
+      "arxiv_url": "https://arxiv.org/abs/2503.09590"
+    },
+    {
+      "arxiv_id": "2503.09410",
+      "title": "Monte Carlo Diffusion for Generalizable Learning-Based RANSAC",
+      "authors": [
+        "Jiale Wang",
+        "Chen Zhao",
+        "Wei Ke",
+        "Tong Zhang"
+      ],
+      "abstract": "Random Sample Consensus (RANSAC) is a fundamental approach for robustly\nestimating parametric models from noisy data. Existing learning-based RANSAC\nmethods utilize deep learning to enhance the robustness of RANSAC against\noutliers. However, these approaches are trained and tested on the data\ngenerated by the same algorithms, leading to limited generalization to\nout-of-distribution data during inference. Therefore, in this paper, we\nintroduce a novel diffusion-based paradigm that progressively injects noise\ninto ground-truth data, simulating the noisy conditions for training\nlearning-based RANSAC. To enhance data diversity, we incorporate Monte Carlo\nsampling into the diffusion paradigm, approximating diverse data distributions\nby introducing different types of randomness at multiple stages. We evaluate\nour approach in the context of feature matching through comprehensive\nexperiments on the ScanNet and MegaDepth datasets. The experimental results\ndemonstrate that our Monte Carlo diffusion mechanism significantly improves the\ngeneralization ability of learning-based RANSAC. We also develop extensive\nablation studies that highlight the effectiveness of key components in our\nframework.",
+      "published_at": "2025-03-12",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Chen Zhao",
+      "upvotes": 1,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2503.09410",
+      "arxiv_url": "https://arxiv.org/abs/2503.09410"
+    },
+    {
+      "arxiv_id": "2503.08674",
+      "title": "Understanding and Mitigating Distribution Shifts For Machine Learning\n  Force Fields",
+      "authors": [
+        "Tobias Kreiman",
+        "Aditi S. Krishnapriyan"
+      ],
+      "abstract": "Machine Learning Force Fields (MLFFs) are a promising alternative to\nexpensive ab initio quantum mechanical molecular simulations. Given the\ndiversity of chemical spaces that are of interest and the cost of generating\nnew data, it is important to understand how MLFFs generalize beyond their\ntraining distributions. In order to characterize and better understand\ndistribution shifts in MLFFs, we conduct diagnostic experiments on chemical\ndatasets, revealing common shifts that pose significant challenges, even for\nlarge foundation models trained on extensive data. Based on these observations,\nwe hypothesize that current supervised training methods inadequately regularize\nMLFFs, resulting in overfitting and learning poor representations of\nout-of-distribution systems. We then propose two new methods as initial steps\nfor mitigating distribution shifts for MLFFs. Our methods focus on test-time\nrefinement strategies that incur minimal computational cost and do not use\nexpensive ab initio reference labels. The first strategy, based on spectral\ngraph theory, modifies the edges of test graphs to align with graph structures\nseen during training. Our second strategy improves representations for\nout-of-distribution systems at test-time by taking gradient steps using an\nauxiliary objective, such as a cheap physical prior. Our test-time refinement\nstrategies significantly reduce errors on out-of-distribution systems,\nsuggesting that MLFFs are capable of and can move towards modeling diverse\nchemical spaces, but are not being effectively trained to do so. Our\nexperiments establish clear benchmarks for evaluating the generalization\ncapabilities of the next generation of MLFFs. Our code is available at\nhttps://tkreiman.github.io/projects/mlff_distribution_shifts/.",
+      "published_at": "2025-03-11",
+      "submitted_at": "2025-03-13",
+      "submitted_by": "Toby Kreiman",
+      "upvotes": 0,
+      "organization": "",
+      "github_repo": "https://github.com/ASK-Berkeley/MLFF-distribution-shifts",
+      "project_page": "https://tkreiman.github.io/projects/mlff_distribution_shifts/",
+      "hf_url": "https://huggingface.co/papers/2503.08674",
+      "arxiv_url": "https://arxiv.org/abs/2503.08674"
+    }
+  ]
+}

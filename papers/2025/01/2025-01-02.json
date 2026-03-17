@@ -1,0 +1,125 @@
+{
+  "date": "2025-01-02",
+  "total": 5,
+  "source": "https://huggingface.co/papers/date/2025-01-02",
+  "papers": [
+    {
+      "arxiv_id": "2412.19723",
+      "title": "OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse\n  Task Synthesis",
+      "authors": [
+        "Qiushi Sun",
+        "Kanzhi Cheng",
+        "Zichen Ding",
+        "Chuanyang Jin",
+        "Yian Wang",
+        "Fangzhi Xu",
+        "Zhenyu Wu",
+        "Chengyou Jia",
+        "Liheng Chen",
+        "Zhoumianze Liu",
+        "Ben Kao",
+        "Guohao Li",
+        "Junxian He",
+        "Yu Qiao",
+        "Zhiyong Wu"
+      ],
+      "abstract": "Graphical User Interface (GUI) agents powered by Vision-Language Models\n(VLMs) have demonstrated human-like computer control capability. Despite their\nutility in advancing digital automation, a critical bottleneck persists:\ncollecting high-quality trajectory data for training. Common practices for\ncollecting such data rely on human supervision or synthetic data generation\nthrough executing pre-defined tasks, which are either resource-intensive or\nunable to guarantee data quality. Moreover, these methods suffer from limited\ndata diversity and significant gaps between synthetic data and real-world\nenvironments. To address these challenges, we propose OS-Genesis, a novel GUI\ndata synthesis pipeline that reverses the conventional trajectory collection\nprocess. Instead of relying on pre-defined tasks, OS-Genesis enables agents\nfirst to perceive environments and perform step-wise interactions, then\nretrospectively derive high-quality tasks to enable trajectory-level\nexploration. A trajectory reward model is then employed to ensure the quality\nof the generated trajectories. We demonstrate that training GUI agents with\nOS-Genesis significantly improves their performance on highly challenging\nonline benchmarks. In-depth analysis further validates OS-Genesis's efficiency\nand its superior data quality and diversity compared to existing synthesis\nmethods. Our codes, data, and checkpoints are available at\nhttps://qiushisun.github.io/OS-Genesis-Home/{OS-Genesis Homepage}.",
+      "published_at": "2024-12-27",
+      "submitted_at": "2025-01-02",
+      "submitted_by": "Qiushi",
+      "upvotes": 87,
+      "organization": "",
+      "github_repo": "https://github.com/OS-Copilot/OS-Genesis",
+      "project_page": "https://qiushisun.github.io/OS-Genesis-Home/",
+      "hf_url": "https://huggingface.co/papers/2412.19723",
+      "arxiv_url": "https://arxiv.org/abs/2412.19723"
+    },
+    {
+      "arxiv_id": "2412.19638",
+      "title": "Xmodel-2 Technical Report",
+      "authors": [
+        "Wang Qun",
+        "Liu Yang",
+        "Lin Qingquan",
+        "Qu Zhijiu",
+        "Jiang Ling"
+      ],
+      "abstract": "Xmodel-2 is a 1.2-billion-parameter large language model designed\nspecifically for reasoning tasks. Its architecture enables different model\nscales to share a unified set of hyperparameters, allowing for extensive\nexperimentation on smaller models and seamless transfer of optimal\nconfigurations to larger models. To maximize training efficiency and stability,\nXmodel-2 employs the WSD learning rate scheduler from MiniCPM. Pretrained on\n1.5 trillion tokens from diverse sources, Xmodel-2 achieves state-of-the-art\nperformance in complex reasoning and agent-based tasks, while maintaining low\ntraining costs. These results highlight the potential of efficient model design\nand training strategies in advancing reasoning capabilities. Model checkpoints\nand code are publicly available on GitHub at\nhttps://github.com/XiaoduoAILab/Xmodel-2",
+      "published_at": "2024-12-27",
+      "submitted_at": "2025-01-02",
+      "submitted_by": "ValeriaWong",
+      "upvotes": 27,
+      "organization": "",
+      "github_repo": "https://github.com/XiaoduoAILab/Xmodel-2",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.19638",
+      "arxiv_url": "https://arxiv.org/abs/2412.19638"
+    },
+    {
+      "arxiv_id": "2412.20750",
+      "title": "Are Vision-Language Models Truly Understanding Multi-vision Sensor?",
+      "authors": [
+        "Sangyun Chung",
+        "Youngjoon Yu",
+        "Youngchae Chee",
+        "Se Yeon Kim",
+        "Byung-Kwan Lee",
+        "Yong Man Ro"
+      ],
+      "abstract": "Large-scale Vision-Language Models (VLMs) have advanced by aligning vision\ninputs with text, significantly improving performance in computer vision tasks.\nMoreover, for VLMs to be effectively utilized in real-world applications, an\nunderstanding of diverse multi-vision sensor data, such as thermal, depth, and\nX-ray information, is essential. However, we find that current VLMs process\nmulti-vision sensor images without deep understanding of sensor information,\ndisregarding each sensor's unique physical properties. This limitation\nrestricts their capacity to interpret and respond to complex questions\nrequiring multi-vision sensor reasoning. To address this, we propose a novel\nMulti-vision Sensor Perception and Reasoning (MS-PR) benchmark, assessing VLMs\non their capacity for sensor-specific reasoning. Moreover, we introduce Diverse\nNegative Attributes (DNA) optimization to enable VLMs to perform deep reasoning\non multi-vision sensor tasks, helping to bridge the core information gap\nbetween images and sensor data. Extensive experimental results validate that\nthe proposed DNA method can significantly improve the multi-vision sensor\nreasoning for VLMs.",
+      "published_at": "2024-12-30",
+      "submitted_at": "2025-01-02",
+      "submitted_by": "Sangyun Chung",
+      "upvotes": 20,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.20750",
+      "arxiv_url": "https://arxiv.org/abs/2412.20750"
+    },
+    {
+      "arxiv_id": "2412.20800",
+      "title": "VMix: Improving Text-to-Image Diffusion Model with Cross-Attention\n  Mixing Control",
+      "authors": [
+        "Shaojin Wu",
+        "Fei Ding",
+        "Mengqi Huang",
+        "Wei Liu",
+        "Qian He"
+      ],
+      "abstract": "While diffusion models show extraordinary talents in text-to-image\ngeneration, they may still fail to generate highly aesthetic images. More\nspecifically, there is still a gap between the generated images and the\nreal-world aesthetic images in finer-grained dimensions including color,\nlighting, composition, etc. In this paper, we propose Cross-Attention Value\nMixing Control (VMix) Adapter, a plug-and-play aesthetics adapter, to upgrade\nthe quality of generated images while maintaining generality across visual\nconcepts by (1) disentangling the input text prompt into the content\ndescription and aesthetic description by the initialization of aesthetic\nembedding, and (2) integrating aesthetic conditions into the denoising process\nthrough value-mixed cross-attention, with the network connected by\nzero-initialized linear layers. Our key insight is to enhance the aesthetic\npresentation of existing diffusion models by designing a superior condition\ncontrol method, all while preserving the image-text alignment. Through our\nmeticulous design, VMix is flexible enough to be applied to community models\nfor better visual performance without retraining. To validate the effectiveness\nof our method, we conducted extensive experiments, showing that VMix\noutperforms other state-of-the-art methods and is compatible with other\ncommunity modules (e.g., LoRA, ControlNet, and IPAdapter) for image generation.\nThe project page is https://vmix-diffusion.github.io/VMix/.",
+      "published_at": "2024-12-30",
+      "submitted_at": "2025-01-02",
+      "submitted_by": "ShaojinWu",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "https://github.com/fenfenfenfan/VMix",
+      "project_page": "https://vmix-diffusion.github.io/VMix/",
+      "hf_url": "https://huggingface.co/papers/2412.20800",
+      "arxiv_url": "https://arxiv.org/abs/2412.20800"
+    },
+    {
+      "arxiv_id": "2412.20735",
+      "title": "HUNYUANPROVER: A Scalable Data Synthesis Framework and Guided Tree\n  Search for Automated Theorem Proving",
+      "authors": [
+        "Yang Li",
+        "Dong Du",
+        "Linfeng Song",
+        "Chen Li",
+        "Weikang Wang",
+        "Tao Yang",
+        "Haitao Mi"
+      ],
+      "abstract": "We introduce HunyuanProver, an language model finetuned from the Hunyuan 7B\nfor interactive automatic theorem proving with LEAN4. To alleviate the data\nsparsity issue, we design a scalable framework to iterative synthesize data\nwith low cost. Besides, guided tree search algorithms are designed to enable\neffective ``system 2 thinking`` of the prover. HunyuanProver achieves\nstate-of-the-art (SOTA) performances on major benchmarks. Specifically, it\nachieves a pass of 68.4% on the miniF2F-test compared to 65.9%, the current\nSOTA results. It proves 4 IMO statements (imo_1960_p2, imo_1962_p2},\nimo_1964_p2 and imo_1983_p6) in miniF2F-test. To benefit the community, we will\nopen-source a dataset of 30k synthesized instances, where each instance\ncontains the original question in natural language, the converted statement by\nautoformalization, and the proof by HunyuanProver.",
+      "published_at": "2024-12-30",
+      "submitted_at": "2025-01-02",
+      "submitted_by": "Linfeng Song",
+      "upvotes": 11,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2412.20735",
+      "arxiv_url": "https://arxiv.org/abs/2412.20735"
+    }
+  ]
+}

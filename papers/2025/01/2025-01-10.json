@@ -1,0 +1,199 @@
+{
+  "date": "2025-01-10",
+  "total": 9,
+  "source": "https://huggingface.co/papers/date/2025-01-10",
+  "papers": [
+    {
+      "arxiv_id": "2501.05441",
+      "title": "The GAN is dead; long live the GAN! A Modern GAN Baseline",
+      "authors": [
+        "Yiwen Huang",
+        "Aaron Gokaslan",
+        "Volodymyr Kuleshov",
+        "James Tompkin"
+      ],
+      "abstract": "There is a widely-spread claim that GANs are difficult to train, and GAN\narchitectures in the literature are littered with empirical tricks. We provide\nevidence against this claim and build a modern GAN baseline in a more\nprincipled manner. First, we derive a well-behaved regularized relativistic GAN\nloss that addresses issues of mode dropping and non-convergence that were\npreviously tackled via a bag of ad-hoc tricks. We analyze our loss\nmathematically and prove that it admits local convergence guarantees, unlike\nmost existing relativistic losses. Second, our new loss allows us to discard\nall ad-hoc tricks and replace outdated backbones used in common GANs with\nmodern architectures. Using StyleGAN2 as an example, we present a roadmap of\nsimplification and modernization that results in a new minimalist baseline --\nR3GAN. Despite being simple, our approach surpasses StyleGAN2 on FFHQ,\nImageNet, CIFAR, and Stacked MNIST datasets, and compares favorably against\nstate-of-the-art GANs and diffusion models.",
+      "published_at": "2025-01-09",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "Aaron Gokaslan",
+      "upvotes": 97,
+      "organization": "",
+      "github_repo": "https://github.com/brownvc/R3GAN",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.05441",
+      "arxiv_url": "https://arxiv.org/abs/2501.05441"
+    },
+    {
+      "arxiv_id": "2501.05032",
+      "title": "Enhancing Human-Like Responses in Large Language Models",
+      "authors": [
+        "Ethem Yağız Çalık",
+        "Talha Rüzgar Akkuş"
+      ],
+      "abstract": "This paper explores the advancements in making large language models (LLMs)\nmore human-like. We focus on techniques that enhance natural language\nunderstanding, conversational coherence, and emotional intelligence in AI\nsystems. The study evaluates various approaches, including fine-tuning with\ndiverse datasets, incorporating psychological principles, and designing models\nthat better mimic human reasoning patterns. Our findings demonstrate that these\nenhancements not only improve user interactions but also open new possibilities\nfor AI applications across different domains. Future work will address the\nethical implications and potential biases introduced by these human-like\nattributes.",
+      "published_at": "2025-01-09",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "Yağız Çalık",
+      "upvotes": 61,
+      "organization": "Human-Like LLMs",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.05032",
+      "arxiv_url": "https://arxiv.org/abs/2501.05032"
+    },
+    {
+      "arxiv_id": "2501.05453",
+      "title": "An Empirical Study of Autoregressive Pre-training from Videos",
+      "authors": [
+        "Jathushan Rajasegaran",
+        "Ilija Radosavovic",
+        "Rahul Ravishankar",
+        "Yossi Gandelsman",
+        "Christoph Feichtenhofer",
+        "Jitendra Malik"
+      ],
+      "abstract": "We empirically study autoregressive pre-training from videos. To perform our\nstudy, we construct a series of autoregressive video models, called Toto. We\ntreat videos as sequences of visual tokens and train transformer models to\nautoregressively predict future tokens. Our models are pre-trained on a diverse\ndataset of videos and images comprising over 1 trillion visual tokens. We\nexplore different architectural, training, and inference design choices. We\nevaluate the learned visual representations on a range of downstream tasks\nincluding image recognition, video classification, object tracking, and\nrobotics. Our results demonstrate that, despite minimal inductive biases,\nautoregressive pre-training leads to competitive performance across all\nbenchmarks. Finally, we find that scaling our video models results in similar\nscaling curves to those seen in language models, albeit with a different rate.\nMore details at https://brjathu.github.io/toto/",
+      "published_at": "2025-01-09",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "Jathushan Rajasegaran",
+      "upvotes": 41,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "https://brjathu.github.io/toto/",
+      "hf_url": "https://huggingface.co/papers/2501.05453",
+      "arxiv_url": "https://arxiv.org/abs/2501.05453"
+    },
+    {
+      "arxiv_id": "2501.04003",
+      "title": "Are VLMs Ready for Autonomous Driving? An Empirical Study from the\n  Reliability, Data, and Metric Perspectives",
+      "authors": [
+        "Shaoyuan Xie",
+        "Lingdong Kong",
+        "Yuhao Dong",
+        "Chonghao Sima",
+        "Wenwei Zhang",
+        "Qi Alfred Chen",
+        "Ziwei Liu",
+        "Liang Pan"
+      ],
+      "abstract": "Recent advancements in Vision-Language Models (VLMs) have sparked interest in\ntheir use for autonomous driving, particularly in generating interpretable\ndriving decisions through natural language. However, the assumption that VLMs\ninherently provide visually grounded, reliable, and interpretable explanations\nfor driving remains largely unexamined. To address this gap, we introduce\nDriveBench, a benchmark dataset designed to evaluate VLM reliability across 17\nsettings (clean, corrupted, and text-only inputs), encompassing 19,200 frames,\n20,498 question-answer pairs, three question types, four mainstream driving\ntasks, and a total of 12 popular VLMs. Our findings reveal that VLMs often\ngenerate plausible responses derived from general knowledge or textual cues\nrather than true visual grounding, especially under degraded or missing visual\ninputs. This behavior, concealed by dataset imbalances and insufficient\nevaluation metrics, poses significant risks in safety-critical scenarios like\nautonomous driving. We further observe that VLMs struggle with multi-modal\nreasoning and display heightened sensitivity to input corruptions, leading to\ninconsistencies in performance. To address these challenges, we propose refined\nevaluation metrics that prioritize robust visual grounding and multi-modal\nunderstanding. Additionally, we highlight the potential of leveraging VLMs'\nawareness of corruptions to enhance their reliability, offering a roadmap for\ndeveloping more trustworthy and interpretable decision-making systems in\nreal-world autonomous driving contexts. The benchmark toolkit is publicly\naccessible.",
+      "published_at": "2025-01-07",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "Lingdong Kong",
+      "upvotes": 27,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.04003",
+      "arxiv_url": "https://arxiv.org/abs/2501.04003"
+    },
+    {
+      "arxiv_id": "2501.05122",
+      "title": "Centurio: On Drivers of Multilingual Ability of Large Vision-Language\n  Model",
+      "authors": [
+        "Gregor Geigle",
+        "Florian Schneider",
+        "Carolin Holtermann",
+        "Chris Biemann",
+        "Radu Timofte",
+        "Anne Lauscher",
+        "Goran Glavaš"
+      ],
+      "abstract": "Most Large Vision-Language Models (LVLMs) to date are trained predominantly\non English data, which makes them struggle to understand non-English input and\nfail to generate output in the desired target language. Existing efforts\nmitigate these issues by adding multilingual training data, but do so in a\nlargely ad-hoc manner, lacking insight into how different training mixes tip\nthe scale for different groups of languages. In this work, we present a\ncomprehensive investigation into the training strategies for massively\nmultilingual LVLMs. First, we conduct a series of multi-stage experiments\nspanning 13 downstream vision-language tasks and 43 languages, systematically\nexamining: (1) the number of training languages that can be included without\ndegrading English performance and (2) optimal language distributions of\npre-training as well as (3) instruction-tuning data. Further, we (4)\ninvestigate how to improve multilingual text-in-image understanding, and\nintroduce a new benchmark for the task. Surprisingly, our analysis reveals that\none can (i) include as many as 100 training languages simultaneously (ii) with\nas little as 25-50\\% of non-English data, to greatly improve multilingual\nperformance while retaining strong English performance. We further find that\n(iii) including non-English OCR data in pre-training and instruction-tuning is\nparamount for improving multilingual text-in-image understanding. Finally, we\nput all our findings together and train Centurio, a 100-language LVLM, offering\nstate-of-the-art performance in an evaluation covering 14 tasks and 56\nlanguages.",
+      "published_at": "2025-01-09",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "Gregor Geigle",
+      "upvotes": 19,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.05122",
+      "arxiv_url": "https://arxiv.org/abs/2501.05122"
+    },
+    {
+      "arxiv_id": "2501.05040",
+      "title": "SWE-Fixer: Training Open-Source LLMs for Effective and Efficient GitHub\n  Issue Resolution",
+      "authors": [
+        "Chengxing Xie",
+        "Bowen Li",
+        "He Du",
+        "Wai Lam",
+        "Difan Zou",
+        "Kai Chen"
+      ],
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable proficiency across\na variety of complex tasks. One significant application of LLMs is in tackling\nsoftware engineering challenges, particularly in resolving real-world tasks on\nGitHub by fixing code based on the issues reported by the users. However, many\ncurrent approaches rely on proprietary LLMs, which limits reproducibility,\naccessibility, and transparency. The critical components of LLMs for addressing\nsoftware engineering issues and how their capabilities can be effectively\nenhanced remain unclear. To address these challenges, we introduce SWE-Fixer, a\nnovel open-source LLM designed to effectively and efficiently resolve GitHub\nissues. SWE-Fixer comprises two essential modules: a code file retrieval module\nand a code editing module. The retrieval module employs BM25 along with a\nlightweight LLM model to achieve coarse-to-fine file retrieval. Subsequently,\nthe code editing module utilizes the other LLM model to generate patches for\nthe identified files. Then, to mitigate the lack of publicly available\ndatasets, we compile an extensive dataset that includes 110K GitHub issues\nalong with their corresponding patches, and train the two modules of SWE-Fixer\nseparately. We assess our approach on the SWE-Bench Lite and Verified\nbenchmarks, achieving state-of-the-art performance among open-source models\nwith scores of 23.3% and 30.2%, respectively. These outcomes highlight the\nefficacy of our approach. We will make our model, dataset, and code publicly\navailable at https://github.com/InternLM/SWE-Fixer.",
+      "published_at": "2025-01-09",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "chengxing xie",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/internlm/swe-fixer",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.05040",
+      "arxiv_url": "https://arxiv.org/abs/2501.05040"
+    },
+    {
+      "arxiv_id": "2501.04377",
+      "title": "On Computational Limits and Provably Efficient Criteria of Visual\n  Autoregressive Models: A Fine-Grained Complexity Analysis",
+      "authors": [
+        "Yekun Ke",
+        "Xiaoyu Li",
+        "Yingyu Liang",
+        "Zhizhou Sha",
+        "Zhenmei Shi",
+        "Zhao Song"
+      ],
+      "abstract": "Recently, Visual Autoregressive (VAR) Models introduced a\ngroundbreaking advancement in the field of image generation, offering a\nscalable approach through a coarse-to-fine \"next-scale prediction\" paradigm.\nHowever, the state-of-the-art algorithm of VAR models in [Tian,\nJiang, Yuan, Peng and Wang, NeurIPS 2024] takes O(n^4) time, which is\ncomputationally inefficient. In this work, we analyze the computational limits\nand efficiency criteria of VAR Models through a fine-grained\ncomplexity lens. Our key contribution is identifying the conditions under which\nVAR computations can achieve sub-quadratic time complexity.\nSpecifically, we establish a critical threshold for the norm of input matrices\nused in VAR attention mechanisms. Above this threshold, assuming the\nStrong Exponential Time Hypothesis (SETH) from fine-grained\ncomplexity theory, a sub-quartic time algorithm for VAR models is\nimpossible. To substantiate our theoretical findings, we present efficient\nconstructions leveraging low-rank approximations that align with the derived\ncriteria. This work initiates the study of the computational efficiency of the\nVAR model from a theoretical perspective. Our technique will shed\nlight on advancing scalable and efficient image generation in VAR\nframeworks.",
+      "published_at": "2025-01-08",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "Zhizhou Sha",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.04377",
+      "arxiv_url": "https://arxiv.org/abs/2501.04377"
+    },
+    {
+      "arxiv_id": "2501.03489",
+      "title": "Entropy-Guided Attention for Private LLMs",
+      "authors": [
+        "Nandan Kumar Jha",
+        "Brandon Reagen"
+      ],
+      "abstract": "The pervasiveness of proprietary language models has raised critical privacy\nconcerns, necessitating advancements in private inference (PI), where\ncomputations are performed directly on encrypted data without revealing users'\nsensitive information. While PI offers a promising solution, its practical\ndeployment is hindered by substantial communication and latency overheads,\nprimarily stemming from nonlinear operations. To address this, we introduce an\ninformation-theoretic framework to characterize the role of nonlinearities in\ndecoder-only language models, laying a principled foundation for optimizing\ntransformer-architectures tailored to the demands of PI.\n  By leveraging Shannon's entropy as a quantitative measure, we uncover the\npreviously unexplored dual significance of nonlinearities: beyond ensuring\ntraining stability, they are crucial for maintaining attention head diversity.\nSpecifically, we find that their removal triggers two critical failure modes:\n{\\em entropy collapse} in deeper layers that destabilizes training, and {\\em\nentropic overload} in earlier layers that leads to under-utilization of\nMulti-Head Attention's (MHA) representational capacity.\n  We propose an entropy-guided attention mechanism paired with a novel entropy\nregularization technique to mitigate entropic overload. Additionally, we\nexplore PI-friendly alternatives to layer normalization for preventing entropy\ncollapse and stabilizing the training of LLMs with reduced-nonlinearities. Our\nstudy bridges the gap between information theory and architectural design,\nestablishing entropy dynamics as a principled guide for developing efficient PI\narchitectures. The code and implementation are available at\nhttps://github.com/Nandan91/entropy-guided-attention-llm{entropy-guided-llm}.",
+      "published_at": "2025-01-07",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "Nandan Kumar Jha",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/nandan91/entropy-guided-attention-llm",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.03489",
+      "arxiv_url": "https://arxiv.org/abs/2501.03489"
+    },
+    {
+      "arxiv_id": "2501.04828",
+      "title": "Building Foundations for Natural Language Processing of Historical\n  Turkish: Resources and Models",
+      "authors": [
+        "Şaziye Betül Özateş",
+        "Tarık Emre Tıraş",
+        "Ece Elif Adak",
+        "Berat Doğan",
+        "Fatih Burak Karagöz",
+        "Efe Eren Genç",
+        "Esma F. Bilgin Taşdemir"
+      ],
+      "abstract": "This paper introduces foundational resources and models for natural language\nprocessing (NLP) of historical Turkish, a domain that has remained\nunderexplored in computational linguistics. We present the first named entity\nrecognition (NER) dataset, HisTR and the first Universal Dependencies treebank,\nOTA-BOUN for a historical form of the Turkish language along with\ntransformer-based models trained using these datasets for named entity\nrecognition, dependency parsing, and part-of-speech tagging tasks.\nAdditionally, we introduce Ottoman Text Corpus (OTC), a clean corpus of\ntransliterated historical Turkish texts that spans a wide range of historical\nperiods. Our experimental results show significant improvements in the\ncomputational analysis of historical Turkish, achieving promising results in\ntasks that require understanding of historical linguistic structures. They also\nhighlight existing challenges, such as domain adaptation and language\nvariations across time periods. All of the presented resources and models are\nmade available at https://huggingface.co/bucolin to serve as a benchmark for\nfuture progress in historical Turkish NLP.",
+      "published_at": "2025-01-08",
+      "submitted_at": "2025-01-10",
+      "submitted_by": "Stefan Schweter",
+      "upvotes": 12,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "https://huggingface.co/bucolin",
+      "hf_url": "https://huggingface.co/papers/2501.04828",
+      "arxiv_url": "https://arxiv.org/abs/2501.04828"
+    }
+  ]
+}

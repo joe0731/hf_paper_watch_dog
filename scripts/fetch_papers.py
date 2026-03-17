@@ -14,7 +14,7 @@ import logging
 import os
 import sys
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -31,6 +31,7 @@ HF_PAPER_BASE = "https://huggingface.co/papers"
 
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 5
+MAX_BACKFILL_DAYS = 365
 
 
 def fetch_json(url: str) -> list | dict | None:
@@ -249,10 +250,17 @@ def main():
             logger.error("invalid date format: %s (expected YYYY-MM-DD)", args.date)
             sys.exit(1)
     else:
-        start_date = datetime.utcnow()
+        start_date = datetime.now(timezone.utc)
 
     dates = []
     if args.backfill > 0:
+        if args.backfill > MAX_BACKFILL_DAYS:
+            logger.error(
+                "backfill %d exceeds maximum of %d days",
+                args.backfill,
+                MAX_BACKFILL_DAYS,
+            )
+            sys.exit(1)
         for i in range(args.backfill):
             d = start_date - timedelta(days=i)
             dates.append(d.strftime("%Y-%m-%d"))

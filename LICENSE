@@ -1,0 +1,36 @@
+MIT License
+
+Copyright (c) 2026 joe0731
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Data Attribution Notice:
+
+Paper metadata archived in the papers/ directory (titles, authors, abstracts,
+upvotes, organizations, etc.) is sourced from Hugging Face Daily Papers
+(https://huggingface.co/papers). The original paper content is hosted on arXiv
+(https://arxiv.org/) and is subject to each paper's own license (typically
+CC BY 4.0 or similar open-access terms).
+
+This repository does not claim ownership of the archived metadata. All rights
+to the original content remain with their respective authors and publishers.
+If you are an author and wish to have your metadata removed from this archive,
+please open a GitHub issue.

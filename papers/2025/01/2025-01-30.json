@@ -1,0 +1,159 @@
+{
+  "date": "2025-01-30",
+  "total": 7,
+  "source": "https://huggingface.co/papers/date/2025-01-30",
+  "papers": [
+    {
+      "arxiv_id": "2501.17703",
+      "title": "Critique Fine-Tuning: Learning to Critique is More Effective than\n  Learning to Imitate",
+      "authors": [
+        "Yubo Wang",
+        "Xiang Yue",
+        "Wenhu Chen"
+      ],
+      "abstract": "Supervised Fine-Tuning (SFT) is commonly used to train language models to\nimitate annotated responses for given instructions. In this paper, we challenge\nthis paradigm and propose Critique Fine-Tuning (CFT), a strategy where models\nlearn to critique noisy responses rather than simply imitate correct ones.\nInspired by human learning processes that emphasize critical thinking, CFT\nencourages deeper analysis and nuanced understanding-traits often overlooked by\nstandard SFT. To validate the effectiveness of CFT, we construct a 50K-sample\ndataset from WebInstruct, using GPT-4o as the teacher to generate critiques in\nthe form of (input=[query; noisy response], output=critique). CFT on this\ndataset yields a consistent 4-10% improvement over SFT on six math benchmarks\nwith different base models like Qwen2.5, Qwen2.5-Math and DeepSeek-Math. We\nfurther expand to MetaMath and NuminaMath datasets and observe similar gains\nover SFT. Notably, our Qwen2.5-Math-CFT model-trained on just 50K\nsamples-matches or outperforms competitive models such as AceMath and\nQwen2.5-Math-Instruct on most benchmarks, both of which use over 2M samples.\nAblation studies show that CFT is robust to the source of noisy response and\nteacher critique model. Through these findings, we argue that critique-based\ntraining offers a more effective alternative to advance the reasoning of\nlanguage models.",
+      "published_at": "2025-01-29",
+      "submitted_at": "2025-01-30",
+      "submitted_by": "yubo",
+      "upvotes": 59,
+      "organization": "",
+      "github_repo": "https://github.com/TIGER-AI-Lab/CritiqueFineTuning",
+      "project_page": "https://tiger-ai-lab.github.io/CritiqueFineTuning/",
+      "hf_url": "https://huggingface.co/papers/2501.17703",
+      "arxiv_url": "https://arxiv.org/abs/2501.17703"
+    },
+    {
+      "arxiv_id": "2501.17195",
+      "title": "Atla Selene Mini: A General Purpose Evaluation Model",
+      "authors": [
+        "Andrei Alexandru",
+        "Antonia Calvi",
+        "Henry Broomfield",
+        "Jackson Golden",
+        "Kyle Dai",
+        "Mathias Leys",
+        "Maurice Burger",
+        "Max Bartolo",
+        "Roman Engeler",
+        "Sashank Pisupati",
+        "Toby Drane",
+        "Young Sun Park"
+      ],
+      "abstract": "We introduce Atla Selene Mini, a state-of-the-art small language\nmodel-as-a-judge (SLMJ). Selene Mini is a general-purpose evaluator that\noutperforms the best SLMJs and GPT-4o-mini on overall performance across 11\nout-of-distribution benchmarks, spanning absolute scoring, classification, and\npairwise preference tasks. It is the highest-scoring 8B generative model on\nRewardBench, surpassing strong baselines like GPT-4o and specialized judges. To\nachieve this, we develop a principled data curation strategy that augments\npublic datasets with synthetically generated critiques and ensures high quality\nthrough filtering and dataset ablations. We train our model on a combined\ndirect preference optimization (DPO) and supervised fine-tuning (SFT) loss, and\nproduce a highly promptable evaluator that excels in real-world scenarios.\nSelene Mini shows dramatically improved zero-shot agreement with human expert\nevaluations on financial and medical industry datasets. It is also robust to\nvariations in prompt format. Preliminary results indicate that Selene Mini is\nthe top-ranking evaluator in a live, community-driven Judge Arena. We release\nthe model weights on HuggingFace\n(https://hf.co/AtlaAI/Selene-1-Mini-Llama-3.1-8B) and Ollama to encourage\nwidespread community adoption.",
+      "published_at": "2025-01-27",
+      "submitted_at": "2025-01-30",
+      "submitted_by": "AK",
+      "upvotes": 35,
+      "organization": "",
+      "github_repo": "https://github.com/atla-ai/selene-mini",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.17195",
+      "arxiv_url": "https://arxiv.org/abs/2501.17195"
+    },
+    {
+      "arxiv_id": "2501.14334",
+      "title": "Exploring the sustainable scaling of AI dilemma: A projective study of\n  corporations' AI environmental impacts",
+      "authors": [
+        "Clément Desroches",
+        "Martin Chauvin",
+        "Louis Ladan",
+        "Caroline Vateau",
+        "Simon Gosset",
+        "Philippe Cordier"
+      ],
+      "abstract": "The rapid growth of artificial intelligence (AI), particularly Large Language\nModels (LLMs), has raised concerns regarding its global environmental impact\nthat extends beyond greenhouse gas emissions to include consideration of\nhardware fabrication and end-of-life processes. The opacity from major\nproviders hinders companies' abilities to evaluate their AI-related\nenvironmental impacts and achieve net-zero targets.\n  In this paper, we propose a methodology to estimate the environmental impact\nof a company's AI portfolio, providing actionable insights without\nnecessitating extensive AI and Life-Cycle Assessment (LCA) expertise. Results\nconfirm that large generative AI models consume up to 4600x more energy than\ntraditional models. Our modelling approach, which accounts for increased AI\nusage, hardware computing efficiency, and changes in electricity mix in line\nwith IPCC scenarios, forecasts AI electricity use up to 2030. Under a high\nadoption scenario, driven by widespread Generative AI and agents adoption\nassociated to increasingly complex models and frameworks, AI electricity use is\nprojected to rise by a factor of 24.4.\n  Mitigating the environmental impact of Generative AI by 2030 requires\ncoordinated efforts across the AI value chain. Isolated measures in hardware\nefficiency, model efficiency, or grid improvements alone are insufficient. We\nadvocate for standardized environmental assessment frameworks, greater\ntransparency from the all actors of the value chain and the introduction of a\n\"Return on Environment\" metric to align AI development with net-zero goals.",
+      "published_at": "2025-01-24",
+      "submitted_at": "2025-01-30",
+      "submitted_by": "Clement Desroches",
+      "upvotes": 20,
+      "organization": "",
+      "github_repo": "",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.14334",
+      "arxiv_url": "https://arxiv.org/abs/2501.14334"
+    },
+    {
+      "arxiv_id": "2501.15891",
+      "title": "Any2AnyTryon: Leveraging Adaptive Position Embeddings for Versatile\n  Virtual Clothing Tasks",
+      "authors": [
+        "Hailong Guo",
+        "Bohan Zeng",
+        "Yiren Song",
+        "Wentao Zhang",
+        "Chuang Zhang",
+        "Jiaming Liu"
+      ],
+      "abstract": "Image-based virtual try-on (VTON) aims to generate a virtual try-on result by\ntransferring an input garment onto a target person's image. However, the\nscarcity of paired garment-model data makes it challenging for existing methods\nto achieve high generalization and quality in VTON. Also, it limits the ability\nto generate mask-free try-ons. To tackle the data scarcity problem, approaches\nsuch as Stable Garment and MMTryon use a synthetic data strategy, effectively\nincreasing the amount of paired data on the model side. However, existing\nmethods are typically limited to performing specific try-on tasks and lack\nuser-friendliness. To enhance the generalization and controllability of VTON\ngeneration, we propose Any2AnyTryon, which can generate try-on results based on\ndifferent textual instructions and model garment images to meet various needs,\neliminating the reliance on masks, poses, or other conditions. Specifically, we\nfirst construct the virtual try-on dataset LAION-Garment, the largest known\nopen-source garment try-on dataset. Then, we introduce adaptive position\nembedding, which enables the model to generate satisfactory outfitted model\nimages or garment images based on input images of different sizes and\ncategories, significantly enhancing the generalization and controllability of\nVTON generation. In our experiments, we demonstrate the effectiveness of our\nAny2AnyTryon and compare it with existing methods. The results show that\nAny2AnyTryon enables flexible, controllable, and high-quality image-based\nvirtual try-on generation.https://logn-2024.github.io/Any2anyTryonProjectPage/",
+      "published_at": "2025-01-27",
+      "submitted_at": "2025-01-30",
+      "submitted_by": "bohan zeng",
+      "upvotes": 16,
+      "organization": "",
+      "github_repo": "https://github.com/logn-2024/Any2anyTryon",
+      "project_page": "https://logn-2024.github.io/Any2anyTryonProjectPage/",
+      "hf_url": "https://huggingface.co/papers/2501.15891",
+      "arxiv_url": "https://arxiv.org/abs/2501.15891"
+    },
+    {
+      "arxiv_id": "2501.15654",
+      "title": "People who frequently use ChatGPT for writing tasks are accurate and\n  robust detectors of AI-generated text",
+      "authors": [
+        "Jenna Russell",
+        "Marzena Karpinska",
+        "Mohit Iyyer"
+      ],
+      "abstract": "In this paper, we study how well humans can detect text generated by\ncommercial LLMs (GPT-4o, Claude, o1). We hire annotators to read 300\nnon-fiction English articles, label them as either human-written or\nAI-generated, and provide paragraph-length explanations for their decisions.\nOur experiments show that annotators who frequently use LLMs for writing tasks\nexcel at detecting AI-generated text, even without any specialized training or\nfeedback. In fact, the majority vote among five such \"expert\" annotators\nmisclassifies only 1 of 300 articles, significantly outperforming most\ncommercial and open-source detectors we evaluated even in the presence of\nevasion tactics like paraphrasing and humanization. Qualitative analysis of the\nexperts' free-form explanations shows that while they rely heavily on specific\nlexical clues ('AI vocabulary'), they also pick up on more complex phenomena\nwithin the text (e.g., formality, originality, clarity) that are challenging to\nassess for automatic detectors. We release our annotated dataset and code to\nspur future research into both human and automated detection of AI-generated\ntext.",
+      "published_at": "2025-01-26",
+      "submitted_at": "2025-01-30",
+      "submitted_by": "Jenna Russell",
+      "upvotes": 15,
+      "organization": "",
+      "github_repo": "https://github.com/jenna-russell/human_detectors",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.15654",
+      "arxiv_url": "https://arxiv.org/abs/2501.15654"
+    },
+    {
+      "arxiv_id": "2501.17749",
+      "title": "Early External Safety Testing of OpenAI's o3-mini: Insights from the\n  Pre-Deployment Evaluation",
+      "authors": [
+        "Aitor Arrieta",
+        "Miriam Ugarte",
+        "Pablo Valle",
+        "José Antonio Parejo",
+        "Sergio Segura"
+      ],
+      "abstract": "Large Language Models (LLMs) have become an integral part of our daily lives.\nHowever, they impose certain risks, including those that can harm individuals'\nprivacy, perpetuate biases and spread misinformation. These risks highlight the\nneed for robust safety mechanisms, ethical guidelines, and thorough testing to\nensure their responsible deployment. Safety of LLMs is a key property that\nneeds to be thoroughly tested prior the model to be deployed and accessible to\nthe general users. This paper reports the external safety testing experience\nconducted by researchers from Mondragon University and University of Seville on\nOpenAI's new o3-mini LLM as part of OpenAI's early access for safety testing\nprogram. In particular, we apply our tool, ASTRAL, to automatically and\nsystematically generate up to date unsafe test inputs (i.e., prompts) that\nhelps us test and assess different safety categories of LLMs. We automatically\ngenerate and execute a total of 10,080 unsafe test input on a early o3-mini\nbeta version. After manually verifying the test cases classified as unsafe by\nASTRAL, we identify a total of 87 actual instances of unsafe LLM behavior. We\nhighlight key insights and findings uncovered during the pre-deployment\nexternal testing phase of OpenAI's latest LLM.",
+      "published_at": "2025-01-29",
+      "submitted_at": "2025-01-30",
+      "submitted_by": "AK",
+      "upvotes": 14,
+      "organization": "",
+      "github_repo": "https://github.com/Trust4AI/GENIE",
+      "project_page": "https://trust4ai.github.io/trust4ai/",
+      "hf_url": "https://huggingface.co/papers/2501.17749",
+      "arxiv_url": "https://arxiv.org/abs/2501.17749"
+    },
+    {
+      "arxiv_id": "2501.17433",
+      "title": "Virus: Harmful Fine-tuning Attack for Large Language Models Bypassing\n  Guardrail Moderation",
+      "authors": [
+        "Tiansheng Huang",
+        "Sihao Hu",
+        "Fatih Ilhan",
+        "Selim Furkan Tekin",
+        "Ling Liu"
+      ],
+      "abstract": "Recent research shows that Large Language Models (LLMs) are vulnerable to\nharmful fine-tuning attacks -- models lose their safety alignment ability after\nfine-tuning on a few harmful samples. For risk mitigation, a guardrail is\ntypically used to filter out harmful samples before fine-tuning. By designing a\nnew red-teaming method, we in this paper show that purely relying on the\nmoderation guardrail for data filtration is not reliable. Our proposed attack\nmethod, dubbed Virus, easily bypasses the guardrail moderation by slightly\nmodifying the harmful data. Experimental results show that the harmful data\noptimized by Virus is not detectable by the guardrail with up to 100\\% leakage\nratio, and can simultaneously achieve superior attack performance. Finally, the\nkey message we want to convey through this paper is that: it is\nreckless to consider guardrail moderation as a clutch at straws towards harmful\nfine-tuning attack, as it cannot solve the inherent safety issue of the\npre-trained LLMs. Our code is available at https://github.com/git-disl/Virus",
+      "published_at": "2025-01-29",
+      "submitted_at": "2025-01-30",
+      "submitted_by": "TianshengHuang",
+      "upvotes": 10,
+      "organization": "",
+      "github_repo": "https://github.com/git-disl/virus",
+      "project_page": "",
+      "hf_url": "https://huggingface.co/papers/2501.17433",
+      "arxiv_url": "https://arxiv.org/abs/2501.17433"
+    }
+  ]
+}
